@@ -1,0 +1,1474 @@
+https://www.youtube.com/watch?v=6up6crGC0q8&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=11
+
+A pharma AI/ML partnerships lead presses three operators on the gap between AI in biology marketing decks and what the science actually supports. Where is the field overselling, where is it underselling, and what would change a skeptic's mind.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Panelists:
+Hani Goodarzi, Core Investigator, Arc Institute
+Reshma Shetty, Co-founder & COO, Ginkgo Bioworks
+Jacob Kimmel, Co-founder & President, NewLimit
+
+Moderated by Gregg Spivey, AI/ML Partnerships, Lilly
+
+---
+0:10
+Great to be here uh moderating this
+0:12
+panel. Uh getting to the getting to the
+0:15
+heart of the topic that Michelle first
+0:17
+introduced this morning. What is real
+0:19
+and what is hype? And uh cutting through
+0:21
+hype. For those of you who haven't
+0:23
+noticed that's the Wi-Fi password yet.
+0:26
+Um yeah, we have a great panel here. Um
+0:29
+interesting topic. Um I think you know
+0:33
+when we think about hype uh Michelle
+0:35
+opened nicely with some of the uh very
+0:39
+positive quotes uh from people in the
+0:41
+drug discovery field and then maybe some
+0:43
+of the rebuttals uh from from people. Um
+0:47
+you know we also exist in the wider AI
+0:50
+field you particularly here in the Bay
+0:52
+Area. Super exciting. It's obviously
+0:54
+driven a lot of funding into AI for drug
+0:56
+discovery. It's also brought with its
+0:59
+fair share of hype. Uh you I'm wearing
+1:02
+my Allirds trainers specifically for
+1:04
+this panel famous uh famous news story.
+1:07
+Sounds like everyone has already heard.
+1:09
+You know, they announced their like
+1:10
+completely normal natural pivot from
+1:13
+being a trainer company to being a data
+1:15
+center company providing GPUs to the AI
+1:18
+community and their stock price promptly
+1:20
+went up 600% in one day. So that is an
+1:23
+example of the hype we're you know we're
+1:25
+up against whether I should be trading
+1:27
+my trading my trainers in for some GPU
+1:30
+credits. Um but then you know bringing
+1:33
+us back to reality in the AI drug
+1:35
+discovery field um you know we are
+1:38
+obviously aiming to deliver improved
+1:40
+cures for patients. patients are waiting
+1:43
+and also in the wider AI community um
+1:48
+people often rely on saying AI is
+1:51
+helping with drug discovery as a way of
+1:54
+um yeah advocating for the entire field.
+1:56
+So I think there is a link between AI
+1:58
+hype and uh drug discovery uh you know
+2:02
+drug discovery MLAI what's real what's
+2:04
+hype and looking forward to exploring
+2:06
+that with uh with the panel today. Um
+2:09
+yeah my name is Greg Spy. work at uh
+2:11
+Lily in a IML partnerships. One of the
+2:14
+things uh I spend most my time on is a
+2:17
+project called Lily Tune Lab where we're
+2:19
+making Lily a IML models available to
+2:22
+the biotech ecosystem. They can use them
+2:25
+free of charge in return for making a
+2:28
+training data contribution back to
+2:30
+improve the models. So I'm obviously
+2:33
+biased, but I would put that in the the
+2:35
+real category. We're taking real models
+2:37
+used by Lily scientists every day,
+2:39
+making them available to people who
+2:41
+previously didn't have access to them to
+2:43
+help advance their science. So, we're
+2:46
+really excited by what we're building
+2:47
+there. Um, love to turn to the panel,
+2:50
+ask them to introduce themselves and,
+2:52
+you know, their companies uh, one by one
+2:54
+and then, yeah, what are they most
+2:56
+excited about that they would put in the
+2:59
+real AI category? We'll come to the hype
+3:02
+category in a minute. and um we're also
+3:04
+going to try and do some audience
+3:05
+questions later if we have time. I know
+3:07
+not a lot of panels have not done that.
+3:09
+So um think about who's going to be
+3:12
+brave and ask the uh the first audience
+3:15
+question. Um but yeah, love to turn to
+3:17
+to Hani and kick us off with uh tell us
+3:20
+about the ARC Institute which is
+3:22
+innovative in itself and yeah, what is
+3:24
+what is real in your your AI work?
+3:27
+Awesome. Uh hello everyone. I'm Hani. Um
+3:30
+I'm a faculty at UCSF and uh also a core
+3:33
+investigator at ARC institute. Uh I was
+3:36
+also a founding member of the
+3:38
+computational technology center which is
+3:40
+one of the centers at centers of
+3:42
+excellence at arc that focuses on our
+3:45
+core initiatives at arc institute. One
+3:48
+of them being a virtual cell initiative
+3:50
+with the goal of building an AI model of
+3:52
+this cell that you roani uh spoke about
+3:55
+that a little bit earlier I think a few
+3:57
+panels ago and also Alzheimer's disease
+3:59
+initiative. Uh my own research has been
+4:02
+in intersection of machine learning and
+4:04
+biology for really decades now at this
+4:07
+point. Uh and that's kind of where I
+4:09
+spend most of my time. uh there have
+4:11
+been also a number of uh spin outside of
+4:14
+my lab uh in in this intersection uh and
+4:17
+some of them are in the audience XI bio
+4:20
+uh to therapeutics of biosciences I
+4:24
+think that's kind of where where we
+4:25
+operate um broadly and uh in terms of
+4:29
+the kind of AI that I'm excited about um
+4:32
+I would say you know in terms of the AI
+4:35
+that is real I think most AI that I see
+4:38
+practically in in a scientific audience
+4:40
+is is broadly real. Um I think um there
+4:44
+is there is an AI out there um that I
+4:47
+think gets hyped up but I think when it
+4:48
+comes to intersection of science if
+4:50
+anything is truly not hyped enough um I
+4:53
+think we could do better. So please do
+4:56
+um you know some of us are really old
+4:58
+enough to remember that for example when
+5:01
+the human genome project was being
+5:03
+pitched to the public you know it was a
+5:05
+$3 billion projects which you know today
+5:07
+would be you know more than five six
+5:09
+billion dollars um you know cost of
+5:12
+running a human genome project at the
+5:14
+time and uh it was projected to solve
+5:16
+all human diseases. So one might say we
+5:19
+are still on the way and once we get
+5:21
+there you know him solving the human
+5:23
+genome was a part of that potentially uh
+5:26
+but certainly you know was that hype
+5:28
+shouldn't we have done that um was it
+5:30
+the wrong framing I I don't think so I
+5:33
+think uh we clearly see how how AI uh
+5:36
+certainly in the intersection of science
+5:38
+is changing how we do science how we
+5:40
+interact with other scientists how we
+5:42
+interact with the data uh I think all
+5:45
+the models that we have built at at uh
+5:48
+ARC for example uh both EVO and and
+5:52
+state uh and offshoots of state um that
+5:55
+that Ysef mentioned earlier you know I'm
+5:57
+proud of every every one of them and I
+5:59
+think they hold up uh to his scrutiny as
+6:01
+well.
+6:01
+Yep. Great answer and then yeah turning
+6:04
+turning to uh Jacob I know Jacob has the
+6:07
+distinction of being not just in AI and
+6:09
+ML but also in the field of aging and
+6:10
+longevity as well. So maybe a double
+6:13
+hype a double layer of excitement double
+6:15
+layer of hype risk. I
+6:17
+Greg, I have no idea what you're talking
+6:18
+about. No one's ever hyped aging biology
+6:20
+history. Um, so it's difficult to follow
+6:23
+Hani, but I'll do my best to try. Um, so
+6:26
+my name is Jacob. I run a company called
+6:28
+New Limit. I co-ounded it about four
+6:30
+years ago. We're working on developing
+6:31
+medicines for age related diseases by
+6:34
+restoring youthful function in age cells
+6:35
+through epigenetic reprogramming. The
+6:37
+ultimate ambition would be that if you
+6:39
+can restore youthful function and even
+6:40
+just a few age cell types within your
+6:42
+body, you could eventually add happy
+6:44
+healthy years to the median Americans
+6:46
+life, which is something that would be
+6:47
+very difficult to achieve in the
+6:49
+traditional paradigm of therapeutics
+6:50
+discovery. In terms of things that are
+6:52
+real, I think I try tend to decompose
+6:55
+the drug discovery problem into a tptic
+6:57
+of discovering the right targets to go
+6:58
+after. Which pieces of biology do you
+7:00
+want to manipulate, developing a
+7:02
+molecule that can go and manipulate
+7:03
+those particular targets, and then
+7:05
+running a clinical trial, figuring out
+7:07
+whether or not this therapeutic
+7:08
+hypothesis you have actually bears out
+7:10
+in patients. And I think we're just now
+7:12
+starting to see the first real
+7:14
+instantiations of AI systems that can
+7:16
+help us with that earliest target
+7:18
+discovery piece. And I'll plant a bold
+7:20
+flag in the ground and argue that that's
+7:21
+really where we've been bottlenecked on
+7:23
+discovering medicines for the past
+7:24
+several decades. These systems often
+7:26
+take the form of those that Honey
+7:28
+alluded to where while we can't quite
+7:30
+simulate everything happening in a cell
+7:31
+today, we might be able to get to a
+7:33
+place where we can take what is formerly
+7:35
+a artisal heristic process where the
+7:38
+human has an idea about what to test and
+7:40
+turn that into something that's a bit
+7:41
+more industrial where we can experiment
+7:43
+and ask can we simulate what would occur
+7:45
+in a given type of cell if we were to
+7:47
+perturb X Y and Zed genes and we can do
+7:49
+that in a much higher order way than we
+7:51
+would have been able to even just a few
+7:52
+years back. Um to turn that more to the
+7:55
+hype uh side of the spectrum, I do think
+7:57
+there's a very attractive notion that
+7:59
+there already are enough observations of
+8:01
+the universe out there. And this is
+8:03
+especially prominent in the biosciences.
+8:05
+And really what we need is a higher
+8:07
+order of reasoning to look at all the
+8:09
+observations that have already been
+8:10
+made. And if we're just able to in some
+8:12
+autonomous way reason through all the
+8:14
+literature that's already out there,
+8:15
+we'll come to a number of massive
+8:17
+unlocks that allow us to develop new
+8:18
+medicines and new therapies that humans
+8:20
+just haven't thought of yet. I tend to
+8:22
+be a bit more da on that hypothesis. I
+8:24
+think in the vast majority of cases, if
+8:26
+we're trying to discover a new therapy
+8:28
+or build a new biological tool, the
+8:30
+observations of the universe that we
+8:31
+need to reason our way there don't yet
+8:33
+exist. It's not just that we lack
+8:35
+sufficient intelligence, but that we
+8:36
+also need to actually run more
+8:38
+experiments and observe the universe in
+8:39
+new ways.
+8:41
+That is a great segue to uh Ra and Ginko
+8:45
+in terms of running experiments.
+8:47
+Yeah. Hi everyone. Um my name is R
+8:49
+Machete. I'm the co-founder of a company
+8:51
+called GKO Bowworks. We're based over in
+8:53
+Boston. Um at GKO, we've uh been
+8:56
+building a an autonomous lab and running
+8:58
+our work on top of that autonomous lab.
+9:00
+So, if you're interested in doing lab in
+9:02
+the loop experiments, want your own
+9:03
+autonomous lab, we sell you the hard
+9:05
+hardware and software stack to do that.
+9:07
+Or if you don't yet want to build your
+9:08
+own, but you want access to an
+9:10
+autonomous lab to run your closed loop
+9:11
+experiments, uh we offer cloud lab
+9:13
+services and other R&D services on top
+9:15
+of our autonomous lab. Um, in terms of
+9:17
+distinguishing hype uh from reality, I
+9:20
+would say actually in biology that's
+9:22
+pretty easy to do. Um, because the
+9:24
+reality is all that matters is what you
+9:26
+can one demonstrate in the lab and then
+9:28
+ultimately demonstrate in patients. So
+9:30
+it's actually I would argue one of the
+9:31
+fields that's easiest uh to distinguish
+9:33
+what's real from what's not. Um, and I
+9:36
+think that the way you do that is by,
+9:38
+you know, showing what tools or what
+9:40
+models work like in the lab, what and
+9:44
+which of those actually translate to the
+9:45
+clinic. So, um, I'm actually bullish
+9:48
+about AI as or about biology as an
+9:50
+application for AI because you can sort
+9:52
+through the hype so easily with actual
+9:54
+experiments in the lab.
+9:56
+Yeah, I think maybe picking up on what
+9:58
+both Jacob and Rajma have said. Yeah, I
+10:00
+think some of the areas we've seen the
+10:02
+most progress in in in AI for drug
+10:05
+discovery is where we have enough
+10:07
+training data and then we can close the
+10:11
+um yeah close the lab in the loop uh
+10:14
+cycle from an algorithm making a
+10:16
+prediction to actually running a real
+10:18
+wet lab experiment to to check uh
+10:22
+whether it's accurate or not and also
+10:23
+generate training data at the same time
+10:25
+and therefore improve the algorithm. So
+10:27
+yeah, I think we're starting to see that
+10:28
+work really well in the antibbody yeah
+10:31
+antibbody space for example. Um what are
+10:34
+maybe some of the next spaces you think
+10:36
+we can uh we can go to uh where um we
+10:42
+have the ability to generate enough
+10:44
+training data to come up with uh you
+10:46
+know an algorithmic breakthrough we
+10:48
+don't have now and we can and we can
+10:50
+test it without needing to wait for a
+10:52
+full human clinical trial. uh which
+10:55
+obviously is the the end state as we all
+10:57
+know but uh we want to try and have
+11:00
+quicker cycle times than that.
+11:03
+Yeah,
+11:05
+I'll jump in.
+11:06
+Um so I think the example of antibbody
+11:08
+generation is instructive. I would argue
+11:10
+this is really the most mature of the
+11:12
+applications of AI systems in
+11:14
+biotechnology today.
+11:15
+And I think an easy extrapolation to
+11:17
+make from that is that we'll start to
+11:19
+see the same sort of innovations in lead
+11:20
+optim lead optimization and other
+11:22
+modalities. Um it's not too crazy a
+11:25
+proposition to say that if you can
+11:26
+optimize over a sequence of amino acids,
+11:28
+you can optimize over a sequence of
+11:29
+nucleotides. And it turns out that most
+11:31
+of life is nucleotides and amino acids.
+11:32
+So pretty quickly you get from just
+11:34
+making antibodies to making novel types
+11:36
+of enzymes that might never have existed
+11:38
+before getting to the place where you
+11:40
+can optimize nucleic acid sequences and
+11:41
+RNA medicines like I know Hani and his
+11:43
+group have really pioneered that have
+11:45
+properties you wouldn't have been able
+11:46
+to achieve previously. So I think that's
+11:48
+maybe phase one. Phase two might get to
+11:50
+a place where if we are thinking more
+11:52
+now about what is it that we want these
+11:54
+molecules to do not just how do we make
+11:56
+them you can yeah maybe you can't quite
+11:59
+simulate the trial you can't quite
+12:01
+predict the outcome of a phase three
+12:02
+today we just don't have enough data
+12:04
+points to do that but you can take some
+12:05
+of the best surrogates we have the best
+12:07
+pre-clinical systems and parallelize
+12:09
+them to a larger degree than we have
+12:10
+before but more importantly with even a
+12:13
+subsampling of that space in the same
+12:15
+way that protein design was solved in
+12:17
+some ways or protein folding was solved
+12:18
+with hundreds of thousands of
+12:20
+observations. Maybe we can make hundreds
+12:21
+of thousands to millions of observations
+12:23
+of the space of 10 to the much larger n
+12:25
+exponent possible interventions you
+12:27
+might make in terms of the genes and
+12:28
+molecules you want to manipulate in the
+12:30
+best nonclinical system by screening in
+12:32
+parallel and then begin to predict which
+12:34
+of those targets would be the most
+12:35
+exciting to go after.
+12:38
+Kind of building on that I think um
+12:41
+actually one of the things I would say
+12:43
+is hype maybe in this space uh is the
+12:46
+lab in the loop. Um the the reality is
+12:48
+that it's actually you were we were
+12:50
+talking about it earlier. It's actually
+12:52
+quite hard to complete that loop. Um
+12:56
+because the vast majority of the assays
+12:58
+and experiments in biology are quite
+13:01
+slow. I mean the clinical trial being
+13:03
+the extreme example of that in the end.
+13:06
+Um so while everyone goes out there and
+13:08
+pitches lab in the loop as an approach
+13:10
+and I and I see why right again if if
+13:14
+biology is data spared as a field how do
+13:17
+you solve that problem and I think
+13:19
+active learning is a very tempting
+13:20
+solution and we are going to ask the
+13:23
+model to tell us where to go next and
+13:26
+how to explore the data space and uh we
+13:29
+subscribe to that at arc institute for
+13:31
+example and you know other teams that I
+13:33
+work with certainly subscribe to that uh
+13:36
+however that is actually a hard loop to
+13:39
+complete quickly enough uh to really
+13:42
+take advantage of the compounding of AI.
+13:44
+Yeah.
+13:45
+The real experiment which is the result
+13:47
+in human whereas we end up doing
+13:49
+essentially surrogate experiments like
+13:50
+in in vitro experiments and and invivo
+13:53
+experiments are currently the best
+13:56
+proxies we have for the human result.
+13:59
+But in some cases they're really not
+14:00
+very good proxies. They're just the best
+14:02
+ones we have today. And there you know
+14:04
+ultimately there are two solutions that
+14:05
+I see. One is the kind of work that GKO
+14:08
+or Medra and others are doing by really
+14:10
+automating assays uh really bonafideed
+14:14
+and faithful assays to the extent that
+14:16
+they can be done rapidly and and you
+14:18
+know with a quality that can complete
+14:20
+the loop quickly. or we take the
+14:23
+approach and basically put in the work
+14:25
+that will allow us to build assays so
+14:28
+massive and so scalable that then when
+14:31
+they when the data gets unlocked it
+14:33
+gives you a playground for a duration of
+14:36
+time until the second batch comes and
+14:39
+that's something that for example at the
+14:40
+arc institute we have been uh focusing
+14:42
+on and also some of the companies that I
+14:44
+that I work with again uh I think the
+14:46
+idea would be kind of like the World of
+14:48
+Warcraft scenario where you know you the
+14:50
+game starts with with an arena and a
+14:53
+universe and then the next upgrade comes
+14:56
+in an entire area opens up with entire
+14:58
+quests and all of that. I don't know.
+15:00
+I'm pretty old so I don't know what new
+15:01
+games are out there uh with with this
+15:04
+model but let's go with World of
+15:05
+Warcraft.
+15:05
+I was not expecting a World of Warcraft
+15:07
+reference.
+15:09
+That will be my perspective. I think we
+15:11
+need to get to a point that we don't
+15:13
+necessarily
+15:14
+like we really legitimize the slowness
+15:18
+of the loop in biology. Yeah. and really
+15:20
+focus on building assays that are really
+15:23
+high quality and scalable but really
+15:26
+bonafideed like measurements of biology
+15:28
+that will allow us to have that
+15:30
+playground while that loop is going for
+15:32
+another round.
+15:33
+Yeah. And um Ra just to pick up on a
+15:36
+point that Honey mentioned a key part of
+15:37
+this obviously for machine learning
+15:39
+training is quality which also is you
+15:42
+know one of one of many of the reasons
+15:45
+to automate same with you know same with
+15:47
+measures platform as well and create
+15:49
+data that you know humans are you know
+15:52
+great at doing experiments but there's
+15:54
+also a lot of v variability in humans
+15:56
+doing experiments that we can remove
+15:57
+with more automated methods and yeah
+16:00
+sometimes that's what we need to do to
+16:01
+to unlock the signal from from and the
+16:04
+noise is that is that something that
+16:06
+you're you're very much focused on as
+16:07
+you you design new systems in this area.
+16:10
+Yeah, I mean I very much agree that the
+16:13
+quality and the scale of the data is
+16:16
+like needs to be pushed in order for um
+16:18
+us to make progress in this field. I
+16:21
+would say you know one of the
+16:22
+challenging things and historically why
+16:24
+this has been hard if if you think about
+16:25
+the DMTA cycle right um we've used
+16:28
+automation on the kind of the the make
+16:29
+and test part of that and now we have
+16:31
+reasoning models to help you with the
+16:33
+analyze and design part of that right so
+16:35
+that's kind of why it's an interesting
+16:36
+moment is because you have pieces to
+16:38
+start to address both sides of the cycle
+16:40
+instead of just one but on the um on the
+16:43
+make and test side you know one of the
+16:45
+challenges with biology is it's not just
+16:47
+one assay that you need right it's
+16:49
+really I mean biology ology when you're
+16:50
+developing a drug, it's a
+16:51
+multi-objective optimization problem,
+16:53
+right? Um, and that's everything from,
+16:56
+you know, obviously like binding or
+16:57
+efficacy to, you know, developability to
+16:59
+manufacturability to talks and so on.
+17:02
+So, it's a large list and we probably
+17:03
+don't even know all the things we should
+17:04
+be optimizing on in reality.
+17:06
+And so, the challenge is that if you're
+17:09
+going to actually be able to do lab in
+17:11
+the loop, and I'm probably a little more
+17:12
+bullish on it than than Hani is, um, I
+17:14
+think you need to be able to do that
+17:16
+diversity of biological assays, right?
+17:19
+And one of the key limitations we've had
+17:21
+with automation historically is that we
+17:23
+build automation usually around a single
+17:26
+workflow. Right? So a pharma company
+17:28
+might build a facility for high
+17:30
+throughput compound screening or they'll
+17:32
+build a a work cell that can do sample
+17:35
+prep for nextgen sequencing or they'll
+17:37
+commission a new work cell for antibbody
+17:39
+production. Right? And that's how they
+17:41
+think about it. And so it's that team
+17:42
+and they're going to use it for that one
+17:43
+workflow and every time they have a new
+17:45
+workflow they build a new automation
+17:46
+system. The question is can we build
+17:49
+instead of automated labs can we build
+17:50
+autonomous labs that can actually span
+17:52
+the flexibility of biology because the
+17:54
+reality is a bench scientist does not
+17:56
+want to be limited to a single type of
+17:58
+assay. Um they have a huge variety of
+18:01
+questions they need to ask and answer
+18:03
+and therefore they have a huge variety
+18:05
+of experiments they want to do. So I
+18:07
+think some of the advances in automation
+18:09
+coupled to um the advances on the
+18:11
+reasoning models, it's about unlocking
+18:13
+the diversity of experiments you need
+18:15
+while still generating the high quality
+18:17
+uh data sets in order to be able to like
+18:19
+advance drug discovery. And so to me
+18:21
+that's the key is really being able to
+18:22
+handle the diversity of what of work
+18:24
+that needs to be done for biologic for
+18:27
+biological questions.
+18:28
+That makes sense without the very long
+18:30
+lead time you need to build a completely
+18:32
+new work cell or anything else. Yeah.
+18:34
+All right. I did promise at the start we
+18:36
+were going to try and get to some get to
+18:37
+some hype and uh you know talk about
+18:40
+some hype stories. You know in some ways
+18:42
+uh uh you know there a lot of startup
+18:44
+founders here a certain degree of hype I
+18:47
+think we all agree is useful. You know
+18:49
+if something already existed in the
+18:52
+world then it wouldn't be a startup. It
+18:54
+wouldn't be a new development. It
+18:55
+wouldn't be a new piece of science. So
+18:56
+in some respect we're all predicting the
+18:58
+future in you know starting a new
+19:01
+project in a big company or or starting
+19:03
+an entire new company getting VC funding
+19:05
+but as we've seen with my orbirds
+19:07
+example you know sometimes the hype can
+19:10
+go maybe a little bit too far um anyone
+19:13
+want to jump in on their first uh hype
+19:15
+story and after that I will ask the
+19:17
+audience if there are any any questions
+19:18
+so uh keep keep thinking about those
+19:22
+mine was lamb in the loop
+19:24
+I gave you mine which is we're just
+19:25
+gonna uh reason our way from all the
+19:27
+existing PDFs to new medicines.
+19:28
+Yeah. Yeah.
+19:29
+Yeah.
+19:30
+Uh similarly, I I I believe it's hype to
+19:32
+think that we'll just be able to use
+19:34
+strictly models to design, you know,
+19:36
+molecules and we won't need to ever test
+19:38
+them in the lab that we can just do one
+19:39
+shot things. I think that's a pretty far
+19:41
+off uh dream.
+19:43
+Do you think the idea that we we zero
+19:46
+shot a development candidate is too is
+19:48
+too far off?
+19:48
+Yeah.
+19:49
+Just give me the injector. Let's go.
+19:52
+Me and me and Honey will sample. Do you
+19:54
+think we'll never get to zero shot DC's
+19:56
+or just zero shot um like uh GMP ready
+20:00
+medicines?
+20:01
+Yeah, now we're we're starting to split
+20:03
+hairs a little bit, but I I I you know,
+20:05
+how close to the monkeys do you think
+20:06
+we'll get?
+20:07
+Um like look, I I'm I have been working
+20:11
+in the area of engineering biology for a
+20:13
+long time and biology is complex. It's
+20:14
+evolved over a long long period of time,
+20:17
+far longer than human language. So, it's
+20:19
+going to take us a while to have our
+20:20
+chat GBT moment because human language
+20:22
+is a lot younger than biology.
+20:25
+There's just a lot more complexity in
+20:27
+biology.
+20:30
+Honey, any any more any more hype hype
+20:32
+ideas to add?
+20:34
+Uh I I mean maybe it's the opposite of
+20:37
+hype in some sense, but the the reality
+20:40
+is that I think when like what is hype?
+20:43
+pipe is something that we think to
+20:45
+accomplish for example the goal would be
+20:47
+the goal of AI in biology would be to
+20:49
+accomplish what we just described like
+20:52
+zero shot drug into a human but but I
+20:55
+don't set I wouldn't set the bar there I
+20:58
+think there's plenty of room between
+20:59
+where we are today which is you know all
+21:02
+the preclinical experimental models we
+21:04
+use with all the caveats that they have
+21:07
+and you know an actual outcome in the
+21:09
+patient what we need the AI models to be
+21:11
+able to do is just surpass pass this. I
+21:14
+mean, this is why 90% of drugs fail
+21:16
+today, right? Yeah.
+21:17
+Um, so the we we don't of course
+21:20
+we have a low bar we have a low bar to
+21:21
+clear. Is that what you're saying?
+21:23
+It's not it's not super low, but it's
+21:24
+like it's certainly not the kind of
+21:26
+bonafide biology of a human that we need
+21:29
+to clear. We need to do the messy like
+21:33
+clear the messy mouse version of like
+21:35
+whatever disease we're trying to model.
+21:37
+Uh I think that's kind of that's where
+21:38
+the bar is.
+21:40
+Great.
+21:42
+Any question? Any questions from the
+21:43
+audience? Yes, there are some.
+21:45
+Excellent. I We were joking earlier. I
+21:47
+should have planted one to kick every
+21:48
+Oh, these are my plants. Thanks.
+21:49
+There are already there already. Yeah.
+21:56
+Oh, great. Fantastic. Uh, my question is
+21:58
+about lab automation. We hear a lot
+22:00
+about lab automation and having the lab
+22:02
+in the loop handling all of the all of
+22:05
+the steps of drug discovery, but
+22:06
+automation works really well when you
+22:08
+have processes or for, you know, for
+22:11
+basic processes that have high
+22:13
+utilization, right? Like the few steps
+22:14
+that everybody needs and it works really
+22:16
+poorly economically when you get to the
+22:18
+long tail of things that you're going to
+22:19
+use once or only in idiosyncratic
+22:21
+circumstances. So, is there ever a
+22:23
+scenario where the human is entirely
+22:25
+removed? And if not, are you still going
+22:27
+to be paying humans to be standing
+22:28
+around waiting for that one little step
+22:30
+where they're going to need to step in?
+22:32
+Yeah, I can take that. So, I I think the
+22:35
+shortcomings you're describing are
+22:36
+definitely true for automate automation
+22:38
+like work cells, but I don't think
+22:40
+they're true for true autonomous labs.
+22:42
+Really, when I talk about autonomous
+22:43
+lab, I'm saying a lab that is
+22:46
+purpose-built to do a high diversity of
+22:48
+workflows. And so what that means is I
+22:50
+take take think about your biology lab
+22:53
+take all the pieces of equipment in
+22:54
+there and let me hook them up together
+22:56
+so that I can transport samples from one
+22:58
+piece of equipment to another in any
+23:00
+order I want. Then if I can do that then
+23:02
+I've basically got a lab that can do
+23:05
+almost anything that a person at the
+23:06
+bench could do. So that that's a
+23:09
+hardware stack and software stack you
+23:10
+have to build. And we we're built we
+23:11
+built it at GKO and we're running that.
+23:13
+So we have scientists from all over the
+23:14
+company submitting their protocol
+23:16
+requests to a common lab. So it can be
+23:18
+done today. Um it's been hard
+23:20
+historically, but I think now we can
+23:22
+actually lower the barriers to even
+23:24
+using it with some of the um the coding
+23:27
+agents because one of the big barriers
+23:28
+to using automation historically for
+23:30
+bench scientists has been all the work
+23:32
+you have to do to just write your
+23:33
+protocol in a way that can run on the
+23:35
+automation. But I think the coding
+23:37
+agents can now bring that down quite a
+23:38
+bit. So I I I believe that the the very
+23:41
+like challenges you site are now
+23:44
+solvable.
+23:45
+I think it was interesting a couple of
+23:47
+the earlier panels this morning also
+23:48
+talked about more and more scientists
+23:50
+wearing uh you know specs with cameras
+23:53
+on and collecting data that way and
+23:55
+thinking about reproducibility and you
+23:57
+know how we store all this human
+23:59
+metadata. So I think it's an exciting
+24:01
+part of um yeah the software side of of
+24:05
+that as well. Um we maybe have time for
+24:07
+one more question. There was one at the
+24:09
+back. Hi.
+24:11
+Um so even though in each uh cell in our
+24:14
+body we have the same DNA uh eventually
+24:17
+the biomolelecule composition in each
+24:19
+cell is completely different like the
+24:21
+RNA the proteins the nutrients and I
+24:24
+think that uh a lot of the conversations
+24:26
+I'm having these days is about the
+24:28
+limiting factor in drug discovery where
+24:30
+a lot of the data that we have been
+24:32
+basing our hypotheses on were basically
+24:35
+generated by um like engineered cells
+24:38
+and I'm wondering In regard to your uh
+24:41
+question about hype and reality, um I'm
+24:44
+thinking of what you in the panel think
+24:46
+on the potential of AI to bridge this
+24:49
+gap and allow like this transfer
+24:52
+learning between different cell types.
+24:56
+Great question, Jacob. How many
+24:57
+I can ask this one fairly shortly. Um I
+25:00
+would agree with you that we've learned
+25:01
+a lot about something like a K562 cell
+25:03
+which has who knows how many chromosomes
+25:04
+depending on what lab you're in. I'm not
+25:06
+actually sure it's human anymore. Um,
+25:08
+and we know far less about what happens
+25:10
+in actual human cells from real human
+25:11
+beings. It's much harder to run
+25:13
+experiments in the latter, but I would
+25:14
+argue it's worthwhile. That's everything
+25:16
+we do at New Limit. Um, I think there's
+25:18
+another question which yet remains to be
+25:20
+answered whether or not you're going to
+25:21
+be able to get transfer learning across
+25:23
+cell types throughout the body. If I
+25:25
+learn a lot about skeletal muscle and
+25:26
+adiposytes, will that tell me what is
+25:28
+going to occur when I make a certain set
+25:30
+of interventions in the brain? And while
+25:32
+I can't say we have a definitive answer
+25:33
+yet, we've started to already see
+25:35
+signals even fairly small data regimes
+25:37
+in terms of the number of cell types
+25:38
+we've we've observed thus far where you
+25:40
+do start to actually get some benefit
+25:42
+from one cell type into another. So the
+25:44
+hope would be that as you start to climb
+25:45
+up the access from zero toward the 200
+25:48
+plus cell types in the human body that
+25:49
+the nth cell type becomes easier and
+25:51
+easier to unlock in the future.
+25:53
+Excellent. Um great we are out of time
+25:55
+but thanks to the panel great uh great
+25:57
+discussion, thanks for the questions and
+25:59
+yeah enjoy the rest of the conference
+26:00
+everyone.

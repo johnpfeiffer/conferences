@@ -1,0 +1,1666 @@
+https://www.youtube.com/watch?v=BXT8rjPHsWE&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=8
+
+Scientific data is small, noisy, and expensive. The training recipes that built frontier LLMs don't transfer cleanly to biology and chemistry. Builders from Arc Institute, BigHat, and Goodfire on what actually works when training AI for science, where interpretability fits in, and where the field's training assumptions break down.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Panelists:
+Yusuf Roohani, Assistant Director of Machine Learning, Arc Institute
+Peyton Greenside, Co-founder & CEO, BigHat Biosciences
+Eric Ho, Co-founder & CEO, Goodfire
+
+Moderated by Johnny Hu, Principal, Menlo Ventures
+
+---
+0:09
+Thanks for joining everyone. I see some
+0:11
+familiar faces in the crowd. Um, just to
+0:14
+kick off, yeah, I'm Johnny. I work at
+0:15
+MELO. Um, it's exciting to be here. I
+0:18
+feel like we're really at the cusp of,
+0:20
+you know, AI and bio today. And we have
+0:22
+some really great leaders in the field
+0:24
+right now to talk about model training
+0:26
+and what it looks like to build models
+0:28
+in this field. Um just a little uh
+0:31
+background on Milo. We're a 50-year-old
+0:33
+VC firm. Now in the interest of full
+0:35
+disclosure, we are investors in some of
+0:36
+the speakers uh at the conference today
+0:39
+including Zara, Axium, Measra, and
+0:41
+Goodfire. Um but let's kick it off. So
+0:44
+Yousef, you know, you you lead a group
+0:46
+at the Ark Institute. Um I think you you
+0:48
+know are looking to train virtual cell
+0:51
+models, right? Which is kind of one I
+0:52
+consider one of the holy grails for
+0:54
+biology. And I was reading your last
+0:57
+paper and it looked like you had
+0:58
+invented a new kind of architecture um
+1:00
+for model training. So yeah, would love
+1:02
+to talk a little bit about it, maybe
+1:03
+some of your work at the Ark Institute
+1:05
+and how you know you really came into
+1:07
+this field and and the need maybe for
+1:09
+new architecture in biology which might
+1:11
+look very different from the the large
+1:13
+language models which are you know
+1:15
+mostly text only.
+1:16
+Yeah. No, no, happy to talk about this
+1:18
+and thank you for the invitation to be
+1:19
+here. Um you know there's there's the
+1:21
+obvious differences between uh biology
+1:25
+and language which is you know of course
+1:26
+in the language field you have these
+1:28
+well um well-developed well understood
+1:30
+architectures that are being applied. In
+1:32
+biology I think there's many different
+1:34
+constraints and factors that need to be
+1:36
+accounted for. One of the most common
+1:38
+questions that comes up is uh we don't
+1:40
+necessarily even have that level of data
+1:42
+to train these very large models. I
+1:44
+would go one step further and say that
+1:46
+in many cases we don't even have a
+1:48
+really good understanding of what that
+1:50
+scaling should look like. I think
+1:52
+there's a lot of open questions these
+1:54
+days around what is the right axis along
+1:56
+which we should be um scaling to really
+1:59
+get that LLM moment for biology. And for
+2:02
+me I think that's like the most um kind
+2:04
+of exciting space right now to be
+2:05
+working in in AI for bio. So for
+2:07
+instance, if you look at our you
+2:08
+mentioned our recent paper, we had a
+2:10
+paper called stack um where we
+2:12
+essentially made use of both
+2:13
+observational data which gave us a
+2:15
+breath of understanding of biological
+2:17
+diversity all the way from cell lines to
+2:20
+patient samples to primary cells. But
+2:22
+then in addition to that, we also wanted
+2:24
+to use this kind of other axis of
+2:26
+dynamic and mechanistic and more causal
+2:28
+information. But then how do you kind of
+2:30
+square that circle? How do you find that
+2:32
+right trade-off? I think this is a
+2:33
+common challenge in a lot of biological
+2:34
+problems. we found the sweet spot and we
+2:37
+were able to leverage that to translate
+2:38
+insights from cells in a dish all the
+2:41
+way to you know making predictions for
+2:43
+what would happen to patients um uh in
+2:45
+in the clinic. But I think you know
+2:47
+really I think AI really has to help us
+2:49
+in thinking about what that right data
+2:51
+generation strategy needs to be. And for
+2:53
+for me I think that's kind of the
+2:54
+exciting exciting intersection and and
+2:56
+maybe the hot take here is I think the
+2:58
+alphafold model of essentially just
+3:01
+scaling up um a specific modality of
+3:03
+data and expecting these models to give
+3:05
+us insights. I don't think that's going
+3:07
+to work for most of biology. And so I
+3:09
+think there's a really exciting time to
+3:11
+think about how we can integrate more
+3:12
+closely with data generation. How do we
+3:14
+bring experimental velocity as like this
+3:16
+key metric for determining which virtual
+3:19
+cells or which um bio AAI models are
+3:22
+really impactful?
+3:23
+That's a good segue because Eric, you
+3:26
+work on mechanistic interpretability
+3:28
+which I think part of it is to
+3:30
+understand kind of the inner workings of
+3:31
+these models, right? And so, you know,
+3:33
+especially for our field today in
+3:35
+biology, that seems very important to
+3:37
+not just see the output, but you know,
+3:39
+maybe understand also how the model got
+3:41
+to the output, right? And so you know
+3:43
+for you to think about partners model
+3:46
+building like when should they engage
+3:47
+with you too right? Is it during the
+3:49
+pre-training post-training how best is
+3:51
+it to leverage the technology that you
+3:52
+guys are are working on at Goodfire?
+3:54
+Yeah totally. So um the way to think
+3:56
+about uh what our company does is uh
+3:58
+interpretability kind of research and
+4:01
+the way to think about interpretability
+4:02
+is uh we're turning AI into something
+4:05
+that you can actually understand you can
+4:06
+debug you can edit uh and design like
+4:09
+written software. So it's like the whole
+4:11
+kind of northstar vision of of what
+4:13
+we're doing. And it's deeply important
+4:16
+in biology to actually make sure that
+4:17
+these models are learning true
+4:19
+mechanistic insights that map to real
+4:22
+biology. And there's no other way to
+4:24
+understand that other than like looking
+4:25
+inside the models to to see what they've
+4:27
+learned. Uh and so you know one of the
+4:30
+surprising things I think that we've
+4:33
+found in building this organization is
+4:35
+that uh everywhere that you look inside
+4:38
+these you know massive neural networks
+4:40
+you find like structure and beauty and
+4:44
+geometry and like uh there's just so
+4:47
+much stuff these models have learned but
+4:50
+they often don't speak any English like
+4:52
+take um Arc Institute state model or EVO
+4:57
+2 which are yeah virtual cell and
+4:58
+genomics models respectively. Like if
+5:01
+you interact with the genomics model,
+5:03
+it's just going to say like speak
+5:04
+nucleotides to you and it's not very
+5:06
+helpful when you're trying to speak
+5:07
+English and like understand what's
+5:08
+actually going on. And so like how do
+5:10
+you map this to like real grounded
+5:13
+biological understanding and make sure
+5:15
+that the model is actually learning? Um
+5:17
+that's kind of the the problem that
+5:18
+we're looking to to solve and bridge
+5:20
+that gap. And so what our product
+5:23
+actually is, you can kind of think of it
+5:24
+as an AI debugger. like how do you look
+5:27
+inside the mind of the model, map that
+5:28
+mind of the model and then debug its its
+5:31
+pathologies so that we can improve it,
+5:33
+make it better and make sure that it's
+5:34
+learning uh real stuff rather than than
+5:37
+memorizing.
+5:38
+Cool. And Peyton, like at Big Hat, you
+5:42
+know, I I think of you guys as kind of
+5:43
+being in the center of of model building
+5:46
+for drug design right now because you're
+5:48
+working on, you know, protein structure,
+5:49
+antibbody design, right? And I think
+5:51
+there's a lot of interest obviously you
+5:53
+know post alpha fold but even in pre and
+5:56
+so how do you think about you know kind
+5:58
+of interfacing with other models that
+6:00
+might be out there building your own
+6:02
+proprietary models and you know also
+6:04
+areas of unmet need right where you're
+6:06
+like hey like you know maybe in this
+6:07
+area the the open models are good enough
+6:09
+now but we want to build you know
+6:12
+something proprietary with within big
+6:14
+hat as well. Yeah, great question. And
+6:16
+um so one of the co-founders of Big Hat
+6:18
+Biosciences and we're an AIdriven
+6:20
+protein and antibody design company and
+6:22
+we really focus on being the biolog
+6:24
+biological data generation engine um to
+6:27
+essentially get generate the data to
+6:29
+train all the models we need to make a
+6:31
+unique and differentiated molecule and
+6:33
+importantly try to do that with the
+6:34
+fastest lab in the loop. However quickly
+6:36
+we can get data, you know, that's as
+6:38
+quickly as our models can improve. Um
+6:40
+and so you're exactly right. We're in a
+6:41
+really interesting and exciting space
+6:42
+where a lot of structural models are
+6:43
+becoming available. A lot of sequence
+6:45
+models um are becoming publicly
+6:46
+available. Those are getting better and
+6:48
+better. But the thing is when you're in
+6:49
+the business of making a drug, you care
+6:51
+not about the full landscape of all
+6:52
+proteins in the world. You care about
+6:54
+your exact drug being as good as it can.
+6:56
+So you can invest tens of millions of
+6:58
+dollars into advancing that drug through
+7:00
+clinical trials to reach patients. And
+7:02
+that's where really where we focus is
+7:03
+how do we generate the fitfor-purpose
+7:05
+data to go from I have a good idea, a
+7:07
+good lead to this is the drug that I
+7:09
+want to invest in to get to patients.
+7:11
+And that is really through closing the
+7:13
+loop around um the lab to actually prove
+7:15
+it's functional, it's safe, it's
+7:16
+efficacious in all the ways that we can
+7:18
+before we head into patients.
+7:20
+Awesome. And so maybe like getting a
+7:23
+little bit into the logistics of
+7:24
+building a model, right? Like obviously,
+7:26
+you know, everyone talks about the need
+7:27
+for compute, right? It seems like we're
+7:29
+still compute limited in this this this
+7:31
+world and and maybe to your point maybe,
+7:33
+you know, for biology, you know, smaller
+7:36
+data sets, right? But is is compute
+7:38
+still a limiting factor for you guys as
+7:40
+you think about your model building? So
+7:42
+So Yousef, maybe I'll start with you
+7:44
+because, you know, I was looking at um I
+7:46
+think one of Patrick's posts lately
+7:47
+where he was he was showcasing some of
+7:49
+the GPUs that you had uh building
+7:52
+building at the Arc Institute, right?
+7:53
+And so like thinking about you know
+7:55
+using the supercalers building your own
+7:57
+cluster like how do you guys balance
+7:59
+that need with the with the the model
+8:01
+building capabilities that you're also
+8:02
+building in house.
+8:04
+Yeah. Yeah know that's a great question.
+8:05
+I would say that it's a little bit of
+8:08
+both like I think there's definitely a
+8:10
+limitation in terms of compute that is
+8:12
+limiting certain domains such as um DNA
+8:14
+foundation models. There's a lot we can
+8:16
+gain through increasing scale through
+8:17
+increasing parameter size. A large
+8:19
+portion of the problems currently in
+8:21
+biology, I would say, are still a bit
+8:23
+more data constrained. And we've seen
+8:24
+that the delta we can get by perhaps
+8:26
+adding more highquality data is often
+8:28
+much larger than the delta we get by
+8:30
+scaling the number of parameters. And so
+8:33
+often our for our compute workloads, we
+8:35
+like that flexibility. We like having um
+8:37
+this kind of on-prem setup where we can
+8:40
+design our partitions and our usage uh
+8:43
+characteristics in a way that suits our
+8:45
+teams and sort of has like this
+8:47
+flexibility of a more sort of
+8:48
+experiment-heavy approach followed by
+8:50
+more scaling bursts. So I think for us
+8:52
+it's been more effective to have some of
+8:55
+that compute on prem. Um but you know
+8:57
+I'd love to hear what folks in the
+8:59
+biotech world are thinking. Payton, you
+9:01
+seem to be nodding a bit of an air and
+9:03
+so
+9:03
+well you asked before about you know
+9:05
+public models versus proprietary models
+9:06
+and this I think you know dovetales very
+9:08
+well with the idea of compute and so I
+9:10
+think there are many and as I mentioned
+9:12
+increasingly large number of models that
+9:14
+are publicly available they take more
+9:16
+and more compute as the data sets get
+9:17
+bigger and I think the architectures get
+9:19
+more sophisticated um and those are
+9:21
+great we use those that are publicly
+9:22
+available and in fact our compute is not
+9:24
+our kind of the longest pole in the tent
+9:26
+it really is I think this the cost and
+9:28
+speed of data generation because we
+9:29
+focus mostly on fine-tuning those
+9:31
+models. We do train some of our own
+9:33
+models, you know, sequence based models
+9:34
+um in particular. But when you're
+9:36
+focused on, as sort of you said, the
+9:38
+benefit you get from targeted data
+9:39
+generation, that puts less of a burden
+9:41
+on the compute side and much more on the
+9:43
+how quickly and how, you know, sort of
+9:44
+richly can you um generate the data you
+9:46
+need to fine-tune and train. So, people
+9:48
+need to do it definitely. Um for us,
+9:50
+we've found the most benefit and sort of
+9:52
+bang for our buck very much in um again
+9:54
+the biological sort of data generation
+9:56
+side. And Eric like for you and your
+9:58
+partners right because you have a lot of
+10:00
+partners when you're you're building
+10:01
+these models right and so like you know
+10:03
+how much do you think about their
+10:05
+compute capacity versus what you need to
+10:07
+have in house and you know whether
+10:09
+mechanistic interpretability frankly
+10:11
+also you know decreases maybe the the
+10:13
+need for these scaling laws right
+10:15
+yeah well we we occupy a really
+10:18
+interesting um space where we can
+10:19
+actually get almost a horizontal slice
+10:21
+of all of the or get an understanding of
+10:23
+a horizontal slice of all the biom
+10:25
+models that we we work with and so uh
+10:28
+it's really it really just kind of like
+10:30
+I think depends on on the model right
+10:32
+now. I think most models like with more
+10:33
+data with more scale with more compute
+10:35
+will form like more intelligent and more
+10:39
+uh robust representations. Um but it's
+10:41
+got to be trained also in the right way
+10:42
+and uh and built in the right way. And I
+10:45
+think like when you kind of peek under
+10:47
+the hood of a lot of these models, you
+10:48
+often find that they contain
+10:50
+capabilities and understanding that are
+10:52
+a little harder to extract um when just
+10:55
+kind of like prompting them naively. So
+10:57
+we've done a bunch of work with uh with
+10:59
+ARC institute and with with Mayo Clinic
+11:01
+on essentially using the uh internal
+11:04
+representations of of Vivo 2 to uh do
+11:08
+things like um uh diagnose pathogenicity
+11:12
+uh from um just like the representations
+11:15
+of of this DNA transformer. Um, and it's
+11:18
+a little bit of a surprising uh result
+11:21
+because we didn't actually train uh the
+11:24
+Evo 2 wasn't actually trained on human
+11:26
+data. It was just the human reference
+11:28
+genome. And so like being able to
+11:29
+actually uh you know understand
+11:32
+pathogenicity from all Clintar variants
+11:35
+uh is is a pretty pretty surprising cool
+11:37
+thing that we didn't know like actually
+11:38
+existed within the model. So we can both
+11:40
+help reduce the need for like uh maybe
+11:44
+like increase the usefulness of the
+11:46
+models that we've already scaled but
+11:48
+also I think you know very very excited
+11:50
+to see the next generation of DNA
+11:52
+transformers and the next generation of
+11:54
+these models which I think will be able
+11:56
+lot more robust and be more useful using
+11:58
+interpretability technology. Um but also
+12:01
+like you know just in terms of like
+12:03
+compute overall like we'll always take
+12:04
+more compute. feel like a a large
+12:06
+portion of the round that you all led
+12:08
+for us just goes straight to Nvidia and
+12:10
+like you know we're uh it's it's
+12:12
+important to scale these models up too.
+12:14
+I I'm curious given that you're all all
+12:17
+of you are saying you know the need for
+12:18
+data generation right how much does you
+12:20
+know synthetic data play a role in our
+12:23
+field in in that scaling law right and
+12:25
+so so pay maybe like for you guys you
+12:27
+know you obviously have a lab you've
+12:30
+spent a lot of time and effort to scale
+12:31
+that data generation in a lab right but
+12:33
+how much are you also looking at the
+12:35
+synthetic data side for increasing that
+12:37
+output
+12:37
+it's a really good question um I mean so
+12:39
+because we've reduced kind of the cost
+12:41
+and speed we've certainly focused on if
+12:43
+I design a new protein, how quickly can
+12:45
+I get the true gold standard
+12:46
+measurements for that? And I think
+12:47
+synthetic data is like a challenging
+12:49
+job. We've talked about this for six
+12:50
+years over the history of the company.
+12:52
+It's really challenging. What does that
+12:53
+mean? If I simulate a mutation, right,
+12:55
+in a protein and I want to sort of
+12:56
+simulate what the potential binding
+12:58
+stability, other properties would be
+13:00
+like how well can I simulate that in a
+13:02
+way that that will actually now help my
+13:04
+model. It's been really challenging. I
+13:05
+think there's other areas where it makes
+13:06
+a little bit more sense potentially in
+13:07
+imaging or others. in sequence space
+13:09
+where for example you have um you know I
+13:11
+think potentially very strong deltas in
+13:13
+the actual kind of functional readout
+13:16
+it's it's can be quite challenging and
+13:17
+so we answer the question by saying
+13:19
+instead of relying on again sort of
+13:21
+large um corpus of synthetic data how do
+13:23
+I just again make it more scalable to
+13:24
+get the gold standard measurement and we
+13:26
+found that over and over again we have
+13:27
+cases where we have um led much more
+13:30
+stringent you know data quality
+13:31
+pipelines reducing the data set you know
+13:33
+by to a quarter of what we started with
+13:35
+because it's again where we have more
+13:36
+confidence that boosts our models more
+13:38
+than adding more data that's maybe
+13:40
+noisier. And so frankly in our hands
+13:41
+what we found is it really really
+13:43
+matters what the data pipelines are and
+13:44
+smaller numbers of data points again for
+13:47
+our use cases can actually be more
+13:49
+impactful. It's very counterintuitive to
+13:51
+cut out, you know, data points and
+13:52
+everyone says more data, more data. But
+13:53
+quality matters a lot and we have great
+13:55
+examples that we've seen in practice to
+13:57
+that point.
+13:58
+And you, you also incorporating
+14:01
+publicly generated data, right? And so
+14:03
+how much is that looking at data cleanup
+14:06
+like you know normalizing data across
+14:08
+data sets, right? And so like how how do
+14:10
+you think about that problem?
+14:11
+Yeah. Yeah. So I think at uh at ARC we
+14:13
+are very very careful and methodical
+14:15
+about data. We really want to set a new
+14:18
+standard and a new bar for what high
+14:20
+quality data looks like. Um we're
+14:22
+investing a lot internally in terms of
+14:25
+uh both looking at transcrytoics and
+14:27
+other modalities looking at cells both
+14:29
+in in vitro systems as well as um in
+14:32
+patient derived stem cell models looking
+14:35
+at organoid models. Um we're really
+14:37
+excited about you know really building
+14:39
+highquality data sets inhouse and
+14:41
+investing a lot of time and money into
+14:44
+that. But in addition to that, we've
+14:45
+also um taken on efforts to reprocess
+14:48
+and make accessible public data in a
+14:50
+format that is useful to the research
+14:52
+community. And so a great effort in this
+14:54
+direction was a paper we recently
+14:56
+published called SC base count where we
+14:58
+essentially made use of AI agents to go
+15:00
+into um the sequence read archive which
+15:02
+is the largest NIH hosted repository of
+15:04
+transcrytoics data, reprocess it from
+15:06
+scratch, make it accessible in a nice uh
+15:08
+uniformly processed format. And so for
+15:11
+us, not only was that useful for our
+15:12
+models, but for at ARC, we're really
+15:14
+excited to sort of move the field
+15:15
+forward. We want um we want to do work
+15:18
+that benefits the science and benefits
+15:20
+the field more broadly. Um and so we
+15:22
+released that data set broadly for the
+15:24
+field to use and we hope to also release
+15:25
+the data sets that we're generating
+15:27
+internally from various different
+15:28
+biologically meaningful systems and hope
+15:30
+that that'll be useful to move the field
+15:32
+forward particularly in the area of
+15:33
+complex disease which is of great
+15:35
+interest um to us. Yeah. Right. So to
+15:38
+add to that I mean like uh one of our
+15:40
+researchers says that uh data is the
+15:42
+language of representations. So the way
+15:44
+we think about this is like how do you
+15:46
+take data uh and you train on that data
+15:49
+and that compresses into generalizable
+15:50
+representations that you can then use to
+15:52
+form all sorts of predictions or then
+15:54
+you can use send on on downstream uh
+15:57
+clinical tasks. And so what we've seen
+15:59
+um I mean to your earlier point is that
+16:02
+uh if you know certain data sets like uh
+16:05
+when trained on like don't lead to high
+16:08
+quality good representations if you
+16:10
+remove that data then that's great like
+16:12
+I'll improve your model. Um but also
+16:14
+like in you know in the role of
+16:16
+synthetic data like I think the way we
+16:18
+think about it is that there is a a
+16:20
+strong role that synthetic data can play
+16:22
+but it just has to lead to generalizable
+16:25
+grounded u causal biology that um the
+16:30
+model can use in order to generate like
+16:32
+a more accurate prediction. And kind of
+16:34
+what we're really deeply focused on is
+16:36
+like that verification loop. Like how do
+16:38
+you evaluate whether you've actually
+16:39
+found that that grounding?
+16:42
+Eric, I'm curious because you like you
+16:44
+said you sit in a pretty unique space in
+16:46
+our industry, right? And that you can
+16:47
+see, you know, kind of horizontally
+16:49
+across all the different models. And so,
+16:51
+you know, I'm curious if you've seen
+16:53
+signs now given that kind of the barrier
+16:55
+to entry to model building, you know,
+16:57
+could be coming down, right? I think
+16:58
+there's there's tools out there now that
+17:00
+allow you know not not just the kind of
+17:02
+world's best you know model builders but
+17:04
+you know people like you and me maybe to
+17:06
+well me not you but but to to build
+17:09
+their own model right and but like you
+17:12
+juxtapose that with you know if you want
+17:14
+to be you know state-of-the-art soda
+17:16
+right the the the the bar might be
+17:19
+getting higher and higher right as each
+17:21
+model in you know release happens
+17:23
+there's just more competition right and
+17:25
+so like if you think about that does
+17:27
+that do you think that there'll be more
+17:29
+model releases coming out or is it kind
+17:32
+of be a more kind of unified model for
+17:34
+biology, right? Where we're going to try
+17:36
+to collapse everything into one one big
+17:39
+model but that's kind of you know
+17:41
+increasingly complex increasingly data
+17:44
+heavy.
+17:45
+Yeah, I'm I'm optimistic here. Uh I uh
+17:48
+think that there's going to be a lot
+17:49
+more models. there's just a ton of
+17:51
+excitement you know in this room in this
+17:52
+field for like more models more like uh
+17:57
+understanding and I think just because
+17:59
+there's so many biological domains like
+18:01
+and interesting things to uh to look at
+18:04
+and understand like I think there's just
+18:06
+going to be like an explosion of more
+18:08
+and more AI models and I think like
+18:10
+that's part of the reason why we're
+18:11
+building what we're building is to kind
+18:13
+of equip people with the tools to
+18:15
+actually be able to design these models
+18:16
+like written software not like this
+18:18
+black garb magic and dark arts that that
+18:21
+it currently is when you're just kind of
+18:22
+growing a model on the scaffolding of a
+18:24
+neural network and just praying that you
+18:26
+get what you want um out at the other
+18:28
+end. And so that's like the whole
+18:29
+purpose of our our company and software
+18:31
+to make it a lot easier, reduce the
+18:33
+barrier to entry um and provide the
+18:35
+tooling necessary to let people um
+18:38
+design their models with precision. And
+18:41
+and Peyton, I think you have a platform
+18:44
+within Big Hat to actually serve
+18:46
+different models, not just the ones that
+18:48
+you're building, but but other
+18:49
+That's right. I I I really agree with
+18:51
+what you're saying because I think
+18:52
+really we're in a regime where models
+18:53
+are going to become easier and easier to
+18:55
+train. They'll proliferate. How do you
+18:56
+know which model is working for your
+18:58
+application? I think this is mentioned
+18:59
+on a prior panel, but Eval sets really
+19:01
+well grounded validation mechanisms for
+19:04
+your models to see what's actually
+19:05
+working for you. you know you can have
+19:07
+maybe on a you know some a public
+19:09
+benchmark you know maybe it's not a big
+19:10
+granular difference in a bunch of
+19:11
+different models but for your use case
+19:13
+there might be an enormous difference
+19:14
+are you creating the right you know data
+19:15
+sets test sets or test validation
+19:17
+mechanisms to evaluate that so we built
+19:19
+a platform literally to do this
+19:20
+internally to big saying you know we
+19:22
+really need for design problem A where I
+19:25
+want to make protein do you know um
+19:27
+function X how do I pick the right data
+19:29
+set and the right model I have thousands
+19:30
+and thousands of data sets and I have
+19:32
+thousands of thousands of models how am
+19:34
+I picking the right combination and in
+19:36
+That's actually where to your prior
+19:37
+point kind of the compute questions and
+19:39
+and sort of the challenges of
+19:40
+operationalizing this become quite
+19:41
+difficult because now you're trying to
+19:43
+you know pair and also we add in the
+19:45
+complexity of data pipelines and
+19:46
+normalization and so now every data set
+19:48
+can be you know you know um process
+19:50
+differently and that has huge
+19:51
+implications so the combinatorial space
+19:53
+is enormous and I think that puts a real
+19:54
+premium on do you have the right eval
+19:56
+sets and mechanisms again to really
+19:59
+prove to yourself you have the right
+20:00
+data set and you have the right model to
+20:02
+maximize the impact again of your kind
+20:03
+of AI um driven design in your
+20:05
+application.
+20:06
+Yeah, I just I just wanted to echo what
+20:08
+what Eric and Peyton talked about.
+20:10
+Definitely, we're going to see a lot of
+20:11
+new models coming up in in these
+20:13
+different biological domains. But I also
+20:15
+just want to highlight that there is a a
+20:17
+new capability that's also emerging,
+20:19
+especially with the new um more adept
+20:22
+agentic workflows, especially uh built
+20:24
+off of claude and and the new GPT
+20:26
+models. I think we're really excited to
+20:28
+see that most scientists and even ML
+20:30
+researchers are now engaging with their
+20:33
+models not d not so much directly but
+20:35
+through the medium of claude through the
+20:37
+medium of these language models and
+20:38
+there and the benefit that you're
+20:40
+getting with this kind of approach is
+20:42
+one you get like this broader biological
+20:44
+context to any prediction that your
+20:46
+foundation model is making and probably
+20:48
+benefits from the interpretability
+20:49
+analysis that Eric's team makes but also
+20:52
+you're getting um scientists that uh are
+20:54
+very unconventionally able to look
+20:56
+across many different silos that
+20:59
+normally have been isolated from each
+21:00
+other. So the folks on the molecular
+21:02
+design side probably never thought about
+21:04
+um you know target discovery or or cell
+21:06
+biology as much but now that because we
+21:08
+have these common interfaces and these
+21:10
+orchestrators that are sitting across
+21:12
+these different foundation models we're
+21:14
+able to develop new get access to new
+21:16
+insights that uh previously were just um
+21:20
+were difficult for for a single
+21:21
+scientist in a single domain. I think
+21:23
+there's also some new uh low hanging
+21:25
+fruit that are emerging even with the
+21:26
+the sort of this uh this constellation
+21:29
+of new models that are emerging. Yeah.
+21:32
+Cool. How do you think of it because you
+21:34
+you run a a lab within ARC and you know
+21:37
+obviously you know filled with some of
+21:38
+the best and brightest minds from the
+21:40
+the Bay Area, right? But do you think
+21:42
+that you know for for new researchers,
+21:44
+for new PhD students, you know they
+21:46
+should invest in either kind of like
+21:48
+what you said, right? like you know
+21:49
+understanding how to use you know claude
+21:52
+or or GBT to interface with these models
+21:55
+or even have you know the ability to to
+21:57
+train your own models is that something
+21:58
+that's that's useful you know like you
+22:00
+said for the kind of general bench
+22:02
+scientist or or you know even someone
+22:04
+who's like a little adjacent like let's
+22:06
+say bionformatics right who hasn't done
+22:08
+their own model training before.
+22:10
+Yeah I mean that's a great question. And
+22:11
+I think uh I feel like the jury's out on
+22:13
+like what the best uh direction to focus
+22:16
+on is. Um it could just given how
+22:18
+quickly the field is changing. Um I
+22:20
+think uh regardless of how how easy or
+22:23
+difficult it's becoming to train models
+22:25
+for specific biological domains, I think
+22:28
+the core challenge of connecting these
+22:30
+models to biological impact and
+22:31
+biological questions that matter, I
+22:33
+think remains as hard as ever. um when
+22:35
+we started when I started in this field
+22:37
+back in like 2019 you know we didn't
+22:40
+have GPT we didn't have these language
+22:42
+models we still had to find meaningful
+22:44
+ways to connect these predictive models
+22:46
+to tasks that matter to biologists tasks
+22:48
+that matter to uh researchers in the
+22:50
+field I think that problem still remains
+22:52
+and so I definitely encourage new um
+22:54
+students to think deeply about what is
+22:56
+the core biological problem that we're
+22:58
+interested in addressing I think as more
+23:00
+and more of the model development
+23:01
+process is getting um for lack of a
+23:03
+better word commoditized by um aentic
+23:06
+interfaces. I think that that connection
+23:09
+to um uh biological impact and
+23:11
+understanding is going to become even
+23:12
+more important.
+23:13
+Right. Yeah.
+23:14
+And and so uh just quickly to finish
+23:17
+because I think you guys touched on
+23:18
+something that's that's very important
+23:20
+for our field, right? Like the you said
+23:22
+eval like how do we actually think about
+23:24
+model performance across models, right?
+23:27
+And in some ways that requires you know
+23:29
+some amount of openness also from from
+23:31
+these models. And so when you think
+23:32
+about you know closed models versus open
+23:34
+models you know how do you balance the
+23:37
+need to share the need to you know
+23:39
+obviously enable the industry versus you
+23:42
+know frankly also commercial
+23:44
+considerations for you know a company
+23:46
+right and so maybe Peyton we'll start
+23:48
+with you and we'll work our way down.
+23:49
+Yeah, sure. So, I mean, um I think
+23:52
+there's a few ways that we think about
+23:53
+kind of contributing and and one of
+23:55
+those is I mean we you know publish we
+23:57
+have um you know papers at ICLR some
+23:58
+teams going um uh soon and a few things
+24:01
+like that. We really keep data though
+24:02
+proprietary in house. I think that is
+24:04
+sort of where we think our um you know
+24:06
+sort of secret sauce is and what I think
+24:07
+is really hard for others to replicate.
+24:08
+So we focus on keeping data internally
+24:10
+are a little bit more open to sharing um
+24:12
+you know methods and models I think as
+24:14
+those proliferate. So that's been our
+24:15
+strategy. We also partner and
+24:17
+contribute, you know, work with um Lily
+24:18
+Tune Lab and and other um you know,
+24:20
+partners in ways that they're they're um
+24:22
+aggregating data sets and sharing those
+24:24
+with public and and things like that. So
+24:26
+um I think it's really important to have
+24:28
+benchmarks and the best you know ways
+24:29
+I've seen are especially when multiple
+24:30
+groups come and collaborate and jointly
+24:32
+build them um for the field.
+24:35
+Um open science is deeply important and
+24:37
+we're big believers in it. Uh and uh we
+24:40
+try to publish as much as possible our
+24:41
+inter methodologies, techniques, our
+24:44
+work with our partners. Uh I love what
+24:46
+Arc Institute is doing with uh kind of
+24:48
+open sourcing EVO EVO 2 and uh and state
+24:52
+and uh yeah I think just like being able
+24:54
+to to be a part of that is um is pretty
+24:57
+is pretty awesome for us. And uh yeah I
+25:00
+think for us like yeah we do have to
+25:01
+balance like commercial considerations
+25:02
+with like how much we open source but we
+25:04
+want to just kind of lean towards like
+25:07
+uh lean into this moment in time where
+25:08
+there's just like so much innovation
+25:10
+happening that we want to kind of
+25:11
+accelerate that and kind of get that
+25:12
+flywheel going. And that's why we try to
+25:14
+publish as as much of our our stuff as
+25:17
+we as we poss.
+25:18
+Eric, I'm curious because one of your
+25:19
+big partners is the Mayo Clinic. Yeah.
+25:21
+And that's obviously been been public,
+25:23
+but like you know, as you think about
+25:25
+working with, you know, closer or even
+25:28
+clinical data sets, right? Like how do
+25:30
+you also think about, you know, privacy,
+25:32
+patients rights obviously and and I mean
+25:35
+how how the the AI models will impact
+25:37
+not just, you know, life sciences and
+25:38
+bio, but also also healthcare.
+25:40
+Yeah. Well, we obviously wouldn't be
+25:41
+able to publish those clinical data
+25:43
+sets, but I think like the
+25:44
+methodologies, the techniques, like kind
+25:46
+of our approaches and we'll try to to
+25:48
+build out in the open as as much as we
+25:50
+possibly can. And um what we've been uh
+25:53
+really uh happy with um with kind of
+25:56
+working with Mayo Clinic is that they
+25:57
+really do believe in in open science as
+25:59
+well and we've been publishing a good
+26:00
+amount alongside them um to to just make
+26:03
+sure that our work is out in the public
+26:04
+as much as possible. So, we're very much
+26:06
+aligned on on that goal.
+26:09
+Yeah. Yeah, I guess just to echo what
+26:10
+Eric said that at at Arc, we are of
+26:12
+course a nonprofit. We're excited about
+26:14
+advancing the field in the our fight
+26:16
+against complex disease. And so we we
+26:18
+definitely open source all of our work
+26:20
+um as soon as it's ready to share. Um in
+26:22
+addition to that, I think one other
+26:23
+dimension here that's worth considering
+26:24
+is the safety aspect. I think as these
+26:27
+biological foundation models get more
+26:28
+and more powerful um an important
+26:30
+element of building in uh safety
+26:33
+mechanisms is also sharing it broadly
+26:34
+with the public in in specific ways so
+26:36
+that we can make sure that there's open
+26:38
+engagement with the research community
+26:40
+to make sure we are progressing um
+26:42
+collectively and not within closed
+26:44
+doors.
+26:45
+Oh, certainly. I've I've always been uh
+26:48
+a little surprised, frankly, by the the
+26:51
+capabilities that we have today and and
+26:53
+you know, obviously the the capability
+26:56
+of them to do good, but also the
+26:58
+capability for them to, you know, as you
+26:59
+say, on the safety side and and I'm glad
+27:01
+that you know, nothing from wood has has
+27:04
+happened yet. But, you know, like you
+27:05
+said, maybe that also requires vigilant
+27:08
+effort from the the researchers
+27:09
+themselves. So, I think that's right on
+27:11
+time. Um, so I want to thank again the
+27:14
+panelists for their insights today and
+27:15
+and really looking forward to I'm sure
+27:17
+you can find them while wandering the
+27:19
+halls afterwards if you want to chat
+27:20
+with them more. Brainos. Thanks.

@@ -1,0 +1,721 @@
+https://www.youtube.com/watch?v=AkkiumFw3zk&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=5
+
+Most attempts to predict clinical response from preclinical data fall apart at the bedside. Ron Alfa, co-founder and CEO of Noetik, walks through how multimodal world models change what's possible, and what it takes to build them.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Speaker: Ron Alfa, Co-founder & CEO, NOETIK
+
+---
+0:00
+Hi
+0:04
+everyone. Great to be here. Uh thanks to
+0:08
+Medra and Michelle for organizing this.
+0:10
+This is an awesome event. Like a lot of
+0:12
+great companies here like huge turnout.
+0:16
+So we're Noetic and we're focused on
+0:19
+building foundation models of human
+0:21
+biology. Initially starting with with
+0:23
+oncology.
+0:25
+I'll just start this off by making a
+0:27
+little bit of a contrarian
+0:29
+comment. You know, we are super AI pill
+0:33
+and you know, use language models in
+0:35
+just about everything that we do, but I
+0:39
+don't think language models are going to
+0:41
+solve the fundamental problem of how do
+0:43
+we get to new biology.
+0:46
+So, as an MD by training, I think they
+0:48
+are fully going to replace doctors like
+0:50
+maybe right now. But I think we still
+0:53
+have a core problem of if we want to
+0:55
+cure cancer, we need models that are
+0:57
+trained on, you know, raw biological
+1:00
+knowledge. And so that's what we're
+1:01
+building at noetic foundation models,
+1:03
+world models that can be simulation
+1:05
+engines for new biology. So I'll start
+1:07
+off with a couple boring slides on just
+1:09
+kind of the problem here which I don't
+1:10
+know if everyone recognizes in the drug
+1:13
+discovery and development industry. You
+1:15
+know we spend you know roughly 300
+1:17
+billion per year and 200 of that is
+1:21
+focused on this one question which drugs
+1:23
+will work in patients. Most of our
+1:26
+effort in pharma and drug discovery is
+1:28
+focused on the clinic. That's where all
+1:32
+the money is spent and that's where the
+1:33
+biggest outcomes are. And we've sort of
+1:35
+gotten used to this problem of
+1:38
+everything fails. You know, we all like
+1:40
+maybe you'll see this number in a couple
+1:42
+slidesh today like n 90% 95% of drugs
+1:47
+fail. And we we've sort of, you know,
+1:49
+accepted it. We've built the whole
+1:51
+industry around it. Um, you know, we
+1:53
+talk about two billion uh dollars per
+1:56
+per drug, but it's sort of ridiculous.
+1:58
+We don't need we don't need to accept
+2:00
+this. Um, our thesis is the problem here
+2:03
+is we have a fundamental disconnect
+2:06
+between all the science we're doing
+2:09
+early in the drug discovery process in
+2:12
+cells and animals and how we're going to
+2:16
+translate that to people. So
+2:18
+fundamentally what we need to do is
+2:21
+build models that are learning from the
+2:24
+right type of data and that's real human
+2:27
+data. This is a hard problem. You know,
+2:30
+people have been trying to do this for a
+2:31
+long time, but we think this is the
+2:34
+moment, you know, to be able to achieve
+2:36
+this. We're, you know, AI is the best
+2:40
+it's ever been. Data generation is
+2:42
+massively more efficient. We have
+2:44
+instruments coming out every day that
+2:46
+can generate data at scale. So, you
+2:48
+know, really this is the time to do it.
+2:49
+So, what are we doing at Noetic? We've
+2:51
+really focused on a few different data
+2:53
+modalities and we said, okay, if we want
+2:55
+to train models that understand human
+2:57
+biology, those models are going to have
+2:59
+to see raw biological information,
+3:03
+but they're going to need to see the
+3:04
+right type of information to actually
+3:06
+learn the biological interconnections.
+3:08
+So the image over here on the left,
+3:09
+pathology, H& so every patient that has
+3:12
+a diagnosis of cancer, for example, will
+3:15
+get um, you know, an H& image of their
+3:18
+tumor. And today uh doctors will use uh
+3:22
+you know human vision to uh to diagnose
+3:26
+these tumors. Um they'll look at these
+3:28
+images and they'll you know make a call
+3:30
+about what the tumor is. And you know
+3:32
+this is standard of care for for you
+3:34
+know most of oncology. So we need that
+3:36
+layer. This is the connectivity between
+3:39
+you know the data that we're generating
+3:40
+and the clinic. But there's not enough
+3:43
+information in just these pathology
+3:44
+images. We've been trying to train
+3:46
+digital pathology models for you know
+3:47
+more than 10 years and they reach a
+3:49
+ceiling in what they can do. So we also
+3:52
+need additional types of information. So
+3:55
+we want the models to understand you
+3:56
+know not just the tissue but also the
+3:58
+cells. So we can also give them
+4:00
+information about protein um the protein
+4:03
+layer uh distinguishes different cell
+4:06
+types the tumor types the immune cells
+4:08
+you know the interaction of those. And
+4:10
+then finally, if we're going to bridge
+4:12
+all of this to, you know, raw biological
+4:14
+knowledge, we need something that's a
+4:16
+lot more dense and broad. And so we
+4:20
+generate spatial transcriptto. So what
+4:22
+this is is RNA expression. So you know,
+4:25
+lots of people think of single cell RNA
+4:27
+seek. Um, this is single cell RNA, but
+4:31
+it's in a spatial orientation. So for
+4:34
+every cell where we have an H& we can
+4:38
+see protein and then we can see the
+4:41
+whole transcriptto for that cell and the
+4:44
+models are getting this really rich
+4:46
+depth of data and what's really unique
+4:48
+about our data set is for every patient
+4:50
+we have all of these paired data aligned
+4:52
+and we can train multimodal models on
+4:54
+all of these. So where's this data come
+4:56
+from? Our labs are in South San
+4:57
+Francisco. Um we source human tumor
+5:00
+specimens. So we actually get the tumor
+5:02
+that comes from a patient and we process
+5:04
+it through a series of robotics into
+5:08
+these arrays. And in an array you have
+5:11
+many different representations of each
+5:13
+patient randomized next to controls and
+5:16
+other patients. And really this starts
+5:19
+to look more and more like you know a
+5:22
+token generation factory for machine
+5:24
+learning models. So a lot of people talk
+5:27
+about huge numbers and put out press
+5:30
+releases about you know we're going to
+5:31
+generate infinite data in like you know
+5:34
+a year. This data takes a long time to
+5:36
+generate. We have been running one of
+5:38
+the world's largest uh labs generating
+5:41
+spatial transcrytoics for about three
+5:43
+years and we've generated about 4,000
+5:46
+patients worth of paired data across
+5:48
+about 12 different cancers. So we
+5:50
+started in lung cancer then we generated
+5:52
+data in colon cancer. And now we have a
+5:54
+long tail of uh again about 10 10 or 12
+5:57
+other cancers. This year we're scaling
+5:59
+this across all of solid tumor oncology.
+6:02
+So by the end of the year we should have
+6:03
+about 16 to 20,000 patients worth of
+6:06
+data.
+6:08
+These data are incredibly dense. Um so
+6:10
+we have hundreds of million cells just
+6:12
+from each of these patients and it's
+6:13
+huge data set in terms of uh the
+6:16
+pabytes. So in January we announced our
+6:18
+first partnership with GSK. This
+6:20
+partnership focused on our virtual cell
+6:22
+model. So this is a model really that's
+6:25
+operating on you know spatial
+6:26
+transcripttoics protein and H&
+6:30
+simulate biology and perform biological
+6:32
+simulation. So what you're seeing here
+6:34
+is a example of that simulation a demo
+6:37
+um where we're prompting the model with
+6:39
+a couple genes to tell the model you're
+6:40
+simulating an immune cell in this case a
+6:42
+T- cell and we're asking the model to
+6:45
+tell us about the gene expression for
+6:46
+that TE- cell as a function of where
+6:48
+that cell sits in the tissue. And then
+6:50
+on the left we're reconstructing uh the
+6:52
+the gene expression for one gene. And so
+6:54
+what you can see is this model has
+6:56
+learned context dependent gene
+6:57
+expression for this virtual T- cell um
+7:01
+in the in the context of an actual human
+7:03
+patient sample. And so you can scale
+7:05
+these simulations across many different
+7:08
+patients, many different samples. You
+7:10
+can build cohorts of patients and ask
+7:12
+you know therapeutics questions. So this
+7:14
+is an incredibly powerful model. But I
+7:16
+actually don't want to talk about the
+7:18
+virtual cell model today. Last week we
+7:20
+announced a new model uh that we're
+7:23
+calling target 2. So this is an auto
+7:26
+reggressive model that's trained on
+7:28
+paired pathology data and spatial
+7:31
+transcripttonics.
+7:32
+And what's really powerful about this
+7:34
+model um is it essentially takes an H&
+7:37
+encoder and a transcript encoder um and
+7:40
+then an autogressive decod decoder
+7:42
+allows it to actually infer from the H&
+7:45
+alone the spatial transcripttoics.
+7:48
+So as I said you know every patient in
+7:51
+the clinical setting is going to get an
+7:52
+H& um we may not be able to get the
+7:55
+actual tissue from that patient. um we
+7:58
+might not we may not be able to get the
+7:59
+slide but usually we can you know
+8:01
+potentially access the image. So what
+8:03
+this model can do is start with this
+8:05
+image and generate a 19,000 gene panel
+8:09
+for that patient from a simple H&'s
+8:14
+example of some of these. So what you're
+8:16
+seeing here is a tumor patch. All the
+8:19
+little blue things on the lower left are
+8:20
+all immune cells and then there's some
+8:22
+tumor right here in this um lower lower
+8:25
+left corner.
+8:28
+And so what we're going to do is just,
+8:30
+you know, start this movie. And we're
+8:31
+just inferring different genes across
+8:33
+this tumor patch. Um, and we can change
+8:36
+the resolution of the inference. Um, you
+8:38
+know, this can get pretty high- res.
+8:39
+It's really compute dependent. So it
+8:41
+depends how much money we want to spend.
+8:42
+But this movie can essentially go on and
+8:44
+on across 19,000 genes. And you can
+8:47
+you're seeing that, you know, those
+8:48
+immune cells are are lighting up a lot
+8:50
+of, you know, some of these genes
+8:51
+because they're immunereated genes. And
+8:53
+so we can quantify how good this model
+8:55
+is across, you know, 19,000 genes um in
+8:59
+the transcriptto. And you know, I'll
+9:01
+note this is pretty early for this work.
+9:03
+So I didn't tell you at the beginning of
+9:05
+this talk that we have, uh, you know, an
+9:07
+atlas of all of human tissues, but we do
+9:11
+have, you know, genes representing all
+9:13
+of human tissues. Um and so you know
+9:16
+largely a lot of these genes are not
+9:18
+going to be in distribution of of this
+9:20
+model today because we're focused on
+9:21
+cancer but already we're seeing you know
+9:24
+very nice correlation both at the
+9:26
+pseudobulk level um and at the spatial
+9:28
+level between thousands of genes and we
+9:31
+can test this because we have thousands
+9:33
+of patients. So this model is trained on
+9:34
+thousands of patients and we hold out uh
+9:37
+roughly 10% of each of each cohort of of
+9:40
+tumor type to test the model. So this
+9:43
+model is also able to get from you know
+9:46
+essentially H and images to patient
+9:49
+level embedding. So here I'm showing you
+9:51
+an embedding space where um we're seeing
+9:54
+that the model is able to represent
+9:56
+patients by both you know the site of
+9:58
+diagnosis. So say lung cancers or the
+10:01
+hisytological diagnosis so the cell
+10:03
+type. So what would a pathologist you
+10:05
+know call this tumor? And so again this
+10:07
+is all from self-supervised training.
+10:08
+the model's not getting any inputs about
+10:11
+uh you know clinical information or what
+10:13
+the pathologist annotations are. Um and
+10:15
+we're seeing very nice clustering of
+10:17
+tumors based on their underlying biology
+10:19
+and this is biology that we already
+10:20
+know. So um we're not getting a lot here
+10:23
+but this tells you that you know this
+10:24
+model is able to learn real biology.
+10:29
+What starts to get more interesting is
+10:31
+we can actually now use this model to
+10:34
+simulate um you know for example gene
+10:37
+expression. So these are a couple
+10:38
+well-known genes in lung cancer and this
+10:41
+is a lung cancer space. You know KAS has
+10:44
+been in the news recently with a lot of
+10:46
+progress on K RAS inhibitors for
+10:48
+pancreatic cancer. And so what we're
+10:49
+doing here is simulating gene exp you
+10:52
+know gene mutations in this case um over
+10:54
+a lung cancer embedding space and we can
+10:56
+see that you know the the model very
+10:58
+nicely um separates out these different
+11:01
+underlying genotypes of lung cancers.
+11:03
+Okay. So, I started this talk off and I
+11:05
+said, "Okay, what the problem we want to
+11:06
+solve is clinical development." Um, and
+11:09
+so you might be seeing here like, "Yeah,
+11:10
+that's nice. Okay, you're inferring
+11:12
+transcripttos, but you're not really not
+11:14
+solving the problem that you want to
+11:15
+solve." Here's some data from a phase 2
+11:19
+program where what we're doing here is
+11:21
+starting with these H& images alone from
+11:24
+this phase 2 program. This was
+11:26
+essentially a failed trial. So, roughly
+11:29
+8% of patients responded in this in this
+11:31
+trial. Um, and you know, this is cancer.
+11:34
+So 8% of patients received this drug and
+11:37
+they had a response, but that's not
+11:39
+enough patients for an approved uh an
+11:42
+approved drug. Um, so we got the H&
+11:45
+images and we're essentially doing
+11:47
+zeroot inference using tario from those
+11:50
+H& images and we're asking whether those
+11:53
+patients co-embbed with our training
+11:55
+data shown here on the left. And what
+11:58
+you can see is all the responders to
+12:00
+this drug in green fall right in the
+12:03
+center of this embedding space. And
+12:05
+again, we're not training the model on
+12:07
+this trial whatsoever. Um, it's all
+12:10
+inference at this point. So what that
+12:12
+means is there's common biology to these
+12:15
+patients that the model can identify
+12:18
+that can allow us to design, you know, a
+12:21
+follow-up trial or or another trial um
+12:24
+where we would enrich for those
+12:25
+patients. So in this case what we can do
+12:27
+is enroll you know not that whole
+12:29
+population but let's say 25 to 35% of
+12:32
+the population um and enrich the
+12:34
+responder population above 50%. And
+12:37
+essentially this can go from you know a
+12:38
+failed trial to a potentially successful
+12:41
+trial. So this is my last slide and I
+12:44
+just want to emphasize you know
+12:46
+everything I've shown today is a uh is
+12:48
+from a 200 million parameter model. Um,
+12:51
+and you can see on this scaling curve
+12:52
+that, you know, we put this out in the
+12:54
+blog about a month ago. So, this model
+12:56
+is about 200 million parameters, uh,
+12:58
+10,000 tokens in terms of the context
+13:00
+length. And we've already seen that we
+13:02
+can scale these models up to four
+13:04
+billion parameters and even further. And
+13:06
+we can scale the context windows even
+13:08
+larger than this. In this case, the
+13:10
+context window means the amount of the
+13:13
+tumor that the model can see. And so
+13:15
+what we found is a larger model is going
+13:19
+to perform better if it sees more of the
+13:21
+tumor. So ideally we want to be able to
+13:23
+present you know the whole of a tumor
+13:25
+patch to these models. This is a
+13:28
+challenging engineering problem that
+13:29
+we're currently working on and also an
+13:31
+expensive compute problem. Um but you
+13:34
+know the the icing on the cake here is
+13:36
+that if we can scale these models you
+13:39
+know these get better at solving a
+13:41
+really fundamental problem. you know,
+13:42
+which drugs will work in patients.
+13:46
+So, I'll end there. Um, thank you all
+13:47
+for your time and I'll be here all day
+13:49
+if anyone has questions.

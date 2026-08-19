@@ -1,0 +1,980 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-only",
+  "notes": [
+    "These proposals do not modify the source transcripts.",
+    "Timestamps are the nearest preceding timestamp marker in the transcript and may span the following sentence.",
+    "High-confidence fixes are supported by transcript metadata, the conference graph, an official organization source, or unambiguous scientific terminology.",
+    "Medium-confidence fixes are strongly suggested by context but should be checked against the recording before changing the transcript."
+  ],
+  "referenceUrls": [
+    "https://www.unlockscience.ai/",
+    "https://www.xaira.com/news/x-cell-scaling-causal-perturbation-prediction-across-diverse-cellular-contexts-via-diffusion-language-models",
+    "https://www.noetik.ai/octo",
+    "https://arcinstitute.org/news/foundation-model-stack",
+    "https://arcinstitute.org/news/yusuf-roohani-virtual-cell-architecture",
+    "https://edisonscientific.com/news/performance-of-our-platform-agents"
+  ],
+  "fixes": [
+    {
+      "id": "agents-metr",
+      "replacements": [
+        { "observed": "Meter", "proposed": "METR" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["0:47"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The speaker is describing METR's plots of the task-completion time horizon of AI systems."
+    },
+    {
+      "id": "agents-futurehouse",
+      "replacements": [
+        { "observed": "future house", "proposed": "FutureHouse" },
+        { "observed": "Future House", "proposed": "FutureHouse" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["2:58", "5:06", "9:01"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "FutureHouse is the former organization name referenced by Andrew White."
+    },
+    {
+      "id": "agents-paperqa",
+      "replacements": [
+        { "observed": "paper QA", "proposed": "PaperQA" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["4:03"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "PaperQA is the published name of the scientific-literature retrieval framework."
+    },
+    {
+      "id": "agents-gpt4",
+      "replacements": [
+        { "observed": "GPT4", "proposed": "GPT-4" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["4:50"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "GPT-4 is the canonical model name."
+    },
+    {
+      "id": "agents-kosmos",
+      "replacements": [
+        { "observed": "Cosmos", "proposed": "Kosmos" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["6:52", "7:11", "12:49", "12:51", "13:30", "17:20"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and Edison Scientific identify the AI scientist as Kosmos."
+    },
+    {
+      "id": "agents-lab-bench",
+      "replacements": [
+        { "observed": "lab bench", "proposed": "LAB-Bench" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["10:06"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "LAB-Bench is the benchmark suite's canonical name."
+    },
+    {
+      "id": "agents-bixbench",
+      "replacements": [
+        { "observed": "Bixbench", "proposed": "BixBench" },
+        { "observed": "bixbench", "proposed": "BixBench" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["11:39", "11:40", "11:48"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "BixBench is the benchmark's canonical capitalization."
+    },
+    {
+      "id": "agents-product-capitalization",
+      "replacements": [
+        { "observed": "protein crow", "proposed": "ProteinCrow" },
+        { "observed": "claude code", "proposed": "Claude Code" },
+        { "observed": "openclaw", "proposed": "OpenClaw" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["14:24", "14:27", "15:25", "17:07", "17:24"]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "These appear to be product-name capitalization errors; ProteinCrow should be checked against the recording or product materials."
+    },
+    {
+      "id": "astrazeneca-jorge",
+      "replacements": [
+        { "observed": "George", "proposed": "Jorge" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["metadata", "18:27"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and conference graph identify the speaker as Jorge Reis-Filho."
+    },
+    {
+      "id": "astrazeneca-company-name",
+      "replacements": [
+        { "observed": "Astroenica", "proposed": "AstraZeneca" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["0:27", "0:36", "2:40", "2:47", "2:55", "4:04", "11:56", "12:17", "16:34", "17:09", "18:54"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The official company name is AstraZeneca."
+    },
+    {
+      "id": "astrazeneca-bioinformatics",
+      "replacements": [
+        { "observed": "bionirmatics", "proposed": "bioinformatics" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["1:50"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The surrounding phrase is 'pathology, omics, and bioinformatics/computational biology.'"
+    },
+    {
+      "id": "astrazeneca-radioconjugates",
+      "replacements": [
+        { "observed": "Radiojugates", "proposed": "Radioconjugates" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["4:16"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Radioconjugates are the therapeutic modality being listed alongside antibody-drug conjugates."
+    },
+    {
+      "id": "astrazeneca-explainability",
+      "replacements": [
+        { "observed": "explanability", "proposed": "explainability" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["9:37", "10:59"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Explainability is the standard AI term used in the surrounding discussion."
+    },
+    {
+      "id": "astrazeneca-evals-benchmarks",
+      "replacements": [
+        { "observed": "evolves benchmarks", "proposed": "evals, benchmarks" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["19:05"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The next sentence explicitly expands on evaluations and benchmarks."
+    },
+    {
+      "id": "dealmaking-anthropic",
+      "replacements": [
+        { "observed": "Enthropic", "proposed": "Anthropic" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-dealmaking-and-partnerships.txt",
+          "timestamps": ["0:34", "0:39", "13:18", "21:00", "29:05"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The panel metadata and conference graph identify Anthropic."
+    },
+    {
+      "id": "dealmaking-abbvie",
+      "replacements": [
+        { "observed": "Avy", "proposed": "AbbVie" },
+        { "observed": "Advide", "proposed": "AbbVie" },
+        { "observed": "Abby", "proposed": "AbbVie" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-dealmaking-and-partnerships.txt",
+          "timestamps": ["2:04", "14:02", "16:02"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Sarah Nam's affiliation in the transcript metadata and graph is AbbVie."
+    },
+    {
+      "id": "dealmaking-terray",
+      "replacements": [
+        { "observed": "terra", "proposed": "Terray" },
+        { "observed": "Terra", "proposed": "Terray" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-dealmaking-and-partnerships.txt",
+          "timestamps": ["4:54", "6:18", "12:22", "13:18"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The panelist's company is Terray Therapeutics."
+    },
+    {
+      "id": "training-menlo",
+      "replacements": [
+        { "observed": "Milo", "proposed": "Menlo" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["0:31"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Moderator Johnny Hu is affiliated with Menlo Ventures."
+    },
+    {
+      "id": "training-yusuf",
+      "replacements": [
+        { "observed": "Yousef", "proposed": "Yusuf" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["0:44", "7:42"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and graph identify Yusuf Roohani."
+    },
+    {
+      "id": "training-arc-institute",
+      "replacements": [
+        { "observed": "Ark Institute", "proposed": "Arc Institute" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["0:46", "1:03"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The official organization name is Arc Institute."
+    },
+    {
+      "id": "global-antibody",
+      "replacements": [
+        { "observed": "antibbody", "proposed": "antibody" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["4:16"]
+        },
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["5:49"]
+        },
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["4:21", "11:28", "18:28"]
+        },
+        {
+          "transcript": "unlock-2026-what-is-hype-and-what-is-real.txt",
+          "timestamps": ["10:28", "10:31", "11:06", "17:37"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "This is a recurring automatic-transcription spelling error for antibody."
+    },
+    {
+      "id": "global-transcriptomics",
+      "replacements": [
+        { "observed": "transcrytoics", "proposed": "transcriptomics" },
+        { "observed": "transcripttoics", "proposed": "transcriptomics" },
+        { "observed": "transcripttonics", "proposed": "transcriptomics" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["14:25", "15:04"]
+        },
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["5:41", "6:26", "7:31", "7:45"]
+        },
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["24:32"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The discussion is consistently about spatial or single-cell transcriptomics."
+    },
+    {
+      "id": "noetik-company-name",
+      "replacements": [
+        { "observed": "Noetic", "proposed": "Noetik" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["0:16", "2:49"]
+        },
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["26:23"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The official company name is Noetik."
+    },
+    {
+      "id": "noetik-transcriptome",
+      "replacements": [
+        { "observed": "transcriptto", "proposed": "transcriptome" },
+        { "observed": "transcripttos", "proposed": "transcriptomes" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["4:20", "4:41", "8:59", "11:12"]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "The singular and plural contexts point to transcriptome/transcriptomes, but the 4:20 phrase may instead be 'spatial transcriptomics' and should be checked against audio."
+    },
+    {
+      "id": "noetik-autoregressive-decoder",
+      "replacements": [
+        { "observed": "autogressive decod decoder", "proposed": "autoregressive decoder" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["7:40"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Autoregressive decoder is the standard model component described by the surrounding architecture explanation."
+    },
+    {
+      "id": "noetik-immune-related",
+      "replacements": [
+        { "observed": "immunereated", "proposed": "immune-related" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["8:51"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The speaker is describing genes activated in immune cells."
+    },
+    {
+      "id": "proof-anna-transfyr-ginkgo",
+      "replacements": [
+        { "observed": "Any", "proposed": "Anna" },
+        { "observed": "Anorie", "proposed": "Anna Marie" },
+        { "observed": "Transfer", "proposed": "Transfyr" },
+        { "observed": "GKO", "proposed": "Ginkgo" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["0:15", "0:21", "0:27"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and graph identify Anna Marie Wagner of Transfyr and her prior work at Ginkgo."
+    },
+    {
+      "id": "proof-payal-bms",
+      "replacements": [
+        { "observed": "Pile", "proposed": "Payal" },
+        { "observed": "Shet", "proposed": "Sheth" },
+        { "observed": "Bristol Myers Quip", "proposed": "Bristol Myers Squibb" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["1:49", "1:56"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and graph identify Payal Sheth of Bristol Myers Squibb."
+    },
+    {
+      "id": "proof-vhhs",
+      "replacements": [
+        { "observed": "VHS's VH", "proposed": "VHHs; VHH" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["4:21"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The speaker is discussing single-domain antibody discovery using VHHs."
+    },
+    {
+      "id": "proof-opentrons-ex-vivo",
+      "replacements": [
+        { "observed": "openrons", "proposed": "Opentrons" },
+        { "observed": "Xvivo", "proposed": "ex vivo" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["4:27"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Opentrons is a laboratory-automation platform, and ex vivo is the biological term used for a lymph-node system outside the body."
+    },
+    {
+      "id": "proof-generate-biomedicines",
+      "replacements": [
+        { "observed": "Generate when public", "proposed": "Generate went public" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["4:41"]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "The sentence refers to Generate Biomedicines and a public-market valuation; the exact wording should be checked against the audio."
+    },
+    {
+      "id": "proof-aws",
+      "replacements": [
+        { "observed": "AOS AWS", "proposed": "also AWS" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["4:53"]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "The context is a transition to AWS tools for AI antibody discovery."
+    },
+    {
+      "id": "proof-nabla-bio",
+      "replacements": [
+        { "observed": "Naba", "proposed": "Nabla Bio" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["5:04"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Nabla Bio develops zero-shot, developable antibody and multifunctional-molecule designs matching the surrounding description."
+    },
+    {
+      "id": "proof-in-silico-exscientia",
+      "replacements": [
+        { "observed": "in silicico", "proposed": "Insilico" },
+        { "observed": "XCNC", "proposed": "Exscientia" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["5:24"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The sentence names Insilico Medicine and Recursion's Exscientia programs in the clinic."
+    },
+    {
+      "id": "proof-perturbation",
+      "replacements": [
+        { "observed": "portabation", "proposed": "perturbation" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["8:33", "16:27"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Perturbation platforms and perturbation datasets are the scientific concepts used in context."
+    },
+    {
+      "id": "proof-ron-alfa",
+      "replacements": [
+        { "observed": "Ron Alpha", "proposed": "Ron Alfa" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["26:23"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The graph and Noetik transcript identify Ron Alfa."
+    },
+    {
+      "id": "hype-lilly-aiml",
+      "replacements": [
+        { "observed": "Lily", "proposed": "Lilly" },
+        { "observed": "a IML", "proposed": "AI/ML" },
+        { "observed": "Lily Tune Lab", "proposed": "Lilly TuneLab" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-what-is-hype-and-what-is-real.txt",
+          "timestamps": ["2:11", "2:17", "2:19", "2:37"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The graph identifies Gregg Spivey's affiliation as Lilly, and Lilly TuneLab and AI/ML are the canonical forms."
+    },
+    {
+      "id": "hype-ginkgo-bioworks",
+      "replacements": [
+        { "observed": "GKO Bowworks", "proposed": "Ginkgo Bioworks" },
+        { "observed": "GKO", "proposed": "Ginkgo" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-what-is-hype-and-what-is-real.txt",
+          "timestamps": ["8:51", "8:53", "14:05", "23:11"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The graph and panel metadata identify Reshma Shetty's company as Ginkgo Bioworks."
+    },
+    {
+      "id": "xaira-ci-chu",
+      "replacements": [
+        { "observed": "Suchu", "proposed": "Ci Chu" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["0:07"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and conference graph identify the speaker as Ci Chu."
+    },
+    {
+      "id": "xaira-company-name",
+      "replacements": [
+        { "observed": "Zera", "proposed": "Xaira" },
+        { "observed": "ADA", "proposed": "Xaira" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["0:12", "0:17", "0:49", "13:54"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The official company name is Xaira; 'everything at Xaira starts with X' resolves the 0:49 occurrence."
+    },
+    {
+      "id": "xaira-bo-wang",
+      "replacements": [
+        { "observed": "Boen", "proposed": "Bo Wang" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["0:14"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The transcript metadata and conference graph identify the co-presenter as Bo Wang."
+    },
+    {
+      "id": "xaira-x-cell",
+      "replacements": [
+        { "observed": "XL", "proposed": "X-Cell" },
+        { "observed": "Excel", "proposed": "X-Cell" },
+        { "observed": "Excel Ultra", "proposed": "X-Cell Ultra" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["0:49", "0:51", "9:02", "9:30", "10:14", "11:31", "11:39", "13:44"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Xaira's official model name and the transcript title are X-Cell."
+    },
+    {
+      "id": "xaira-cell-not-sale",
+      "replacements": [
+        { "observed": "virtual sale", "proposed": "virtual cell" },
+        { "observed": "sale states", "proposed": "cell states" },
+        { "observed": "sale state", "proposed": "cell STATE" },
+        { "observed": "sales", "proposed": "cells" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["9:06", "10:49", "11:26", "13:09", "13:16", "13:21", "13:27"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The talk is about virtual-cell models, cell states, and scaling the number of cells."
+    },
+    {
+      "id": "xaira-scgpt",
+      "replacements": [
+        { "observed": "SGBT", "proposed": "scGPT" },
+        { "observed": "SGB", "proposed": "scGPT" },
+        { "observed": "SGBD", "proposed": "scGPT" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["9:47", "10:21", "10:46", "11:31", "11:55", "13:41"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The X-Cell architecture and parameter-count comparison refer to the single-cell model scGPT."
+    },
+    {
+      "id": "xaira-diffusion-model",
+      "replacements": [
+        { "observed": "division language model", "proposed": "diffusion language model" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["10:16"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Xaira's official X-Cell paper describes diffusion language models."
+    },
+    {
+      "id": "xaira-prior-knowledge",
+      "replacements": [
+        { "observed": "chbd", "proposed": "ChatGPT" },
+        { "observed": "depth map", "proposed": "DepMap" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["10:34", "10:42"]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "The speaker is listing literature-derived and biological prior knowledge; both forms fit the technical context but should be checked against audio."
+    },
+    {
+      "id": "xaira-benchmark-models",
+      "replacements": [
+        { "observed": "state from AR institute", "proposed": "STATE from Arc Institute" },
+        { "observed": "sale uh state from AR institute and sale", "proposed": "Cell STATE from Arc Institute and Cell" },
+        { "observed": "to centers from Google", "proposed": "2Sentence from Google" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["11:26", "11:29"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "STATE and Cell2Sentence are the virtual-cell comparison models named in context."
+    },
+    {
+      "id": "xaira-pisces-context-axis",
+      "replacements": [
+        { "observed": "pis data sets", "proposed": "Pisces dataset" },
+        { "observed": "contacts", "proposed": "contexts" },
+        { "observed": "scaling access", "proposed": "scaling axis" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["13:21", "13:33", "13:36"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The official dataset is X-Atlas/Pisces, and the speaker is describing context and parameter scaling axes."
+    },
+    {
+      "id": "agents-cofounded",
+      "replacements": [
+        { "observed": "co-ounded", "proposed": "co-founded" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["2:58"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "This is a dropped-consonant transcription error."
+    },
+    {
+      "id": "agents-bioinformatics",
+      "replacements": [
+        { "observed": "bionformmaticians", "proposed": "bioinformaticians" },
+        { "observed": "bionformmatics", "proposed": "bioinformatics" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["11:44", "11:58"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The speaker is discussing conventions and hypothesis-driven work in bioinformatics."
+    },
+    {
+      "id": "agents-kras-inhibitors",
+      "replacements": [
+        { "observed": "coalent inhibitor", "proposed": "covalent inhibitor" },
+        { "observed": "PANRASS inhibitor", "proposed": "pan-KRAS inhibitor" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-agents-for-scientific-discovery.txt",
+          "timestamps": ["7:15", "7:27"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Covalent KRAS inhibitors and pan-KRAS inhibitors are the drug classes described in context."
+    },
+    {
+      "id": "astrazeneca-bioinformatician",
+      "replacements": [
+        { "observed": "bionformmatician", "proposed": "bioinformatician" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["1:41"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Jorge Reis-Filho is describing retraining as a bioinformatician."
+    },
+    {
+      "id": "astrazeneca-multimodal",
+      "replacements": [
+        { "observed": "multimodel", "proposed": "multimodal" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["5:01"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The speaker is describing models that combine multiple data modalities."
+    },
+    {
+      "id": "astrazeneca-additional-spelling",
+      "replacements": [
+        { "observed": "Astrazanica", "proposed": "AstraZeneca" },
+        { "observed": "datadriven", "proposed": "data-driven" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-astrazeneca-ai-playbook.txt",
+          "timestamps": ["8:49", "19:08"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "These are unambiguous organization-name and compound-word transcription errors."
+    },
+    {
+      "id": "dealmaking-target-ligand",
+      "replacements": [
+        { "observed": "target lian binding interaction", "proposed": "target-ligand binding interaction" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-dealmaking-and-partnerships.txt",
+          "timestamps": ["11:29"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Target-ligand binding is the standard molecular interaction described by the measurement dataset."
+    },
+    {
+      "id": "dealmaking-multispecifics",
+      "replacements": [
+        { "observed": "multisspecifics", "proposed": "multispecifics" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-dealmaking-and-partnerships.txt",
+          "timestamps": ["17:22"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Multispecifics are the therapeutic modality listed before small molecules and targeted protein degradation."
+    },
+    {
+      "id": "training-clinvar",
+      "replacements": [
+        { "observed": "Clintar", "proposed": "ClinVar" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["11:32"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "ClinVar is the variant database used to assess pathogenicity."
+    },
+    {
+      "id": "training-bioinformatics",
+      "replacements": [
+        { "observed": "bionformatics", "proposed": "bioinformatics" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-how-to-train-an-ai-for-science.txt",
+          "timestamps": ["22:06"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Bioinformatics is the scientific field referenced in context."
+    },
+    {
+      "id": "noetik-h-and-e",
+      "replacements": [
+        { "observed": "H&", "proposed": "H&E" },
+        { "observed": "H&'s", "proposed": "H&Es" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["3:09", "3:15", "4:34", "6:26", "7:34", "7:42", "7:52", "8:09", "11:21", "11:42", "11:50"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The speaker is consistently referring to hematoxylin-and-eosin pathology images, abbreviated H&E."
+    },
+    {
+      "id": "noetik-autoregressive",
+      "replacements": [
+        { "observed": "reggressive model", "proposed": "autoregressive model" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["7:26"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The following architecture description explicitly refers to an autoregressive decoder."
+    },
+    {
+      "id": "noetik-t-cell-kras",
+      "replacements": [
+        { "observed": "T- cell", "proposed": "T cell" },
+        { "observed": "K RAS", "proposed": "KRAS" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-noetik.txt",
+          "timestamps": ["6:42", "6:57", "10:46"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "T cell and KRAS are the canonical scientific forms."
+    },
+    {
+      "id": "proof-zero-shot-and-assays",
+      "replacements": [
+        { "observed": "zeroshot", "proposed": "zero-shot" },
+        { "observed": "n equals1", "proposed": "n=1" },
+        { "observed": "assayas", "proposed": "assays" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-predictions-to-proof.txt",
+          "timestamps": ["5:04", "25:19"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "These are standard AI, experimental-design, and laboratory terms."
+    },
+    {
+      "id": "hype-cofounded",
+      "replacements": [
+        { "observed": "co-ounded", "proposed": "co-founded" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-what-is-hype-and-what-is-real.txt",
+          "timestamps": ["6:28"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "This is a dropped-consonant transcription error."
+    },
+    {
+      "id": "xaira-perturb-seq",
+      "replacements": [
+        { "observed": "perturbse seek", "proposed": "Perturb-seq" }
+      ],
+      "occurrences": [
+        {
+          "transcript": "unlock-2026-xaira-x-cell-drug-discovery.txt",
+          "timestamps": ["3:29"]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Perturb-seq is the single-cell perturbation assay being described."
+    }
+  ]
+}

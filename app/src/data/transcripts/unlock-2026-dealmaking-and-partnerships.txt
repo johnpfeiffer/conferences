@@ -1,0 +1,629 @@
+https://www.youtube.com/watch?v=J-wD-BwOu4M&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=8
+
+How is big pharma working with AI and what projects are actually getting funded? Senior leadership from AbbVie, J&J, Anthropic, and Terray on the new modalities, what pharma gets right and wrong, and what AI still can't solve.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Panelists:
+Sarah Nam, VP, Global Head of Partnerships, AI, AbbVie
+Jonah Cool, Life Sciences, Anthropic
+Eli Berlin, Co-founder, Terray Therapeutics
+Stacy Feld, Global Head, External Scientific Innovation, Johnson & Johnson
+
+Moderated by Chris Leiter, Founder & General Partner, Atria Ventures
+
+---
+0:09
+All right. Uh, this is why everyone's here. Deal making in progress live uh on the stage here. So, I'm really excited
+0:15
+to have a rockstar panel here. Um, thanks for everyone for being here. I I
+0:21
+want to kind of lead off uh this initial question with understanding what how you
+0:26
+guys are thinking about deal making and uh and the AI era here, but I think Jonah to you first. I mean lot of news
+0:34
+happening out of Enthropic recently uh you know coefficient bio uh vas from
+0:39
+Novartis joining the the PBC board. Um I think everyone wants to know is Enthropic becoming a pharma company?
+0:46
+Whoa. Get get out of the gate fast here. No. Right. Right. I mean I I think our thesis is really about working with
+0:53
+partners, working with the world's largest pharma companies. A big part of that is working and bringing you know
+0:59
+teams like the coefficient team into our team that really know that space and think about the sector as platforms and
+1:05
+then also obviously you know vase brings a ton of experience there. But our our goal is continuing to you know push
+1:12
+claude push the limits of what is possible both in terms of working with companies across the the sector biotech
+1:18
+pharma tech bio to advance you know their programs uh as as efficiently and
+1:24
+scalably as possible. I think that the big thing is, you know, how we develop our products and really kind of close
+1:30
+that gap from kind of general purpose tools like Claude into more specific tools and products and features that uh
+1:38
+provide those artifacts for those companies to go the last mile like as quickly as accurately as specifically as
+1:43
+possible. And we'll get into how you're doing that in a little bit. But um Sarah, you know, big pharma AI is a huge topic amongst uh
+1:52
+AVY and what you guys are developing. you guys have been setting up whole new structures in terms of how you think
+1:58
+about deals but also deal making with AI first bio companies. Um maybe walk
+2:04
+through the audience who who have not talk to Avy ever like how are you actually setting up teams governance
+2:10
+structures and the deal archetypes that you guys are working on today. Yes, absolutely. In terms of ADV, we've
+2:17
+decided to set up an entirely new business development team. And I reported to our chief business officer
+2:23
+and what he realized is that the business development organization and most pharma companies are really
+2:28
+equipped to do asset driven deals and occasionally a few platform driven deals. But in terms of really evaluating
+2:35
+the opportunities in AI across the full value chain, there was a muscle that was lacking in terms of really being able to
+2:42
+diligence the model architecture, do model benchmarking as well as pilots to
+2:48
+really look at the data generation capabilities, the training data sets that are really differentiating and also
+2:54
+the computational talent behind many of these companies. And so our team was stood up about a year ago within the
+3:01
+business development organization where we're independently now assessing about 400 to 500 companies every year across
+3:08
+the full value chain from AIdriven drug discovery biotech frontier lab partnerships hyperscaler partnerships
+3:15
+digital health SAS players really across the full value chain from discovery clv
+3:20
+commercial and now physical AI and manufacturing as well and so it's been a really wonderful journey In addition to
+3:27
+that, we have found that both funding and governance needs to be fundamentally different for AI. That many of our
+3:33
+functions will not take these big bets in AI and that creating a centralized governance structure. What we call the
+3:39
+AI external opportunities or is really chaired by our chief business officer and myself. But we also have the chief
+3:46
+R&D officer, the chief commercial officer, the chief operating officer. And we really review these larger
+3:52
+AIdriven deals at this governance body to provide momentum and speed at scale
+3:57
+for some of these AIdriven deals that are necessary. In terms of the deal types that you asked about, we're also
+4:03
+seeing a huge change from pharma just doing the typical target-based discovery
+4:10
+collaborations to now model co-development, fine-tuning, data sharing, as well as tech enablement and
+4:17
+even platform licensing in a very unique way. Often blending many of these deal
+4:22
+archetypes together. And the deal terms are emerging literally as we speak. oftentimes we're building the plane as
+4:29
+we fly in terms of constructing these deal terms and constructs as we're in the middle of many of these negotiations
+4:36
+in a really dynamic and fun space that's been very intellectually interesting to be a part of
+4:41
+and we're going to talk a little bit more around how that works in terms of data partnerships in a little bit and and that's a really great segue in terms
+4:47
+of Eli you know you guys have been on the forefront of making some of these deals you've been around for six or seven years assetbased company but now
+4:54
+having a really interesting small molecule discovery engine and maybe you could share a little bit about what terra does but how have you seen that
+5:01
+change from pharma in the last 6 to 12 months and as Sarah just said how's that plane being built live in your viewpoint
+5:08
+absolutely um thanks for having me uh ter therapeutics is built at the intersection of uh precise proprietary
+5:14
+data at scale and advanced AI uh we use our platform which we call Emmy
+5:20
+experimentation meets machine intelligence to solve problems that others simply cannot grateful to work
+5:25
+with Gilead had BMS, Calico, and a a really exciting co-development deal with Odyssey Therapeutics. Um, and I I think
+5:34
+the the key the two things that have changed or we've been at this now for seven and a half years. When we started,
+5:42
+Pharma would give us a project and and even if they had existing data uh data
+5:47
+sets internally, tools and just say go for it and we'd say, well, can we work together? Can we leverage some of your
+5:53
+existing experimental data? Can we collaborate more? No, just go for it. Um, and we've seen in the last six to 12
+6:00
+months this total sea change where it's let's put everything we possibly can to solve these problems. You know, by the
+6:06
+time you're working with us as a partner, you've tried every other modality. And so, we're really solving
+6:11
+problems that other people simply cannot. And putting the combined power of large pharma, mid-tier biotech with a
+6:18
+terra in a collaboration is really, really powerful. So we've seen that sea change around data sharing and
+6:24
+collaboration thematically. And then the other big change we've seen is folks are really interested in not just our full
+6:32
+me platform but what can we do with just the advanced AI what can we do with the model infrastructure to accelerate
+6:38
+programs and hit to lead uh optimize in areas where we're stuck and really work
+6:44
+on these problems that have been intractable at large farmer or mid-tier biotech over time. And so those two
+6:49
+themes have become, you know, kind of front and center over really the last like six to 12 months. Yeah.
+6:55
+Yeah. Um it's kind of interesting on the stage we have a you know Jonah from a 5-year-old company and Stacy you're JJ
+7:02
+140y old company. Uh you know when we were catching up uh uh you know you were
+7:08
+saying hey we're we're done experimenting with AI we are implementing it live. Obviously isomorphic being one of the more you
+7:13
+know large partnerships that you guys have announced a lot of other unannounced ones. um how do you see this
+7:19
+live in your day it's you know dayto-day and how are you thinking about you know deal structures now at J&J
+7:24
+yeah great and again thanks for um for having me uh maybe to set the context I
+7:31
+lead external scientific innovation which is a part of our innovative medicine business J&J 140year-old
+7:37
+startup as sometimes we like to say and um we're really focused on fueling the
+7:43
+pipeline so when I think about the moment that we're in um looking at all
+7:49
+of beyond the hype, all of the tangible applications for AI, the focus that my
+7:54
+team has is both on sourcing and developing partnerships on the asset
+7:59
+driven um side to help fuel the pipeline, but also to look at um
+8:05
+platforms and enabling technologies to help fuel the molecular engine that
+8:11
+delivers um new modalities and and new therapeutic platforms um to fuel the PIP. line. So with that as our focus,
+8:19
+we're really less focused on any one particular model, any one particular
+8:25
+structure. It's what's the problem that we're trying to solve and then what's the right approach um to take. So you
+8:32
+know you mentioned isomorphic that structure and that that relationship came together cross modalities um and
+8:41
+you know multi-target highly highly you know focused whereas
+8:46
+we're also looking at enabling um models to integrate in a highly highly tight
+8:55
+way to our R&D um efforts. So this is not a a side hustle. It's really
+9:01
+something that needs to be highly integrated. I think your comment about, you know, going off and doing something
+9:08
+we want to build together. We really want to enable partnerships through um
+9:15
+sharing data, sharing, you know, what we've done to date. I think you know being one of the the leading healthcare
+9:22
+companies we do have a tremendous amount of data and uh that you know that's an
+9:27
+asset that we bring and it's something that we want to help enable um through
+9:32
+through partnerships. I I think we'll talk more about uh what partnership
+9:38
+structures are emerging. As I said, we we're not wedded to any one particular
+9:43
+approach. It's just moving to much more of a how to enable the pipeline. Um and
+9:50
+we have many ways to engage with the external ecosystem. So my responsibility
+9:55
+is on our early stage incubation side and partnership side. So we run innovation challenges. is we're actually
+10:01
+in the midst of a Genova protein design innovation challenge that has um been
+10:07
+partnered together with um Nvidia where we have 18 finalists um you know highly
+10:13
+focused on solving really tough to tackle um challenges. So
+10:18
+and I want to get to the the data part because I think that's really interesting. It's it's pretty live but but Eli maybe in terms of the this this
+10:24
+next section what do the new deals actually look like? Um, something we we talked about before is, you know, you
+10:30
+would partner with pharma and they just give you their hardest, most difficult, intractable issue to solve for, but
+10:35
+actually now that's changing right now. And how how are you seeing that change
+10:40
+from like actually how can you do incremental improvement? How do you accelerate existing models, existing
+10:46
+data sets that pharma now can dig up and use these partnership models that you guys are developing with your
+10:51
+technology? Maybe talk about that and then I'd love to come to Stacy and and Sarah on that data validation piece.
+10:56
+Yeah, absolutely. I think our business started with pharma coming to us to solve truly unsolved problems where
+11:04
+there's no known we work in small molecules. I should have said this at this at the start. We work in small molecules focused on immunology
+11:10
+internally and other areas of unmet medical need with partners and these partners would bring us targets where
+11:15
+there was very little chemical equity available or no chemical equity available out there. And we use our our
+11:21
+proprietary experimental technology which has built the largest chemistry data set uh in the world. It's now 16
+11:29
+billion precise measurements of target lian binding interaction. It grows by about a billion measurements a quarter
+11:34
+to find these novel starting points and then rapidly optimize them using our compute infrastructure. And that's been
+11:40
+what's been interesting writ large to pharma for for quite some time now. What
+11:45
+we've seen is what I alluded to before is pharma saying, "Okay, those are the programs where I have nothing, where
+11:52
+there's no existing data, so that makes sense." But we have all these other programs where there's a bunch of
+11:59
+information in the hit to lead sort of let's get this thing really going. And I
+12:04
+think there was historically this bias that and we are large pharma and can do
+12:09
+this ourselves. Um and that is very true in many in that like never underestimate
+12:15
+the power of large pharma to be clear. But now there's a willingness and an openness to hey how can we collaborate
+12:22
+with people who are specialists at the frontier in this specific domain. how can we leverage you know terra's uh
+12:29
+foundation model of chemistry which is trained on over a billion uh data points for our own work and that's become
+12:36
+really central to these conversations and uh to Sarah's comment earlier these business models are totally new like
+12:42
+there there is no there is a template for an asset partnership there is no template for how uh we might work
+12:49
+together on leveraging our foundation model of chemistry to advance seven programs at ABV it just doesn't exist
+12:55
+So, it's a it's a super exciting time and um there's just an open-mindedness
+13:00
+that I think is very fresh. Well, let's set the template on stage right now. So, um Sarah Stacy, I I think
+13:07
+my one of my core thesis that we're seeing live and and certainly Sarah, we've talked about this is pharma's now
+13:13
+always been a buyer of data. Um but pharma is now being a broker of data and
+13:18
+and thinking about not only working with companies like you know, Terra, but also with Enthropic, OpenAI and others. um
+13:24
+walk us through these a two two steps for for both of you here. One is like what do these data validation data
+13:30
+licensing potential deals look like? How have you thought about them? Um and then how are you thinking about working with
+13:36
+Frontier Labs in terms of data sharing and data validation work? Happy to get us started. I think as we
+13:43
+think about data partnerships, what we found is that it's really not a zero- sum game that pharma has incredible
+13:50
+treasure troves of data of multimodal multi- horizon and in many ways by
+13:56
+partnering with really leading players that are developing the frontier models has been very helpful across the full
+14:02
+value chain. So I'll give you a few examples on how that's come to play at a company like Advide
+14:09
+as we think about some of the modalities for which there are low data regimes. Just the public data sets are very
+14:15
+limited in a given modality. We're looking at partnerships whereby we could take a lot of the high throughput data
+14:20
+in that given modality to train a very specific model focused on that specific area. And it's been a real opportunity
+14:28
+for us to really push the frontiers of these models in that modality that's been historically very kind of poorly
+14:36
+understood from a generative model perspective. And when we tested this on
+14:41
+all openweight models in this given area, the hit rates were less than.1%.
+14:46
+But by really partnering with some of these other players that we're really able to push that frontier in clinical
+14:52
+development, as you can imagine, one of the biggest priority areas is for us to really reduce the cycle times of our
+14:58
+clinical development and clinical trial processes. And there we have so much
+15:03
+information around our protocols, all of our clinical study documents that are now being used to train very specific
+15:09
+models that help us accelerate those timelines and commercial as well. As you think about as a pharma industry, we're
+15:17
+facing external pressures like no other. Most favored nation, 340B, PBM reform in
+15:23
+really meaningful ways whereby being able to use some of our internal data to drive better decision-making in the
+15:30
+commercial organization has been very helpful. And as we think about even manufacturing, by enabling our
+15:36
+scientists to have cameras on their glasses to really understand the
+15:42
+physical movements of how they work can really drive imitation learning and drive robotics in ways that will improve
+15:49
+physical AI and the applications that it can have within a company like ours. And so we really do see partnerships across
+15:55
+the full value chain as it relates to data and uh an opportunity for us to work together. And just to clarify, has
+16:02
+Abby done a data upfront or licensing deal plus asset deal yet or or that's
+16:08
+that that I don't think you've announced anything yet, right? We have announced two federated learning consortia that we've been a part of and
+16:14
+then several currently in the works. Awesome. Yes. So we have also you know taken sort
+16:20
+of a multimodal approach from a data perspective joining consorcia
+16:26
+um and really thinking about you know what what is the the challenge that we're trying to tackle. I I'll speak
+16:33
+primarily from a discovery perspective of although of course we're looking at AI across the the entire value chain
+16:41
+from discovery, development, manufacturing and and and commercial. And I think the um the the focus really
+16:49
+is not that we want to continue to do this ourselves, but to know that in you know
+16:57
+two, five uh months, years, it's hard to know the time scale because things are
+17:03
+accelerating at such a big pace that there's going to be a fundamental change to how anyone whether it's biotech or
+17:11
+bioarm discover new medicines. And so we have to be really flexible and really
+17:16
+adaptive in our pro our approach particularly with such a diverse and
+17:22
+increasingly complex set of modalities multisspecifics um small molecules
+17:28
+targeted protein degradation cell therapy um I I could go on and I think
+17:35
+what's what is really interesting is you do have a template for asset driven
+17:41
+collaborations um But you also have companies that are really thinking about
+17:47
+just enabling the industry and looking a little bit more like software licensing
+17:52
+models where there's an opportunity to um value success on hit generation or
+18:01
+you know enabling a new molecular entity and continuing to to increase the
+18:07
+probability of success as we get into the clinic. So I I think we're we're
+18:12
+open to a lot of different structures and as I said earlier enabling partnerships by sharing you know
+18:20
+different data sets and co-building models to um to enable the pipeline.
+18:26
+So Jonah um you guys are actively building with pharma with startups. You
+18:31
+started this conversation out saying look we're really interested in doing partnerships that are pushing claw to
+18:37
+its limits. So maybe a two-parter here. What what's the threshold for you and
+18:42
+the anthropic team to say hey look we want to spend a lot of applied research team in a specific area and then B how
+18:49
+are you sifting through these partnerships with big pharma in particular and how are you guys thinking
+18:54
+about that also with startups? Yeah. So, yeah, I think a lot about um really
+19:00
+experimentation, you know, a scientist by training. And I think the the big question here is kind of the supplied
+19:05
+area of research downstream of current model capabilities where we're looking for partners that often um can bring a
+19:13
+couple things. One is, you know, a question where we just don't like maybe we have an intuition, but we have uh low
+19:19
+confidence in exactly how the model will perform. And the best way to chase down
+19:25
+that intuition and hopefully increase confidence is going and running really good experiments and doing that in close
+19:32
+partnership you know with an expert in that you know modality domain clinical indication you know what whatever the
+19:38
+right experimental context is. Um and so we are looking for both like very ambitious and also really good partners
+19:44
+and that partnership often is a combination of the domain expertise where we can engage at a deep level and
+19:50
+then also a willingness to move fast. Right. So and and this is just an acknowledgement of how quickly the model capabilities the core capabilities are
+19:56
+moving that if we don't have a similarly paced kind of applied uh research direction then it's is always going to
+20:03
+be out of sync and so we just have to operate in those time scales and and the ambition and so we think a lot about
+20:08
+that and then of course you know depending on the results there and in close partnership it also then opens up
+20:13
+the door to kind of bringing back some of those questions back into the model training right and so we get to this
+20:19
+point on data licensing or RL environments or you know other constructs where based on a really
+20:24
+principled um applied question, we can then both have an intuition of something
+20:29
+that's going to be powerful, a very realistic view of what current capabilities get there and then start to
+20:34
+push forward and you know model training to close that gap and and really push the the core capabilities of the model.
+20:40
+And maybe just to get a little bit more granular on this, like when you have a a scientific question that you and the team and want to come up with, um, are
+20:48
+you specifically going out to seek out partnerships with pharma or or are you saying, "Hey, look, there's a TA that we
+20:54
+know Aby's really strong and we're going to hit up Sarah and see if there's a partnership, but like like maybe get a little granular how you think about
+21:00
+that." Yeah, I mean the the answer like so many things at Enthropic is all of the above.
+21:05
+Um so there are certainly instances where internally we have an intuition and this is maybe back to the earlier
+21:11
+question right like that intuition grows when we start you know bringing in expertise of groups like coefficient and
+21:17
+people like vase of like these are domains that we should be focused on and questions and then we can identify and go out and you know seek out the right
+21:23
+partnerships. But there are also then um a lot of instances where you know our closest customers and partners come to
+21:30
+us and say you know this seems like something that should work or we believe that this is what the future looks like
+21:36
+and we want to engage at this more technical level that is different than just you know kind of a a traditional
+21:42
+sales motion or other where we're trying to like push the capabilities. Um I would say right now honestly like the
+21:48
+the latter given how early stage we are is probably more prevalent. So you know those close customers and partners are
+21:54
+coming to us with problems that really matter to them. Um I would expect with time as we work more in this space those
+21:59
+kind of like clear gaps or strategic opportunities start to emerge. U but probably you know 7525 right now but but
+22:05
+both are wonderful right I think the important thing is that it's a good question that we feel like we can commit
+22:11
+ourselves to and invest in and make some progress against. Got it. Um maybe a slight detour to
+22:16
+Sarah and Stacy here. I mean we we all know uh you know you mentioned the deal deal structures are are changing but the
+22:23
+deal teams are also changing uh and you know Sarah you guys have hired uh a lot
+22:29
+of ML engineers who are sitting alongside your BD teams and to assess these AI teams just to uh the talent
+22:36
+picture inside pharma uh help me understand what that's looking like from a BD perspective but also a general like
+22:42
+you know buy versus build you know decision- making obviously it's pretty specific, but I'd love to hear Stacy and
+22:48
+Sarah maybe just talk about that briefly. Yeah. So um from the beginning when we set up uh
+22:57
+external scientific innovation the teams one were deeply embedded in really rich
+23:04
+innovation ecosystems with the triangulation of academic science,
+23:10
+venture capital and entrepreneurs coming together to enable um innovation. And we
+23:18
+knew that we needed to have not your not only your traditional business development capabilities, search and
+23:24
+evaluation and transactions, but also the scientific expertise. So we operate
+23:31
+in four regions around the the globe. And in addition to the search and evaluation and transactors that we have
+23:39
+in the regions, we have subject matter experts from our oncology therapeutic
+23:44
+area, immunology therapeutic area, neuroscience and then what we sometimes
+23:50
+call our functional experts. So these are the modality experts both small
+23:55
+molecule and large molecule and then um data science and digital health. So we
+24:01
+have embedded as part of our um evaluation diligence and deal teams that
+24:08
+range of scientific expertise and um my colleague here in California on the data
+24:15
+science and digital health um Eva is actually in the audience somewhere uh and so she's you know a part of our deal
+24:22
+teams and are connected up to what the overall uh innovative medicine R&D and
+24:29
+and broader strate strategies are which allow us to get, you know, really, really precise around what we're looking
+24:36
+for, how we're evaluating things, the types of deals that, you know, we we're
+24:41
+prioritizing. And then, of course, the most important thing is once the ink is is uh dry or before the ink is dry, how
+24:49
+we integrate those into um the our activities to enable sustainable
+24:55
+partnerships. At Adv, we've completely reshaped our
+25:00
+deal teams entirely by hiring in new talent. And so we have a few of my team members in the room. But Sonia, as an
+25:06
+example, is a computational chemist, was a machine learning engineer, trained at MIT with a PhD. Sandy came from an
+25:14
+experience of uh founding a company focused on protein language models and
+25:20
+then was also a biotech investor out in China. And so these new kind of innovative leaders that we're embedding
+25:26
+directly into our deal teams where we'll pair them directly with a transaction leader who's used to kind of running the
+25:33
+penning these typical biotech deals. By bringing those together, we've created a
+25:39
+tremendous amount of synergy in both doing the diligence process fundamentally differently and really
+25:44
+delving deeply into the data generation capabilities, the computational capabilities, running these model
+25:50
+benchmarking and pilots in a much more effective way by also at the same time
+25:55
+still preserving kind of what we need to do to do pharma deals correctly in terms of all the contracting and terms that
+26:01
+would be necessary to bring them to fruition with the level of risk that pharma is typically
+26:07
+accountable for. So, uh, we're going to do a lightning round of one or two questions here. Um,
+26:12
+Jonah, I'll start with you and we'll go down. Um, what's an area where AI can't solve
+26:18
+can't solve for in our industry? Uh, on what timeline?
+26:25
+Yeah, I mean, I I don't know. I I obviously am very bullish here. I don't
+26:30
+know that I would put anything out of the like can't solve. I I I think there is a reasonable argument I think a lot
+26:36
+about areas where either like we don't want it to solve. So thinking about like safety problems or alignment where we
+26:43
+just like need to remain engaged. Um or a lot of areas and I think about this in my daily work where I frankly just
+26:49
+derive a lot of like satisfaction from doing certain tasks and still like to analyze some data and do this like
+26:54
+Claude is better at it than me. Happy to admit that at this point. Um but still you know I I think there are um points
+27:02
+and certain types of diseases or indications maybe to try to answer the question more directly where you know
+27:07
+the the super unique features of like a given patient very very rare where like you can just imagine the distribution
+27:14
+where perhaps like the confidence is just lower and if we're talking about AI in kind of the large general language
+27:20
+model sense like outside of like hypersp specific you know tune models and assuming those two are not talking to each other then I I think you could see
+27:27
+like some of those areas where it just may not have that level of precision where you know for a given variant for a
+27:32
+particular structure for um you know some indication it wouldn't get there. Um but honestly I think like
+27:38
+increasingly putting those pieces together like the models will figure that out. The pieces are there. It it's
+27:44
+hard for me to see like a a genuine use case where it's like oh no no that's just like completely off. I I was expecting that but I'm glad
+27:50
+Sarah similar to you and I'm extremely bullish in this field. that I think it's only a
+27:56
+matter of time of what AI can solve and we see about 300 companies every month
+28:01
+and so it's uh that velocity of being able to see those improvements in real time week on week improve so
+28:08
+significantly has been incredible to experience but in terms of where we see limitations today on the next two month
+28:16
+cycle uh one is just around long horizon planning so as we think about really
+28:21
+building agentic systems and our core processes in pharma Clenv is one that I kind of mentioned
+28:27
+earlier, but one of the biggest things that the head of clinical development asked me to help him solve is to bring
+28:33
+down his study startup timeline from 14 months down to nine months. And with that, the clinical study startup process
+28:39
+at ADVI involves around 80 different substeps and touches around a 100
+28:45
+different stakeholders in large pharma. And so being able to develop an agentic system with that long horizon planning
+28:53
+while at the same time being able to orchestrate all those subprocesses and stakeholders and reimagine it all
+28:59
+entirely end to end has been a challenge that we're continuing to work with partners around and certainly doing
+29:05
+workshops with players like Enthropic has helped us really plan that in more detail. The second area is just around
+29:11
+causal reasoning and as we all know AI is extremely good at correlation and really being able to sift through and
+29:17
+understand patterns really effectively but driving that next horizon into
+29:22
+really understanding causality is critical and we're encouraged by players like Zara who will speak later and some
+29:28
+of the work that they're doing along with many other academic players into really understanding the causal elements
+29:35
+of biology. That's really critical. The third that I'll point out is really around kind of low data regimes. And so
+29:42
+uh I mentioned kind of modalities where there are low data available. There's
+29:47
+also just patient subopuls for which biology is unknown. Uh first-in-class
+29:54
+mechanisms of actions where there's just less data that's known. And so we're continuing to push those frontiers, be
+30:00
+much more creative in how we we actually prospectively generate that data. and and I think it's just a matter of time
+30:06
+of when these models will become uh performant enough to generate insights
+30:11
+that meaningfully move the needle for pharma in these areas as well. I think AI is like this is the most
+30:18
+obvious thing probably anybody's going to say all day, but it's like this generational accelerant of human capabilities, right? And um I think it's
+30:25
+going to lead to an era of pipeline abundance. And I think what it can't solve is how you capitalize and finance
+30:32
+that pipeline and how you optimize for patient outcomes. Um and so I think we're gonna have to see like a total sea
+30:39
+change in the capital formation and regulatory backdrop for for patients to to see the transformation they deserve.
+30:45
+Yeah. Deal structure is going to be a big focus. Stacy, you want to wrap us up? I will pick up on the thread Sarah that
+30:51
+you um dropped around causal um causality. I think the and I'll pair
+30:58
+that with the scientific conviction that it takes to really, you know, forge new
+31:03
+territory with novel biology. Um I think that although some are trying and I hope
+31:09
+I'm wrong I think that's going to be a a real a real challenge and one of the things that makes um it's such a
+31:17
+synergistic partnership with you know enabling new design make test regimens
+31:23
+with the scientific judgment and conviction of going after novel targets
+31:28
+novel novel biology and then I guess because this is a partnering panel I'll throw in another one which is although
+31:38
+AI is enabling search and evaluation and even due diligence, I don't think it's
+31:43
+going to replace the trust building and the relationship development that it takes to form partnerships. Um, so that
+31:52
+that would be the wrap-up. Great. Well, we're we're over time. Uh, panelists, thank you so much. Please give a round of applause. Thanks
+31:58
+everyone.

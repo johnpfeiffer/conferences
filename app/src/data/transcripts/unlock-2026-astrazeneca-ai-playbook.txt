@@ -1,0 +1,1042 @@
+https://www.youtube.com/watch?v=mMBnE4kFPK4&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=13
+
+"Our core thesis at AstraZeneca is that AI is going to change absolutely every single step in what we do in terms of drug discovery and clinical development."
+
+Jorge Reis-Filho, AstraZeneca's Chief of AI for Science Innovation, on the strategy behind it: why domain-specific frontier models trained on AstraZeneca's clinical trial data are the differentiator, why his team focused on transforming clinical development first, and what it takes to deploy AI inside one of the world's largest pharma companies. In conversation with Michelle Lee, Founder & CEO of Medra.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Speakers:
+Jorge Reis-Filho, Chief of AI for Science Innovation, AstraZeneca
+Michelle Lee, Founder & CEO, Medra (moderator)
+
+
+---
+All right, George. So good to have you
+0:09
+here at Unlock. I know uh you've been
+0:12
+traveling a lot uh all over the place,
+0:14
+conference to conference, so feel very
+0:16
+lucky to have you here. We would love to
+0:19
+start out with you introducing yourself.
+0:22
+Um, I think it's also especially
+0:25
+interesting that, you know, as a chief
+0:27
+AI officer at Astroenica, you actually
+0:28
+have a pathology background.
+0:30
+You just promoted me, Michelle, the
+0:31
+chief AI for science innovation.
+0:33
+Chief AI for science innovation officer
+0:36
+at Astroenica. But I think it's it's
+0:38
+it's exciting that you come from
+0:40
+pathology, not not from AI. So, how did
+0:42
+that come to be?
+0:43
+It's odd. I get it. It is odd. Why would
+0:46
+a pathologist be talking about AI with
+0:48
+you today?
+0:50
+This reason actually is very simple. I
+0:53
+live through and contribute to the very
+0:57
+disruption of my specialty.
+0:59
+Uh with the development of deep learning
+1:01
+and then self-supervised learning
+1:03
+foundation models in pathology, we
+1:05
+actually had to reimagine our whole
+1:08
+profession. And as we contributed to
+1:10
+that development, we've seen these patch
+1:14
+level and whole slide level foundation
+1:17
+models perform over 30 tasks that could
+1:21
+only be performed by pathologists before
+1:23
+at a level that beat us. It's in a way
+1:26
+you can say that it has attained super
+1:28
+intelligence in many ways because the
+1:30
+level of reproducibility and accuracy
+1:33
+surpasses what we can do. So that's how
+1:36
+I ended up doing AI. So I I'm a
+1:38
+pathologist by training. Went to do my
+1:40
+PhD. I had to retrain as a
+1:41
+bionformmatician the turn of the
+1:43
+century. So you can see how old I am.
+1:46
+Then um career evolved at the nexus of
+1:50
+pathology omics and bionirmatics
+1:53
+computational biology. And in 2015 I
+1:55
+fell into the rabbit hole of
+1:57
+convolutional neural networks uh applied
+2:00
+to computer vision or pathology images.
+2:02
+And the rest
+2:04
+is what she dubbed to be. Yeah. Um, I
+2:09
+had a bit of an an orthodox career
+2:13
+because, uh, for many years I worked
+2:15
+very closely with Goldman Sachs merchant
+2:17
+banking uh, in the health tech, big
+2:21
+data, tech buyer space. It's their
+2:23
+private equity arm and we developed a
+2:25
+few businesses in that area. Um, super
+2:28
+excited to be here with you today.
+2:30
+Definitely. So
+2:33
+obviously you know you are leading a lot
+2:37
+of AI efforts across many areas at
+2:40
+Astroenica.
+2:41
+Pathology is definitely one area.
+2:44
+Clinical trials is another area. How how
+2:47
+is Astroenica thinking about the
+2:49
+development and also adoption of AI
+2:52
+across the organization? Our core thesis
+2:55
+at Astroenica is that AI is going to
+2:58
+change absolutely every single step of
+3:01
+what we do in a in terms of drug
+3:04
+discovery and clinical development. It's
+3:06
+a it's granted. We'll accelerate drug
+3:09
+discovery. We'll transform clinical
+3:11
+development. We'll optimize clinical
+3:14
+operations which is a real challenge
+3:16
+actually
+3:17
+and also offer patients journeys that
+3:21
+are more seamless,
+3:24
+more um impactful and meaningful, not
+3:27
+prompts all the time that there is
+3:28
+something that they need to be alert to
+3:30
+provide those journeys to the patients.
+3:32
+That really makes sense. I would submit
+3:35
+however
+3:36
+that for each one of these fields the
+3:39
+time horizon is different.
+3:41
+My team is primarily focused on
+3:43
+transforming clinical development. First
+3:46
+and foremost, our core strategy here is
+3:51
+to utilize domain specific frontier
+3:54
+models
+3:55
+uh to derive new biological and clinical
+3:58
+insights utilizing our key
+4:01
+differentiator our data from clinical
+4:04
+tri. Astroenica has the
+4:07
+I would submit most diverse portfolio in
+4:10
+oncology. Five different classes of
+4:13
+agents that target the cancer cells
+4:15
+directly.
+4:16
+Radiojugates, antibbody drug conjugates,
+4:19
+drugs that target DNA repair, drugs that
+4:22
+target the drivers of cancers including
+4:24
+EGFR mutations, estrogen receptor
+4:26
+signaling and even epigenomics. So five
+4:29
+categories targeting the cancer cells,
+4:31
+three categories leveraging the immune
+4:33
+system to target the cancer cells. So um
+4:37
+traditional IO approaches in the form of
+4:39
+bicep specifics second um engages T-
+4:43
+cell engages and now we have going have
+4:45
+gone into cell therapy for solid
+4:48
+malignancies.
+4:50
+We've been acrewing this data for 15
+4:52
+years the translational data. It's a
+4:54
+gold mine. Our idea then is to insource
+4:59
+frontier domain specific foundation
+5:01
+models ideally multimodel in nature
+5:05
+and then utilize our data to reinforce
+5:07
+fine-tune and augment those models to
+5:09
+address four types of tasks.
+5:12
+First patient selection
+5:15
+using multimodal biomarkers. The idea
+5:17
+here however is not to develop a
+5:19
+multimodal biomarker that's so complex
+5:22
+that can only benefit 0.01% not 1% of
+5:25
+the cancer patients. The idea is to
+5:27
+apply maximum parsimony and derive the
+5:30
+smallest set of clinical parameters that
+5:32
+can identify the largest patient
+5:34
+population that can benefit from one of
+5:36
+our drugs alone or in combination.
+5:39
+Things make sense. Yeah, it's not easy
+5:42
+but it's tractable. Second,
+5:45
+to accelerate our phase one and phase
+5:47
+two studies and to derisk their
+5:49
+transition to phase three. Every time we
+5:52
+make a phase three decision,
+5:54
+we we're committing 300 to 700 million
+5:57
+dollars to a trial. Often times we find
+6:01
+ourselves at the end of those phase two
+6:03
+studies with 40 patients worth of data
+6:07
+having to make one of those decisions
+6:09
+and the data is not clear. It's not
+6:10
+self-evident.
+6:12
+We are leveraging one of the properties
+6:14
+of these uh frontier foundation models
+6:17
+that is to generalize from smallest data
+6:20
+sets. if we had already reinforced the
+6:23
+the model adequately with previous data.
+6:26
+So we're utilizing for that purpose that
+6:28
+transition. The third point is how do we
+6:31
+increase the probability of technical
+6:34
+success of our phase three studies
+6:37
+here is we leverage another property of
+6:39
+these frontier foundation models that is
+6:42
+to generalize from sparer data. In phase
+6:45
+three, we have a lot of patients, but we
+6:47
+don't have the depth of the number of
+6:50
+modalities of data and the depth of
+6:52
+information that we have in a phase one,
+6:53
+phase two. So, how do we then extract
+6:56
+the most insights?
+6:58
+All of these three areas are just to
+7:01
+contribute to our key goal that is to
+7:03
+devise the next generation of
+7:05
+combination treatments that will be
+7:08
+transformational for patients. Cancer,
+7:10
+it's very unlikely that cancer is going
+7:11
+to be cured with a single drug. So
+7:14
+devising the combinations
+7:16
+not on the basis of empiricism but
+7:19
+informed by data and the insights that
+7:21
+come from these models is essential. So
+7:24
+that that's what what we're focusing on
+7:26
+with time horizon 2020.
+7:28
+Yeah. And I I I think what it's really
+7:30
+interesting here is a lot of the
+7:32
+speakers here today are really thinking
+7:34
+about how to use AI for early discovery,
+7:37
+but uh in your case, you're really
+7:39
+thinking about how to use AI um for
+7:41
+clinical trials and to be able to um
+7:43
+accelerate uh uh these clinical
+7:46
+operations.
+7:48
+How does then the regulatory aspect play
+7:51
+a role here? Right? because in early
+7:53
+discovery you don't really you know you
+7:54
+don't really have to think about the
+7:56
+regulatory um uh barriers. How are how
+7:59
+are you guys thinking about the
+8:01
+regulatory barriers? Are there any in
+8:03
+using AI?
+8:04
+Thank you Michelle. That's such a great
+8:05
+question. And yesterday actually at the
+8:07
+American Association for Cancer Research
+8:09
+meeting we had actually a joint session
+8:12
+with the FDA
+8:13
+to discuss exactly this topic. How do we
+8:17
+move away from the idea of regulators
+8:19
+being bottlenecks
+8:21
+to a point that regulators actually come
+8:24
+to become enablers of innovation by
+8:27
+providing really clear clearly defined
+8:29
+guard rails?
+8:30
+If we have good guard rails then we can
+8:33
+develop our models in a safe and
+8:35
+responsible manner and benefit those who
+8:39
+need the models the most the patients.
+8:42
+So we have moved a long way from our
+8:46
+first submission back in 2023 to to the
+8:49
+FDA uh through Astrazanica to now
+8:52
+because they invite us to seminars. They
+8:54
+want to iterate with us and a really
+8:57
+important development that has happened
+8:58
+not only with the FDA but also with some
+9:02
+professional uh groups in Europe, the
+9:05
+European Society of Medical Oncology.
+9:07
+It's coming to become clear that when
+9:10
+we're devising biomarkers
+9:13
+through AI not with AI through AI where
+9:16
+what they're predicting is prognosis or
+9:19
+predicting response to treatment
+9:22
+validation is absolutely essential and
+9:25
+the rules for the validation have been
+9:27
+well defined. If it's a predictive
+9:29
+marker, it needs to be on the basis of a
+9:31
+prospective study. That's all fine. But
+9:34
+there was one change, fundamental
+9:36
+change.
+9:37
+That explanability
+9:39
+in me make in mechanistic understanding
+9:42
+is no longer mandatory. It's only
+9:45
+desirable. So imagine but you have to
+9:47
+validate everything that you every
+9:51
+biomarker that you derive in independent
+9:53
+cohorts that are sufficiently sized and
+9:56
+fit for their purpose.
+9:58
+But you do not need to explain it
+10:00
+mechanistically to its entirety.
+10:03
+Yeah. And I find this so important
+10:04
+that's so important for for for AI
+10:07
+because that is one of the major
+10:10
+bottlenecks in in the past of the
+10:12
+regulatory aspect of having to explain
+10:14
+but you know with humans uh you can try
+10:17
+to explain your thought process but AI
+10:19
+is a little harder but it sounds like
+10:20
+there's this movement to go from from
+10:23
+the past to really think about where AI
+10:25
+is very powerful at and then how do we
+10:28
+actually also address its weaknesses.
+10:30
+But but but but here Michelle let's just
+10:32
+stop for one second and think here if
+10:35
+we're making predictions that are above
+10:36
+and beyond what we could derive with
+10:38
+through heristics or just through linear
+10:41
+models. Um and we have to explain this
+10:45
+with semantics. We may be missing all of
+10:48
+the nonlinear correlations that are
+10:50
+heavy in the latent space and trying to
+10:52
+collapse that into words and semantics
+10:54
+that may not explain the whole process.
+10:56
+Yeah. And the other point is that if we
+10:59
+go for explanability
+11:01
+from a biological standpoint, it's not
+11:04
+too difficult to retrofit a narrative
+11:06
+even though it's not really what it is.
+11:09
+So I think uh the regulators and the
+11:12
+professional societies are recognizing
+11:14
+that that this is a limitation and
+11:16
+they're prepared to engage with us to
+11:18
+develop the most capable solutions that
+11:20
+will benefit patients. I think it's in
+11:23
+our common interest to have them
+11:25
+extremely well validated to have very
+11:27
+clear evaluations and benchmarks to have
+11:30
+SOPs for the benchmarks because we don't
+11:32
+want people gifying uh the benchmarking
+11:35
+exercise again. Yeah. Uh but when you
+11:38
+when we get there I'm certain that the
+11:40
+patients will start benefiting from
+11:42
+those
+11:42
+definitely. Well, you talk about this um
+11:47
+emerging kind of approach of FDA through
+11:49
+partnership. Another thing you would
+11:50
+also talk a lot about is that we can't
+11:53
+be building AI in isolation. So I would
+11:56
+love to hear also how Astroenica is
+11:59
+thinking about partnerships with
+12:01
+academia, partnerships with biotechs and
+12:04
+just broad partnerships
+12:06
+um uh and how you're especially in the
+12:08
+field of AI where so much is happening
+12:10
+across this whole ecosystem. How are you
+12:13
+also thinking about building those
+12:15
+partnerships beyond just within
+12:17
+Astroenica? Michelle, you know this
+12:20
+better than I do, but the pace of AI
+12:22
+development is unprecedented. We've not
+12:24
+seen anything developing at this pace
+12:26
+and being adopted at this pace before in
+12:29
+humanity's history.
+12:31
+Um there's the compounding of
+12:33
+technologies as well as we see the most
+12:36
+capable frontier models becoming more
+12:38
+and more competent smashing every
+12:40
+possible benchmark and increasing in
+12:42
+their ability of reasoning um several
+12:46
+fold every couple of weeks and the
+12:49
+length of tasks that agents can perform
+12:52
+increasing doubling every so and so
+12:54
+weeks. So this component technologies
+12:56
+has basically disrupted everything that
+12:59
+we do in a large organization
+13:02
+like a pharma company. We have many
+13:05
+processes innovation is hard to let's
+13:09
+say foster within this ecosystem. So we
+13:13
+have reasoned that for us to be able to
+13:16
+deliver the solutions that will benefit
+13:18
+patients directly we had to create an
+13:20
+ecosystem of partnerships. So we have
+13:22
+partnerships with hyperscalers.
+13:25
+We have partnerships with frontier AI
+13:27
+labs. Then we have partnerships with
+13:30
+specialized AI companies. Many of them
+13:32
+are public. We have with tempos with
+13:34
+pathos. We acquired Modella AI. We have
+13:38
+partnerships with Emuli, Okin, Evanova
+13:41
+to address different parts of our the
+13:45
+journey from drug discovery to clinical
+13:48
+operations and real world. So we we have
+13:51
+all these partnerships running. Then we
+13:54
+have a fourth dimension that's super
+13:55
+important. Partnership with academics.
+13:58
+I spend more time with academics now
+14:00
+than I used to spend when I was at
+14:02
+Memorial Zone Katherine.
+14:04
+It's because we need to see the
+14:06
+innovation where it's happening. We need
+14:08
+to see around the corner from around the
+14:10
+corner.
+14:11
+Yeah,
+14:11
+we spend a lot of time with them
+14:13
+ideating and co-creating. I think that
+14:15
+the word here that's really important is
+14:17
+co-creation. And fifth, that actually
+14:20
+was something that only happened in
+14:22
+September last year that we brought into
+14:25
+this ecosystem, the patient advocates.
+14:29
+Without the patient voices, we're
+14:32
+developing solutions in particular for
+14:34
+the end part of of that whole spectrum
+14:37
+that were may not have been entirely fit
+14:40
+for their purpose. And I actually was
+14:42
+humbled by the degree of sophistication
+14:44
+of some of these patient advocacy groups
+14:47
+in terms of how they empowering the
+14:48
+patients to uh have access to more
+14:52
+information to have access to reasoning
+14:55
+through AI solutions. It's incredibly
+14:57
+inspiring. So we brought them to play
+15:00
+with us. Now there's one final dimension
+15:02
+that I'd like to discuss. Imagine so
+15:04
+those five different hyperscalers
+15:06
+frontier specialized academics and
+15:10
+advocates but then we think about it in
+15:12
+in the form of three layers. We have the
+15:15
+model layer and for the models the data
+15:19
+diversity required to pre-train those
+15:21
+models and the volumes far supersede
+15:24
+what we would have in pharma. So we do
+15:27
+this in partnership with academics with
+15:29
+frontier labs. Then there's a second
+15:32
+layer. as a solution layer. That's where
+15:34
+we play. We get those models used in our
+15:37
+data to reinforce, fine-tune, augment
+15:39
+these models to address specific sets of
+15:41
+questions. We create a gentic framework
+15:44
+that connects the models to our data.
+15:47
+Then there's a third layer that's
+15:48
+application layer. So imagine that we we
+15:51
+have the solution, we develop something
+15:52
+that's really going to benefit patients
+15:54
+and we can ship and for instance we
+15:57
+shipped one last year that received
+15:59
+breakthrough device designation by the
+16:00
+FDA that we do then with partners but
+16:04
+different sets of partners that are the
+16:06
+diagnostic companies. So with that with
+16:08
+that approach we're we're trying to
+16:11
+deliver the AI innovation in a in an
+16:14
+impactful way.
+16:16
+Yeah. And so we were just talking right
+16:19
+about this idea of with how fast AI is
+16:22
+advancing, it could be very soon where
+16:25
+we can have a one person, you know,
+16:28
+billiondoll drug discovery company. You
+16:31
+don't need a lab anymore. You you just
+16:34
+need agents. How is Astroenica thinking
+16:36
+about that? Is that a partner potential?
+16:39
+Is that a threat to how drugs drug
+16:41
+discovery is done? as a pharma company
+16:43
+that's a Fortune 500, how are you
+16:46
+thinking about I guess this landscape
+16:49
+changing right beneath our feet?
+16:51
+I think that's it's such an important
+16:53
+question here, Michelle, because we
+16:56
+accept that the current processes will
+17:00
+be challenged by the technologies that
+17:02
+are being developed. We are seeking to
+17:04
+reimagine ourselves and that's the very
+17:06
+reason for us to create an enterprise AI
+17:09
+unit at Astroenica. 900 people strong
+17:12
+now seeking to derive the most impactful
+17:17
+innovative solutions and introduce into
+17:19
+our system in the form of repeatable
+17:22
+patterns solutions that we can then
+17:25
+transfer learn to other domains.
+17:27
+Mhm. and the creation of a group that's
+17:31
+all about transformation.
+17:34
+How do we upskill and transform our
+17:37
+workforce so that they can be the most
+17:40
+capable versions of themselves to
+17:43
+address the challenges that we face in
+17:45
+drug discovery, clinical development,
+17:47
+clinical operations, first principles
+17:50
+and it's not easy. It's a an over
+17:53
+100,000 FTE strong company. So, how do
+17:56
+we get all of our employees embarking on
+18:00
+this journey of AI transformation? It's
+18:03
+been a privilege actually to try and
+18:06
+write a book as we go along. It's a type
+18:08
+of transformation that we're
+18:10
+experiencing collectively for the first
+18:12
+time. People may borrow some concepts
+18:15
+from previous transformations that
+18:17
+happened, but this one is different
+18:19
+because the pace is so high.
+18:22
+Yeah.
+18:22
+It's hard to match.
+18:24
+Yeah. Well, a final question for you,
+18:27
+George. Um, the theme of this conference
+18:30
+is cutting through the hype and
+18:32
+obviously there's true transformation
+18:35
+occurring in AI, but there's also
+18:38
+possibly some overpromises uh being
+18:42
+tossed around. How are you thinking
+18:45
+about what is real and what what is
+18:47
+hype? How are you thinking about even
+18:49
+determining what are the types of
+18:51
+investments and types of technology that
+18:54
+that Astroenica should be making right
+18:58
+now?
+19:00
+That's the billion dollar question. What
+19:02
+do you mean? So
+19:05
+evolves benchmarks.
+19:08
+We have to be datadriven here. The
+19:10
+decisions in terms of investments
+19:12
+require very clearly and well
+19:14
+articulated evaluations and benchmarks.
+19:17
+task specific end to end and actually a
+19:20
+lot of ideation and co-creation in terms
+19:22
+of setting up those benchmarks for
+19:25
+open-endedness
+19:27
+because many of the questions that we
+19:28
+have are open-ended.
+19:30
+They have not been answered before and
+19:32
+we are seeking to derive those new
+19:34
+answers on the basis of new uh models um
+19:38
+or assembles of models that we bring
+19:40
+together. It's still a bit of a dark
+19:44
+heart
+19:45
+for the known tasks. Those we actually
+19:48
+have agentic systems that run benchmarks
+19:50
+across all models that we have or across
+19:53
+all agents as well. We have
+19:55
+leaderboards. We compare them
+19:57
+head-to-head and we try to deploy the
+19:59
+right model through the right agentic
+20:02
+framework to derive the information and
+20:05
+intelligence we need to have access to.
+20:07
+Yeah. But what what specific areas are
+20:10
+you most excited about right now?
+20:13
+I think
+20:16
+multimodal
+20:18
+uh predictions
+20:20
+including time as a first dimension.
+20:22
+Imagine early fusion single patient
+20:26
+representations one vector per patient
+20:29
+where we can predict the patient
+20:30
+trajectories because once we have access
+20:33
+to that we can start doing the
+20:34
+counterfactuals.
+20:36
+we can start modeling the trials in a
+20:38
+better way. We can start extrapolating
+20:40
+from small sample sizes. So I think for
+20:43
+in particular for the main purpose of my
+20:45
+team that is to transform clinical
+20:47
+development having access to these
+20:49
+multimodal foundation models that have
+20:53
+that embed time as well
+20:55
+would be really important. Yeah,
+20:57
+when we get there, I would submit that
+21:00
+even the way that we submit our trials
+21:04
+for consideration by the regulators will
+21:06
+change.
+21:08
+There's much that can be transformed.
+21:11
+It's only going to happen through
+21:12
+partnerships and collaboration.
+21:14
+Absolutely. Well, thank you so much,
+21:16
+Jor, for your time and for this
+21:17
+wonderful chat. Um, and thank you for
+21:21
+joining us here at Unlock. Pleasure.
+21:23
+Thank you guys all so much.
+

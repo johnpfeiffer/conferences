@@ -1,0 +1,588 @@
+https://www.youtube.com/watch?v=4IeCzLAoGjw&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=11
+
+A computational prediction is not a drug. Three operators working at different points in the pipeline on where the handoff from model to molecule still breaks, how teams diagnose computational vs. biological failure, and what closes the loop between dry lab and wet lab.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Panelists:
+Anna Marie Wagner, Co-founder & CEO, Transfyr
+Martin Jensen, Co-founder & CSO, Gordian Biotechnologies
+Payal Sheth, SVP Therapeutic Discovery Sciences, Bristol Myers Squibb
+
+Moderated by Alex Morgan, Partner, Khosla Ventures
+
+---
+0:09
+Well, let's start and have the esteemed panel maybe give a little bit of background about yourself and what
+0:15
+you're doing in your day job. So, start with you, Any. Sure, I'll keep it quick. Um, I'm Anorie, uh, co-founder and CEO of
+0:21
+Transfer. I am a failed scientist who then decided math was much easier and became a tech investor. uh and then
+0:27
+spent five years working at the intersection of AI, automation and science at GKO, leading the AI team
+0:33
+there as well as um strategic transactions. And there got obsessed with a couple things that all stemmed
+0:39
+from the fact that we fundamentally don't actually know what scientists do every day. And it turns out if you don't really understand the physicality of the
+0:46
+science, it's really hard to train robots how to do that science. And if you can't disambiguate whether an
+0:53
+experiment failed because the hypothesis was wrong or because someone screwed something up or it was cold today or the
+0:58
+pherommones were off or whatever, you can't actually trust that data in an AI
+1:03
+model. And so we kept observing that these large large data sets that were being consolidated from researchers
+1:10
+across the globe or being created in these large automated labs were training models more about where the science was
+1:18
+done than what the science was supposed to be telling us. Um and so I decided to start transfer really to to understand
+1:27
+how do you build a more mechanistic understanding of how the scientific execution impacts the scientific
+1:32
+results. So we have an observability platform that tries to passively collect as much metadata as possible about
+1:38
+scientific execution so that you can both trust the data that's coming out of that experiment and erase the
+1:43
+information content in that data so that you can train models to understand the mechanics of the science and train
+1:49
+robots to replicate that science as well. Pile, thank you for having me. My name is Pile
+1:56
+Shet. I've been with Bristol Myers Quip now for five years. Um I lead therapeutic discovery sciences. Um and I
+2:03
+I say it's a dream job because just to be part of drug discovery and seeing evolution of technology and now
+2:10
+intersection with AI is what gets me excited and get me out of the bed um every morning. Um I have the privilege
+2:17
+of working across all disciplines um across therapeutic areas and across modalities um which again makes my job
+2:25
+super exciting. Um, and so happy to be here and looking forward to the conversation today.
+2:30
+Martin, yeah, I'm uh I don't know if I call myself failed yet, but I'm a scientist
+2:36
+working on longevity, trying to figure out um why we age and what we can do about it. Um, and I did that in academia
+2:43
+for a while and discovered that aging is essentially a Gordian knot. Uh so I returned my grants, left academia,
+2:50
+started a company uh called Gordian Biotechnology to solve this question of
+2:55
+processes that only happen in a living organism slowly over time. How do we
+3:01
+test hypotheses at scale and how do we generate sort of causal data at scale?
+3:06
+Um so we invented technology that allows us to pull putitive therapeutics in vivo
+3:12
+in a single animal model. Um and see what happens with each of these. We are
+3:17
+somewhere north of a thousand different genetic targets now. Um where we know what happens if you perturb this target
+3:25
+across different organs, hearts, livers, um lungs, uh and then can use that to
+3:30
+try to predict. How do you modulate? How do you bring a physiological system that's declining in a complex way with
+3:37
+all this interplay into the state um that you want it to be in, you know, which is of course more healthy people
+3:44
+uh letting their lives unfold. So the theme is about cutting through the hype. So we're going to talk a
+3:50
+little bit about discovery of new therapeutics and translation so forth. But on the theme of cutting through
+3:56
+hype, what is real as of end of first quarter of 2026? So how many people let's start with biologics. How many
+4:02
+people here have been to Medra or seen what they're doing in automation for antibody discovery? Raise your hand. So
+4:09
+a good fraction. If you haven't, I really suggest you go because it has arrived. Automation for workflows for
+4:14
+antibody discovery that exists. You can go see it. Uh you can be there. There are new platforms on the physical side.
+4:21
+We we've got a platform doing VHS's VH is uh single chain antibbody discovery
+4:27
+and an automated system at openrons. We've got a got a Xvivo lymph node and a company called Prellis. New physical
+4:34
+technology discovering biologics. It's here today. New chemical matter is coming out on the AI side, right?
+4:41
+Generate when public sitting at a 1.6 billion market cap. Even having been
+4:46
+critiqued on how novel their designs are successful company. I'm sure many of you are entrepreneurs would probably be happy uh be sitting where they are
+4:53
+today. Um AOS AWS just released a whole new set of tools for AI antibody
+4:59
+discovery. I don't know if they're the best frontier models but they're certainly democratizing access right
+5:04
+company like Naba which is now able for not all targets but in many cases now zeroshot developable uh molecule design
+5:12
+like the oracle creates an anti or a biologic multifunctional domain biologic that can bind successfully against
+5:18
+multiple targets. So we are in a world where those technologies exist today and are only going to get better on the
+5:24
+small molecule side right um in silicico and recursion through XCNC are in the clinic with AI designed small molecules
+5:31
+again there's been some critique about how novel that chemical matter is but there is a new generation which is clearly quite novel chemical matter so
+5:38
+amic has a heru inhibitor uh in the clinic we know uh isomorphic is going to
+5:44
+go into the clinic soon charm therapeutics has a really good-look pan inhibitor very novel AI designed
+5:50
+chemical matter. So we have crossed the level of frontier and those technology are only going to accelerate.
+5:57
+So the question is where are we going next and what does the future hold? So
+6:04
+one of the things I think pile is interested in people come to you and present their tools their systems
+6:09
+binding accuracy prediction all kinds of different things. what is your interest in the next couple years of what you're
+6:14
+looking for in in in your kind of as the so let's say the acquirer of technology.
+6:21
+Oh thanks for asking that question Alex. So I as you pointed out rightly there's been a lot of um progress as as it
+6:29
+relates to design components. Um uh design is just first step in drug discovery and um and when we think of uh
+6:36
+what we have been doing at Bristol Meers Quib uh we have the predict first approach towards drug discovery as in
+6:42
+you know we try to predict the properties of the molecule that we're optimizing against prior to the
+6:48
+synthesis component. So whether it's across a small molecule large molecule or across other complex modalities. So
+6:55
+that's sort of a great first step. Um I think what we have also done very well and I think that's true for Bristol my
+7:01
+squib and other uh pharmaceutical companies and and many biotech companies is we have created automation um and
+7:08
+leveraged automation workflows in a way that can augment um our aspirations as
+7:14
+it relates to scale throughput um of the biology that we're interrogating. So I think there's been a lot of progress uh
+7:20
+made in that regard as well. And as I was speaking yesterday during our tour at Medra, I think where there remains an
+7:27
+opportunity is the connection between design um and the automation component and orchestration um of those components
+7:35
+together to be able to bridge the continuum of design make and test cycles. So I think that's an area that
+7:42
+we would be looking at very closely as we try to build as many others are what does the future of the lab in the loop
+7:48
+um look like? The other piece I think is uh is is the biology and we talk about
+7:54
+how complex the biology is, how heterogeneous the disease is um and how the context within each um humans right
+8:01
+of how that manifestation of the disease um is going to drive um the efficacy of
+8:06
+the drugs. Um so that's a key area of interest for us because even as we do multiparameter optimization for lead
+8:14
+optimization um of of our programs and we do that really well across certain property space what we're not able to
+8:21
+pre predict is what are the properties that are going to drive that translational relevance um and be able
+8:27
+to bridge uh what we're trying to measure in the lab to actual outcomes in patients. And so that's a key area of
+8:33
+focus as well is that how do we build portabation platforms or disease relevant complex systems into our stack
+8:41
+of technology as it relates to um the continuum of drug discovery um and how
+8:47
+it integrates with AI. So you have couple threads there. One is about data and orchestration. The other
+8:52
+is about biology and translation. So let's distribute those questions maybe an you want to tackle the first one.
+8:58
+Well, I mean maybe just to cut to the trace like it's eval is what's next, right? And that's you we're seeing it
+9:04
+right now at the cutting edge of computer science where you have models that are automatically improving
+9:10
+themselves if given a reasonable evaluation to assess its performance on a given set of tasks, a different cap a
+9:18
+distinct capability area. And the same thing is true in biology. We have incredible models that are capable of
+9:24
+designing infinite compounds for us essentially for free. The question is how are we giving feedback back to that
+9:31
+model around whether it's been successful at the task. And unfortunately that still requires today
+9:36
+doing work in the real world and boring things like assay development still take
+9:41
+a really really long time. And then you add on, oh, we're looking at a really complex multi-system disease and and and
+9:47
+like suddenly we don't even have the biology available to us to do an eval.
+9:52
+And this is this is a this is a problem across the spectrum from very very simple science all the way to these
+9:58
+complex diseases. But I think that's going to be the frontier and it's where we need to invest. It's why we're so focused on that that sort of physical
+10:04
+translation layer. How do I build better tests? How do I automate the testing process? It's why we're so excited about
+10:10
+what automation has the potential to do. If you can build that eval onto an automated system and you can trust the
+10:16
+result of that system, then suddenly you can have these recursive loops where a model is generating an idea, it's
+10:22
+testing the idea, it's getting feedback and it's going on and on and on without human involvement. That is really really exciting. But what we're missing right
+10:28
+now are highquality trustworthy evals where we actually understand the inputs and the outputs and what it's really
+10:34
+telling us. So on the eval side, Martin, you're doing some creative things in how
+10:40
+you move in vivo and try to get results faster. Can you talk a little bit about
+10:45
+that? Yeah, I think the thing that has really happened with AI in the last few years
+10:51
+is that you can immediately have an answer to anything you want, right? Like we've gotten really good at generating
+10:58
+answers and it's becoming increasingly valuable to know what is a good answer
+11:03
+and what is a bad answer, right? We've all gone to Claude and like explain this concept to me. Oh, here's what you need
+11:10
+to know. Here's a citation. Oh, can you give me more on this? Never mind. I made it up. Right? If you don't know your
+11:17
+area, then it's hard to spot those kinds of things. And I think uh the more we
+11:22
+start to rely on AI to tell us what to do um not how to do it, you know, what's
+11:28
+the antibbody, but like how do we treat Alzheimer's or heart failure um the more important it becomes to have causal
+11:36
+validation to test all of these hypotheses against right you can have an
+11:41
+infinite number of hypotheses and if you want to answer questions like what happens in this diseased tissue where I
+11:48
+don't fully understand how the disease works. It happens with age. I don't know why. Um then you should probably go into
+11:56
+that system and generate a lot of causal data. Um which is why yeah we've invented this technology to do at scale
+12:03
+sort of the invivo causal validation testing right so that if you have a million hypotheses um from I don't know
+12:11
+AI mining all of clinical trials and like geo uh then you can go in and say
+12:16
+okay is any of this actually working and then of course you can start to turn that lab in a loop I don't know organism
+12:22
+lab in a loop right lab in an organism in a loop by doing iterative rounds of
+12:28
+that and say now we have learned something about the causal relationships within disease. Um we can now start to
+12:33
+make predictions and then we do one more round in the matter of a year we've sort of gotten somewhere in terms of like
+12:40
+what do we do about heart failure. So on the point of eval ultimate eval in
+12:47
+making a new therapeutic is does it work in a person and cure or address whatever problem they're seeking remedy for. Um,
+12:55
+I am privileged enough to hear every day people come tell me why their new innovation is going to increase chance
+13:01
+of success in a trial. The cynical part the the technoptimist part of me keeps taking those meetings and really excited
+13:08
+about the future. The cynical part of me thinks well there's only two things that have ever consistently increased success
+13:13
+uh in the clinic. The first is the orphan drug act. The second is the rise of biologics and nothing else since then
+13:20
+has actually consistently changed that. So kind of the question for the group is what is the kind of now moment? What's
+13:25
+our chat GPT moment where suddenly this is going to change in some way? Um
+13:31
+let's start with with you now. Yeah, I mean you mentioned the orphan drug act. We actually we've looked to
+13:36
+the rare disease community for a lot of inspiration for what we're doing because what's what's so interesting about it is
+13:43
+I mean let's let's just be level set. The business model of science is fundamentally broken. We have innovation
+13:48
+that is happening at the component level and then we have no ability to systems integrate. So you might spend half a
+13:55
+decade doing a PhD developing the best tool to do X. But for X to actually make
+14:01
+a difference in a patient's life, it needs to be surrounded by a bunch of other components. Right? You might have
+14:07
+made the best little gene editor, but if you can't deliver that to the tissue it needs to target, it doesn't matter. And
+14:13
+so what's been really interesting watching the rare disease community is that they have managed to come together
+14:18
+in a way that classical drug development has not because it's the only way to make it economically feasible to treat a
+14:25
+patient. You can't spend billions of dollars to treat one kid. It just doesn't work. And so when you look at like the baby KJ's story for example
+14:32
+where this is a kid who went from born with a rare disease sequenced his personal little gene edit to a dose in
+14:38
+what was it 6 months something like that first dose in six months treat it cured in nine months like that is that is an
+14:44
+unbelievable timeline and the reason that that happened was because you had all of the components off the shelf.
+14:50
+They exist and that is true by the way for the vast majority of these diseases. We just don't have a good infrastructure to build them together. that tech
+14:56
+transfer process that systems integration is broken. And so looking at communities like that as forcing
+15:02
+functions to leapfrog the entire the rest of the drug development process is really really exciting to us. And and
+15:08
+again it's it's it's easy to get component level advances. It it is much harder to get systems level integration.
+15:14
+But that is actually something I think AI could be quite quite good at is helping with the translation between the
+15:20
+people um and the workflows that they're running to bring these components together more effectively.
+15:26
+Wild, do you have any thing you'd want to add? Yeah, I as I reflect on the question, um
+15:31
+I I I'm a pragmatist, right? I have been 20 years in drug discovery. I've seen a lot of failures and I've seen some
+15:37
+successes, but more failures than successes. And um and and when I think about you know where we are today at at
+15:44
+the intersection of technology um large amounts of data sets including clinical
+15:50
+data sets as well as causal data sets and our ability uh to um amplify our
+15:56
+productivity within our R&D setting. Um I think it's a sweet spot for us to
+16:02
+change sort of that inflection point um in terms of um the decision um uh our
+16:09
+velocity perhaps and and also the quality of decisions that we make um and and if you if you just go back to the
+16:15
+fundamentals of drug discovery, you start with a causal hypothesis. I think if we can get better uh in our
+16:21
+understanding of the causal hypothesis be beyond obviously human genetics that we've done very effectively but actually
+16:27
+look at the clinical signals and let that those clinical signals as well as portabation data sets in an in vitro
+16:34
+setting inform around targets and mechanisms um that could have potential to uh improve our decision quality and
+16:41
+on the back end of drug discovery while we're in lead optimization ensuring that
+16:47
+our experiments are reflected of the disease state and the heterogeneity of the disease states and
+16:53
+not simply measuring what we can technically measure. Um I I think uh a lot of our work when we think of from a
+16:59
+drug discovery standpoint is we're measuring endpoint based on technical feasibility rather than disease
+17:04
+complexity. And so if we can marry the two, I think that's a sweet spot. I don't see um a significant like increase
+17:13
+in in terms of like the probability of success of transition. uh but even an
+17:19
+incremental increase in that POSOS um and our decision quality can have huge
+17:24
+impact on the returns uh if you think if you consider in the big scheme of things the amount of dollars um and and time
+17:31
+that's spent in drug discovery um and so yeah I'm pragmatic I think uh we can change the decision velocity I can we
+17:38
+can change the decision quality um and we can bring good candidates uh to the patients faster um and to me that's uh
+17:46
+that's uh that's an That's incremental progress as it were today uh can have huge returns uh for the patients and and
+17:52
+and for people that are waiting for those medicines. Obviously the future could look very different 10 years from
+17:58
+now and future is not written it's for you to make it to unlock. Do you have do you have something to unlock? Do you have
+18:04
+something to add about probability of success in the clinic? Yeah, I think by default there will not be a chatbt moment for clinical like
+18:11
+improvement if we are asking broadly across um you know all kinds of diseases. we will see greater efficiency
+18:20
+in lots of areas that we already do a lot like you know preparing an IND going through the trials uh going from this
+18:28
+target to how do we make an antibbody that targets it all those are going to get accelerated that's going to be great because it's going to uh reduce the cost
+18:36
+to make an attempt right and therefore to learn something and so I think the industry as a whole will accelerate
+18:42
+because of that there's also a possibility for us to actually change the probability of success across
+18:49
+different disease areas. But uh this will be a uh jagged frontier where the
+18:56
+advancement of the frontier will depend on what data is available and whether in
+19:02
+particular that data contains the answer to your question. So if we want to
+19:08
+improve our um understanding of or our ability to treat Alzheimer's, we have to
+19:13
+ask, do the test systems and the readouts that we have available actually give us information about how
+19:20
+Alzheimer's works? Even if we build a terrific virtual cell um is the answer
+19:28
+to Alzheimer's, which like what is Alzheimer's? It's like a bunch of doctors
+19:33
+decide that this set of symptoms, that's what Alzheimer's is. Maybe it's one thing, maybe it's not one thing, right?
+19:40
+There's some common threads. Um, and then you take a neuron, just one
+19:46
+neuron, and we can now simulate the neurons. So, we can a trillion experiments and perturbations and so forth. But how does that even tie to
+19:54
+what overall happens in the brain and the loss of memory? that is what you're going to read out in your clinical
+20:00
+trial, right? So, do the data sets that you are generating actually encompass uh
+20:05
+everything that's going on um in these diseases? Whenever we overlook that, I
+20:12
+think we will have a sort of faltering frontier where we're not really making progress. Even though we can do
+20:18
+everything more efficiently, we can't do it more effectively uh because we don't have, if you will, the right eval.
+20:24
+Although I think there is there is potentially like a cool opportunity in that jagged frontier which is you know like AI in any field has that right or
+20:31
+broadly has that where you could see that chat GPT moment in weird small places. I'm a teenager and I've got a
+20:38
+gene sequencer at home and I figure out what bacteria is causing my acne and I make my own skin cream. Like that weird
+20:45
+stuff I think could happen a lot faster than we think. And then there's always going to be the stuff that's just like
+20:50
+we fundamentally don't understand this complex biology across the human body, right? And how well adapted is the all
+20:56
+the current infrastructure? Because people are like, you know, sorry, I'm going to piss off Michelle, but like robots are cool, but BMS already has a
+21:03
+lot of robots, right? Like if you what you need is like squirt liquid onto cell, we can do the heck out of that
+21:10
+already. So what are the problems that are solved by that kind of approach? I work in longevity, right? So what
+21:15
+happens when you're studying a process that takes years, right? And that is just slow. What are you going to do
+21:22
+there other than, you know, give up and do cancer instead? But like no offense to the cancer researchers in
+21:28
+the audience, they have their own problems, right? Mutation, adaptation, uh but but do do
+21:34
+we have an infrastructure of data generation, causal validation that is fit for purpose to the problems we want
+21:40
+to solve? And then as a society you know do we really want to solve let's say Alzheimer's or other aspects of aging I
+21:47
+do but uh if we do then we should be thinking about what's the data that we
+21:53
+need to start generating now because it cannot be sped up we need to monitor the situation over you know years decades
+22:01
+and the AIS will get smarter in that period of time and it won't help us because we can't point them to the right
+22:06
+information to look at so I can't help responding to some something that you said about business
+22:12
+models and most of the focus of this is on AI science discovery but remember it
+22:18
+costs about 1.7x to commercialize a novel therapeutic than it does to
+22:24
+develop but there's an interesting thing happening in AI that it may be sort of
+22:29
+parallel but AI prescribing is arriving like it you know it's available in Utah through dctonic in a limited way but it
+22:37
+is going to be the future there's also consumerization of delivery of therapeutics. There's that's happening
+22:42
+as a trend. So I I would say that we can predict there are dramatic changes in
+22:48
+the distribution of therapeutics and interventions in the next decade and
+22:53
+that will trickle down into the velocity that innovations that you might have on the basic science side actually get into
+22:59
+people and as you plan out the future of discoveries you make. So let's talk about the future and you know we talked
+23:05
+a little bit about you know uh personalized therapeutics and of one therapeutics. Well, and also about
+23:11
+complex spaces in cancer. So, Sid Subbrani went into founder mode on his
+23:17
+cancer and spun up a whole lot of technology to build a personalized approach to treating his problem. Now,
+23:23
+if you look historically at what will become new things in the future, it's what are very wealthy people with a lot
+23:29
+of resources doing with technology. prices and and innovations bring those things down to to addressable to the
+23:36
+let's say the average person and regulation isn't regulation you know they come in tandem but back there's right to try in many
+23:43
+states you know that's it's actually increasing over the next couple months what do we need for infrastructure to
+23:50
+basically have end of one for some of these complex conditions like cancer where you know what what is what is what
+23:56
+are the gaps to get there personalized essays I I I just I always
+24:02
+come back to Evals. I think I think the regulation is a problem right now, but to your point that's catching up. Um and
+24:07
+you have several states in the United States, you have other countries that are making it easier and easier and easier for individuals to try whatever
+24:13
+they want on themselves. And so being able to create a personalized EVO, a
+24:19
+personalized assay, that to me feels like the unlock plow. Yeah, I would say patient signatures um
+24:26
+related to the diseases, right? like so individual patients would have different signatures whether it's OMX patterns
+24:32
+right transcrytoics and then if you um layer in like the genetics and um and
+24:38
+the context of that patient um I I think that's going to inform around um you
+24:43
+know what yeah what that what that therapy arc is going to be for those individual patients and yes and and
+24:49
+could have a customized component to that but understanding the disease state in the patient body context I think is
+24:56
+going to be really important um as we think about like what that future of personalized medicine could look like
+25:01
+and then therefore treatment as well. Yeah, definitely the eval right you can
+25:07
+see in diseases where it's sort of relatively easy to tell whether it's
+25:12
+working or not. So cancer like are the cells gone infectious disease everything changes fast then people will be able to
+25:19
+run these n equals1 experiments and like get a good readout there will be questions around like are the assayas
+25:26
+legit and so forth if we aren't doing clinical trials there will be ripe opportunity for people to create BS and
+25:32
+sell it to desperate PE patients right um but again what happens for a slower
+25:39
+disease right like I want to prevent my cancer from appearing How do you measure whether it's true? Like RCTs are uh very
+25:46
+good fit for purpose for certain things and once we go n equals 1 uh it really becomes a question of do we create
+25:53
+bodies these could be government these could be private that uh robustly
+25:59
+validate the predictive validity of different markers in aging. We have all
+26:04
+these clocks that you guys can buy and none of them are validated. Sorry. Right. like we don't know if they
+26:10
+respond positively to a drug that just modulates your immune function. So what are those entities going to be? What's
+26:16
+going to be their consumer reports for measuring your disease in cases where it's not obvious? I think that'll make
+26:23
+uh difference. So Ron Alpha from Noetic presented one set of approach in in cancer. But now
+26:32
+let's take we'll move into the what is let's assume some of the hype all works out and some of the ways we talked about
+26:38
+a lot of things do make a lot of progress on the vectors that they seem to be on Martin you you know mentioned
+26:44
+the concept of the jagged frontier so where are the areas where they're just a lot or disease areas therapeutic areas
+26:50
+what are the types of problems where people really are going to run into trouble even with access to all the
+26:55
+kinds of technology changes in regulation all the things that we talked about where is it still going to hard and where should people in the audience
+27:01
+be working on important new problems? Yeah, I think we covered a little bit earlier like if it doesn't happen in a
+27:07
+cell and therefore we can't apply all of our you know lab stuff that can look at
+27:12
+individual cells if you need to zoom out to physiological uh organismman scale
+27:18
+right like we do we have tools there where we can do a lot measure a lot and then if it can't be accelerated right if
+27:25
+it takes a while for your biological process to happen especially in humans then you better start now so I think
+27:32
+those are the two big questions of like what scale do I need to be looking at and uh how fast can I possibly generate
+27:40
+data even if I had a trillion dollars and was allowed to like parallelize anything am I just going to have to wait
+27:46
+uh and then you know start now and find ways where you can uh do more without waiting
+27:52
+anybody have anything else on that theme maybe I'll just one of the things we
+27:58
+were talking about backstage um there's that I'm optimistic about I'm I'm generally a cynic but you know we've
+28:04
+been effectively trying in this space for 30 odd years to make biology an engineering discipline and there's been
+28:10
+this culture clash between the computer scientists who are like what are all you idiot biologists doing like we should be
+28:17
+able to make this engineering and repeatable and reproducible blah blah and then the biologists saying just leave me alone you don't have a clue
+28:23
+like biology is complicated we actually um we have all of our engineers do serial dilutions as part of their
+28:29
+interviews like these are like computer scientists not not biologists um to help bridge that cultural divide. But one of
+28:34
+the things I'm most optimistic about is actually what you see happening in the computer science community with AI specifically is that the biologists were
+28:41
+kind of right um and that where computer science ended up is in a much more biological place. We don't know what
+28:48
+happens inside a model in the same way that we don't really know what happens inside of a cell and certainly not what happens inside of the body. And so you
+28:54
+have these two communities now that are coming from a much more similar place in their approach to their science that
+29:00
+that really does create the opportunity and the mutual respect uh to start overcoming some of the gaps in that in
+29:06
+that jagged frontier. Kyle, why don't you end us with any wrapping up comments?
+29:12
+So I forgot to mention in my introduction, I'm an engineer by training. So it's it's in my blood to
+29:17
+build things. Um and I happen to be a scientist and a pharmacologist. So I feel like I I'm excited about the
+29:24
+intersection of disciplines when we see we look around the conversations in the room around drug discovery. It's not
+29:31
+just biologists talking to biologists, right? It's it's biologists talking to engineers talking to computational
+29:37
+scientists. That's exciting because I feel like the synergies of the discipline is what's going to bring a
+29:43
+step change in how we approach drug discovery. And if you layer in AI as as
+29:48
+sort of that um discovery intelligence component um I I I I I I think you know
+29:54
+even as someone who's very pragmatic as I said before there's a lot to be excited about in the future.
+30:00
+Well uh let's end on that. There's a lot to be excited about and I wish you all the best in unlocking the future of
+30:06
+cures and do better treatments for all of us. Thank you.

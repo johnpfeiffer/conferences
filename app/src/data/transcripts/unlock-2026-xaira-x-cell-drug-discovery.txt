@@ -1,0 +1,744 @@
+https://www.youtube.com/watch?v=B8t5aEYbeOM&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=15
+
+A technical breakdown of X-Cell, Xaira Therapeutics' approach to AI-enabled drug discovery, from the team building it.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Speakers:
+Ci Chu, SVP, AI-Enabled Discovery, Xaira Therapeutics
+Bo Wang, SVP & Head of Biomedical AI, Xaira Therapeutics
+
+---
+
+All right, everyone. Let's get started.
+0:07
+I My name is Suchu. I go by Chu as in
+0:10
+Chewbacca. It's a lot easier to say that
+0:12
+way. I lead hyperbiology at Zera. And
+0:14
+this is my partner in crime, Boen. Um,
+0:17
+who leads biomedical AI at Zera. Zera is
+0:20
+a AI drug discover. What that means is
+0:23
+we work on drug discovery to deliver
+0:26
+patient care. But at the same time, we
+0:29
+also build AI models across protein
+0:32
+design, predictive biology, virtual cell
+0:35
+and patient models to accelerate that
+0:38
+drug discovery process. Today our talk
+0:41
+will be mostly focused on the virtual
+0:42
+cell predictive biology models.
+0:45
+Before we go into all the technical
+0:47
+details about virtual cell which we call
+0:49
+XL because everything in ADA start with
+0:51
+X, what's our vision for Excel? Well, we
+0:55
+want to build a model that's trained on
+0:57
+massive causal data and can predict
+0:59
+perturbation effects in non-scalable
+1:01
+models. It happens in three steps.
+1:04
+Number one, we build massive causal
+1:07
+data, interventional data where you know
+1:09
+the perturbation and effect the um uh
+1:12
+intervention and outcome and we build a
+1:15
+model on top of that that can predict
+1:17
+forward and backward counterfactual
+1:19
+problems. Forward as in if I do this to
+1:21
+the cell what will happen to the
+1:24
+molecular state of the cell. Reverse
+1:26
+being if I want to move cell from a sick
+1:28
+state to a healthy state what is the
+1:30
+perturbation I have to do thereby give
+1:32
+you target ideas. If we can do that we
+1:35
+think it will enable a whole host of
+1:37
+translational applications towards the
+1:38
+right from target prioritization to
+1:40
+mechanistic discovery to patient uh
+1:43
+stratification.
+1:45
+But another equally important part of
+1:47
+the model is we wanted to be able to
+1:49
+generalize to unseen context and that's
+1:51
+because just like many other domains in
+1:53
+biology uh in AI biology is also one
+1:57
+where there are datari regimes these
+2:00
+cell autonomous systems where it's easy
+2:02
+to generate massive data at scale and
+2:05
+data poor regimes in all of your
+2:08
+pre-clinical models in mouse in patients
+2:11
+in organoids where it's not quite easy
+2:13
+to generate data at scale and test
+2:15
+exhaustively to build a model that can
+2:17
+bridge from data rich regimes to data
+2:19
+poor regimes eventually make predictions
+2:21
+in human exactly is the holy grail for
+2:24
+for this field.
+2:27
+What what do we think are the data
+2:28
+that's needed to make this happen? Well,
+2:30
+we think this will involve descriptive
+2:32
+data. What a skin cell is and what a
+2:35
+heart cell is. Perturbative data which
+2:38
+I'll talk about for the most part of
+2:39
+this talk and translational data. Now
+2:42
+importantly most of the B models first
+2:45
+generation of virtual cell models for
+2:47
+example SGPT pioneered by Bose lab in
+2:50
+University of Toronto are all trained on
+2:53
+descriptive data curated by cell by gene
+2:56
+or human cell atlas and they do very
+2:59
+well on descriptive tasks surpassing
+3:02
+older generations of technology but
+3:04
+there's many reports that they don't yet
+3:06
+outperform simpler methods on
+3:07
+counterfactual questions if I did this
+3:09
+to the cell what would happen and we
+3:10
+think that's largely a data limit
+3:12
+computation problem and the perturbative
+3:14
+data in the middle is what was needed to
+3:17
+teach this model about causality and
+3:19
+that data is much harder to generate at
+3:20
+scale and when we started this effort
+3:23
+that's exactly where we focus on now
+3:25
+there are many ways to generate
+3:27
+perturbative data the technique that
+3:29
+we've been focusing on is perturbse seek
+3:31
+pioneered by a viviver and many um
+3:34
+inventors in academic field and this
+3:36
+combines high throughput pulled crisper
+3:38
+prohibations with single cell RNA seek
+3:41
+technology
+3:42
+two two techniques that came of age
+3:44
+recently to deliver these rich matrices
+3:47
+of data that's critical for machine
+3:48
+learning. Now even though this has been
+3:50
+demonstrated in academic it's very hard
+3:53
+to do this at scale as we quickly
+3:55
+learned when we talk about doing this
+3:57
+for genome scale Alice building we're
+3:59
+talking about harvesting hundreds of
+4:01
+millions of cells over often a 16-hour
+4:04
+day and I guarantee you by the end of
+4:07
+that day if you work on fresh cells you
+4:09
+can readily detect stress signals from
+4:11
+the cells and from your scientist who's
+4:13
+been there for 16 hours and all of that
+4:16
+artifacts will go into the models that
+4:17
+both team is going to have to So we
+4:19
+realized early on that there's a whole
+4:21
+industrializing and engineering step
+4:23
+that we need to take and we introduce
+4:25
+techniques such as fixation and chemical
+4:27
+preservation of the state of the cell
+4:29
+rigorous QC steps and pause points so
+4:32
+that we can make sure data quality is
+4:33
+good before we launch a very expensive
+4:35
+and timeconuming campaign automating as
+4:38
+many steps as possible finally yielding
+4:41
+superior data quality sensitivity and
+4:43
+low batch effects comparing to uh
+4:45
+academic uh state-of-the-art uh from
+4:47
+wiseman
+4:49
+that method which we call fixed perturb
+4:52
+and the first two genomewide perturbs
+4:54
+data sets which we call XLS Orion were
+4:57
+all published um last June happy to
+4:59
+report that data has been downloaded
+5:00
+80,000 times and uh it's favorably
+5:04
+covered by uh industry news outlet
+5:06
+received praise from key opinion leaders
+5:08
+such as Dr. Emma Loomberg um and the
+5:10
+data was free for academic use and we
+5:12
+welcome commercial licensing and again
+5:14
+happy to report that we have had
+5:15
+multiple commercial licenses already
+5:17
+signed so there's a lot of interest in
+5:19
+this type of data that was last June and
+5:22
+that was already the biggest data set
+5:24
+we've been busy so in March we put out
+5:26
+the next installment the second wave of
+5:28
+such data which we call XLS Pisces
+5:32
+Pisces is more than three times the size
+5:34
+of Orion sitting at about um 20 uh six
+5:38
+million cells. But more importantly than
+5:41
+just the volume of cells, it's also
+5:43
+multicontext. Context diversity is very
+5:46
+important for virtual cell model
+5:48
+building. So we designed exposure
+5:50
+context stimulating and not stimulating
+5:52
+cells as well as one of the most
+5:54
+ambitious multi-ell type uh perturbation
+5:57
+atlas differentiating IPS into many many
+5:59
+lineages and achieving 10 different cell
+6:02
+type plus genome perturbation in one
+6:04
+single experiment. And we think these
+6:06
+data are going to be important for our
+6:08
+machine learning colleagues to test the
+6:10
+model's ability to generalize out of
+6:12
+exposure out of cell type even out of
+6:14
+zera to other people's data.
+6:16
+Just to give you some quick vignettes I
+6:18
+will be quick about this since this is
+6:20
+all published. Data quality has been
+6:21
+very good. In fact it's even better than
+6:23
+Orion data both in terms of knockdown
+6:25
+efficiency as well as the sensitivity of
+6:28
+number of genes detected pushing the
+6:30
+limits of singles RNA technology. Also
+6:33
+the context diversity really paid off.
+6:35
+As we analyze the data, we observe a
+6:37
+monotonic increase. If we introduce more
+6:40
+of the cell and context, we recover more
+6:43
+and more of known biology in terms of
+6:45
+protein protein interactions captured by
+6:48
+databases such as quorum and stream DB,
+6:50
+suggesting that learning in just one
+6:52
+context is not going to teach you more
+6:54
+biology than learning from across
+6:56
+diverse context. And perhaps one of the
+6:59
+most striking illustration of that
+7:00
+happened when we tried to cluster the
+7:02
+data. So this is a UMAP clustering all
+7:04
+of the perturbations from each of the
+7:06
+seven screens that we did color by the
+7:08
+screen the cell type of origin. Well,
+7:11
+first of all, you can see the data
+7:12
+cluster mapping to the parent cell type
+7:14
+of origin as expected. But you can also
+7:17
+see many partations deviating from their
+7:20
+parental cluster um to different extent
+7:23
+and mapping and forming into coherent
+7:26
+clusters of known protein complexes and
+7:28
+known biology. That's great.
+7:31
+But interestingly we observe some of
+7:34
+these clusters have multicolor meaning
+7:36
+that they are coming from different cell
+7:38
+types. So regardless of the cell type of
+7:40
+origin, the perturbations do the same
+7:42
+thing shown at the bottom. And that's
+7:45
+not perhaps not surprising to share that
+7:47
+these are your housekeeping genes.
+7:49
+Mitochondrial ribosomes for example,
+7:51
+they do the same thing every different
+7:52
+cell type. But there are other
+7:55
+partations that are only single color
+7:58
+dual color origin. These are your
+7:59
+context dependent partations. One
+8:02
+example that we highlighted in the paper
+8:03
+is complex one. What's required for
+8:05
+oxidative phosphorilation in cells? We
+8:08
+only observe these perturbation effects
+8:10
+in primary cells in IPS and IPS multi
+8:12
+cell types. We do not see them having a
+8:14
+strong effect in cancer cell lines and
+8:16
+thereby suggesting possibly that cancer
+8:18
+cell lines have rewired metabolism to
+8:21
+evade oxidative phospholation and hijack
+8:23
+glycolysis directly for energy
+8:24
+production a well reported and
+8:26
+hypothesized uh phenomena called
+8:28
+warbrook effect. I think it's exactly
+8:30
+these context dependent phenotypes,
+8:33
+perturbations, gene functions that are
+8:36
+obviously highlighting the importance of
+8:37
+doing these atlas building across
+8:39
+diverse contexts, but also these are
+8:41
+potentially the more interesting signals
+8:43
+to give our machine learning colleagues
+8:45
+so that a model can learn to generalize
+8:47
+effects out of context. So with that, I
+8:49
+pass it off to both to talk about the
+8:51
+modeling efforts. Thank you.
+8:54
+So building upon the large scale high
+8:57
+quality perturbic data set to just talk
+8:59
+about. So uh we just announced our first
+9:02
+virtual cell model called Excel uh which
+9:05
+we believe is one of the
+9:06
+state-of-the-arts virtual sale model out
+9:08
+there to uh model causal biology. Uh we
+9:11
+have received lots of positive reviews
+9:13
+from social media from lots of academic
+9:16
+colleagues. And uh in this talk I will
+9:18
+briefly talk about some of the uh AI
+9:20
+innovations we made in this talk because
+9:22
+we only have 14 minutes overall. So I
+9:25
+will stay uh high level.
+9:28
+So this is the model architecture we
+9:30
+built for Excel. Um to just talk about
+9:33
+the data uh which is extremely large
+9:36
+scale diverse uh context and uh we made
+9:40
+two major innovations from the AI
+9:42
+architecture side. First we ditched the
+9:45
+original next token prediction which
+9:47
+actually uh originated from SGBT. Um
+9:51
+instead we use a diffusion language
+9:53
+model. The reason we use diffusion
+9:55
+language model is that uh unlike
+9:57
+languages where order of words naturally
+10:00
+mean something the order of genes
+10:02
+doesn't mean much from expression data
+10:04
+sets. And the reason we use that in the
+10:06
+beginning is because the whole training
+10:08
+uh training paradigm are quite mature to
+10:11
+to use uh next token predictions. But uh
+10:14
+right now for Excel we decide to use
+10:16
+division language model and turns out to
+10:18
+be much better than next token
+10:21
+prediction such as SGB and many other
+10:23
+virtual cell models. The second
+10:25
+innovation we made is we use cross
+10:27
+attention to in incorporate quite
+10:30
+diverse prior knowledge including
+10:32
+literature as simple as you can just ask
+10:34
+chbd tell me everything about this gene
+10:37
+and we embed the output into the models
+10:40
+and we also incorporate PPI uh
+10:42
+morphology uh etc depth map we also use
+10:46
+original SGBT as a prior knowledge uh to
+10:49
+encode sale uh sale states and overall
+10:52
+we incorporate five diverse set of prior
+10:55
+knowledge and we find that different
+10:57
+cell lines requires different uh
+10:59
+importance from different prior
+11:01
+knowledge but overall combining with
+11:03
+different language models and
+11:05
+incorporating uh different diverse sets
+11:07
+of prior knowledge really helps with the
+11:10
+result. So we'll quickly go through some
+11:13
+of the results. We run internal screen
+11:15
+and we validate uh 200 um independent uh
+11:18
+perturbations which the model never seen
+11:21
+before and we report multiple metrics
+11:23
+across the board. And we compare with
+11:26
+sale uh state from AR institute and sale
+11:29
+to centers from Google including our
+11:31
+original SGBD and we find that Excel
+11:34
+outperform these virtual cell models by
+11:37
+quite a margin particularly on the first
+11:39
+uh metric and you can see Excel uh
+11:42
+really stands out in terms of very
+11:44
+comprehensive uh metrics and we the next
+11:47
+thing we did is uh scaling uh we in the
+11:50
+paper we actually show very beautiful
+11:52
+scaling laws that we scale from the
+11:55
+original SGB which only has 50 million.
+11:57
+We also a relatively smaller model XL
+12:00
+mini which have 55 million to the
+12:02
+current XL Ultra uh which almost have
+12:05
+five billion parameters that's almost
+12:07
+100x increase in terms of number of
+12:10
+parameters and we find that as we
+12:12
+increase the number of parameters uh the
+12:15
+training and validation loss keep
+12:17
+decreasing and this is extremely
+12:19
+encouraging. We also find that once you
+12:22
+start to increase the number of
+12:24
+parameters uh we start to see really
+12:26
+good out of context generalizations
+12:29
+and we also start to see a lot better
+12:31
+out of cell type generalization which is
+12:33
+really the challenging point to build
+12:36
+virtual cell and eventually we want to
+12:39
+see whether our model can generize out
+12:41
+out of zera generalization. We tested T-
+12:45
+cell lines uh from Marson's lab which
+12:47
+are independent generation of primary T-
+12:50
+cell general wide prohibition data set.
+12:52
+We also see excellent generalizations.
+12:54
+So this really shows the effect of
+12:57
+scaling law.
+13:00
+So really just one quickly summarize uh
+13:03
+lots of words don't read but really this
+13:06
+slide is trying to show that uh at zera
+13:09
+we deeply believe that for virtual sale
+13:11
+we are at the early phase of scaling law
+13:13
+and u uh we are scaling at different
+13:16
+axis first we are scaling at the sale
+13:19
+numbers as she mentioned we have 25
+13:21
+million sales for pis data sets the
+13:24
+second scaling axis is the context and
+13:27
+by training billions sales of the
+13:29
+similar cell type doesn't really mean
+13:31
+much. We're trying to scale the number
+13:33
+of contacts uh to really make the train
+13:36
+very diverse. The last scaling access is
+13:38
+the number of parameters and uh we
+13:41
+scaled the original SGBD from 50 million
+13:44
+to now Excel Ultra to 5 billion and we
+13:47
+see a lot increased generalization
+13:49
+capacities at different uh out of
+13:52
+distribution context. So the current
+13:54
+focus of Zera is continue to generate
+13:57
+more disease relevant context still kind
+14:00
+of uh we firmly believe that if you
+14:03
+scale the number of cells the number of
+14:05
+contexts the number of parameters in
+14:06
+your model you will have uh really you
+14:09
+will yield a lot uh increase in terms of
+14:12
+accuracy in term of generalizations for
+14:15
+virtual cells and eventually we want to
+14:17
+get to more complicated biological
+14:19
+system such as animals organoid and
+14:22
+eventually uh patient models.
+14:25
+All right, that's all. Thank you for
+14:26
+listening.
+

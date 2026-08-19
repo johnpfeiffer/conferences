@@ -1,0 +1,1288 @@
+{
+  "schemaVersion": 1,
+  "scope": "Canonical scientific and AI terms explicitly discussed across the eight UNLOCK 2026 transcripts. Company and person names remain in the conference graph; named models, benchmarks, and platforms are included here when they carry technical meaning.",
+  "referenceUrls": [
+    "https://www.unlockscience.ai/",
+    "https://www.xaira.com/news/x-cell-scaling-causal-perturbation-prediction-across-diverse-cellular-contexts-via-diffusion-language-models",
+    "https://www.noetik.ai/octo",
+    "https://www.noetik.ai/octo-vc",
+    "https://arcinstitute.org/news/foundation-model-stack",
+    "https://arcinstitute.org/news/yusuf-roohani-virtual-cell-architecture",
+    "https://edisonscientific.com/news/performance-of-our-platform-agents"
+  ],
+  "terms": [
+    {
+      "term": "Active learning",
+      "category": "AI and machine learning",
+      "definition": "A strategy in which a model selects the most informative next examples or experiments from which to learn."
+    },
+    {
+      "term": "ADMET",
+      "category": "Drug discovery and development",
+      "definition": "The absorption, distribution, metabolism, excretion, and toxicity properties used to assess whether a molecule could become a safe and effective drug.",
+      "aliases": ["absorption, distribution, metabolism, excretion, and toxicity"]
+    },
+    {
+      "term": "Agent",
+      "category": "AI and machine learning",
+      "definition": "An AI system that can plan, use tools, take actions, and iterate toward a goal rather than only produce a single response."
+    },
+    {
+      "term": "Agentic AI",
+      "category": "AI and machine learning",
+      "definition": "AI designed to carry out multi-step work with some autonomy, often using tools, memory, and feedback."
+    },
+    {
+      "term": "AI scientist",
+      "category": "AI and machine learning",
+      "definition": "An agentic system intended to perform substantial parts of scientific research, such as literature review, analysis, hypothesis generation, and experiment planning."
+    },
+    {
+      "term": "AI/ML",
+      "category": "AI and machine learning",
+      "definition": "A combined abbreviation for artificial intelligence and machine learning."
+    },
+    {
+      "term": "Amino acid",
+      "category": "Biology",
+      "definition": "A molecular building block whose sequence forms a protein."
+    },
+    {
+      "term": "Antibody",
+      "category": "Biology",
+      "definition": "An immune protein that binds a specific molecular target and can be engineered as a therapeutic."
+    },
+    {
+      "term": "Antibody-drug conjugate",
+      "category": "Drug discovery and development",
+      "definition": "A therapeutic that links a target-specific antibody to a drug payload so the payload can be delivered to selected cells.",
+      "aliases": ["ADC"]
+    },
+    {
+      "term": "API",
+      "category": "Scientific data and computing",
+      "definition": "An application programming interface through which software systems or agents exchange requests and data.",
+      "aliases": ["application programming interface"]
+    },
+    {
+      "term": "Assay",
+      "category": "Laboratory and experimentation",
+      "definition": "An experimental procedure that measures a biological or chemical property."
+    },
+    {
+      "term": "Autonomous lab",
+      "category": "Laboratory and experimentation",
+      "definition": "A laboratory in which software and robotics can plan, execute, analyze, and iterate experiments with limited human intervention.",
+      "aliases": ["self-driving lab"]
+    },
+    {
+      "term": "Autoregressive model",
+      "category": "AI and machine learning",
+      "definition": "A model that generates an output sequentially, conditioning each new element on previously generated elements."
+    },
+    {
+      "term": "Batch effect",
+      "category": "Scientific data and computing",
+      "definition": "Systematic variation caused by differences in experimental runs, sites, protocols, or processing rather than the biology being studied."
+    },
+    {
+      "term": "Benchmark",
+      "category": "AI and machine learning",
+      "definition": "A standardized collection of tasks, data, and metrics used to compare model capabilities."
+    },
+    {
+      "term": "Biological foundation model",
+      "category": "AI and machine learning",
+      "definition": "A broadly trained model of biological data that can be adapted or prompted for many downstream scientific tasks."
+    },
+    {
+      "term": "Biologic",
+      "category": "Drug discovery and development",
+      "definition": "A therapeutic produced from or composed of biological material, such as an antibody or recombinant protein."
+    },
+    {
+      "term": "Bioinformatics",
+      "category": "Scientific data and computing",
+      "definition": "The computational analysis and interpretation of biological data."
+    },
+    {
+      "term": "Biomarker",
+      "category": "Clinical science",
+      "definition": "A measurable biological characteristic used to indicate a state, process, disease, or response to treatment."
+    },
+    {
+      "term": "BixBench",
+      "category": "Named model or benchmark",
+      "definition": "A benchmark for evaluating whether agents can explore biological datasets, perform multi-step analyses, and interpret the results."
+    },
+    {
+      "term": "Cancer",
+      "category": "Biology",
+      "definition": "A group of diseases characterized by uncontrolled cell growth and the potential to invade or spread to other tissues."
+    },
+    {
+      "term": "Causal data",
+      "category": "Scientific data and computing",
+      "definition": "Data produced by controlled interventions that help reveal how changing one factor affects another."
+    },
+    {
+      "term": "Causal inference",
+      "category": "Scientific data and computing",
+      "definition": "Methods for estimating cause-and-effect relationships rather than simple correlations."
+    },
+    {
+      "term": "Causal model",
+      "category": "AI and machine learning",
+      "definition": "A model intended to represent or predict the effects of interventions and counterfactual changes."
+    },
+    {
+      "term": "Causal perturbation prediction",
+      "category": "AI and machine learning",
+      "definition": "Prediction of how a biological system will change after a specified genetic, chemical, or environmental intervention."
+    },
+    {
+      "term": "Cell",
+      "category": "Biology",
+      "definition": "The fundamental structural and functional unit of living organisms."
+    },
+    {
+      "term": "Cell line",
+      "category": "Biology",
+      "definition": "A population of cells maintained in culture for repeated experimental use."
+    },
+    {
+      "term": "Cell state",
+      "category": "Biology",
+      "definition": "The molecular and functional condition of a cell at a particular time."
+    },
+    {
+      "term": "Cell2Sentence",
+      "category": "Named model or benchmark",
+      "definition": "A method that represents single-cell gene-expression profiles as ordered gene sequences so language-model techniques can be applied to cellular data.",
+      "aliases": ["C2S"]
+    },
+    {
+      "term": "Cellular context",
+      "category": "Biology",
+      "definition": "The cell type, tissue, disease state, environment, and experimental conditions in which a cellular response occurs."
+    },
+    {
+      "term": "Chemical matter",
+      "category": "Drug discovery and development",
+      "definition": "Chemical compounds considered as starting points, leads, or candidates in a drug-discovery program."
+    },
+    {
+      "term": "Clinical development",
+      "category": "Clinical science",
+      "definition": "The stage of medicine development in which a candidate is tested in humans and evidence is assembled for regulatory review."
+    },
+    {
+      "term": "Clinical endpoint",
+      "category": "Clinical science",
+      "definition": "A predefined patient outcome or measurement used to evaluate a clinical trial."
+    },
+    {
+      "term": "Clinical response",
+      "category": "Clinical science",
+      "definition": "A measurable change in a patient's disease or health after treatment."
+    },
+    {
+      "term": "Clinical signal",
+      "category": "Clinical science",
+      "definition": "Early evidence in patient data that a treatment may have a meaningful biological or therapeutic effect."
+    },
+    {
+      "term": "Clinical trial",
+      "category": "Clinical science",
+      "definition": "A prospective study in human participants that evaluates a medical intervention."
+    },
+    {
+      "term": "Closed-loop experimentation",
+      "category": "Laboratory and experimentation",
+      "definition": "A cycle in which experimental results update a model, which then proposes the next experiments."
+    },
+    {
+      "term": "Cloud lab",
+      "category": "Laboratory and experimentation",
+      "definition": "A remotely accessible automated laboratory in which users submit experimental workflows through software."
+    },
+    {
+      "term": "Coding agent",
+      "category": "AI and machine learning",
+      "definition": "An AI agent specialized in writing, running, debugging, and modifying software."
+    },
+    {
+      "term": "Computational biology",
+      "category": "Scientific data and computing",
+      "definition": "The use of algorithms, models, and computation to study biological systems."
+    },
+    {
+      "term": "Computational prediction",
+      "category": "Scientific data and computing",
+      "definition": "A forecast produced by a mathematical or machine-learning model rather than a direct experiment."
+    },
+    {
+      "term": "Context window",
+      "category": "AI and machine learning",
+      "definition": "The amount of input and prior output a model can consider in one inference run."
+    },
+    {
+      "term": "Convolutional neural network",
+      "category": "AI and machine learning",
+      "definition": "A neural-network architecture that learns local spatial patterns and is widely used for image analysis.",
+      "aliases": ["CNN"]
+    },
+    {
+      "term": "Counterfactual",
+      "category": "Scientific data and computing",
+      "definition": "A hypothetical outcome describing what would happen if an intervention or condition were different."
+    },
+    {
+      "term": "Cross-attention",
+      "category": "AI and machine learning",
+      "definition": "An attention mechanism that lets one representation selectively use information from another representation or modality."
+    },
+    {
+      "term": "Data generation",
+      "category": "Laboratory and experimentation",
+      "definition": "The deliberate production of new measurements through experiments, assays, simulations, or observation."
+    },
+    {
+      "term": "Data-poor regime",
+      "category": "Scientific data and computing",
+      "definition": "A setting in which too few relevant observations are available to train or validate a model reliably."
+    },
+    {
+      "term": "Data-rich regime",
+      "category": "Scientific data and computing",
+      "definition": "A setting with enough relevant observations to train and evaluate models at substantial scale."
+    },
+    {
+      "term": "Deep learning",
+      "category": "AI and machine learning",
+      "definition": "Machine learning based on neural networks with multiple learned layers of representation."
+    },
+    {
+      "term": "Diffusion language model",
+      "category": "AI and machine learning",
+      "definition": "A generative model that learns to reconstruct structured sequences from noise through iterative denoising rather than only predicting the next token."
+    },
+    {
+      "term": "Disease model",
+      "category": "Laboratory and experimentation",
+      "definition": "An experimental or computational system used to reproduce selected features of a human disease."
+    },
+    {
+      "term": "DMTA cycle",
+      "category": "Drug discovery and development",
+      "definition": "The iterative design-make-test-analyze cycle used to improve candidate molecules.",
+      "aliases": ["design-make-test-analyze cycle"]
+    },
+    {
+      "term": "DNA",
+      "category": "Biology",
+      "definition": "Deoxyribonucleic acid, the molecule that stores hereditary information in most organisms."
+    },
+    {
+      "term": "DNA sequencing",
+      "category": "Laboratory and experimentation",
+      "definition": "The determination of the order of nucleotide bases in DNA."
+    },
+    {
+      "term": "Domain-specific model",
+      "category": "AI and machine learning",
+      "definition": "A model trained or adapted for the data, vocabulary, and tasks of a particular field."
+    },
+    {
+      "term": "Drug discovery",
+      "category": "Drug discovery and development",
+      "definition": "The process of identifying and optimizing potential therapeutic interventions."
+    },
+    {
+      "term": "Drug target",
+      "category": "Drug discovery and development",
+      "definition": "A biological molecule or process whose modulation is expected to produce a therapeutic effect."
+    },
+    {
+      "term": "Dry lab",
+      "category": "Scientific data and computing",
+      "definition": "Computational, mathematical, or data-analysis work performed without direct physical experimentation."
+    },
+    {
+      "term": "Efficacy",
+      "category": "Clinical science",
+      "definition": "The degree to which an intervention produces its intended beneficial effect under specified conditions."
+    },
+    {
+      "term": "EGFR",
+      "category": "Biology",
+      "definition": "Epidermal growth factor receptor, a signaling protein frequently altered and therapeutically targeted in cancer.",
+      "aliases": ["epidermal growth factor receptor"]
+    },
+    {
+      "term": "Embedding",
+      "category": "AI and machine learning",
+      "definition": "A learned numeric representation that places data with related properties near one another in a vector space."
+    },
+    {
+      "term": "Encoder",
+      "category": "AI and machine learning",
+      "definition": "A model component that converts raw input into a learned internal representation."
+    },
+    {
+      "term": "Epigenetic reprogramming",
+      "category": "Biology",
+      "definition": "The alteration of gene-regulatory marks and programs without changing the underlying DNA sequence."
+    },
+    {
+      "term": "Epigenomics",
+      "category": "Biology",
+      "definition": "The genome-wide study of chemical and structural features that regulate gene activity without changing DNA sequence."
+    },
+    {
+      "term": "Estrogen receptor signaling",
+      "category": "Biology",
+      "definition": "Cellular signaling driven by estrogen receptors, important in normal physiology and several cancers."
+    },
+    {
+      "term": "Evaluation",
+      "category": "AI and machine learning",
+      "definition": "The systematic measurement of whether a model or system performs a defined task reliably and usefully.",
+      "aliases": ["eval"]
+    },
+    {
+      "term": "Evo",
+      "category": "Named model or benchmark",
+      "definition": "Arc Institute's genomic foundation-model family for reading, writing, and reasoning over biological sequences."
+    },
+    {
+      "term": "Ex vivo",
+      "category": "Laboratory and experimentation",
+      "definition": "Experiments performed on living cells, tissues, or organs removed from an organism while preserving aspects of their native organization."
+    },
+    {
+      "term": "Explainability",
+      "category": "AI and machine learning",
+      "definition": "The ability to provide human-understandable reasons or evidence for a model's output."
+    },
+    {
+      "term": "Experimental artifact",
+      "category": "Laboratory and experimentation",
+      "definition": "A pattern introduced by measurement or protocol conditions rather than the biological phenomenon of interest."
+    },
+    {
+      "term": "Experimental metadata",
+      "category": "Scientific data and computing",
+      "definition": "Contextual information about how, where, when, and under what conditions an experiment was performed."
+    },
+    {
+      "term": "Fine-tuning",
+      "category": "AI and machine learning",
+      "definition": "Additional training that adapts a pre-trained model to a narrower dataset or task."
+    },
+    {
+      "term": "Foundation model",
+      "category": "AI and machine learning",
+      "definition": "A model trained broadly at scale so it can support many downstream tasks."
+    },
+    {
+      "term": "Frontier model",
+      "category": "AI and machine learning",
+      "definition": "A model near the leading edge of capability or scale at a given time."
+    },
+    {
+      "term": "Gene",
+      "category": "Biology",
+      "definition": "A DNA sequence that contributes to a functional product or regulated biological process."
+    },
+    {
+      "term": "Gene editing",
+      "category": "Biology",
+      "definition": "The deliberate alteration of DNA at selected genomic locations."
+    },
+    {
+      "term": "Gene expression",
+      "category": "Biology",
+      "definition": "The process and measurable level by which information in a gene is used to produce RNA or protein."
+    },
+    {
+      "term": "Gene regulatory architecture",
+      "category": "Biology",
+      "definition": "The network of relationships and control mechanisms that determines when and how genes are expressed."
+    },
+    {
+      "term": "Genome",
+      "category": "Biology",
+      "definition": "The complete genetic material of an organism or cell."
+    },
+    {
+      "term": "Genome-wide perturbation",
+      "category": "Laboratory and experimentation",
+      "definition": "A systematic experiment that alters genes across most or all of the genome to measure their effects."
+    },
+    {
+      "term": "Genomic foundation model",
+      "category": "AI and machine learning",
+      "definition": "A foundation model trained on large collections of DNA or other genomic sequences."
+    },
+    {
+      "term": "Generative model",
+      "category": "AI and machine learning",
+      "definition": "A model that learns a data distribution well enough to create or reconstruct new examples."
+    },
+    {
+      "term": "Generalization",
+      "category": "AI and machine learning",
+      "definition": "A model's ability to perform well on data, contexts, or tasks not seen during training."
+    },
+    {
+      "term": "Genetics",
+      "category": "Biology",
+      "definition": "The study of genes, heredity, and variation."
+    },
+    {
+      "term": "GPT",
+      "category": "AI and machine learning",
+      "definition": "A family of generative pre-trained transformer models for language and multimodal tasks.",
+      "aliases": ["generative pre-trained transformer"]
+    },
+    {
+      "term": "GPU",
+      "category": "Scientific data and computing",
+      "definition": "A graphics processing unit, widely used to accelerate neural-network training and inference."
+    },
+    {
+      "term": "H&E staining",
+      "category": "Laboratory and experimentation",
+      "definition": "Hematoxylin-and-eosin staining, a standard pathology method for visualizing tissue structure.",
+      "aliases": ["hematoxylin and eosin", "H&E"]
+    },
+    {
+      "term": "High-dimensional data",
+      "category": "Scientific data and computing",
+      "definition": "Data in which each observation contains many measured variables or features."
+    },
+    {
+      "term": "High-throughput screening",
+      "category": "Laboratory and experimentation",
+      "definition": "Automated testing of large numbers of compounds, perturbations, or biological conditions."
+    },
+    {
+      "term": "Histopathology",
+      "category": "Clinical science",
+      "definition": "The diagnosis and study of disease through microscopic examination of tissue."
+    },
+    {
+      "term": "Hit-to-lead",
+      "category": "Drug discovery and development",
+      "definition": "The stage in which initial active compounds are confirmed and improved into credible lead series."
+    },
+    {
+      "term": "Human genetics",
+      "category": "Biology",
+      "definition": "The study and use of inherited and acquired genetic variation in people."
+    },
+    {
+      "term": "Hyperscaler",
+      "category": "Scientific data and computing",
+      "definition": "A provider that operates cloud-computing infrastructure at very large scale."
+    },
+    {
+      "term": "Immune cell",
+      "category": "Biology",
+      "definition": "A cell that participates in innate or adaptive immune defense."
+    },
+    {
+      "term": "Immune checkpoint",
+      "category": "Biology",
+      "definition": "A regulatory pathway that restrains immune activation and can be therapeutically blocked in cancer."
+    },
+    {
+      "term": "Immune system",
+      "category": "Biology",
+      "definition": "The cells, tissues, molecules, and processes that protect the body from threats and abnormal cells."
+    },
+    {
+      "term": "Immunology",
+      "category": "Biology",
+      "definition": "The study of the immune system."
+    },
+    {
+      "term": "Immunotherapy",
+      "category": "Drug discovery and development",
+      "definition": "Treatment that activates, redirects, or suppresses immune function to address disease."
+    },
+    {
+      "term": "In silico",
+      "category": "Scientific data and computing",
+      "definition": "Performed computationally, such as a simulation or virtual screen."
+    },
+    {
+      "term": "In vitro",
+      "category": "Laboratory and experimentation",
+      "definition": "Performed outside a living organism in a controlled laboratory system."
+    },
+    {
+      "term": "In vivo",
+      "category": "Laboratory and experimentation",
+      "definition": "Performed within a living organism."
+    },
+    {
+      "term": "In-context learning",
+      "category": "AI and machine learning",
+      "definition": "A model's ability to adapt its behavior from examples or information supplied in the current input without updating model weights."
+    },
+    {
+      "term": "Indication",
+      "category": "Clinical science",
+      "definition": "A disease, condition, or patient use for which a therapy is being developed or prescribed."
+    },
+    {
+      "term": "Inference",
+      "category": "AI and machine learning",
+      "definition": "The use of a trained model to generate a prediction, representation, or output."
+    },
+    {
+      "term": "Interventional data",
+      "category": "Scientific data and computing",
+      "definition": "Measurements collected after deliberately changing a variable or applying a perturbation."
+    },
+    {
+      "term": "Interpretability",
+      "category": "AI and machine learning",
+      "definition": "The degree to which people can inspect or understand a model's internal representations and decision process."
+    },
+    {
+      "term": "Jupyter notebook",
+      "category": "Scientific data and computing",
+      "definition": "An interactive document that combines executable code, results, visualizations, and explanatory text."
+    },
+    {
+      "term": "Kosmos",
+      "category": "Named model or benchmark",
+      "definition": "Edison Scientific's AI scientist, which combines literature, analysis, and other specialized agents for autonomous scientific discovery."
+    },
+    {
+      "term": "LAB-Bench",
+      "category": "Named model or benchmark",
+      "definition": "A benchmark suite for evaluating language models and agents on practical biology-research tasks."
+    },
+    {
+      "term": "Lab automation",
+      "category": "Laboratory and experimentation",
+      "definition": "The use of instruments, robotics, and software to execute laboratory workflows with reduced manual handling."
+    },
+    {
+      "term": "Language model",
+      "category": "AI and machine learning",
+      "definition": "A model trained to represent or generate sequences such as human language, code, proteins, or genes."
+    },
+    {
+      "term": "Large language model",
+      "category": "AI and machine learning",
+      "definition": "A language model trained at large scale on broad data and capable of many language and reasoning tasks.",
+      "aliases": ["LLM"]
+    },
+    {
+      "term": "Latent representation",
+      "category": "AI and machine learning",
+      "definition": "An internal learned encoding that captures important hidden structure in data."
+    },
+    {
+      "term": "Lead optimization",
+      "category": "Drug discovery and development",
+      "definition": "Iterative improvement of a lead molecule's potency, selectivity, safety, exposure, and developability."
+    },
+    {
+      "term": "Lilly TuneLab",
+      "category": "Named model or benchmark",
+      "definition": "Lilly's program for making selected AI/ML models available to biotech users in exchange for model-improving data contributions."
+    },
+    {
+      "term": "Long-horizon task",
+      "category": "AI and machine learning",
+      "definition": "A task requiring many dependent actions over an extended period before a useful result is reached."
+    },
+    {
+      "term": "Low-data regime",
+      "category": "Scientific data and computing",
+      "definition": "A modeling setting where examples are scarce relative to the complexity of the prediction task."
+    },
+    {
+      "term": "Machine learning",
+      "category": "AI and machine learning",
+      "definition": "Methods that learn patterns from data to make predictions, generate outputs, or guide decisions."
+    },
+    {
+      "term": "Masked autoencoder",
+      "category": "AI and machine learning",
+      "definition": "A model trained to reconstruct portions of an input that have been hidden or masked.",
+      "aliases": ["MAE"]
+    },
+    {
+      "term": "Masked token modeling",
+      "category": "AI and machine learning",
+      "definition": "A self-supervised training task in which a model predicts input tokens that were intentionally hidden."
+    },
+    {
+      "term": "Mechanism of action",
+      "category": "Drug discovery and development",
+      "definition": "The biological process through which a treatment produces its effect.",
+      "aliases": ["MoA"]
+    },
+    {
+      "term": "Mechanistic biology",
+      "category": "Biology",
+      "definition": "Study focused on the causal molecular and cellular processes that produce a biological outcome."
+    },
+    {
+      "term": "Mechanistic interpretability",
+      "category": "AI and machine learning",
+      "definition": "Analysis that tries to identify the internal components and computations responsible for a model's behavior."
+    },
+    {
+      "term": "MCP server",
+      "category": "Scientific data and computing",
+      "definition": "A server implementing the Model Context Protocol so an AI system can discover and use external tools or data.",
+      "aliases": ["Model Context Protocol server"]
+    },
+    {
+      "term": "Model architecture",
+      "category": "AI and machine learning",
+      "definition": "The structural design of a model, including its components and how information flows between them."
+    },
+    {
+      "term": "Model benchmarking",
+      "category": "AI and machine learning",
+      "definition": "The process of measuring and comparing models on defined datasets, tasks, and metrics."
+    },
+    {
+      "term": "Model co-development",
+      "category": "AI and machine learning",
+      "definition": "A partnership in which organizations jointly build, adapt, evaluate, or deploy an AI model."
+    },
+    {
+      "term": "Model organism",
+      "category": "Laboratory and experimentation",
+      "definition": "A non-human species studied experimentally to understand biology that may generalize to other organisms."
+    },
+    {
+      "term": "Model parameter",
+      "category": "AI and machine learning",
+      "definition": "A learned numeric value that helps determine a model's behavior."
+    },
+    {
+      "term": "Molecular modality",
+      "category": "Drug discovery and development",
+      "definition": "A class of therapeutic molecule or intervention, such as a small molecule, antibody, RNA medicine, or cell therapy."
+    },
+    {
+      "term": "Molecular property prediction",
+      "category": "Drug discovery and development",
+      "definition": "Computational estimation of a molecule's chemical, physical, biological, or safety properties."
+    },
+    {
+      "term": "Molecule design",
+      "category": "Drug discovery and development",
+      "definition": "The computational or experimental creation and optimization of molecular structures for desired properties."
+    },
+    {
+      "term": "Multimodal data",
+      "category": "Scientific data and computing",
+      "definition": "Data combining distinct measurement types, such as images, gene expression, proteins, clinical records, and text."
+    },
+    {
+      "term": "Multimodal model",
+      "category": "AI and machine learning",
+      "definition": "A model that learns from or produces more than one type of data."
+    },
+    {
+      "term": "Multiplex protein staining",
+      "category": "Laboratory and experimentation",
+      "definition": "Imaging that measures many protein markers in the same tissue sample while preserving spatial location."
+    },
+    {
+      "term": "Neural network",
+      "category": "AI and machine learning",
+      "definition": "A machine-learning model composed of connected layers that learn transformations from data."
+    },
+    {
+      "term": "Neuroscience",
+      "category": "Biology",
+      "definition": "The study of the nervous system."
+    },
+    {
+      "term": "Next-token prediction",
+      "category": "AI and machine learning",
+      "definition": "A training objective in which a model predicts the next element in a sequence from the preceding context."
+    },
+    {
+      "term": "Non-human primate",
+      "category": "Laboratory and experimentation",
+      "definition": "A primate species other than humans used in biological and preclinical research.",
+      "aliases": ["NHP"]
+    },
+    {
+      "term": "Nucleotide",
+      "category": "Biology",
+      "definition": "A molecular building block of DNA or RNA."
+    },
+    {
+      "term": "Observational data",
+      "category": "Scientific data and computing",
+      "definition": "Measurements collected without deliberately assigning an intervention."
+    },
+    {
+      "term": "OCTO",
+      "category": "Named model or benchmark",
+      "definition": "Noetik's Oncology Counterfactual Therapeutics Oracle, a multimodal world model for simulating patient-level cancer biology.",
+      "aliases": ["Oncology Counterfactual Therapeutics Oracle"]
+    },
+    {
+      "term": "OCTO-vc",
+      "category": "Named model or benchmark",
+      "definition": "Noetik's virtual-cell foundation model for simulating spatially resolved single-cell gene expression in tissue.",
+      "aliases": ["OCTO-VirtualCell"]
+    },
+    {
+      "term": "Omics",
+      "category": "Biology",
+      "definition": "Large-scale measurement of a class of biological molecules or features, such as genomes, transcripts, proteins, or epigenetic marks."
+    },
+    {
+      "term": "Oncology",
+      "category": "Clinical science",
+      "definition": "The study and treatment of cancer."
+    },
+    {
+      "term": "Organoid",
+      "category": "Laboratory and experimentation",
+      "definition": "A three-dimensional cell culture that reproduces selected structures and functions of an organ or tissue."
+    },
+    {
+      "term": "Orphan drug",
+      "category": "Drug discovery and development",
+      "definition": "A therapy developed for a rare disease or condition."
+    },
+    {
+      "term": "Out-of-distribution generalization",
+      "category": "AI and machine learning",
+      "definition": "Performance in data or biological contexts that differ materially from those used for training."
+    },
+    {
+      "term": "PaperQA",
+      "category": "Named model or benchmark",
+      "definition": "A framework for retrieving and synthesizing evidence from scientific papers."
+    },
+    {
+      "term": "Pathology",
+      "category": "Clinical science",
+      "definition": "The study and diagnosis of disease through changes in tissues, cells, and bodily materials."
+    },
+    {
+      "term": "Patient-derived data",
+      "category": "Clinical science",
+      "definition": "Measurements obtained directly from patient samples, records, or outcomes."
+    },
+    {
+      "term": "Patient stratification",
+      "category": "Clinical science",
+      "definition": "The division of patients into biologically or clinically meaningful groups, often to predict treatment response."
+    },
+    {
+      "term": "Perturbation",
+      "category": "Laboratory and experimentation",
+      "definition": "A deliberate change to a biological system, such as a gene edit, drug treatment, or environmental alteration."
+    },
+    {
+      "term": "Perturbation dataset",
+      "category": "Scientific data and computing",
+      "definition": "A collection of measurements describing how biological systems respond to controlled interventions."
+    },
+    {
+      "term": "Perturb-seq",
+      "category": "Laboratory and experimentation",
+      "definition": "A pooled screening method that combines genetic perturbations with single-cell RNA sequencing to measure their effects."
+    },
+    {
+      "term": "Pharmacology",
+      "category": "Drug discovery and development",
+      "definition": "The study of how drugs interact with biological systems."
+    },
+    {
+      "term": "Phenotype",
+      "category": "Biology",
+      "definition": "An observable molecular, cellular, organismal, or clinical characteristic."
+    },
+    {
+      "term": "Physical AI",
+      "category": "AI and machine learning",
+      "definition": "AI that perceives, controls, or coordinates actions in the physical world, including robotics and laboratory systems."
+    },
+    {
+      "term": "Platform licensing",
+      "category": "Drug discovery and development",
+      "definition": "A commercial arrangement that grants access to a discovery technology, model, dataset, or integrated platform."
+    },
+    {
+      "term": "Preclinical model",
+      "category": "Laboratory and experimentation",
+      "definition": "An experimental system used to study disease or treatment effects before human clinical trials."
+    },
+    {
+      "term": "Precision medicine",
+      "category": "Clinical science",
+      "definition": "Prevention or treatment tailored to molecular, environmental, or clinical differences among patients."
+    },
+    {
+      "term": "Predictive biology",
+      "category": "AI and machine learning",
+      "definition": "The use of quantitative models to forecast biological behavior, intervention effects, or patient outcomes."
+    },
+    {
+      "term": "Pre-training",
+      "category": "AI and machine learning",
+      "definition": "Initial large-scale training that gives a model broad capabilities before task-specific adaptation."
+    },
+    {
+      "term": "Protein",
+      "category": "Biology",
+      "definition": "A folded chain of amino acids that performs structural, catalytic, signaling, or regulatory functions."
+    },
+    {
+      "term": "Protein design",
+      "category": "Drug discovery and development",
+      "definition": "The creation or optimization of amino-acid sequences to produce desired protein structures and functions."
+    },
+    {
+      "term": "Protein degradation",
+      "category": "Drug discovery and development",
+      "definition": "Therapeutic removal of a target protein by directing it to a cell's degradation machinery."
+    },
+    {
+      "term": "Protein expression",
+      "category": "Biology",
+      "definition": "The production or measured abundance of a protein in a cell or tissue."
+    },
+    {
+      "term": "Protein language model",
+      "category": "AI and machine learning",
+      "definition": "A sequence model trained on amino-acid strings to learn protein structure, function, or design patterns."
+    },
+    {
+      "term": "Proteomics",
+      "category": "Biology",
+      "definition": "The large-scale study of proteins, including their abundance, structure, interactions, and modifications."
+    },
+    {
+      "term": "Pseudobulk",
+      "category": "Scientific data and computing",
+      "definition": "An aggregate gene-expression profile created by combining measurements from many single cells."
+    },
+    {
+      "term": "Radioconjugate",
+      "category": "Drug discovery and development",
+      "definition": "A targeted molecule linked to a radioactive isotope for imaging or therapy."
+    },
+    {
+      "term": "Reasoning model",
+      "category": "AI and machine learning",
+      "definition": "A model optimized to perform multi-step inference before producing an answer or action."
+    },
+    {
+      "term": "Representation learning",
+      "category": "AI and machine learning",
+      "definition": "Learning internal features from data instead of relying only on manually designed descriptors."
+    },
+    {
+      "term": "RNA",
+      "category": "Biology",
+      "definition": "Ribonucleic acid, a family of molecules central to gene expression, regulation, and protein synthesis."
+    },
+    {
+      "term": "RNA medicine",
+      "category": "Drug discovery and development",
+      "definition": "A therapeutic whose active component or mechanism uses RNA."
+    },
+    {
+      "term": "RNA sequencing",
+      "category": "Laboratory and experimentation",
+      "definition": "A sequencing method used to measure RNA molecules and gene-expression patterns.",
+      "aliases": ["RNA-seq"]
+    },
+    {
+      "term": "Robotic lab",
+      "category": "Laboratory and experimentation",
+      "definition": "A laboratory where robotic equipment performs physical experimental operations."
+    },
+    {
+      "term": "Safety",
+      "category": "Drug discovery and development",
+      "definition": "The assessment and management of harmful or unacceptable effects from an intervention."
+    },
+    {
+      "term": "Scaling law",
+      "category": "AI and machine learning",
+      "definition": "An empirical relationship describing how model performance changes with data, compute, parameters, or another scale variable."
+    },
+    {
+      "term": "Scientific evaluation",
+      "category": "AI and machine learning",
+      "definition": "An evaluation designed to measure whether an AI system produces correct, reproducible, and useful scientific work."
+    },
+    {
+      "term": "Self-supervised learning",
+      "category": "AI and machine learning",
+      "definition": "Training that creates learning targets from the structure of unlabeled data itself."
+    },
+    {
+      "term": "Sequencing",
+      "category": "Laboratory and experimentation",
+      "definition": "Determining the ordered bases in DNA or RNA, or by extension the ordered units in another biological polymer."
+    },
+    {
+      "term": "Single-cell data",
+      "category": "Scientific data and computing",
+      "definition": "Measurements resolved to individual cells rather than averaged across a mixed population."
+    },
+    {
+      "term": "Single-cell RNA sequencing",
+      "category": "Laboratory and experimentation",
+      "definition": "RNA sequencing performed at individual-cell resolution.",
+      "aliases": ["scRNA-seq"]
+    },
+    {
+      "term": "Small molecule",
+      "category": "Drug discovery and development",
+      "definition": "A relatively low-molecular-weight organic compound that can modulate a biological target."
+    },
+    {
+      "term": "Spatial biology",
+      "category": "Biology",
+      "definition": "The study of biological molecules, cells, and interactions while preserving their location in tissue."
+    },
+    {
+      "term": "Spatial transcriptomics",
+      "category": "Laboratory and experimentation",
+      "definition": "Measurement of gene expression while retaining the spatial position of cells or regions in tissue."
+    },
+    {
+      "term": "STACK",
+      "category": "Named model or benchmark",
+      "definition": "Arc Institute's single-cell foundation model for in-context learning from observational cellular conditions without condition-specific fine-tuning."
+    },
+    {
+      "term": "STATE",
+      "category": "Named model or benchmark",
+      "definition": "Arc Institute's virtual-cell model for predicting cellular responses to perturbations across varied biological contexts."
+    },
+    {
+      "term": "Structured multimodal masking",
+      "category": "AI and machine learning",
+      "definition": "A self-supervised objective that masks coordinated portions of multiple data modalities so a model must learn cross-modal structure."
+    },
+    {
+      "term": "Synthetic biology",
+      "category": "Biology",
+      "definition": "The design and engineering of biological systems or components with new or modified functions."
+    },
+    {
+      "term": "Systems biology",
+      "category": "Biology",
+      "definition": "The study of interacting biological components as integrated systems rather than isolated parts."
+    },
+    {
+      "term": "T cell",
+      "category": "Biology",
+      "definition": "A lymphocyte central to adaptive immunity, including helper and cytotoxic immune functions."
+    },
+    {
+      "term": "Target discovery",
+      "category": "Drug discovery and development",
+      "definition": "The identification of biological processes or molecules that could be therapeutically modulated."
+    },
+    {
+      "term": "Target identification",
+      "category": "Drug discovery and development",
+      "definition": "Selection of a specific biological target connected to a disease mechanism."
+    },
+    {
+      "term": "Target prioritization",
+      "category": "Drug discovery and development",
+      "definition": "Ranking potential drug targets by evidence, tractability, safety, and likely therapeutic value."
+    },
+    {
+      "term": "Target validation",
+      "category": "Drug discovery and development",
+      "definition": "Experimental confirmation that changing a target produces a relevant and reproducible disease effect."
+    },
+    {
+      "term": "Targeted protein degradation",
+      "category": "Drug discovery and development",
+      "definition": "A modality that recruits cellular machinery to selectively eliminate a disease-related protein."
+    },
+    {
+      "term": "Techbio",
+      "category": "Drug discovery and development",
+      "definition": "A biotechnology approach or company model built around deep integration of software, data, automation, and biology."
+    },
+    {
+      "term": "Therapeutic",
+      "category": "Drug discovery and development",
+      "definition": "An intervention intended to prevent, treat, or manage disease."
+    },
+    {
+      "term": "Therapeutic index",
+      "category": "Drug discovery and development",
+      "definition": "A measure of the separation between doses that produce benefit and doses that produce toxicity."
+    },
+    {
+      "term": "Tissue",
+      "category": "Biology",
+      "definition": "An organized group of cells and extracellular material that performs related functions."
+    },
+    {
+      "term": "Token",
+      "category": "AI and machine learning",
+      "definition": "A discrete unit represented and processed by a sequence model, such as a word fragment, gene, or image patch."
+    },
+    {
+      "term": "Training data",
+      "category": "AI and machine learning",
+      "definition": "Examples used to estimate a model's parameters or behavior."
+    },
+    {
+      "term": "Transformer",
+      "category": "AI and machine learning",
+      "definition": "A neural-network architecture based on attention mechanisms for modeling relationships within sequences or sets."
+    },
+    {
+      "term": "Transcriptome",
+      "category": "Biology",
+      "definition": "The complete set of RNA transcripts present in a cell, tissue, or organism under specified conditions."
+    },
+    {
+      "term": "Transcriptomics",
+      "category": "Biology",
+      "definition": "The large-scale study of RNA transcripts and gene-expression patterns."
+    },
+    {
+      "term": "Translational medicine",
+      "category": "Clinical science",
+      "definition": "Work that connects laboratory discoveries to practical diagnosis, prevention, or treatment in patients."
+    },
+    {
+      "term": "Tumor",
+      "category": "Biology",
+      "definition": "An abnormal mass of tissue produced by excessive or unregulated cell growth."
+    },
+    {
+      "term": "Tumor microenvironment",
+      "category": "Biology",
+      "definition": "The tumor cells, immune cells, stroma, signaling molecules, and physical context surrounding a tumor."
+    },
+    {
+      "term": "Validation",
+      "category": "Laboratory and experimentation",
+      "definition": "Independent testing that checks whether a result, model, target, or assay is reliable and fit for its intended use."
+    },
+    {
+      "term": "Virtual cell",
+      "category": "AI and machine learning",
+      "definition": "A computational model that predicts cellular state or behavior under different biological conditions and perturbations."
+    },
+    {
+      "term": "Virtual screening",
+      "category": "Drug discovery and development",
+      "definition": "Computational evaluation of many candidate molecules or interventions before physical testing."
+    },
+    {
+      "term": "VHH",
+      "category": "Biology",
+      "definition": "A single variable antibody domain derived from heavy-chain-only antibodies and used as a compact binding scaffold.",
+      "aliases": ["single-domain antibody"]
+    },
+    {
+      "term": "Wet lab",
+      "category": "Laboratory and experimentation",
+      "definition": "Physical experimentation with biological or chemical materials."
+    },
+    {
+      "term": "World model",
+      "category": "AI and machine learning",
+      "definition": "A model that learns enough structure and dynamics of a system to simulate possible states, actions, or outcomes."
+    },
+    {
+      "term": "X-Atlas/Pisces",
+      "category": "Named model or benchmark",
+      "definition": "Xaira's large genome-wide perturbation dataset used to train and evaluate X-Cell."
+    },
+    {
+      "term": "X-Cell",
+      "category": "Named model or benchmark",
+      "definition": "Xaira Therapeutics' virtual-cell model for predicting causal perturbation effects across diverse cellular contexts."
+    },
+    {
+      "term": "AI governance",
+      "category": "AI and machine learning",
+      "definition": "The structures, policies, review processes, and accountability used to guide how AI is selected, developed, and deployed."
+    },
+    {
+      "term": "Binding affinity",
+      "category": "Drug discovery and development",
+      "definition": "The strength of the interaction between two molecules, such as a drug or antibody and its target."
+    },
+    {
+      "term": "Cell therapy",
+      "category": "Drug discovery and development",
+      "definition": "Treatment in which living cells are administered, replaced, or modified to produce a therapeutic effect."
+    },
+    {
+      "term": "ClinVar",
+      "category": "Scientific data and computing",
+      "definition": "A public database that aggregates evidence about relationships between human genetic variants and health."
+    },
+    {
+      "term": "Covalent inhibitor",
+      "category": "Drug discovery and development",
+      "definition": "A molecule designed to form a stable covalent bond with its biological target."
+    },
+    {
+      "term": "Data sharing",
+      "category": "Scientific data and computing",
+      "definition": "The controlled exchange of datasets between teams or organizations for analysis, model training, validation, or collaboration."
+    },
+    {
+      "term": "DepMap",
+      "category": "Scientific data and computing",
+      "definition": "The Cancer Dependency Map, a large resource connecting genetic and molecular features of cancer models to vulnerabilities."
+    },
+    {
+      "term": "Developability",
+      "category": "Drug discovery and development",
+      "definition": "The combined properties that determine whether a candidate can be manufactured, formulated, delivered, tolerated, and advanced as a medicine."
+    },
+    {
+      "term": "Disease heterogeneity",
+      "category": "Clinical science",
+      "definition": "Meaningful biological or clinical variation among patients or samples assigned the same disease label."
+    },
+    {
+      "term": "Dose-response",
+      "category": "Drug discovery and development",
+      "definition": "The relationship between the amount of an intervention and the magnitude of the resulting biological effect."
+    },
+    {
+      "term": "FDA",
+      "category": "Clinical science",
+      "definition": "The United States Food and Drug Administration, which regulates drugs, biologics, medical devices, and related products.",
+      "aliases": ["Food and Drug Administration"]
+    },
+    {
+      "term": "Genomics",
+      "category": "Biology",
+      "definition": "The large-scale study of genomes, their organization, variation, and function."
+    },
+    {
+      "term": "Inhibitor",
+      "category": "Drug discovery and development",
+      "definition": "A molecule that reduces the activity of a biological target or process."
+    },
+    {
+      "term": "KRAS",
+      "category": "Biology",
+      "definition": "A signaling protein and oncogene frequently mutated in cancer and targeted by several drug-discovery programs."
+    },
+    {
+      "term": "Large molecule",
+      "category": "Drug discovery and development",
+      "definition": "A high-molecular-weight therapeutic such as an antibody, protein, or other biologic."
+    },
+    {
+      "term": "Morphology",
+      "category": "Biology",
+      "definition": "The observable form, shape, and structural features of cells, tissues, or organisms."
+    },
+    {
+      "term": "Multiparameter optimization",
+      "category": "Drug discovery and development",
+      "definition": "Simultaneous improvement of several candidate properties, such as potency, selectivity, safety, and exposure."
+    },
+    {
+      "term": "Multispecific therapeutic",
+      "category": "Drug discovery and development",
+      "definition": "An engineered therapy capable of binding or modulating more than one target or epitope."
+    },
+    {
+      "term": "N-of-1 experiment",
+      "category": "Clinical science",
+      "definition": "An experiment or trial focused on a single individual, often to evaluate a personalized intervention."
+    },
+    {
+      "term": "Pathogenicity",
+      "category": "Clinical science",
+      "definition": "The capacity of a genetic variant, organism, or biological factor to cause disease."
+    },
+    {
+      "term": "Protein-protein interaction",
+      "category": "Biology",
+      "definition": "A physical or functional association between two proteins.",
+      "aliases": ["PPI"]
+    },
+    {
+      "term": "Protein structure",
+      "category": "Biology",
+      "definition": "The three-dimensional organization of a protein that helps determine its function and interactions."
+    },
+    {
+      "term": "Rare disease",
+      "category": "Clinical science",
+      "definition": "A disease affecting a small fraction of the population, often with a strong genetic component."
+    },
+    {
+      "term": "Regulatory science",
+      "category": "Clinical science",
+      "definition": "The evidence, methods, and standards used to evaluate the quality, safety, and effectiveness of regulated medical products."
+    },
+    {
+      "term": "scGPT",
+      "category": "Named model or benchmark",
+      "definition": "A generative pre-trained transformer for single-cell data that represents genes and expression measurements as model inputs."
+    },
+    {
+      "term": "Selectivity",
+      "category": "Drug discovery and development",
+      "definition": "The degree to which a molecule acts on its intended target more strongly than on other targets."
+    },
+    {
+      "term": "Synthesis",
+      "category": "Drug discovery and development",
+      "definition": "The chemical or biological production of a molecule."
+    },
+    {
+      "term": "Target-ligand binding",
+      "category": "Drug discovery and development",
+      "definition": "The interaction between a biological target and a molecule that binds it."
+    },
+    {
+      "term": "Toxicity",
+      "category": "Drug discovery and development",
+      "definition": "The capacity of a substance or intervention to cause harmful biological effects."
+    },
+    {
+      "term": "Uncertainty",
+      "category": "AI and machine learning",
+      "definition": "The degree of doubt around a prediction or conclusion due to limited data, noise, model assumptions, or unfamiliar context."
+    },
+    {
+      "term": "Zero-shot learning",
+      "category": "AI and machine learning",
+      "definition": "Performance on a task, target, or context without task-specific labeled examples or additional training."
+    },
+    {
+      "term": "Zero-shot molecule design",
+      "category": "Drug discovery and development",
+      "definition": "Generation of candidate molecules for a previously unseen target without target-specific training or iterative optimization."
+    }
+  ]
+}

@@ -1,0 +1,1166 @@
+https://www.youtube.com/watch?v=BzRvHeBC9ZY&list=PLl02HFGbrh1wB221w2FEYufzDjFbyn4w2&index=3
+
+Andrew White's team at Edison Scientific built Kosmos, an AI scientist that completes in 12 hours what takes researchers months. 30,000+ researchers have already used it. Edison raised $70M to scale it. In this talk, Andrew talks what's next for Edison and Kosmos.
+
+Recorded April 22, 2026 at UNLOCK 2026, a one-day AI x life sciences summit in San Francisco.
+
+Speaker: Andrew White, Co-founder & CTO, Edison Scientific
+
+---
+
+Wow. Thank you so much, Michelle. Um,
+0:06
+really happy to be here with everybody.
+0:08
+This is a really cool event. I had no
+0:09
+idea. Michelle talked to me about it a
+0:11
+few weeks ago, and I I had no conception
+0:13
+that it was going to be this many people
+0:14
+and a lot of familiar faces. Um, so
+0:18
+Michelle asked me to talk about
+0:19
+something interesting, so I went a
+0:20
+little ambitious and tried to put
+0:22
+together a whole new slide deck about
+0:23
+like what's changed in in making agents
+0:25
+in 2026. Um, so this would be a little
+0:28
+bit technical and this a little bit
+0:30
+unpolished, so please accept my
+0:31
+apologies, but I wanted to give everyone
+0:33
+something fresh. Um, so I usually give
+0:36
+like a few overview slides about AI
+0:38
+progress. This is something that uh
+0:41
+mostly for academic audiences. I think
+0:42
+all of you here are are more familiar
+0:43
+with this, but I think it's kind of
+0:45
+interesting to reflect on it. So, we
+0:47
+have these um plots that Meter puts out
+0:50
+that measure uh the ability of LLM to do
+0:54
+tasks based on how long it takes a human
+0:56
+to do the tasks. And we've kind of had a
+0:59
+step change uh in the last sort of year.
+1:01
+So, there's a little bit of a slowdown I
+1:03
+think where pre-training was was kind of
+1:05
+hitting a um sort of its stride and then
+1:08
+reasoning models came out and we kind of
+1:09
+have been going up and up and so it's
+1:12
+kind of crazy to think that every seven
+1:13
+months we're seeing sort of a doubling
+1:15
+of this number. But I I think uh we're
+1:17
+going to have to leave these kind of
+1:18
+benchmarks because we're starting to
+1:19
+reach a saturation point.
+1:22
+And a lot of the questions about, you
+1:24
+know, why aren't we seeing the effect uh
+1:26
+of this improvement in coding models?
+1:29
+Well, you can start to see it now in in
+1:32
+sort of late 2025, early 2026. We're
+1:34
+starting to see uh a growth in a few
+1:36
+measures. Things like how many
+1:38
+repositories are on GitHub. And I don't
+1:40
+know if you've been noticing that GitHub
+1:41
+is down a lot lately. The reason GitHub
+1:43
+is down is because the amount of commits
+1:44
+and writes to the website is reaching
+1:46
+such a high point that Microsoft is
+1:48
+having trouble keeping up with the
+1:49
+infrastructure. It's kind of wild to
+1:50
+think about. And another kind of way to
+1:53
+put this in perspective is that what's
+1:54
+actually happening is there's an
+1:55
+enormous amount of capital influx into
+1:57
+AI. So I have here sort of the spending
+1:59
+over the last few years in AI. So the
+2:02
+number that people throw now for 2026 is
+2:04
+about $700 billion. Just to give you an
+2:06
+idea, so 2025 came out to be $251
+2:09
+billion, but it was thought to be like
+2:11
+210 or $215 billion. So we may see an
+2:14
+even a larger increase in capex. And
+2:16
+just to give you some perspective, the
+2:17
+international space station cost $103
+2:19
+billion. The highway system is $271
+2:22
+billion. This is all in 2025. And then
+2:25
+uh the dot boom. So I think a lot of
+2:28
+people wonder, is this like the.com
+2:30
+boom? Well, there you go. That's the
+2:31
+capex that was spent in the.com boom was
+2:33
+$426 billion. So you can get a sense of
+2:35
+like where we are relative to the fiber
+2:36
+optic buildout that was going on uh at
+2:39
+the turn of the century.
+2:41
+So there's a lot of progress I think
+2:44
+from a lot of investment in in actual
+2:47
+capital and we're starting to see it
+2:49
+percolate I think to the broader
+2:50
+economy.
+2:52
+So around this kind of boom we founded
+2:55
+Edison Scientific. So uh when Sam and I
+2:58
+co-ounded future house back in 2023,
+3:01
+we uh we brought in some experts in the
+3:03
+area and we we talked to them like hey
+3:04
+you know we want to work on AI agents
+3:06
+for science. What do you think is the
+3:08
+right approach? And we brought in one
+3:09
+sort of eminent expert whose name I will
+3:11
+I will admit and he said that he thinks
+3:13
+the best problem to work on for doing
+3:15
+progress in scientific discovery is
+3:16
+crossword puzzles because crossword
+3:18
+puzzles you know you have to have a
+3:20
+hypothesis and you do some tests and um
+3:23
+he probably would have said Wordle or or
+3:26
+crosswords but I don't actually remember
+3:27
+which one but Sam and I decided we don't
+3:29
+really want to have this ever happen so
+3:30
+we actually got a wet lab because we
+3:32
+wanted to make sure that we always had
+3:33
+like to ground whatever research we're
+3:35
+doing in actual wet lab experiments. So
+3:37
+this is our wet lab. Uh so we have one
+3:38
+in in in dog patch uh which is you know
+3:41
+10 minutes south of here. So we really
+3:43
+want to make sure that we're we're
+3:44
+really grounded in the kind of stuff
+3:46
+we're doing. So we don't do cross word
+3:47
+puzzles. We don't do Wordle. And um
+3:49
+we've been doing it for a while. So I I
+3:51
+made this timeline recently. So this is
+3:52
+like kind of my personal timeline of of
+3:55
+using um AI agents. So in in January
+3:59
+2023 was when I first started making AI
+4:01
+agents. And so I worked on something
+4:03
+called paper QA which is a a popular
+4:04
+open source repository about how to do
+4:06
+literature research. So I actually was
+4:08
+giving a talk in Copenhagen at Nova
+4:10
+Nordisk uh in in January 2023 and I was
+4:12
+in the hotel room and I was kind of
+4:14
+bored and was reading about some of the
+4:15
+stuff going on. So I put together this
+4:16
+this demo uh which I then talked about
+4:18
+at my talk because I always do things
+4:20
+last minute. But you know the 2023 is
+4:23
+really the earliest point. So 2022 late
+4:24
+2022 is when Shenu Yao did the paper on
+4:27
+react miracle paper came out. So it's
+4:29
+really early stuff. And then in 2023 in
+4:32
+March, this is when Gabe Gomez released
+4:34
+um the co-scientist paper and we
+4:36
+released the ChemCro paper. And that's
+4:38
+when we actually had our agents
+4:40
+operating a remote lab. So it was a
+4:42
+cloud lab that we used from IBM in uh
+4:46
+Luzison. And we were basically
+4:47
+controlling the the equipment and we
+4:50
+were having GPT4 design a molecule. We
+4:54
+had it make a new uh a basically a
+4:57
+colored molecule that had the exact wave
+4:59
+wavelength absorption we wanted was all
+5:02
+able to be put together with uh with an
+5:03
+agent. And then you know I co-founded
+5:06
+Future House in 2023 with Sam. We said
+5:08
+let's do AI agents for science. This was
+5:10
+an insane idea at the time. You know we
+5:12
+did it as a nonprofit because we weren't
+5:13
+really sure what AI agents for science
+5:16
+look like. We thought it was really
+5:18
+ambitious. We said it would be a 10-year
+5:19
+goal before agents could be making
+5:21
+meaningful progress in scientific
+5:23
+discovery. And there's a lot of stuff we
+5:25
+did from 2023 to sort of 2025 that
+5:27
+didn't really make any sense. We like
+5:29
+tried writing protocols. We did a lot of
+5:31
+work on molecular cloning. We thought
+5:33
+molecular cloning was like a really
+5:34
+great application area for for AI agents
+5:36
+for science. Um we did a lot of work on
+5:39
+like these compute graph stuff. But
+5:41
+really in in 2024 things started working
+5:43
+better. And a part of that reason is we
+5:45
+started building benchmarks. We started
+5:46
+building these benchmarks that measure
+5:48
+how good AI agents are at the different
+5:49
+scientific tasks. And so then we were
+5:52
+able to show that we could beat PhD
+5:54
+students or postocs on like retrieving
+5:56
+and synthesizing information. Then we
+5:57
+started training agents against these
+5:59
+benchmarks uh back in 2024 in December
+6:01
+with with Nvidia um in the national AI
+6:03
+research NAR I forget what it stands for
+6:06
+national AI research
+6:08
+resource and then we kind of figured it
+6:11
+out. Then we did this paper called Robin
+6:13
+where we're able to repurpose a drug
+6:14
+with end to end using our agents. We put
+6:16
+out a platform that grew to 100,000
+6:18
+users using our AI agents for things
+6:20
+like data analysis for for looking at
+6:22
+literature and we started training
+6:24
+reasoning models in medicinal chemistry
+6:26
+and then we figured out how to train
+6:27
+multi-turn tool calling reasoning agents
+6:30
+and then that gave us the conviction
+6:32
+that we could actually you know spin out
+6:33
+a company and that's when we spun out um
+6:36
+Edison in June and we put together like
+6:39
+you know what we thought was the last
+6:40
+sort of hurdle in getting these AI
+6:42
+agents to work which was world models
+6:43
+which is how do you get many agents to
+6:45
+work on a very long running project
+6:47
+which I think is is really
+6:48
+representative of scientific discovery.
+6:50
+Um and that's uh what ended up becoming
+6:52
+Cosmos and Cosmos was this like very
+6:54
+long running agent that can run for
+6:56
+multiple days. It will consume uh 10
+6:59
+million tokens. It will call up like
+7:01
+it'll spin up 1,200 sandbox computers to
+7:04
+do very complicated problems. It's
+7:05
+really cool. It's very impressive. I
+7:07
+think it's a great technical achievement
+7:09
+and it's a great like research
+7:10
+achievement. But some people go to
+7:11
+Cosmos and they say like you know uh has
+7:15
+there ever been a coalent inhibitor of K
+7:17
+RAS and it will spin up all these
+7:19
+compute boxes and like go do all this
+7:21
+research and you know I could told you
+7:22
+right now that there was one um for any
+7:25
+of you coming from AACR uh there you
+7:27
+know there's a PANRASS inhibitor that's
+7:28
+been a point of discussion lately. Okay
+7:31
+so what we tried to do out of future
+7:33
+house we tried to synthesize all of what
+7:35
+we learned into one sort of platform
+7:37
+that allows people to deploy their own
+7:38
+agents. Um, we made it portable. This is
+7:40
+kind of an insane idea. If anybody's
+7:42
+starting a company, don't do this idea.
+7:43
+The idea was that we wanted the platform
+7:45
+to be able to be picked up and put
+7:46
+inside of another company to only use
+7:48
+their internal data to have no egress.
+7:50
+And that introduces a lot of weird
+7:52
+constraints when you engineer something.
+7:53
+So, our platform is like you can pick it
+7:55
+up and move it somewhere. Um, and then I
+7:57
+don't know this is a few of the
+7:58
+principles of designing it, but we
+7:59
+wanted to make everything be very
+8:00
+traceable so that if you look at the
+8:01
+output of the system, you could trace
+8:03
+the providence of all the claims uh of
+8:05
+how it came to its conclusions. This is
+8:07
+an old UI. I I told my designer I needed
+8:10
+a video right away for this talk and my
+8:11
+D is like please don't show this video.
+8:13
+This is our old UI, but so I I didn't
+8:14
+have time to make a new one. But
+8:16
+basically, this is what it looks like.
+8:17
+You go through and the agent works
+8:18
+through and makes a plan, decides what
+8:21
+it should do. It reads through papers.
+8:23
+It can, like I said, execute code. It
+8:26
+can read through clinical trials and
+8:27
+patents.
+8:29
+Um, I'll let you all look at it another
+8:31
+time. But so a lot of what makes this
+8:34
+system work really well is is the
+8:36
+integration. So we have 175 million um
+8:38
+full text papers that are accessible. Um
+8:41
+it has 100 access to 120 million paper
+8:43
+patents. It has access to basically all
+8:45
+clinical trials that are registered with
+8:47
+um with the FDA. We've had like two over
+8:49
+2 million queries. So I think it's it's
+8:50
+really cool to see that people are using
+8:52
+it a lot. And it's also like that this
+8:53
+thing works pretty reliably.
+8:56
+Since we launched it in November, we've
+8:57
+had 65,000 new users um plus our our old
+9:01
+users that came over from Future House.
+9:03
+And then we also like measure like how
+9:04
+often if we take a paper from
+9:06
+bioarchchive, how often can we recover
+9:08
+the data that was from that paper in
+9:09
+bioarchchive. And so we measure this at
+9:11
+about 80% using a few different methods.
+9:13
+And then it's on an API. So this is
+9:14
+something that I think was you know my
+9:16
+background is really uh I like to build
+9:18
+things and I think uh having an API to a
+9:21
+system like this is really useful. So
+9:23
+for example at um Pacific Northwest
+9:25
+National Lab, they work on material
+9:26
+science catalyst problems and they call
+9:28
+our platform to do a novelty search like
+9:30
+has anybody ever published this this
+9:32
+discovery? has anybody proposed this
+9:34
+catalyst? So that's really nice to have
+9:35
+this on an API so that you don't have to
+9:37
+build that kind of functionality
+9:38
+yourself and then like I said it's
+9:40
+insane idea but you can you know pick it
+9:42
+up and and put it somewhere else.
+9:44
+So how do you measure these things? So
+9:46
+this is really what I think we worked
+9:48
+you know if we had to say what is our
+9:50
+our moat or something or what is our
+9:51
+durable thing is that we're pretty low
+9:53
+ego company like we're not we don't know
+9:54
+if we train models the best. We don't
+9:56
+know if we're the best at designing
+9:57
+agents, but I think we're really good at
+9:59
+making measurements and building
+10:00
+benchmarks. And so we have hundreds of
+10:02
+of contractors that will write
+10:04
+benchmarks for us. And so the one that
+10:06
+we just put out last month is lab bench
+10:08
+2. And so this covers 1,912 questions
+10:11
+across from, you know, can you read a
+10:13
+patent, can you read a research paper,
+10:15
+can you find information, can you read a
+10:17
+figure, can you design a protocol, can
+10:19
+you spot mistakes in a protocol? Uh so
+10:22
+this is kind of like what we thought was
+10:24
+the intellectual process of doing
+10:25
+science that we want to automate. So
+10:27
+here's an example question. So deletion
+10:29
+of which residues from C elegance
+10:30
+protein cost A1 would most likely affect
+10:32
+the bill cost A1 to recruit MSH5 and
+10:35
+ZHP3. Okay. So for the audience anybody?
+10:40
+Yeah. Okay. So what the the intellectual
+10:43
+task this is testing is is not actually
+10:45
+if the LMS have memorized this. This is
+10:47
+can you find the right paper? pull up
+10:48
+the paper and can you look at the table
+10:50
+and read the table to find the answer to
+10:52
+this? And the answer is is residues
+10:53
+3140. Okay. So anyway, that that that's
+10:57
+interesting. The other thing we wanted
+10:58
+to do was really hypothesis driven
+11:00
+rubrics. So we put out another data set.
+11:03
+We worked with Nvidia on this and it was
+11:04
+announced at um at uh GTC. And what we
+11:08
+did is we took 51 like uh data sets. We
+11:11
+went back to authors of papers. So
+11:12
+people who wrote a research paper, we
+11:14
+asked them to work with us to design a
+11:15
+new question based on the data from
+11:16
+their paper that they didn't explore. So
+11:18
+like they maybe had some hypothesis they
+11:19
+didn't they didn't complete. Then we did
+11:21
+is we built this into rubrics like you
+11:23
+know if you want to prove or disprove
+11:24
+this hypothesis here's the kind of
+11:25
+analysis you should have done. Uh and
+11:27
+then we wrote these with ground truths
+11:29
+and you can and the ground truths are in
+11:31
+R or Python. And so you can look at
+11:33
+these questions here and so like here's
+11:34
+an example one of these questions that
+11:36
+that you can look at and so a lot of
+11:38
+people have been showing big bench
+11:39
+numbers. Bixbench was also a benchmark
+11:40
+we put together. Bixbench was like a
+11:42
+very like uh you know do you follow the
+11:44
+conventions of bionformmaticians like do
+11:46
+you use the right p value correction and
+11:48
+we we don't think bixbench the first one
+11:50
+is really measuring can you do science
+11:51
+and so we went back and redid this and
+11:53
+this sort of hypothesis driven benchmark
+11:55
+we think is a better representation of
+11:56
+how good these agents can do um sort of
+11:58
+hypothesis driven bionformmatics
+12:01
+okay I've blown through most of my time
+12:04
+so I'm not going to really talk too much
+12:05
+about our agents I will just mention
+12:07
+that one of the fun benchmarks everyone
+12:09
+asks us is can you reproduce just a
+12:11
+paper. So what we have been doing is
+12:13
+taking a paper where we take the data
+12:15
+the sort of hypothesis of the paper and
+12:17
+we give it the figure captions and see
+12:19
+if it can recover the figures. So I'll
+12:20
+just show you some of these. So this is
+12:21
+a recent paper that came out on models
+12:23
+of autism and you know basically our
+12:26
+agent went through and and was able to
+12:27
+recapitulate you know figure one here um
+12:30
+and then it did another one. So on the
+12:32
+left hand side is from the paper on the
+12:34
+right hand side is what our agent did.
+12:35
+So you can really actually recover and
+12:37
+check if a paper you think is is true or
+12:39
+not based on rec recapitulating all the
+12:41
+analysis.
+12:42
+Okay. So that's benchmarks, that's
+12:45
+agents. One of the things we wanted to
+12:47
+explore was how do you actually do novel
+12:49
+discovery? And this is in Cosmos. And so
+12:51
+in Cosmos, rather than making a
+12:53
+benchmark, we worked with a bunch of
+12:54
+groups around the world to try to figure
+12:56
+out if we can actually get the same
+12:59
+discoveries that they made by having
+13:01
+them hold their papers for a few weeks
+13:03
+so that we could see if we could make
+13:04
+the same discovery from the same either
+13:06
+data or the same kind of tool that they
+13:08
+were using. And so in this in this
+13:10
+paper, we did a whole bunch of work with
+13:12
+material science, with uh neuroscience,
+13:14
+with uh OMIX data trying to see if we
+13:17
+can recover the discoveries that they
+13:18
+made. And I won't talk about it too
+13:20
+much, but basically we were able to
+13:21
+recover about seven interesting
+13:22
+discoveries and they've been coming out
+13:23
+the papers have been coming out
+13:25
+subsequently. So like one of them was
+13:26
+published a few weeks ago by Antonio's
+13:28
+group at at MIT and material science.
+13:30
+And what Cosmos does is it builds a
+13:32
+world model and this is something that
+13:33
+allows it to have this very long running
+13:35
+sort of coherence that lets it explore
+13:38
+hypothesis really deeply over a few
+13:40
+days. So each dot in this picture is
+13:42
+showing one agent going through and
+13:43
+exploring one sub hypothesis or one
+13:46
+piece of a puzzle. And then over time
+13:48
+that these things disappear or reappear
+13:50
+as it eliminates hypotheses or forms new
+13:52
+ones.
+13:54
+Okay. But so 2026 so I've been building
+13:56
+agents for a long time now. I'm going to
+13:58
+get some opinion on it. And so I think
+14:00
+you know since 2022 really agents have
+14:03
+been kind of stagnant. There's been a
+14:04
+lot of ideas explored but React is still
+14:07
+a powerful baseline. If you go build a
+14:08
+new idea around agents if you try React
+14:10
+it's still very compelling.
+14:13
+And the kind of simple ingredients are
+14:15
+that you call tools, you keep a
+14:17
+conversation history, and then you build
+14:19
+an agent for each different thing. So
+14:20
+for example, we've been trying to build
+14:22
+an agent for protein design for I don't
+14:23
+know two years. We've had a project
+14:24
+called protein crow. And in that in that
+14:27
+protein crow agent, we've been trying to
+14:28
+find the right mix of protein design
+14:30
+tools that allow us to design antibodies
+14:31
+to allow us to design binders and put it
+14:33
+all together. And it's a really hard
+14:34
+thing. It kind of like feels like um you
+14:36
+know whack-a-ole where you like fix one
+14:38
+thing and then another thing breaks. And
+14:40
+I think agents have been really the main
+14:42
+innovation has been progressive
+14:43
+disclosure. So progressive disclosure is
+14:45
+basically you can hide some tools in an
+14:47
+MCP server that only pulls it up when it
+14:49
+needs it or you can hide some context or
+14:50
+some tools in a skill that only pulls it
+14:52
+up when it needs it. This has been sort
+14:53
+of the main I think innovation in
+14:55
+agents, you know, then what makes one
+14:57
+agent better than another agent? Well,
+14:58
+it's all the stuff except for the agent.
+15:00
+It's like, you know, do you have good
+15:00
+infra? Did you train a good model? Do
+15:02
+you have good data? Uh is it reliable?
+15:05
+But I think actually what we're going to
+15:06
+see in 2026 is what I call uni agents.
+15:09
+And so rather than making a lot of
+15:11
+specialized agents for each workflow, we
+15:13
+as a company have coalesed on making
+15:14
+just one agent. And the idea is to build
+15:17
+agents that write and execute code. I
+15:19
+think this has been really proven out
+15:20
+with a lot of other work um you know not
+15:22
+from us but but really like one example
+15:25
+is um uh you know claude code. Basically
+15:27
+it runs on your computer. It runs code
+15:28
+on your computer and that is sort of the
+15:30
+main way that it's harnessed and it can
+15:32
+do many different tasks. And what's
+15:33
+really nice about this is that if you're
+15:34
+trying to design agents, it's not that
+15:36
+you design a bunch of important tools or
+15:38
+a bunch of a good MCP. What you actually
+15:40
+do is you just write good code. And this
+15:42
+is actually something you can hire
+15:43
+people for. It's like a really direct
+15:46
+and and and measurable thing that we
+15:48
+know how to do. And then there's also
+15:49
+this thing of like dropping MCP. It it
+15:51
+fixes this problem of all this context
+15:53
+load of all these different tools. like
+15:54
+if you call the MCP for managing a slurm
+15:56
+job so you can run model training with
+15:58
+your agent then you just introduce a
+16:00
+huge amount of of of unnecessary tokens
+16:03
+and so what's nice is a lot of the
+16:04
+things like discovering how your code is
+16:06
+written is is going to save you context
+16:09
+there's but there's a trade-off here is
+16:11
+that there's something which I call like
+16:12
+a demo tax is that it's actually very
+16:15
+easy to make a coding agent very quickly
+16:17
+running on your own computer so you can
+16:18
+do a lot of incredible things with cloud
+16:20
+code but then you kind of are helpless
+16:22
+in figuring out how to make cloud code
+16:23
+better it's not really obvious how you
+16:25
+improve cloud code to make it better if
+16:26
+it's not working for you. Um, and
+16:28
+there's also this question of like how
+16:29
+do you get to sandboxes? So, if you want
+16:32
+to execute code, you need to put it in a
+16:33
+sandbox, you don't want it running on
+16:34
+your system because it introduces a huge
+16:36
+number of security challenges. And I I
+16:39
+think some of the hacks we've been
+16:40
+seeing lately of many uh startup
+16:42
+companies might be from their exuberance
+16:44
+around building agents that can execute
+16:45
+arbitrary code. You also need to think
+16:47
+about how to separate secrets and how do
+16:49
+you do file system. It's it's a pretty
+16:51
+complicated system. Um anyway, so I
+16:54
+think that that this is going to be the
+16:56
+sort of future of agents in 2026. But
+16:58
+around the same time, there's another
+17:00
+kind of change is that we've been
+17:01
+everyone who was built in this space is
+17:02
+always like our chat bubbles the right
+17:04
+model for agents and that's actually not
+17:07
+really known and I think openclaw showed
+17:09
+us a different kind of form factor that
+17:10
+can do that. So this is like a colleague
+17:11
+that works independently. It's not just
+17:13
+an assistant, it's something that's
+17:14
+always on. So I think OpenClaw really
+17:15
+pushed forward a different kind of form
+17:17
+factor. So we put all these things
+17:18
+together. So we took the world models
+17:20
+from Cosmos, put together this coding
+17:22
+agent. We put together this kind of
+17:24
+interface from openclaw and we built
+17:26
+something which we call project aries.
+17:28
+And this is like something that sits in
+17:29
+your slack and it can basically read
+17:31
+through papers, do all the things that
+17:32
+our agents can do. It can build a long
+17:34
+running coherent research plan and
+17:36
+execute research and it feels like a
+17:38
+colleague that that is now participating
+17:40
+in your company. And we like to do paper
+17:42
+reproductions because they're nice and
+17:43
+self-contained. So we did some
+17:45
+metabolite prediction. Go find this
+17:47
+Glorex paper. Build a bigger data set.
+17:48
+go download data from many other places,
+17:50
+put it together, re-implement their
+17:52
+model, and then make it better. And so,
+17:54
+I won't get into it here, but basically,
+17:56
+we we recapitulated the Gloria demo,
+17:58
+which is just a web server. They didn't
+18:00
+release their model training or they
+18:01
+didn't release their model or the code.
+18:02
+We put all together, and it can apply
+18:04
+the same rules that they do. And so,
+18:07
+this is a very new idea. I think it's uh
+18:10
+something that we haven't we're not
+18:11
+really sure what's the right form
+18:12
+factor, but I think we've kind of
+18:14
+figured out the engineering and the
+18:15
+technical part, and we're really excited
+18:16
+to try it out. the the beta opens
+18:18
+tomorrow. So there's the URL. So if you
+18:20
+want to try it out, please sign up.
+18:22
+Thank you very much.
+
