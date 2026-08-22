@@ -70,6 +70,13 @@ Cross-check the opening minutes across sources. Two AI sources agreeing is a
 signal; one alone is not. Record dropped sentences and edit differences; do not
 "restore" text into the raw transcript.
 
+Also harvest anything that will later serve as an **authoritative glossary**
+for correction (the lookup procedure lives in `fix-transcript`): the guest's
+official bio page, portfolio/company sites named in the description, directory
+pages (e.g. YC company pages for founder names), and official repos/product
+sites for protocol spellings. Record what was consulted, with dates — glossary
+entries without provenance are guesses.
+
 ## Fallback: local transcription
 
 Only when captions are missing or unacceptable. Download audio

@@ -14,9 +14,9 @@ Not a UNLOCK 2026 session and not wired into the app; this folder is data/docume
 | File | Role |
 |---|---|
 | `youtube_raw.txt` | Immutable raw transcript (URL header, `---`, alternating M:SS / text lines) |
-| `proposed-transcript-fixes.json` | 26 traceable correction rules (observed→proposed, timestamps, confidence, reason). Raw text is never modified. |
-| `fixed_transcript.txt` | Raw + fixes applied with the same algorithm as `app/src/data/transcriptFixes.ts` (74 corrections) |
-| `glossary.json` | 50 canonical terms for the episode; names no source could confirm are marked `(unresolved)` instead of being guessed |
+| `proposed-transcript-fixes.json` | 43 traceable correction rules (observed→proposed, timestamps, confidence, reason). Raw text is never modified. |
+| `fixed_transcript.txt` | Raw + fixes applied with the same algorithm as `app/src/data/transcriptFixes.ts` (105 corrections) |
+| `glossary.json` | 70 canonical terms for the episode, each with `sources` provenance; names no source could confirm are marked `(unresolved)` instead of being guessed |
 | `alternate_bidclub_full.md` | Full speaker-attributed transcript from bidclub.ai (cross-reference) |
 | `alternate_audioscrape_preview.md` | Audioscrape preview, partial (full text requires their sign-in); includes podcast-only ad reads |
 | `COMPARISON.md` | Method comparison (yt-dlp variants) and source cross-reference findings |
@@ -24,8 +24,10 @@ Not a UNLOCK 2026 session and not wired into the app; this folder is data/docume
 ## Known limitations
 
 - ASR is verbatim: disfluencies, no speaker labels in the YouTube source (`>>` marks
-  speaker-change hints only), and two names remain unresolved in every AI source
-  ("Aki Naki"/DODEx, "Leopold").
+  speaker-change hints only). After a suspicious-token discovery pass, five names remain
+  unresolved and are documented rather than guessed: "Leopold"/"Liupole", "Mccore",
+  "Padron", "Jack's" (vs bidclub's "Shake Shack"), and "Bill" (Santa Fe Institute board,
+  first name only).
 - Medium-confidence fixes should be checked against the recording before being treated
   as final, per the conventions in `app/src/data/proposed-transcript-fixes.json`.
 - The podcast-audio edit (audioscrape) contains ~2.5 min of dynamically inserted ads

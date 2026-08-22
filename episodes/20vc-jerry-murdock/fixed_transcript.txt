@@ -2,7 +2,7 @@ https://www.youtube.com/watch?v=R1336Jyb-qk
 
 Jerry Murdock, co-founder of Insight Partners (over $90B AUM; backed Twitter, Nest, Docker; portfolio includes Shopify, Wiz, monday.com), joins Harry Stebbings on 20VC. Topics: whether the AI bubble bursts between October 2026 and March 2027, why half the neoclouds die, open-source vs frontier models, sandboxes as the security choke point, OpenRouter's 5% markup, and a Mag7 quick-fire.
 
-Published August 22, 2026 on "20VC with Harry Stebbings" (YouTube). FIXED TRANSCRIPT: YouTube ASR captions with proposed-transcript-fixes.json applied (74 corrections across 26 fix rules). Raw source: youtube_raw.txt (immutable).
+Published August 22, 2026 on "20VC with Harry Stebbings" (YouTube). FIXED TRANSCRIPT: YouTube ASR captions with proposed-transcript-fixes.json applied (105 corrections across 43 fix rules). Raw source: youtube_raw.txt (immutable).
 
 Speakers: Harry Stebbings (host), Jerry Murdock (guest)
 
@@ -228,7 +228,7 @@ has a good return for the year, but but people are going to be a little wary
 8:45
 about his risk-taking capabilities. And so it's underlying it's the people
 8:50
-running the company. What's going to separate one Neoclaw from another is who
+running the company. What's going to separate one neocloud from another is who
 8:56
 is running it. How are they organizing it? We don't see it. You and I and
 9:01
@@ -236,7 +236,7 @@ everybody else, we can't see under the covers how that company's being run. Um
 9:06
 I I can tell you if look at inference providers, I think Fireworks is making a
 9:11
-lot more money than B 10 and you look at the efficiency there and you think, "Oh,
+lot more money than Baseten and you look at the efficiency there and you think, "Oh,
 9:16
 well Baseten's raising money at the same valuation." Well, it's not the same
 9:20
@@ -322,7 +322,7 @@ It's it's it's endless. And I think it's the same thing you know when we look at
 12:30
 intelligence the demand for it is going to be endless by endless numbers of
 12:34
-people and this is helping creating the opportunity for open source and A6 chips
+people and this is helping creating the opportunity for open source and ASIC chips
 12:40
 >> totally get you on cost efficiency of open source compared to frontier models
 12:44
@@ -478,7 +478,7 @@ work with Frontier model providers. They're scared that they're going to eat
 18:51
 their lunch, move into that business. >> Is that true? Or is that Alex rather
 18:56
-self- servingly then saying and Palanteer will help implement a full
+self-servingly then saying and Palantir will help implement a full
 19:00
 infrastructure that's not that? >> Well, look, Alex has a bunch of
 19:04
@@ -504,7 +504,7 @@ everything on me, right? If they wanted to. Uh, I think Amazon has a lot of
 19:47
 data, too. Maybe not the prize data, but they have a lot of data. Microsoft
 19:51
-Satcha Nadella himself came out and said look we've got a a lot of the the data
+Satya Nadella himself came out and said look we've got a a lot of the the data
 19:55
 around the communication how communication works inside an
 19:58
@@ -578,7 +578,7 @@ this, dude. You know I'm here to ruthlessly make money, Jerry. You know
 22:32
 me. What what should I take from that? >> Well, look, if if you look at Fireworks,
 22:39
-T, I'm lucky I invest in Fireworks versus B 10 or Core Weeave or any of the
+T, I'm lucky I invest in Fireworks versus Baseten or CoreWeave or any of the
 22:46
 other inference providers. Why? Because that team was the geniuses that
 22:50
@@ -704,11 +704,11 @@ the entire stack." When you think about that and the rebuilding of the entire
 27:14
 stack, if you start with chips, we see more and more people coming in at
 27:20
-the chips layer, whether it's etched or fractile in the UK.
+the chips layer, whether it's Etched or Fractile in the UK.
 27:25
 >> Yeah. >> How how do you see that?
 27:28
->> I I I've said it last February. I look A6 chips are really ideal if you're
+>> I I I've said it last February. I look ASIC chips are really ideal if you're
 27:37
 thinking about model customization if you're saying look we're at a new
 27:43
@@ -716,9 +716,9 @@ phase in in in this AI buildout where what we really want to do is is is do a
 27:49
 lot of model specialization you don't need a GPU for that too expensive you
 27:54
-can absolutely take an A6 chip and so I think the number of people designing
+can absolutely take an ASIC chip and so I think the number of people designing
 27:58
-chips so A6 chip It's because they recognize that trend
+chips so ASIC chip It's because they recognize that trend
 28:04
 and they want to take advantage of it. >> Do you need to own the chip layer as a
 28:08
@@ -760,7 +760,7 @@ you know, from the loops to, you know, customization,
 29:39
 uh, multiple things, security, all of that stuff from the model out is where I
 29:45
-think it's far more interesting. Going back to the chips, eh, shortterm, I can
+think it's far more interesting. Going back to the chips, eh, short-term, I can
 29:50
 see why people do it. Long term, I think it's unnecessary. I'm an investor in
 29:55
@@ -770,7 +770,7 @@ the two of them, you think, "God, what a competitive landscape." What have been
 30:03
 your lessons over the last few years, decade, two decades, when you have two
 30:08
-very wellunded competitors like this? Fund the guy who is the small startup
+very well-funded competitors like this? Fund the guy who is the small startup
 30:16
 right now watching them to battle it out. particularly in the legal market,
 30:21
@@ -862,7 +862,7 @@ of year targets this year. 4 years to two billion. Jerry, do you remember when
 33:40
 it was Slack 18 months to 10 million? And we were like, "Wow, wow." I think in
 33:46
-the case of Fireworks look um they're benefiting because of open aAnthropic
+the case of Fireworks look um they're benefiting because of OpenAI, Anthropic
 33:52
 they are the next level right and now with open source kicking off they're
 33:59
@@ -920,7 +920,7 @@ of them at least half of them are going to go away and that and they're going to
 36:06
 and they're going to go away with massive amounts of money being burned as
 36:10
-part of it. >> Does the model routting layer carry
+part of it. >> Does the model routing layer carry
 36:14
 enough value to you to be independent? >> My opinion is OpenRouter has massive
 36:20
@@ -932,7 +932,7 @@ and and OpenRouter charges 5% on top of that, which is a crazy amount of money.
 36:34
 That's not going to last. You're going to see exchanges. There's a a blockchain
 36:40
-company called Aki Naki that has just launched DODEx on their mainnet. And this
+company called Acki Nacki that has just launched DEX.DO on their mainnet. And this
 36:46
 thing is an exchange to go out and buy inference. And as part of that, all the
 36:52
@@ -968,7 +968,7 @@ that money. I mean, that's a huge amount of money, by the way. And so, I think
 38:04
 that uh you're going to see a big disruption in that model in the next 3,
 38:10
-four, five months. Actually, not just Aki Naki, but Venice, Venice IO is doing
+four, five months. Actually, not just Acki Nacki, but Venice, Venice IO is doing
 38:14
 that. And there's two or three other guys that are now in the process of
 38:19
@@ -1020,11 +1020,11 @@ look at these other companies that you say, "Wow, Fireworks looks to be like
 40:16
 that." Um AtoB is definitely like that. It's one of my companies. an AtoB. Um
 40:22
-the founder Vnan he's absolutely going to do it. There's no question in my
+the founder Vignan he's absolutely going to do it. There's no question in my
 40:27
-mind. Aven who this guy came out of meta uh as well his name Saudi Khan but Kosha
+mind. Aven who this guy came out of meta uh as well his name Sadi Khan but Khosla
 40:34
-said this is one of the best CEOs ever seen and Venode was one of the best CEOs
+said this is one of the best CEOs ever seen and Vinod was one of the best CEOs
 40:38
 building Sun. So when someone says that you take it seriously.
 40:41
@@ -1066,7 +1066,7 @@ know >> what what happened there? They had a
 42:07
 billion dollar exit on the table. >> Well, they had an opportunity. Yeah.
 42:10
-They had two biders going for them at the time uh um that was very very
+They had two bidders going for them at the time uh um that was very very
 42:15
 interested in them at at around I'll say within 20% of that number and uh one of
 42:22
@@ -1170,13 +1170,13 @@ you're not doing that now good luck >> good luck if you're not doing that now.
 46:36
 Dude, I I look at PE today and I >> I like the P model, but I'm I'm looking
 46:40
-at your Toma Braavos of the world and I'm just like
+at your Thoma Bravo of the world and I'm just like
 46:48
 ouch. Like I'm I I really like Orlando and he was great on the show and I
 46:52
 really I want them to succeed, >> but [ __ ] that's a hard job you've got
 46:56
-with your Cooper and your Anna plans of the world.
+with your Coupa and your Anaplans of the world.
 46:59
 >> Yeah. What do we just have a vintage which which sucks and we just get over
 47:05
@@ -1248,7 +1248,7 @@ you know, the UK, you have like your British Gas and your British telecoms. I
 49:44
 know they're not now but cuz they were sold and privatized but you know you had
 49:48
-your Royal Mail like actually the majority of utilities were stateowned
+your Royal Mail like actually the majority of utilities were state-owned
 49:54
 but look I mean you have a history of socialism in European countries they
 49:58
@@ -1358,7 +1358,7 @@ go out there in the world, right? And so continuous learning models I think will
 54:01
 be architecturally different ultimately. >> Would you have done SSI at 30 billion
 54:07
-Ilia's company which is supposedly coming out with the first version of
+Ilya's company which is supposedly coming out with the first version of
 54:10
 their continuous learning model end of August?
 54:14
@@ -1406,7 +1406,7 @@ that they might not have and that massively opens the TAM.
 56:05
 >> That's the $200 billion opportunity. Right now models are essentially
 56:09
-taskdriven to to a large degree. Would models you know and and frontier models
+task-driven to to a large degree. Would models you know and and frontier models
 56:16
 are doing some levels of creativity but we really went into deep creativity like
 56:22
@@ -1446,7 +1446,7 @@ we've been thinking we're on the cusp of solving cancer for the past 15 years,
 57:45
 right? And we got a little something. We got immune we got we got a little a
 57:50
-little bump with with uh um the new sort of uh drugs like uh Katruda to do you
+little bump with with uh um the new sort of uh drugs like uh Keytruda to do you
 57:57
 know uh cancer solving problems with the immune system but we haven't solved
 58:02
@@ -1578,7 +1578,7 @@ away and they're going to be able to monetize that forever. You can't get rid
 1:03:19
 of it. It's not like it's, you know, your your cable system at home where you
 1:03:23
-can say, "Fine, I can I don't need Infinity anymore. Get rid of it."
+can say, "Fine, I can I don't need Xfinity anymore. Get rid of it."
 1:03:28
 You're not getting rid of Microsoft anytime soon. And these guys have built
 1:03:32
@@ -1676,7 +1676,7 @@ think has fared most well in the transition to an AI world?
 1:07:16
 >> Oh, good question. Well, look, I mean, I I think there's five or six firms that
 1:07:21
-have just done phenomenal. um you know um the the guys like Menlo that that
+have just done phenomenal. um you know um the the guys like Menllo that that
 1:07:29
 did Anthropic how do you say early but early enough
 1:07:33
@@ -1688,11 +1688,11 @@ and a bunch of other great ones that we've tal about so I think despite the
 1:07:48
 fact they're missing um the big frontier models they have a great portfolio
 1:07:54
-I think Khosla is also phenomenal. I mean Venode with Ain and you know his
+I think Khosla is also phenomenal. I mean Vinod with Aven and you know his
 1:08:01
 companies they did amazing. So I think I think Khosla is in that group of I mean
 1:08:06
-they're just going to crush it. Khosla, Menlo and Benchmark have all just done
+they're just going to crush it. Khosla, Menllo and Benchmark have all just done
 1:08:11
 amazing. >> I have one final one for you and this is
 1:08:14
@@ -1714,11 +1714,11 @@ in two years. And that greed element of blockchain, which is exactly what the
 1:08:55
 Bitcoin thing is all about in my humble opinion, is about greed, bringing down
 1:08:59
-the in the whole blockchain thing. Well, Solana and and and and Ethereum, they're
+the in the whole blockchain thing. Well, Salana and and and and Ethereum, they're
 1:09:05
 they're looking like they have a long-term potential. And I do think that
 1:09:11
-new things like Venice or AI Naki or what Robinhood did with Robinhood
+new things like Venice or Acki Nacki or what Robinhood did with Robinhood
 1:09:16
 chain great they got a billion in revenue probably those innovations
 1:09:22
@@ -1726,7 +1726,7 @@ whether you're tokenizing stocks or you're going to do payment rails or
 1:09:26
 you're going to use C or you're going to use blockchain for buying inference like
 1:09:32
-on Akinaki or Gonka those things are going to be real innovations People are
+on Acki Nacki or Gonka those things are going to be real innovations People are
 1:09:39
 going to be blown away that blockchain has found true utility other than some
 1:09:44

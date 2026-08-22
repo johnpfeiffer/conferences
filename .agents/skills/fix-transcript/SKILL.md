@@ -20,12 +20,55 @@ port of `app/src/data/transcriptFixes.ts`.
    company/product names → two agreeing AI transcripts → one AI transcript
    (medium confidence, verify against the recording).
 
-## Build the glossary
+## Stage 0: suspicious-token discovery
+
+Do not wait for someone to notice mistakes. Systematically enumerate anomalies
+in the raw ASR before writing any fix:
+
+1. **Rare-token scan** — tokenize, count, and list alpha tokens with count <= 2
+   and length >= 6. ASR mangles names into tokens rarer than any real vocabulary
+   (`Koshla`, `Palanteer`, `Toma Braavos`).
+2. **Merged/compound anomalies** — tokens that are fused words (`aanthropic`,
+   `wellunded`, `taskdriven`) or impossible bigrams. A merged token can also be
+   TWO real entities fused: `open aanthropic` was `OpenAI, Anthropic`.
+3. **Technical-vocabulary reconciliation** — in a technical discussion, check
+   every domain term against its canonical casing/spelling (`A6 chips` was
+   `ASIC chips`; `mainet`, `pytorch`). If a common tech noun looks odd, it is odd.
+4. **Context windows** — pull ~60 chars around each suspect. Adjacent words
+   resolve most of them: `drugs like Katruda` in a cancer passage is `Keytruda`;
+   `etched or fractile in the UK` in a chip passage is `Etched` and `Fractile`.
+5. **Cluster coherence** — names cluster. `Toma Braavos` + `Orlando` + `Cooper
+   and Anna plans` resolve together as Thoma Bravo / Orlando Bravo / Coupa /
+   Anaplan (both Bravo take-privates).
+
+## Build the glossary (with provenance)
 
 `glossary.json`: `{schemaVersion, scope, referenceUrls, terms[{term, category,
-definition}]}`. Categories: Person, Firm, Company, Concept, `Unresolved proper
-noun`. Mine the episode's info.json first, then alternates. ASR consistently
-confuses similar-sounding names; the glossary is the correction map.
+definition, sources[]}]}`. Categories: Person, Firm, Company, Concept,
+`Unresolved proper noun`. Mine the episode's info.json first, then alternates.
+ASR consistently confuses similar-sounding names; the glossary is the correction
+map.
+
+**Document provenance on every entry** in `sources`: the artifact or URL the
+canonical form came from, plus how it was checked:
+`"verified YYYY-MM-DD"` (the URL was fetched and the spelling confirmed),
+`"canonical reference"` (official domain cited without a fresh fetch),
+`"transcript context M:SS"` (internal evidence), `"user review"` (repo owner
+supplied). Provenance makes each entry auditable and re-checkable later.
+
+**Looking up associated glossaries / authoritative sources, in order:**
+
+1. Episode metadata: title, description, chapter list, tags (free, already local).
+2. Guest/employer official bio pages (name spelling, portfolio companies).
+3. Official company sites and `/about` pages (founder names, investor lists —
+   Aven's own about page confirmed its Khosla backing).
+4. Directories: YC company pages (founder names), Crunchbase/LinkedIn.
+5. Official GitHub orgs/repos and product sites for protocol/product spellings —
+   `Dodex`/`Aki Naki` resolved to DEX.DO on the Acki Nacki chain from dex.do and
+   its CLI repo, not from any transcript.
+6. Domain references for technical vocabulary (vendor docs, drug names, standards).
+7. Alternate AI transcripts — corroboration only, never ground truth; two agreeing
+   AI sources still lose to one authoritative page.
 
 ## Build the fixes
 
@@ -39,8 +82,19 @@ occurrences[{transcript, timestamps[]}], confidence, reason}]}`.
 - Replacements are **case-sensitive** exact strings — use that deliberately:
   lowercase-only `anthropic` → `Anthropic` leaves correct instances untouched;
   `SAS` → `SaaS` only when no legitimate `SAS` exists in the text (grep first).
+- **Count occurrences before writing every replacement** (`grep -c`). One
+  occurrence means the bare token is safe; more means scope the replacement with
+  context (`"with Ain and"` → `"with Aven and"`).
+- **Beware substring corruption across rules.** The applier sorts by
+  `len(observed)` descending, so a longer, more specific replacement fires first
+  and wins — but if you only add the short rule, it mangles longer tokens:
+  `anthropic` → `Anthropic` turned the merged ASR token `aanthropic` into
+  `aAnthropic` until `open aanthropic` → `OpenAI, Anthropic` was added.
 - Include inflected variants as separate replacements (`base 10's`, `base 10`).
 - Record every occurrence timestamp (nearest preceding marker) per fix.
+- Never fix what stays unresolved: a documented `(unresolved)` glossary entry
+  with all observed renderings beats a guessed correction (e.g. `Liupole` /
+  `Leopold`, `Mccore`, `Padron`, `Jack's` vs an alternate source's `Shake Shack`).
 
 ## Apply
 

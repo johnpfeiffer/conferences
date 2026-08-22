@@ -4,14 +4,19 @@
  "notes": [
   "These proposals do not modify the source transcript (youtube_raw.txt stays immutable).",
   "Timestamps are the caption block where the observed string appears.",
-  "High-confidence fixes are supported by the video title/description, a public company name, or unambiguous context.",
+  "High-confidence fixes are supported by the video metadata, a fetched authoritative source (YC company page, dex.do, aven.com), or unambiguous context.",
   "Medium-confidence fixes are strongly suggested by context or by another AI transcript and should be checked against the recording.",
-  "Unresolved names (Aki Naki, DODEx spelling, Leopold) are documented in glossary.json instead of being guessed here."
+  "A suspicious-token discovery pass (rare tokens, merged compounds, casing anomalies) was run over the raw ASR; it surfaced A6->ASIC, 'open aanthropic'->'OpenAI, Anthropic', Neoclaw, Palanteer, Katruda->Keytruda, Toma Braavos->Thoma Bravo, Liupole, and the merged-compound typos.",
+  "Still unresolved after the pass (see glossary.json): Leopold/Liupole, Mccore, Padron, 'Jack's' (vs bidclub's 'Shake Shack'), 'Bill' (SFI board, first name only)."
  ],
  "referenceUrls": [
   "https://www.youtube.com/watch?v=R1336Jyb-qk",
   "https://bidclub.ai/e/20vc-ai-bubble-will-burst-half-neoclouds-will-di",
-  "https://www.audioscrape.com/podcast/the-twenty-minute-vc-20vc-venture-capital--startup-funding--the-pitch/episode/20vc-the-ai-bubble-will-burst-half-the-neoclouds-will-die-china-should-we-ban-chip-exports-be-fearful-of-chinese-open-source-mag7-who-dies-and-who-thrives-why-meta-is-meh-and-microsoft-is-mega-82420"
+  "https://www.audioscrape.com/podcast/the-twenty-minute-vc-20vc-venture-capital--startup-funding--the-pitch/episode/20vc-the-ai-bubble-will-burst-half-the-neoclouds-will-die-china-should-we-ban-chip-exports-be-fearful-of-chinese-open-source-mag7-who-dies-and-who-thrives-why-meta-is-meh-and-microsoft-is-mega-82420",
+  "https://www.ycombinator.com/companies/atob",
+  "https://aven.com",
+  "https://dex.do",
+  "https://github.com/gosh-sh/dexdo-cli"
  ],
  "fixes": [
   {
@@ -34,6 +39,167 @@
    "reason": "Video title and description spell the guest's name Jerry Murdock (Insight Partners co-founder)."
   },
   {
+   "id": "vignan-velivela",
+   "replacements": [
+    {
+     "observed": "Vnan",
+     "proposed": "Vignan"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "40:22"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "AtoB founder/CEO is Vignan Velivela per ycombinator.com/companies/atob (verified 2026-08-22); passage names him as AtoB's founder."
+  },
+  {
+   "id": "sadi-khan",
+   "replacements": [
+    {
+     "observed": "Saudi Khan",
+     "proposed": "Sadi Khan"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "40:27"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Aven cofounder/CEO is Sadi Khan (aven.com, per user review 2026-08-22); passage describes an ex-Meta Aven founder praised by Khosla, and Aven's own site lists Khosla Ventures as a backer."
+  },
+  {
+   "id": "khosla",
+   "replacements": [
+    {
+     "observed": "Koshla",
+     "proposed": "Khosla"
+    },
+    {
+     "observed": "Kosha",
+     "proposed": "Khosla"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:07:54",
+      "1:08:01",
+      "1:08:06",
+      "40:27"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Khosla Ventures; 'Vinod' (Khosla) is named in the same passages."
+  },
+  {
+   "id": "vinod",
+   "replacements": [
+    {
+     "observed": "Venode",
+     "proposed": "Vinod"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:07:54",
+      "40:34"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Vinod Khosla co-founded Sun Microsystems: 'Venode was one of the best CEOs building Sun'."
+  },
+  {
+   "id": "aven",
+   "replacements": [
+    {
+     "observed": "with Ain and",
+     "proposed": "with Aven and"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:07:54"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "'Vinod with Aven and his companies' (1:07:54): Khosla-backed Aven, the company from the 40:27 passage (Sadi Khan). bidclub renders 'Avan'. Single occurrence, context-scoped replacement."
+  },
+  {
+   "id": "thiel",
+   "replacements": [
+    {
+     "observed": "Theal",
+     "proposed": "Thiel"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "31:08",
+      "31:23"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Peter Thiel; the 'start with a niche and dominate it' advice is his well-known Zero to One thesis."
+  },
+  {
+   "id": "satya-nadella",
+   "replacements": [
+    {
+     "observed": "Satcha Nadella",
+     "proposed": "Satya Nadella"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "19:51"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Microsoft CEO Satya Nadella; passage describes Microsoft's knowledge of organizational communications."
+  },
+  {
+   "id": "ilya-ssi",
+   "replacements": [
+    {
+     "observed": "Ilia's",
+     "proposed": "Ilya's"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "54:07"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Ilya Sutskever; the surrounding question is about SSI at $30B, his company."
+  },
+  {
    "id": "baseten",
    "replacements": [
     {
@@ -43,6 +209,10 @@
     {
      "observed": "base 10",
      "proposed": "Baseten"
+    },
+    {
+     "observed": "B 10",
+     "proposed": "Baseten"
     }
    ],
    "occurrences": [
@@ -50,6 +220,8 @@
      "transcript": "youtube_raw.txt",
      "timestamps": [
       "0:37",
+      "22:39",
+      "9:11",
       "9:16",
       "9:20",
       "9:38",
@@ -58,7 +230,26 @@
     }
    ],
    "confidence": "high",
-   "reason": "Baseten (baseten.co) is the inference provider compared with Fireworks; bidclub and audioscrape both render Baseten."
+   "reason": "Baseten (baseten.co) is the inference provider compared with Fireworks; bidclub and audioscrape both render Baseten. 'B 10' variant appears twice."
+  },
+  {
+   "id": "coreweave",
+   "replacements": [
+    {
+     "observed": "Core Weeave",
+     "proposed": "CoreWeave"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "22:39"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "CoreWeave, the neocloud, in a list with Fireworks and Baseten."
   },
   {
    "id": "cursor",
@@ -135,164 +326,64 @@
    "reason": "OpenRouter (openrouter.ai), the inference router whose 5% markup is discussed."
   },
   {
-   "id": "saas",
+   "id": "asic",
    "replacements": [
     {
-     "observed": "SAS",
-     "proposed": "SaaS"
+     "observed": "A6 chip",
+     "proposed": "ASIC chip"
     }
    ],
    "occurrences": [
     {
      "transcript": "youtube_raw.txt",
      "timestamps": [
-      "45:17",
-      "46:01",
-      "46:14",
-      "46:20"
+      "12:34",
+      "27:28",
+      "27:54",
+      "27:58"
      ]
     }
    ],
    "confidence": "high",
-   "reason": "Context is unambiguous ('SAS companies that don't have some kind of system of record'); no SAS Institute reference exists in the episode."
+   "reason": "bidclub renders 'open source and ASIC chips are a tsunami of their own'; the passage then names ASIC designers Etched and Fractile. All four 'A6 chip(s)' instances are this term."
   },
   {
-   "id": "khosla",
+   "id": "etched-fractile",
    "replacements": [
     {
-     "observed": "Koshla",
-     "proposed": "Khosla"
+     "observed": "etched or fractile",
+     "proposed": "Etched or Fractile"
     }
    ],
    "occurrences": [
     {
      "transcript": "youtube_raw.txt",
      "timestamps": [
-      "1:07:54",
-      "1:08:01",
-      "1:08:06"
+      "27:20"
      ]
     }
    ],
    "confidence": "high",
-   "reason": "Khosla Ventures; 'Vinod' (Khosla) is named in the same passage."
+   "reason": "Etched (etched.com, transformer ASICs) and Fractile (fractile.ai, UK AI chips); the passage is about chip designers 'in the UK'."
   },
   {
-   "id": "menlo",
+   "id": "palantir",
    "replacements": [
     {
-     "observed": "Menllo",
-     "proposed": "Menlo"
+     "observed": "Palanteer",
+     "proposed": "Palantir"
     }
    ],
    "occurrences": [
     {
      "transcript": "youtube_raw.txt",
      "timestamps": [
-      "1:07:21",
-      "1:08:06"
+      "18:56"
      ]
     }
    ],
    "confidence": "high",
-   "reason": "Menlo Ventures, named as an early Anthropic investor."
-  },
-  {
-   "id": "solana",
-   "replacements": [
-    {
-     "observed": "Salana",
-     "proposed": "Solana"
-    }
-   ],
-   "occurrences": [
-    {
-     "transcript": "youtube_raw.txt",
-     "timestamps": [
-      "1:08:59"
-     ]
-    }
-   ],
-   "confidence": "high",
-   "reason": "Solana, named alongside Ethereum in the blockchain-for-agent-payments prediction."
-  },
-  {
-   "id": "thiel",
-   "replacements": [
-    {
-     "observed": "Theal",
-     "proposed": "Thiel"
-    }
-   ],
-   "occurrences": [
-    {
-     "transcript": "youtube_raw.txt",
-     "timestamps": [
-      "31:08",
-      "31:23"
-     ]
-    }
-   ],
-   "confidence": "high",
-   "reason": "Peter Thiel; the 'start with a niche and dominate it' advice is his well-known Zero to One thesis."
-  },
-  {
-   "id": "legora",
-   "replacements": [
-    {
-     "observed": "Lagora",
-     "proposed": "Legora"
-    }
-   ],
-   "occurrences": [
-    {
-     "transcript": "youtube_raw.txt",
-     "timestamps": [
-      "29:55"
-     ]
-    }
-   ],
-   "confidence": "high",
-   "reason": "Legora (legora.com), the legal-AI startup that competes with Harvey."
-  },
-  {
-   "id": "forstmann-little",
-   "replacements": [
-    {
-     "observed": "Forceman Little",
-     "proposed": "Forstmann Little"
-    }
-   ],
-   "occurrences": [
-    {
-     "transcript": "youtube_raw.txt",
-     "timestamps": [
-      "47:19",
-      "47:25"
-     ]
-    }
-   ],
-   "confidence": "high",
-   "reason": "Forstmann Little, the PE firm whose telecom exposure ended the firm; bidclub digest confirms."
-  },
-  {
-   "id": "robinhood",
-   "replacements": [
-    {
-     "observed": "Robin Hood",
-     "proposed": "Robinhood"
-    }
-   ],
-   "occurrences": [
-    {
-     "transcript": "youtube_raw.txt",
-     "timestamps": [
-      "1:09:11"
-     ]
-    }
-   ],
-   "confidence": "high",
-   "reason": "Robinhood (company) and Robinhood Chain."
+   "reason": "Palantir; the passage discusses its CEO Alex Karp's enterprise-security warning."
   },
   {
    "id": "xai",
@@ -333,23 +424,23 @@
    "reason": "Company styling."
   },
   {
-   "id": "mainnet",
+   "id": "openai-anthropic-merge",
    "replacements": [
     {
-     "observed": "mainet",
-     "proposed": "mainnet"
+     "observed": "open aanthropic",
+     "proposed": "OpenAI, Anthropic"
     }
    ],
    "occurrences": [
     {
      "transcript": "youtube_raw.txt",
      "timestamps": [
-      "36:40"
+      "33:46"
      ]
     }
    ],
    "confidence": "high",
-   "reason": "Common noun; 'launched DODEx on their mainnet'."
+   "reason": "ASR merged the pair: 'benefiting because of OpenAI, Anthropic - they are the next level'. OpenAI/Anthropic are paired throughout the episode. (Also prevents the 'anthropic' case rule from corrupting the merged token into 'aAnthropic'.)"
   },
   {
    "id": "openai-case",
@@ -443,7 +534,294 @@
     }
    ],
    "confidence": "high",
-   "reason": "AtoB (atob.com), the payments company Murdock names as 'one of my companies'; bidclub digest renders AtoB."
+   "reason": "AtoB (atob.com), the payments company Murdock names as 'one of my companies'; founder Vignan Velivela per YC (verified 2026-08-22)."
+  },
+  {
+   "id": "robinhood",
+   "replacements": [
+    {
+     "observed": "Robin Hood",
+     "proposed": "Robinhood"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:09:11"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Robinhood (company) and Robinhood Chain."
+  },
+  {
+   "id": "keytruda",
+   "replacements": [
+    {
+     "observed": "Katruda",
+     "proposed": "Keytruda"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "57:50"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Keytruda (pembrolizumab), Merck's cancer immunotherapy; passage is 'drugs like Keytruda' in a cancer-treatment analogy. Unambiguous domain vocabulary."
+  },
+  {
+   "id": "thoma-bravo",
+   "replacements": [
+    {
+     "observed": "Toma Braavos",
+     "proposed": "Thoma Bravo"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "46:40"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Thoma Bravo, the software PE firm; adjacent sentence names its founder ('Orlando ... great on the show' = Orlando Bravo, a past 20VC guest)."
+  },
+  {
+   "id": "xfinity",
+   "replacements": [
+    {
+     "observed": "Infinity anymore",
+     "proposed": "Xfinity anymore"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:03:23"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "bidclub renders Xfinity; the analogy is canceling Comcast cable service."
+  },
+  {
+   "id": "acki-nacki",
+   "replacements": [
+    {
+     "observed": "Aki Naki",
+     "proposed": "Acki Nacki"
+    },
+    {
+     "observed": "AI Naki",
+     "proposed": "Acki Nacki"
+    },
+    {
+     "observed": "Akinaki",
+     "proposed": "Acki Nacki"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:09:11",
+      "1:09:32",
+      "36:40",
+      "38:10"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Acki Nacki chain. Resolved from a suspicious-token review: dex.do (verified 2026-08-22) is an AI-inference exchange whose launch program issues NACKL, the Acki Nacki chain token; CLI repo github.com/gosh-sh/dexdo-cli."
+  },
+  {
+   "id": "dexdo",
+   "replacements": [
+    {
+     "observed": "Dodex",
+     "proposed": "DEX.DO"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "36:40"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "DEX.DO (dex.do, verified 2026-08-22): 'Trade decentralized AI', an exchange to buy/sell inference on the Acki Nacki chain - exactly the passage's 'launched DODEx on their mainnet'."
+  },
+  {
+   "id": "legora",
+   "replacements": [
+    {
+     "observed": "Lagora",
+     "proposed": "Legora"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "29:55"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Legora (legora.com), the legal-AI startup that competes with Harvey."
+  },
+  {
+   "id": "forstmann-little",
+   "replacements": [
+    {
+     "observed": "Forceman Little",
+     "proposed": "Forstmann Little"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "47:19",
+      "47:25"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Forstmann Little, the PE firm whose telecom exposure ended the firm; bidclub digest confirms."
+  },
+  {
+   "id": "neoclaw",
+   "replacements": [
+    {
+     "observed": "Neoclaw",
+     "proposed": "neocloud"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "8:50"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "'What's going to separate one neocloud from another is who is running it' - the episode's central neocloud comparison."
+  },
+  {
+   "id": "saas",
+   "replacements": [
+    {
+     "observed": "SAS",
+     "proposed": "SaaS"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "45:17",
+      "46:01",
+      "46:14",
+      "46:20"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Context is unambiguous ('SAS companies that don't have some kind of system of record'); no SAS Institute reference exists in the episode."
+  },
+  {
+   "id": "mainnet",
+   "replacements": [
+    {
+     "observed": "mainet",
+     "proposed": "mainnet"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "36:40"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Common noun; 'launched DEX.DO on their mainnet'."
+  },
+  {
+   "id": "bidders",
+   "replacements": [
+    {
+     "observed": "biders",
+     "proposed": "bidders"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "42:10"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Flipboard 'had two bidders going for them' (Twitter and ByteDance/TikTok per the surrounding text and bidclub)."
+  },
+  {
+   "id": "ortho-merged-compounds",
+   "replacements": [
+    {
+     "observed": "routting",
+     "proposed": "routing"
+    },
+    {
+     "observed": "wellunded",
+     "proposed": "well-funded"
+    },
+    {
+     "observed": "self- servingly",
+     "proposed": "self-servingly"
+    },
+    {
+     "observed": "shortterm",
+     "proposed": "short-term"
+    },
+    {
+     "observed": "stateowned",
+     "proposed": "state-owned"
+    },
+    {
+     "observed": "taskdriven",
+     "proposed": "task-driven"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "18:56",
+      "29:45",
+      "30:08",
+      "36:10",
+      "49:48",
+      "56:09"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Unambiguous orthographic errors (merged or mistyped compounds) found by the suspicious-token scan; each occurs once."
   },
   {
    "id": "lin-qiao",
@@ -484,6 +862,29 @@
    ],
    "confidence": "medium",
    "reason": "audioscrape renders 'joining me in the hot seat today'; YouTube ASR 'stage' is a likely mis-hear."
+  },
+  {
+   "id": "coupa-anaplan",
+   "replacements": [
+    {
+     "observed": "Cooper",
+     "proposed": "Coupa"
+    },
+    {
+     "observed": "Anna plans",
+     "proposed": "Anaplans"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "46:56"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "PE-owned software cluster: 'your Coupa and your Anaplans of the world' directly follows the Thoma Bravo mention, and Thoma Bravo took both Coupa and Anaplan private. No alternate source confirms; check the recording."
   },
   {
    "id": "mag7",
@@ -547,25 +948,6 @@
    ],
    "confidence": "medium",
    "reason": "bidclub digest renders 'GetDynasty' (trusts specialist); single occurrence, check against recording."
-  },
-  {
-   "id": "dodex",
-   "replacements": [
-    {
-     "observed": "Dodex",
-     "proposed": "DODEx"
-    }
-   ],
-   "occurrences": [
-    {
-     "transcript": "youtube_raw.txt",
-     "timestamps": [
-      "36:40"
-     ]
-    }
-   ],
-   "confidence": "medium",
-   "reason": "bidclub digest renders 'DODEx on mainnet'; both sources are AI-generated, so verify."
   }
  ]
 }

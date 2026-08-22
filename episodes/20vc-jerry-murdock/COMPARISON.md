@@ -46,8 +46,32 @@ buys you a dedup problem that `json3` avoids for free.
 3. **Intro ordering:** bidclub moves Harry's "best job in the world / dumb as rocks" line before the
    first question; YouTube has the "hot seat" intro first, then that line at 0:56. Editorial, not an
    ASR error in either.
-4. **Unresolved in every AI source:** "Aki Naki"/"Akinaki" (inference exchange with "DODEx") and
-   "Leopold" (the 3.5x-levered fund blowup). Documented in glossary.json, deliberately not "fixed".
+4. **Unresolved in every AI source, round 1:** "Aki Naki"/"Akinaki" (inference exchange with
+   "DODEx") and "Leopold" (the 3.5x-levered fund blowup). Round 2 resolved the first from
+   authoritative sources: dex.do (verified 2026-08-22) is DEX.DO, an AI-inference exchange on the
+   **Acki Nacki** chain (its launch program issues the NACKL token; CLI at github.com/gosh-sh/dexdo-cli).
+   "Leopold" (also rendered "Liupole") remains unresolved, along with "Mccore", "Padron", and
+   "Jack's" (bidclub says "Shake Shack") — all documented, not guessed.
+
+## 2b. Round 2: suspicious-token discovery
+
+A systematic anomaly pass (rare tokens, merged compounds, tech-vocabulary reconciliation, context
+windows, cluster coherence) over the raw ASR surfaced fixes nobody had noticed:
+
+- `A6 chips` → **ASIC chips** (technical-vocabulary reconciliation; Etched/Fractile named nearby)
+- `open aanthropic` → **OpenAI, Anthropic** (two fused entities; also blocked the `anthropic` case
+  rule from corrupting it into `aAnthropic` — longest-match-first ordering matters)
+- `Vnan` → **Vignan** (Velivela), `Saudi Khan` → **Sadi Khan**, `with Ain and` → `with Aven and`
+  (YC company page + aven.com; the minute-40 cluster)
+- `Palanteer` → **Palantir**, `Satcha Nadella` → **Satya Nadella**, `Ilia's` → **Ilya's** (SSI),
+  `Katruda` → **Keytruda**, `Neoclaw` → **neocloud**, `Core Weeave` → **CoreWeave**
+- `Toma Braavos` → **Thoma Bravo** (+ medium-confidence `Cooper`/`Anna plans` → `Coupa`/`Anaplans`,
+  its take-privates)
+- Merged-compound typos: `routting`, `wellunded`, `self- servingly`, `shortterm`, `stateowned`,
+  `taskdriven`
+
+Every glossary entry now carries `sources` provenance (verified-fetch vs canonical-reference vs
+transcript-context vs user-review, with dates).
 
 ## 3. Artifact series (conferences-repo conventions)
 
@@ -56,9 +80,9 @@ buys you a dedup problem that `json3` avoids for free.
 | `youtube_raw.txt` | Immutable raw transcript, repo format: URL header, description, `---`, alternating M:SS / text lines |
 | `alternate_bidclub_full.md` | Full speaker-attributed BidClub transcript |
 | `alternate_audioscrape_preview.md` | Audioscrape preview (partial; ads flagged) |
-| `glossary.json` | 50 canonical terms (people/firms/companies/concepts), incl. 3 flagged unresolved |
-| `proposed-transcript-fixes.json` | 26 traceable fix rules with timestamps, confidence, reasons; raw untouched |
-| `fixed_transcript.txt` | Raw + fixes applied via the repo's exact algorithm (flatten, sort by len(observed) desc, split/join): **74 corrections** |
+| `glossary.json` | 70 canonical terms (people/firms/companies/concepts) with per-entry provenance; 5 flagged unresolved |
+| `proposed-transcript-fixes.json` | 43 traceable fix rules with timestamps, confidence, reasons; raw untouched |
+| `fixed_transcript.txt` | Raw + fixes applied via the repo's exact algorithm (flatten, sort by len(observed) desc, split/join): **105 corrections** |
 
 ## 4. What a next iteration could add
 - Speaker labels on the fixed transcript by aligning bidclub's attributed text to the timestamped
