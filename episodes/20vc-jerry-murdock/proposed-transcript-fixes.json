@@ -16,7 +16,8 @@
   "https://www.ycombinator.com/companies/atob",
   "https://aven.com",
   "https://dex.do",
-  "https://github.com/gosh-sh/dexdo-cli"
+  "https://github.com/gosh-sh/dexdo-cli",
+  "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/"
  ],
  "fixes": [
   {
@@ -230,7 +231,7 @@
     }
    ],
    "confidence": "high",
-   "reason": "Baseten (baseten.co) is the inference provider compared with Fireworks; bidclub and audioscrape both render Baseten. 'B 10' variant appears twice."
+   "reason": "Baseten (baseten.co) is the inference provider compared with Fireworks; bidclub and audioscrape both render Baseten. 'B 10' variant appears twice. Independent editorial corroboration: bizety.com inference-platforms profile (verified 2026-08-22) lists Baseten at a $2.15B valuation vs Fireworks AI's $200M-$300M ARR - exactly the episode's comparison."
   },
   {
    "id": "coreweave",

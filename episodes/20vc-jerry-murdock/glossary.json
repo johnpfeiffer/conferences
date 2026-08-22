@@ -10,6 +10,7 @@
   "https://aven.com",
   "https://dex.do",
   "https://github.com/gosh-sh/dexdo-cli",
+  "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/",
   "https://www.insightpartners.com",
   "https://www.20vc.com"
  ],
@@ -209,16 +210,18 @@
    "sources": [
     "bidclub.ai transcript/digest",
     "audioscrape preview",
-    "baseten.co (canonical reference)"
+    "baseten.co (canonical reference)",
+    "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/ (verified 2026-08-22): 'Baseten', $2.15B valuation"
    ]
   },
   {
    "term": "Fireworks",
    "category": "Company",
-   "definition": "Inference provider Murdock prefers; ~35% margins per Lin Qiao's prior 20VC appearance.",
+   "definition": "Inference provider (Fireworks AI) Murdock prefers; ~35% margins per Lin Qiao's prior 20VC appearance.",
    "sources": [
     "bidclub.ai transcript/digest",
-    "audioscrape preview"
+    "audioscrape preview",
+    "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/ (verified 2026-08-22): 'Fireworks AI', $200M-$300M ARR - corroborates 'making a lot more money than Baseten'"
    ]
   },
   {
