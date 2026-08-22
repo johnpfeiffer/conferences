@@ -1,0 +1,263 @@
+{
+ "schemaVersion": 1,
+ "scope": "Canonical people, firms, companies, and concepts explicitly discussed in the 20VC episode 'The AI Bubble WILL Burst' (Jerry Murdock, 2026-08-22). '(unresolved)' entries are names no available source could confirm; they are documented rather than guessed in proposed-transcript-fixes.json.",
+ "referenceUrls": [
+  "https://www.youtube.com/watch?v=R1336Jyb-qk",
+  "https://bidclub.ai/e/20vc-ai-bubble-will-burst-half-neoclouds-will-di",
+  "https://www.audioscrape.com/podcast/the-twenty-minute-vc-20vc-venture-capital--startup-funding--the-pitch/episode/20vc-the-ai-bubble-will-burst-half-the-neoclouds-will-die-china-should-we-ban-chip-exports-be-fearful-of-chinese-open-source-mag7-who-dies-and-who-thrives-why-meta-is-meh-and-microsoft-is-mega-82420",
+  "https://www.insightpartners.com",
+  "https://www.20vc.com"
+ ],
+ "terms": [
+  {
+   "term": "Jerry Murdock",
+   "category": "Person",
+   "definition": "Guest; co-founder of Insight Partners. ASR renders 'Murdoch'."
+  },
+  {
+   "term": "Harry Stebbings",
+   "category": "Person",
+   "definition": "Host of 20VC."
+  },
+  {
+   "term": "Lin Qiao",
+   "category": "Person",
+   "definition": "Co-founder and CEO of Fireworks; ASR renders 'Lynn'."
+  },
+  {
+   "term": "Gavin Baker",
+   "category": "Person",
+   "definition": "Atreides Management; his 'a token is a token' claim is debated."
+  },
+  {
+   "term": "Peter Thiel",
+   "category": "Person",
+   "definition": "Cited for dominate-a-niche-first advice; ASR renders 'Theal'."
+  },
+  {
+   "term": "Alex Karp",
+   "category": "Person",
+   "definition": "Palantir CEO; referenced by first name only ('Alex') about enterprises avoiding frontier providers."
+  },
+  {
+   "term": "Tom Lee",
+   "category": "Person",
+   "definition": "Fundstrat; cited for a 10% S&P drawdown call and a Bitcoin-hacking warning."
+  },
+  {
+   "term": "Vinod Khosla",
+   "category": "Person",
+   "definition": "Khosla Ventures; ASR renders 'Koshla'."
+  },
+  {
+   "term": "Leopold (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "A levered fund/person that 'blew up' at ~3.5x leverage. Both YouTube ASR and bidclub flag it uncertain ('Leopold [?]'). Verify against recording."
+  },
+  {
+   "term": "Insight Partners",
+   "category": "Firm",
+   "definition": "Murdock's firm; over $90B AUM, 55+ IPOs."
+  },
+  {
+   "term": "Khosla Ventures",
+   "category": "Firm",
+   "definition": "Named among top AI-transition performers."
+  },
+  {
+   "term": "Menlo Ventures",
+   "category": "Firm",
+   "definition": "Named for being early enough into Anthropic; ASR renders 'Menllo'."
+  },
+  {
+   "term": "Benchmark",
+   "category": "Firm",
+   "definition": "Missed Anthropic/OpenAI but strong with Factory and others."
+  },
+  {
+   "term": "TPG",
+   "category": "Firm",
+   "definition": "Survived a terrible 2001 vintage fund."
+  },
+  {
+   "term": "Forstmann Little",
+   "category": "Firm",
+   "definition": "PE firm ended by telecom exposure; ASR renders 'Forceman Little'."
+  },
+  {
+   "term": "Baseten",
+   "category": "Company",
+   "definition": "Inference provider contrasted with Fireworks; ASR renders 'base 10'."
+  },
+  {
+   "term": "Fireworks",
+   "category": "Company",
+   "definition": "Inference provider Murdock prefers; ~35% margins per Lin Qiao's prior 20VC appearance."
+  },
+  {
+   "term": "Cursor",
+   "category": "Company",
+   "definition": "Anysphere's coding IDE; Baseten contracts, later xAI outcome; ASR renders 'Curser'."
+  },
+  {
+   "term": "xAI",
+   "category": "Company",
+   "definition": "Acquirer in the described $60B Cursor outcome; ASR renders 'XAI'."
+  },
+  {
+   "term": "OpenRouter",
+   "category": "Company",
+   "definition": "Inference router with a 5% markup Murdock says 'is not gonna last'; ASR renders 'open router'."
+  },
+  {
+   "term": "E2B",
+   "category": "Company",
+   "definition": "Cloud sandboxes; one of the two strongest sandbox companies named."
+  },
+  {
+   "term": "Docker",
+   "category": "Company",
+   "definition": "Docker Sandboxes; Docker itself warned containers are not safe."
+  },
+  {
+   "term": "Harvey",
+   "category": "Company",
+   "definition": "Legal AI platform; Murdock prefers funding smaller specialists instead."
+  },
+  {
+   "term": "Legora",
+   "category": "Company",
+   "definition": "Legal AI platform competing with Harvey; ASR renders 'Lagora'."
+  },
+  {
+   "term": "GetDynasty",
+   "category": "Company",
+   "definition": "Trusts specialist cited as niche-domination example; ASR renders 'Get Dynasty'. Verify spelling."
+  },
+  {
+   "term": "AtoB",
+   "category": "Company",
+   "definition": "Payments company, 'one of my companies' per Murdock; ASR renders 'A2B' / 'A to B'."
+  },
+  {
+   "term": "Bending Spoons",
+   "category": "Company",
+   "definition": "Software acquirer; bought Airtable per the discussion."
+  },
+  {
+   "term": "Airtable",
+   "category": "Company",
+   "definition": "Discussed at a $4.85B sale."
+  },
+  {
+   "term": "Flipboard",
+   "category": "Company",
+   "definition": "Murdock's missed ~$1B exit ('arrows in my back')."
+  },
+  {
+   "term": "Factory",
+   "category": "Company",
+   "definition": "Benchmark portfolio company named in the quick-fire."
+  },
+  {
+   "term": "Robinhood",
+   "category": "Company",
+   "definition": "Robinhood Chain cited as tokenization innovation; ASR renders 'Robin Hood'."
+  },
+  {
+   "term": "Venice",
+   "category": "Company",
+   "definition": "venice.ai; direct-inference exchange named alongside Aki Naki."
+  },
+  {
+   "term": "Aki Naki (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "AI-inference exchange that 'launched DODEx on mainnet'. Renderings: 'Aki Naki', 'AI Naki', 'Akinaki'. Possibly a real project name the ASRs mangle; verify."
+  },
+  {
+   "term": "DODEx",
+   "category": "Company",
+   "definition": "Exchange launched by 'Aki Naki' per bidclub; ASR renders 'Dodex'. Verify."
+  },
+  {
+   "term": "Gonka",
+   "category": "Company",
+   "definition": "Blockchain AI-inference network named in the closing prediction."
+  },
+  {
+   "term": "Zerohash",
+   "category": "Company",
+   "definition": "Sponsor in the podcast-audio version only (audioscrape); not in the YouTube edit."
+  },
+  {
+   "term": "MongoDB",
+   "category": "Company",
+   "definition": "Sponsor in the podcast-audio version only."
+  },
+  {
+   "term": "Framer",
+   "category": "Company",
+   "definition": "Sponsor in the podcast-audio version only."
+  },
+  {
+   "term": "Neocloud",
+   "category": "Concept",
+   "definition": "New GPU-cloud providers; Murdock expects at least half to go away within 36 months."
+  },
+  {
+   "term": "Hyperscaler",
+   "category": "Concept",
+   "definition": "Mega-scale cloud operators; best prepared to survive a dislocation."
+  },
+  {
+   "term": "Mag7",
+   "category": "Concept",
+   "definition": "Magnificent Seven; quick-fire subject. ASR variants: 'Mag 7', 'MAG7'."
+  },
+  {
+   "term": "Sandbox",
+   "category": "Concept",
+   "definition": "'If you don't get the sandbox right, forget everything else' - the security choke point for agents."
+  },
+  {
+   "term": "Continuous learning",
+   "category": "Concept",
+   "definition": "Models that keep learning; would replace today's architectures. Timing uncertain (2-3 or 10 years)."
+  },
+  {
+   "term": "Sample-efficient models",
+   "category": "Concept",
+   "definition": "Models that learn from small samples; an early step toward continuous learning."
+  },
+  {
+   "term": "Circular transactions",
+   "category": "Concept",
+   "definition": "Hyperscaler deals that may be obfuscating NVIDIA's organic growth."
+  },
+  {
+   "term": "Token fungibility",
+   "category": "Concept",
+   "definition": "Murdock's counter to 'a token is a token': customization changes a token's value."
+  },
+  {
+   "term": "Co-work era",
+   "category": "Concept",
+   "definition": "Murdock's name for the autonomous-agent era of work."
+  },
+  {
+   "term": "LAMP stack",
+   "category": "Concept",
+   "definition": "Post-dot-com innovation wave example."
+  },
+  {
+   "term": "Oklahoma land rush",
+   "category": "Concept",
+   "definition": "Analogy for land-grab pricing: acceptable as strategy, not as culture."
+  },
+  {
+   "term": "Trough of disillusionment",
+   "category": "Concept",
+   "definition": "Gartner-cycle phase; where Murdock places blockchain today and where AI could land if progress stalls."
+  }
+ ]
+}

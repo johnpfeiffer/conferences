@@ -1,0 +1,1739 @@
+https://www.youtube.com/watch?v=R1336Jyb-qk
+
+Jerry Murdock, co-founder of Insight Partners (over $90B AUM; backed Twitter, Nest, Docker; portfolio includes Shopify, Wiz, monday.com), joins Harry Stebbings on 20VC. Topics: whether the AI bubble bursts between October 2026 and March 2027, why half the neoclouds die, open-source vs frontier models, sandboxes as the security choke point, OpenRouter's 5% markup, and a Mag7 quick-fire.
+
+Published August 22, 2026 on "20VC with Harry Stebbings" (YouTube). Transcript basis: YouTube auto-generated captions (ASR), no manual subtitles exist.
+
+Speakers: Harry Stebbings (host), Jerry Murdock (guest)
+
+---
+0:00
+If there is a dislocation, no one is better prepared to survive it than
+0:04
+hyperscalers. Let's take Neoclouds. I think at least half of them go away
+0:09
+within 36 months. Jerry Murdoch joining me in the hot seat stage. He's the
+0:13
+founder of Insight. They've managed over 90 billion. Jerry has seen pretty much
+0:18
+every technology cycle of the last 25 years. He's invested in some of the
+0:22
+biggest companies across those 25 years. And today we debunk whether we are in a
+0:26
+bubble or not. Whether China will beat the frontier models, whether we are
+0:30
+about to have the greatest cyber security threats of our lifetime. This
+0:34
+and so much more. >> Fireworks is making a lot more money
+0:37
+than base 10. The more you customize the model, the more the token changes its
+0:43
+value. >> Ready to go.
+0:56
+Do you know what? I love my I think I genuinely have the best job in the world
+1:01
+because I get to sit down with people like you and I'm dumb as rocks, but I
+1:06
+get to ask questions that normally I wouldn't be able to ask and I get to
+1:11
+learn from the greatest minds. So, thank you so much for joining me for a second
+1:14
+time, Jerry. >> I'm happy to be here. Now I want to
+1:18
+touch first on something that you said to me before which was you said if the
+1:22
+Iran war continues to fester then you expect to see a correction and depending
+1:27
+on the depth of the correction the AI bubble will burst between October the
+1:32
+26th and March 27. Um can you help me understand your thinking here? If you
+1:38
+look at what happened 2001, the end of the dotcoms, the innovations stopped for
+1:44
+a while and then new innovations came in the LAMP stack which led led to rolled
+1:49
+out of of websites. Google started taking off. 2008 cloud computing very
+1:56
+slow to take off and this is because there was you know this the financial
+2:01
+disruptions slow things down. The stream of commerce gets disrupted and right now
+2:07
+with AI debt is a huge part of this. It's so unique compared to previous
+2:13
+cycles. So much debt all the hyperscalers have taken on much more
+2:18
+debt than they ever have before. And the challenge becomes can will these guys
+2:24
+get disrupted if the credit markets have a disruption which would be certainly
+2:30
+what would happen if we had a problem in the overall capital markets.
+2:34
+>> The concern for you here is that we'll have a credit market disruption caused
+2:38
+by the global conflict which will then impact the ability for these
+2:42
+hyperscalers to borrow cheaply. >> Well, that's one potential disruption. I
+2:48
+see several that could occur. And I think if it's going to happen, it's
+2:52
+going to happen if this Iran war, we can't have it just continue. And I the
+2:57
+reason I say this right now is of complacency. We've got tremendous red
+3:02
+lights that have been going on for a year or more on the credit markets. And
+3:07
+there's just complacency. It's like, ah, we're fine. And I don't think people are
+3:10
+accounting for risk. I mean, if you think about it, um, those guys that are
+3:14
+in the private debt market, the the spreads are too narrow between real risk
+3:19
+and and and not so much risk, and they're not really accounting for that.
+3:24
+And so, I'm concerned about that as one sector. But there's multiple because
+3:28
+this AI revolution is incredibly complex with massive amounts of dollars being
+3:35
+spent on it globally. What are the signs to you that we're
+3:40
+seeing a cracking in the credit markets? >> Well, complacency is the first thing you
+3:46
+look at. When it happened in 2008, 2010, there was a handful of people, which
+3:50
+there's always been documentaries about these guys that made money on shorting
+3:54
+the housing market. Um, but everybody else in the world had no idea what was
+4:01
+really happening. It was complacency complete, you know, and what you had
+4:05
+was, you know, really ugly situation where the people that were supposed to
+4:10
+be keeping an eye on things which were the credit rating agencies and the
+4:15
+credit risk departments of the big banks were asleep at the wheel and this
+4:20
+terrible thing happened and there was enforcing this risk. people didn't
+4:25
+recognize because historically there had never been a huge default problem with
+4:30
+mortgages and that was the kind of thinking that was there and they didn't
+4:34
+realize that the underlying problems associated with credit. I see the same
+4:38
+thing today in that in the credit markets there's many opportunities for
+4:44
+there to be problems. In the late 90s you had long-term credit blow up. We
+4:49
+just had Liupole blow up because he wasn't accounting for, you know, uh the
+4:54
+leverage that he put on his fund. Um I still see that there's these little
+4:59
+warning signs that the complacency is is is is the biggest issue. Um in Japan,
+5:05
+another problem, right? So this is the second time the US has bailed out the
+5:09
+yen. Um and why are they bailing out Japan? That's because Japan holds a
+5:13
+trillion dollars in in treasuries. And if they have to unwind that, if they
+5:18
+sell 100 billion worth of treasuries, the market could absorb it. But if they
+5:23
+sold 300 billion worth of treasuries, a third in order to to be able to buy
+5:27
+dollars to to support the yen, we would have a real problem on our hands
+5:32
+immediately. Immediate global problem. So you you just see like I I do a lot of
+5:38
+backcountry skiing and you recognize the avalanche conditions when they're worse
+5:43
+or they're better and you recognize things can be just easily tipped over.
+5:48
+And so the war in Iran if it gets really ugly, which it hasn't yet if it if
+5:54
+things collapse and inflation comes back, these are disruptors. all of
+6:00
+multiple different opportunities for disruption all based on the war.
+6:05
+Can I ask you though when we look at prior credit market cycles like you
+6:09
+mentioned there was the challenge not the underlying assets were were of poor
+6:13
+quality when we look at the hyperscalers today yes Facebook is having a bond
+6:18
+issuance that's priced higher than expected but but Meta's core business is
+6:22
+throwing off hundreds of billions of cash flow they don't need to borrow
+6:27
+really they could do it off balance sheet it's an optimization game the
+6:31
+assets are good >> I think you just saw that the free cash
+6:35
+flow is the lowest it's ever been in the history of a company. Number one. Number
+6:40
+two, you know, back in the dotcom bubble, there was a lot of fiber that
+6:44
+got laid in the ground and that fiber was always valuable, but the companies
+6:48
+that laid the fi fiber and stuff, they all went bankrupt.
+6:52
+So, you know, when you're really heavily dependent on debt and there's a
+6:57
+dislocation, the underlying value of the asset declines. It may not decline
+7:02
+forever, but it declines pretty sharply in a very short period of time and
+7:07
+that's when you have margin calls. That's the way it goes.
+7:12
+>> What should they do from here? They should not take out such levels of debt.
+7:16
+Like how do you expect this to play out? >> I mean look I mean what people are
+7:21
+making decisions on the risk that they see to their business if there is a
+7:25
+dislocation no one is better prepared to survive it than hyperscalers. I mean,
+7:30
+all the hyperscalers have enough ongoing business and they've been very
+7:35
+consistent. That's why they're worth what they're worth. The Magnificent 7 is
+7:38
+there because they've been doing this for a long time. And so, they know that
+7:43
+they could absorb this. And if it happens, it'll be good for them because
+7:50
+everybody else gets wiped out and then assets are become cheaper for them to
+7:53
+acquire and they're in still in good shape. The demand for AI compute is not
+7:59
+going to change. That's not going to go away. The issue is the ability to fund
+8:04
+it in the short term. Let's take NeoClouds. Neoclouds right now, there's
+8:08
+a whole bunch of them. I think at least half of them go away within 36 months,
+8:14
+but that and if there's an an economic disruption, a lot of them go away right
+8:18
+away. >> Can you help me understand that? I I
+8:21
+can't pass that over. What will separate the Neoclouds that go away and become
+8:26
+valueless versus those that retain value and become even more valuable?
+8:30
+>> That same a question around which which head funds are going to go away and
+8:34
+which ones aren't. If you looked at at at Leopold's returns, you think he's
+8:39
+never going to go and he's probably going to survive this because he still
+8:41
+has a good return for the year, but but people are going to be a little wary
+8:45
+about his risk-taking capabilities. And so it's underlying it's the people
+8:50
+running the company. What's going to separate one Neoclaw from another is who
+8:56
+is running it. How are they organizing it? We don't see it. You and I and
+9:01
+everybody else, we can't see under the covers how that company's being run. Um
+9:06
+I I can tell you if look at inference providers, I think Fireworks is making a
+9:11
+lot more money than B 10 and you look at the efficiency there and you think, "Oh,
+9:16
+well base 10's raising money at the same valuation." Well, it's not the same
+9:20
+business. I'd bet on fireworks over base 10
+9:26
+times better business in my opinion because they're more capital efficient.
+9:30
+>> That's purely based on a capital efficiency.
+9:32
+>> Capital efficiency and their willingness to to make profits on business. I think
+9:38
+Curser was pretty smart in the the base 10 contracts from last year with Curser.
+9:44
+I don't think there was much profit in it for uh base 10. They just got revenue
+9:48
+and they got scale from it, but they didn't get a lot of earnings. And so if
+9:52
+you're not making a lot of money and you're putting up a lot of money, you're
+9:55
+at risk. You're absolutely at risk. >> You mentioned fireworks there. Um we had
+10:00
+Lynn on the You had Lynn on the show. Amazing found where she said that
+10:04
+actually specialized intelligence would be the future and that the majority of
+10:08
+companies would have their own models trained on their own data and that would
+10:11
+be very important. Do you think we have a world of millions of specialized
+10:16
+models in this way >> and a couple of frontier providers? How
+10:21
+do you see that? >> Well, on two things in the big in the
+10:25
+big overall view, if we say that models are there to provide intelligence and we
+10:31
+look at the world and you got 7 billion people, how many intelligent people do
+10:35
+we have in the world? I mean, in some ways, you're going to see that models
+10:40
+are going to replicate humans in this sense of being specialized and being
+10:45
+able to do a specific task in a specific way. You know, someone who's cutting a
+10:49
+gem has a certain intelligence about how to do that work that's pretty
+10:54
+specialized. And I think I think you're going to see intelligence is in the
+10:59
+early days of these models, it's all going to be about specialization and the
+11:04
+ability to customize. What's happening is is that you can't customize uh
+11:09
+anthropic models or or open AI models right now. Not the not the not the big
+11:13
+frontier models. You're not allowed to do that. Um so OBEST has given an
+11:17
+opening I think for for um open- source models to be tuned. As I mentioned on
+11:24
+our last call, I thought that that open source models and AS6 chips were going
+11:28
+to kind of be part of a tsunami of their own. And if you're looking at a frontier
+11:33
+model with double dollar digit costs per token and you're looking at an open
+11:37
+source model that's 10 11 cents per token while all tokens aren't created
+11:43
+equal, it's still enough of a difference that there's going to be a massive
+11:48
+adoption of and and by the way, it's not like AI is is only demands for
+11:55
+enterprise customers or a few consumers. It's a global demand by every business
+12:00
+in the world today. Even though it's people haven't quite act, you know,
+12:06
+haven't quite acted on that demand, the more it's like websites at first, right?
+12:12
+In the '9s, only a certain amount of companies had had websites, but the
+12:16
+building out of websites has not slowed down. It's massive. It's just the the
+12:21
+the desire for that and the need for website building continues to this day.
+12:26
+It's it's it's endless. And I think it's the same thing you know when we look at
+12:30
+intelligence the demand for it is going to be endless by endless numbers of
+12:34
+people and this is helping creating the opportunity for open source and A6 chips
+12:40
+>> totally get you on cost efficiency of open source compared to frontier models
+12:44
+but what everyone says is you're seeing the token traffic go towards open models
+12:49
+and you're seeing the dollar traffic the revenue go towards Frontier models is
+12:54
+that how you expect it to continue and will Frontier here just be paid a lot
+12:58
+more for harder problems and open source take the majority of easy.
+13:03
+>> That's a great question. Um I'm going to give you an answer, but I want to caveat
+13:08
+it this way and that there's opportunity in the answer for short-term disruptions
+13:14
+that last from 3 months to a year where economics appear to have leveled out. as
+13:20
+long as the frontier model companies and I'm convinced they they have goals for
+13:25
+continuous learning um and and and ultimately lifelong learning in these
+13:30
+models and and so as they if they can execute against those goals over the
+13:36
+next decade the demand for those models will never cease and so they'll just
+13:41
+continue to grow but because the global demand is so massive I mean I'd assume
+13:47
+that we're probably in single single digit demand fulfillment today
+13:53
+single digits low single digits and I suspect that open source has a long way
+13:59
+to go to um fill in the need and of course it's going to be low cost and of
+14:05
+course most of the dollars are going to go to the people that that uh can afford
+14:08
+to pay for them right I mean um Teslas were really expensive at the beginning
+14:14
+uh and only wealthy people could afford a Tesla at the beginning and now that's
+14:18
+changed and So I think that's the way it's going to work. Only the wealthiest
+14:23
+companies and people can afford these models and and uh in the early days and
+14:28
+open source is going to be suffering from a very uh a big catch-up game in
+14:34
+terms of in terms of revenue. Um but they're going to get a lot of money and
+14:39
+a lot of thing very very soon. It's coming. A token is a token is actually
+14:44
+what Gavin Baker said the other day and Jensen doesn't give a [ __ ] whether you
+14:50
+put it on a frontier or an open source he wins at the end of the day.
+14:54
+>> Right. >> Do you agree with that perspective? And
+14:56
+how did you analyze his opensource evangelism with his letter?
+15:02
+>> I disagree with a token is a token. Um, that may be true at the moment with
+15:09
+pretty much Frontier models, but I disagree with it because companies like
+15:14
+Fireworks and others are helping companies to customize. The more you
+15:20
+customize the model, the more the token changes its value, right? Because the
+15:25
+more you customize what's being produced. And some models they talk a
+15:30
+lot more than other models and so they produce a hell of a lot more tokens.
+15:35
+>> And so essentially you're saying the efficiency gains that can come when you
+15:38
+work with a provider like fireworks means that one token goes a lot further
+15:42
+than another token in a lot of cases. Well, it there's two things to each
+15:48
+model h and it's as the more it's customized, the more it's going to have
+15:53
+a particular I'll say style to it and whether it's a
+15:59
+verbose style or a style of brevity that's going to matter a lot in the
+16:05
+overall cost. And I think that what we're going to see is as enterprises and
+16:11
+people with money have more time to understand these more and more
+16:15
+customization is going to occur to do things. I mean, when you talk about
+16:19
+agentic systems, it's natural that you think, hey, you're going to use an open
+16:23
+source model for coding because they have they've got that figured out. But
+16:27
+for customer service, for onboarding, you can see open- source models being
+16:34
+really ideal because it's a highly specialized task. And I think that
+16:39
+highly specialized tasks are going to be something that pays off a lot quicker,
+16:44
+right? And a lot cheaper. You can take your if you only have a million dollars
+16:48
+to spend, you can spend that million dollars on customization and getting
+16:53
+specific tasks done a lot more efficiently than you can on a frontier
+16:57
+model. >> How does this not cannibalize frontier
+17:01
+models business? I'm not one to wants to see the open AI and anthropic challenge.
+17:05
+Their thriving is good for all of us, but I don't understand how that doesn't
+17:10
+cannibalize their business making their town smaller. But don't forget, we're
+17:14
+talking about intelligence. Intelligence is you want more of it all
+17:20
+the time and you want different flavors of it, right? I mean, humans have
+17:24
+emotional intelligence. They have, you know, all different styles of
+17:28
+intelligence. We know that learning, some people have more visual
+17:32
+intelligence, if you will. And I think that we're going to see the same thing
+17:35
+with models. We're going to absolutely see this thing that, you know, prohibits
+17:40
+and the the the cannibalization of frontier models, at least in the short
+17:45
+term. What I've seen with every new wave of technology my career, the market
+17:50
+initially expands and then the contraction comes when there's a
+17:54
+contraction in global markets and then you see the fallout and then you start
+17:59
+again with more innovation. It's this continuous cycle of sort of Cambrian
+18:04
+explosion of innovation followed by these sort of glacial periods when
+18:09
+ecosystems collapse and then they grow back again. And so I think as long as
+18:14
+frontier models can continue to innovate because they have the money and they
+18:20
+have the ability to do more innovation, there's never been a time yet where the
+18:24
+open- source model has has trumped a frontier model on innovation yet. They
+18:30
+might be better at specialization, but they certainly don't compete yet in sort
+18:35
+of complex in being able to do complex tasks.
+18:38
+>> When you think about that challenge of Frontier versus Open, Alex
+18:43
+Co has said the biggest enterprise customers in the world don't want to
+18:48
+work with Frontier model providers. They're scared that they're going to eat
+18:51
+their lunch, move into that business. >> Is that true? Or is that Alex rather
+18:56
+self- servingly then saying and Palanteer will help implement a full
+19:00
+infrastructure that's not that? >> Well, look, Alex has a bunch of
+19:04
+customers that that have that of course are very worried about that. All the all
+19:09
+the CIA and all the intelligence organization of course they they they
+19:13
+they're paranoid about that. So he's he's one got a huge customer base that
+19:17
+that's exactly the way those people think. But two, look there's two issues,
+19:22
+right? one is the data, you know, and yes, they've been giving their I mean,
+19:26
+Anthropic's been getting all this data and and open AI already for years. So,
+19:31
+in some ways, the cat's out of the bag, right? I mean, look, if you if you if
+19:35
+you worry about from a security perspective, I mean, look, I mean, Apple
+19:39
+could already rob my bank tomorrow. They have all my passwords. Apple has
+19:43
+everything on me, right? If they wanted to. Uh, I think Amazon has a lot of
+19:47
+data, too. Maybe not the prize data, but they have a lot of data. Microsoft
+19:51
+Satcha Nadella himself came out and said look we've got a a lot of the the data
+19:55
+around the communication how communication works inside an
+19:58
+organization. So look enterprises have already given up a lot of their secret
+20:05
+sauce to the years and they should be cautious. I agree with Alex that
+20:12
+open that that enterprises need to be smart about just continuously shoving
+20:18
+their data up into uh anthropic and open AI. They need to practice discernment
+20:23
+and they need to think about what they want to keep behind the firewall and
+20:29
+they need to continuously have an iterative conversation about that and be
+20:32
+careful. And I think in part this is what's going to drive the open- source
+20:37
+opportunity is that yeah, you know what, we don't want that stuff uh uh uploaded
+20:43
+into the cloud. We want it, you know, behind the firewall. So look, two
+20:48
+things. One, recognize that enterprises have already given up a lot to uh third
+20:53
+party companies. And B, yeah, they need to be careful going forward.
+20:58
+>> They need to be careful going forward and security is front and center more
+21:01
+than ever before. We're seeing hacks like we've never seen before. We're
+21:05
+seeing Open AI and Hugging Face. Anthropic came out saying, "Hey, Mayor
+21:09
+Kulpa, our models actually hacked three companies." And it's almost like a brag
+21:14
+now to have like a Do you know what I mean? Our models hacked companies.
+21:18
+Thanks. >> Yeah.
+21:19
+>> How do you think about the golden age of cyber that is to come?
+21:24
+>> Uh well, there's no question that there's a heck of a lot of complacency
+21:30
+around security overall. Even people that think they're getting the job done,
+21:36
+they're complacent. They haven't really thought through. I mean, um I don't know
+21:40
+how many developers are running their their models in YOLO mode, but uh
+21:46
+probably a lot. And so are they and and they're thinking, oh, I'll put it the
+21:50
+model in the container. I'll put the tools in container. I'm okay. Well,
+21:54
+containers aren't safe. You need sandboxes. This is why the big container
+21:59
+company Docker said, "Hey, themselves said containers aren't safe. You better
+22:03
+put in a sandbox." And that's why they've had a huge success with Docker
+22:06
+sandboxes. That's why E2B is successful with cloud sandboxes. People don't
+22:11
+realize how important it is to really step up the game on security. It
+22:17
+everybody in my opinion is underestimating it.
+22:20
+>> When you think about investing today personally,
+22:23
+>> Yeah. >> do you want to do a lot more in
+22:25
+security? Like what what can I take from that? I'm a venture investor. You know
+22:29
+this, dude. You know I'm here to ruthlessly make money, Jerry. You know
+22:32
+me. What what should I take from that? >> Well, look, if if you look at Fireworks,
+22:39
+T, I'm lucky I invest in Fireworks versus B 10 or Core Weeave or any of the
+22:46
+other inference providers. Why? Because that team was the geniuses that
+22:50
+understood Python the best. PyTorch in particular. I mean, so you've got this
+22:55
+sort of team of people that have a different take and have a different set
+23:00
+of aspirations in what they're doing. They're going to move up the stack, you
+23:05
+know, they're going to move up and do a lot more fine-tuning and refinement and
+23:08
+customization for people and they're going to be the best ones at it. That's
+23:12
+why they're going to succeed. I think you're going to see the same thing in
+23:16
+security. And the most important thing that is underestimated
+23:20
+is the need for sandboxes. The truth is there's going to be thousands of
+23:26
+different forms of sandboxes and you're going to need a company that understands
+23:30
+how models look at tools and what that behavior is
+23:36
+and be able to take that behavior and optimize for it. Because you know these
+23:41
+agents we forget sometimes are probabilistic. It's not like a developer
+23:45
+says okay I'm going to go build this little app over here and I going to pick
+23:48
+two different libraries. I'm gonna see which one does best and I'm going to
+23:53
+generate my app. No, an agent could say, I'm gonna open up a hundred different
+23:57
+sandboxes with a hundred different libraries and then determine which is
+24:01
+the best app, right? And all these different tools. That knowledge is in a
+24:07
+handful of companies today. And if you look at E2B and you look at Docker,
+24:12
+they're probably the two best at understanding all that stuff. So, you
+24:16
+start there because if you don't get the sandbox right, forget everything else.
+24:21
+>> I have to ask you, you've mentioned FireWorks multiple times. Um,
+24:25
+>> Lynn has margins in the 35% range, she said on the show publicly. Um,
+24:31
+>> many companies within the AI application layer in particular have very depressed
+24:36
+margins, lower than that, 20%. >> Right?
+24:39
+>> Should we just all get used to a lower margin generation of companies and that
+24:43
+is AI sadly? or should we think differently about
+24:47
+margin in this generation? >> Early in a cycle with new technology,
+24:52
+it's always a real estate game, right? I mean, when they wanted to populate
+24:59
+Oklahoma with settlers, they just had this giant date, had all these people
+25:03
+out there, pulled down the flag, and everyone ran and just put their put
+25:07
+their stake in the ground, said, "This is mine." And it didn't matter if it
+25:10
+belonged to to Native Americans or not. They just did it. And I think in the
+25:14
+same way you've got people doing the exact same thing. They're taking low
+25:19
+margins or zero margins in some cases just to get the customers to get the
+25:25
+relationship to get the real estate. And so it's a strategy. If you've got
+25:29
+capital, you're going to own the real estate and then you're going to go back
+25:33
+later and and get the margins built into the business.
+25:37
+>> So you don't worry about that. You're like, it's a land grab. It's more
+25:40
+important to put your flag in the ground and we can expand margin later.
+25:44
+>> Well, it's just a strategy. I would not invest in people that build a culture
+25:49
+around that idea of low margin. Now, if that's why I probably lost out on
+25:55
+investing in Amazon because I just didn't, you know, I didn't buy into
+25:59
+Bezos's idea that your margin is my opportunity. It turn in in groceries and
+26:04
+books and things. Yeah, he's right. And in in compute, he was right. He was
+26:08
+absolutely right. and he and he scaled it uh in a different way. But most
+26:12
+people aren't thinking like Jeff Bezos in that regard. I believe that you need
+26:17
+to build a culture that works and if you don't want to give all your company away
+26:21
+to venture capitalists, you might think about monetizing and generating margin
+26:26
+effective margin and you can be clever about it. If I talk about the sandbox
+26:30
+example, you know, the newest thing is, you know, most sandbox people make money
+26:35
+on compute. Frankly, that's a dumb idea in my
+26:39
+opinion. You want to you want to have a model that says bring your own compute
+26:44
+and we'll make money because we we understand how to run sandboxes better.
+26:47
+We know how to network them better. We know how to provide traces better. We
+26:50
+know how to do all these things that are going to give you visibility into what
+26:53
+you're doing. And so again, innovation is what should be on your front of your
+26:59
+mind. And that innovation better drive margin. So even if you don't have it
+27:03
+right this minute, if you're not thinking about it, I won't invest in
+27:07
+you. >> You said like, "Hey, we need to rebuild
+27:09
+the entire stack." When you think about that and the rebuilding of the entire
+27:14
+stack, if you start with chips, we see more and more people coming in at
+27:20
+the chips layer, whether it's etched or fractile in the UK.
+27:25
+>> Yeah. >> How how do you see that?
+27:28
+>> I I I've said it last February. I look A6 chips are really ideal if you're
+27:37
+thinking about model customization if you're saying look we're at a new
+27:43
+phase in in in this AI buildout where what we really want to do is is is do a
+27:49
+lot of model specialization you don't need a GPU for that too expensive you
+27:54
+can absolutely take an A6 chip and so I think the number of people designing
+27:58
+chips so A6 chip It's because they recognize that trend
+28:04
+and they want to take advantage of it. >> Do you need to own the chip layer as a
+28:08
+model company today? Do you think when you see Deep Seat building their own
+28:12
+chips? You see Anthropic now building their own Jalapino from Open AI.
+28:18
+>> I'm not sure Jalapeno is the best name. It bothers me,
+28:24
+you know, and I love Mexican food. I love spicy food, but I don't know. I I
+28:30
+just not sure about that. >> The next iteration is called Padron
+28:33
+Pepper. >> Look, look, actually owning the chip is
+28:37
+going the wrong way long term. Short term, it makes sense for larger
+28:44
+companies because they want to optimize chipsets for models and that's what
+28:50
+they're thinking about. But when I was uh at the Santa Fe Institute and I'm on
+28:54
+the board there, we had a meeting with a bunch of chief scientists from all the
+28:58
+major AI companies. And what we came back with out of that meeting, well, two
+29:04
+points was one, we don't know how to measure AGI even if it shows up. But the
+29:08
+second point that's useful to this conversation
+29:11
+is that we should focus on this complexity between the model and the
+29:19
+agent and therefore the human being to the degree that they're in the loop.
+29:24
+That's where the opportunity is. And sure enough, I think that's where the
+29:28
+most compelling place I would focus on in investing is that level, which is,
+29:35
+you know, from the loops to, you know, customization,
+29:39
+uh, multiple things, security, all of that stuff from the model out is where I
+29:45
+think it's far more interesting. Going back to the chips, eh, shortterm, I can
+29:50
+see why people do it. Long term, I think it's unnecessary. I'm an investor in
+29:55
+Lagora and they obviously fight intensely with Harvey. When you look at
+30:00
+the two of them, you think, "God, what a competitive landscape." What have been
+30:03
+your lessons over the last few years, decade, two decades, when you have two
+30:08
+very wellunded competitors like this? Fund the guy who is the small startup
+30:16
+right now watching them to battle it out. particularly in the legal market,
+30:21
+the chances of being early and take when you're in that competitive situation,
+30:25
+you're going to take risks and you might regret. And the first one of those guys
+30:31
+that that has a security leak and security problem and it will happen is
+30:37
+going to wreck their market opportunity. And you think, oh well, the other one's
+30:40
+going to win. Well, probably not, cuz they'll probably both be vulnerable
+30:43
+because they're they're looking at each other and they're watching what each
+30:46
+other's doing. So for me, I look at that situation like I want to go for the next
+30:53
+innovative young company who's maybe not trying to do all things for all lawyers
+30:58
+and be more highly specialized like Get Dynasty is in the trust world. You know,
+31:03
+do something very specific. And by the way, this has been a lot of advice. Uh
+31:08
+Peter Theal's advice is start with a niche,
+31:12
+dominate the niche, and then grow it out. And so when you're trying to take a
+31:18
+whole ocean like the legal system, I just wonder if it's kind of contrary to
+31:23
+Peter Theal's advice. >> Do you worry that we just throw price
+31:28
+out of the window? It it seems like we've never been less price sensitive.
+31:31
+This is crazier than 2021, Jerry. I mean, like I'm investing every single
+31:36
+day on the ground. I I consistently have founders say, "Oh, you know, we're
+31:40
+raising 100." And I'm like, "Oh, wow. It's like, how much are you raising?"
+31:44
+And they're like, "We're we're raising a hundred." I'm like, "That's the that's
+31:48
+the friends and family round. What the fuck?" And like when when I I
+31:53
+said I said to a founder the other day, we write $25 million checks. And they
+31:57
+were like, "Okay, good. So you're small and collaborative." Have we just lost
+32:01
+price sensitivity and is that okay given all outcomes can be trillion dollar
+32:06
+companies? >> It's an evidence that we're still in the
+32:08
+hype cycle, right? We're in the hype cycle because expectations are beyond
+32:13
+everyone's imagination, you know, I mean, and so if you're saying, I'm going
+32:17
+to be a trillion dollar company. My my opening round's 100 mill 100 million or
+32:21
+something or even a billion, you know, whatever the valuation is are. You just
+32:28
+you just recognize and you have to look in your head and look at the people that
+32:32
+are going to take that money and you're going to recognize that has that number
+32:36
+been well thought out and or are they or are they just doing it because the
+32:41
+market's doing it? And I would argue that it looks like anthropic and open AI
+32:47
+those crazy mega rounds you know at 100 billion 150 billion might actually have
+32:52
+been cheap. I mean, I think Gavin Baker probably believes that and others
+32:56
+believe that. And so for a few companies, yeah, but how many trillion
+33:02
+dollar companies we going to have? I think it I think discernment again is
+33:06
+necessary here to decide, you know, what really can have the sort of hypers scale
+33:11
+type growth associated with it and which ones
+33:16
+are going to be also rans or a little more of a slower growth opportunity. And
+33:22
+we need to and we need to sort out those a little better.
+33:25
+>> Is slower growth venture anymore, Jerry? If we look at fireworks, you know, it's
+33:29
+3 and a half years to a billion. It'll be 4 years to 2 billion if they hit end
+33:35
+of year targets this year. 4 years to two billion. Jerry, do you remember when
+33:40
+it was Slack 18 months to 10 million? And we were like, "Wow, wow." I think in
+33:46
+the case of fireworks look um they're benefiting because of open aanthropic
+33:52
+they are the next level right and now with open source kicking off they're
+33:59
+benefiting from that and so what what they ride on the shoulders of these
+34:04
+model builders and they're the next layer that needs to get developed and so
+34:10
+they can scale right behind that but if you're somebody else and like say in the
+34:15
+app layer. I'm just not buying that, you know. I'm not buying I'm not buying it
+34:19
+for the legal and I'm not buying it for the app layers yet. Um, but for
+34:24
+infrastructure, absolutely.
+34:27
+>> But I get killed for this. I say publicly triple triple double double's
+34:31
+dead. Do you remember this? Am I glib and my kid you are a product of a cycle
+34:37
+or is this just a new expectation level for venture?
+34:43
+Uh you are glib at sometimes not all the time but right
+34:47
+now you are. Yeah. Uh I would argue that general statements don't apply here. You
+34:53
+have to be highly specific. Look if you look at anthropic and you look at what
+34:58
+they've done anthropic and open a it's never been done in the history of the
+35:00
+world. It shows the importance of the time. So we are definitely if we look
+35:07
+through the history of venture in a completely different era and the
+35:12
+frontier model companies have done something extraordinary in the history
+35:16
+of the world right I mean this is this is definitely on the level of inventing
+35:22
+fire uh you know the electricity whatever you want to call it it's truly
+35:28
+extraordinary what the frontier model companies have done they've they've lit
+35:31
+the match to AI and the companies that can follow right on top of them and not
+35:37
+get killed by them, but can grow and solve more infrastructure problems and
+35:43
+help create an ecosystem around the model companies. Those guys can they
+35:48
+deserve those economics. Other categories, no way. Like for
+35:53
+example, neoclouds, uh, no way. I don't buy it. I think some
+35:58
+one or two of those Neoclouds are going to end up dominating and and and a lot
+36:02
+of them at least half of them are going to go away and that and they're going to
+36:06
+and they're going to go away with massive amounts of money being burned as
+36:10
+part of it. >> Does the model routting layer carry
+36:14
+enough value to you to be independent? >> My opinion is open router has massive
+36:20
+amounts of transactions because people are basically lazy, right? It was easy.
+36:24
+Okay, I need to connect to this model. I'm just going to use open router and
+36:28
+and and open router charges 5% on top of that, which is a crazy amount of money.
+36:34
+That's not going to last. You're going to see exchanges. There's a a blockchain
+36:40
+company called Aki Naki that has just launched Dodex on their mainet. And this
+36:46
+thing is an exchange to go out and buy inference. And as part of that, all the
+36:52
+model routing is done for you. And so I think you're going to see multiple
+36:57
+opportunities to an open router type product where people that are hosting
+37:02
+the models themselves will provide, you know, through an exchange an easy way to
+37:07
+to to to acquire the inference and the the need for an open router type product
+37:14
+is and and particularly paying the 5% markup for the inference will matter,
+37:19
+right? So, because that's what that's what those things do and and my humble
+37:25
+opinion is that they're not necessary long-term.
+37:29
+>> So, if you're on the board of Open Router and the $10 billion acquisition
+37:33
+comes through, what do you say? >> You say, "Fuck yeah, this is great." You
+37:39
+know, and and like a lot of people, you know, you take you take it you take the
+37:43
+money when you can. And look, credit to Open Router, they're there early.
+37:47
+developers didn't see another alternative. They could just go to
+37:50
+there, go to the API, and they're willing to pay 5% markup to get their
+37:55
+inference. And guess what? Shame on the enterprises for letting them burn all
+37:59
+that money. I mean, that's a huge amount of money, by the way. And so, I think
+38:04
+that uh you're going to see a big disruption in that model in the next 3,
+38:10
+four, five months. Actually, not just Aki Naki, but Venice, Venice IO is doing
+38:14
+that. And there's two or three other guys that are now in the process of
+38:19
+building exchanges that you can go directly get the inference you need
+38:24
+without paying the 5% markup. >> I think he very accurately said about
+38:28
+kind of uh where we are today the potential um dislocation of excitement,
+38:34
+dislocation due to external affairs and then the reblossoming of an ecosystem so
+38:39
+to speak. >> Yeah. If you think about that
+38:42
+>> and you advise me as a venture investor, >> yeah,
+38:45
+>> deploying say your money today, what would you say to me? Play the game on
+38:50
+the field billy style. Be mindful. Don't spunk cash into Neols a billion dollars
+38:58
+pre for one person out of open AI. What would you say to me?
+39:03
+>> Well, I think Bill Bill's on the board of the Santa Fe Institute with me. I
+39:07
+mean, his his guidance is pretty smart. He's pretty much on on point with a lot
+39:12
+of things with venture capital. What I would suggest is you look for impact.
+39:18
+You you look for people that are going to be just they're just they're just way
+39:23
+different than anyone else. And you look at them and you realize it's not that
+39:26
+they want to build this business, it's that they have to build this business.
+39:30
+And if you find that in a person and you and you recognize that that they have
+39:36
+the commitment to it because the commitment to it is allin, there's no
+39:41
+other option. And look for that and look for the fact that what they're going to
+39:46
+do has impact if they do it. When you review the founders you've worked with,
+39:51
+where was that most obviously striking? >> It's rare, right? Because you could say
+39:58
+all the founder-driven MAG7 companies would qualify, right? I mean, Elon,
+40:03
+Jensen, Zuckerberg, they all qualify for that definition. But you look at um you
+40:11
+look at these other companies that you say, "Wow, fireworks looks to be like
+40:16
+that." Um A2B is definitely like that. It's one of my companies. an A to B. Um
+40:22
+the founder Vnan he's absolutely going to do it. There's no question in my
+40:27
+mind. Aven who this guy came out of meta uh as well his name Saudi Khan but Kosha
+40:34
+said this is one of the best CEOs ever seen and Venode was one of the best CEOs
+40:38
+building Sun. So when someone says that you take it seriously.
+40:41
+>> Do you think we see a compression in like liquidity timelines? We have cursor
+40:46
+scaling to 60 billion sale in four years.
+40:50
+>> Yeah. Do we see actually venture cycles get
+40:53
+shorter in this environment given companies grow faster?
+40:58
+>> I think what cursor did cuz the team is really smart is they pivoted out of the
+41:03
+IDE space and they pivoted and in that pivot they convinced Elon that they
+41:09
+could build models. They hadn't proved it yet but they convinced him that they
+41:13
+knew enough to do it. And Elon was pretty desperate to to solve his problem
+41:18
+with XAI. And so it was a great fit and they got the 60 billion. So you hit you
+41:22
+hit the bid. If open router gets a $10 billion, you know, bid from Stripe, you
+41:28
+take it. I think those are not the norm. Those are the a those are the abnormal
+41:34
+those are events that are happening because the board and the and the
+41:40
+management realizes, hey, maybe what we've built isn't uh isn't a isn't a
+41:46
+isn't a a decade company. maybe this is something that we need to move out of
+41:50
+and we take take the win for what we had. And uh I I had a few companies back
+41:56
+in the day that I wish had done that. Uh Flipboard was one of them that I wish
+41:59
+Flipboard had taken the billion dollar exit. Uh um but they didn't. And you
+42:05
+know >> what what happened there? They had a
+42:07
+billion dollar exit on the table. >> Well, they had an opportunity. Yeah.
+42:10
+They had two biders going for them at the time uh um that was very very
+42:15
+interested in them at at around I'll say within 20% of that number and uh one of
+42:22
+them was Twitter and the other one um was Tik Tok the founder of bite dance
+42:29
+and founder just you know he got advice from uh someone called the coach who was
+42:35
+pretty famous at the time that said hey don't sell your company and the coach
+42:38
+was was unfortunately passing way and I think the board bought into the coach's
+42:43
+advice and they stayed with it and now flipboard you don't care about it right
+42:47
+you missed you missed the opportunity I think those opportunities uh happen with
+42:52
+a lot of companies I have a lot of arrows in my back from this situation so
+42:57
+you just have to know when it's a time to go and when it's not a time not to go
+43:00
+>> the one I love is one of my dear friends once said to me you know Harry I've
+43:05
+never regretted making millions of dollars and I say this for imagine G650.
+43:13
+>> I I always remember that. Um, can I ask you, we we mentioned that obviously C is
+43:17
+selling to X. It seems like IPO markets are open for the rare few for anthropic
+43:24
+and open AI when they want to for SpaceX. But I'm concerned that your Air
+43:30
+Table of the world at 485 couldn't IPO. You can't IPO with less
+43:36
+than a billion dollars in revenue today. Does that concern you?
+43:42
+>> No. I just think that we're at a moment in time um where, you know, if you want
+43:48
+a proper IPO, you need to be on track for that. But I would think Curser, if
+43:53
+they had gone out last summer, if they wanted to, they could have gone. I mean,
+43:58
+they would have been taken despite the fact. I think the the management team
+44:01
+was wise to realize that they weren't quite ready for that and didn't do it.
+44:05
+But they could have. Absolutely, they could have. the numbers were crazy and
+44:09
+so you know there's always a banker willing to do it. The question is you
+44:14
+know which bankers and is it the right thing to do?
+44:18
+Do you worry that air table is the start of a much broader generational cohort
+44:25
+that will be sold at a mega discount to last round?
+44:30
+Uh, no. I I don't um first of all, there's not that many buyers like uh
+44:35
+bending spoons, right? And so, um, there's not that many buyers there. So,
+44:42
+I don't I think I think the the companies if they're at 4 500 million
+44:48
+and they have the kind of revenue, the question is, are they going to continue
+44:51
+having the revenue if they haven't already integrated AI in a compelling
+44:55
+way? Yeah. I'm not I'm not optimistic about their future at all. And if you
+45:02
+don't have a a a really thoughtful AI strategy and a thoughtful AI product, uh
+45:08
+I don't believe that you're going to have an opportunity uh to do much of
+45:13
+anything with the company in two years. >> I mean, are we not seeing most of the
+45:17
+SAS generation put lipstick on the pig, so to speak? Ah, [ __ ] Let's sprinkle
+45:22
+some pixie dust in this. And oh, now you've got an AI co-pilot. And
+45:27
+>> there you go. >> Right. Right.
+45:31
+>> Well, you know what? It's a good thing you mentioned that because we're in a
+45:34
+new era now. we've gone uh to what I call the co-work era where it's really
+45:40
+more agentic where we're I mentioned autonomous agents and I think to those
+45:45
+few companies that have deployed autonomous agents successfully uh
+45:49
+co-work is becoming the new trend and as as co-work becomes you know more
+45:56
+successful and more stable and more broadly used I would be really concerned
+46:01
+about SAS companies that don't have some kind of system of record or some kind of
+46:06
+AI strategy in place uh um to succeed um because the co-work era it begins the
+46:14
+threat so the threat to the SAS world is just starting right now um but it's
+46:20
+still early days so if you've got time to pivot if you SAS company you got time
+46:24
+to to do AI and bolt on AI and and figure out some other direction but if
+46:30
+you're not doing that now good luck >> good luck if you're not doing that now.
+46:36
+Dude, I I look at PE today and I >> I like the P model, but I'm I'm looking
+46:40
+at your Toma Braavos of the world and I'm just like
+46:48
+ouch. Like I'm I I really like Orlando and he was great on the show and I
+46:52
+really I want them to succeed, >> but [ __ ] that's a hard job you've got
+46:56
+with your Cooper and your Anna plans of the world.
+46:59
+>> Yeah. What do we just have a vintage which which sucks and we just get over
+47:05
+it? >> Well, you know, it's amazing. I mean, in
+47:08
+2001, uh, TPG had a terrible fund and ventures, like everybody did. Uh, uh,
+47:16
+they survived it cuz they had a whole lot of telecom investments that just
+47:19
+evaporated. Forceman Little had a lot of telecom investments and that led to the
+47:25
+end of the firm. Firm ended, died, no more Forceman Little. Um, so look, I
+47:31
+suppose these PE firms that have challenging portfolios, they have time
+47:36
+to do something about it now, but when and if a financial dislocation comes,
+47:43
+that's the problem because they're all levered up. The problem with the PE
+47:46
+business is the leverage on the businesses and if IBIDA drops churn
+47:51
+increases um and if it happens rapidly through a
+47:56
+financial dislocation and there's you know um a margin call effectively on the
+48:01
+debt. Yeah, it's going to be tough. It's going to be really tough.
+48:05
+>> Dude, a lot of these assets are like four to 6x levered. It I mean it's like
+48:10
+it's high. >> Yeah, it's high. I mean look it uh
+48:14
+Leopold was only 3 and 1/2x levered and he had to sell a lot of assets. Um I
+48:20
+agree it doesn't look good. Um but look they have enough IBIDA today and they
+48:26
+have PE firms that know their survival's at stake and the PE firms have time to
+48:32
+come up with some strategies as long as the market stays up. I mean, you know,
+48:37
+this is the point I was making that, you know, the global markets are critically
+48:43
+important to what's going to happen into the tech sector. Critically important.
+48:48
+And if you have at this location, I think it was Tom Lee that called for a
+48:52
+10% decline uh or draw down in in the S&P this fall. If he's right, you know,
+48:59
+and if it and if it's if it's any worse than that, I don't know how people
+49:04
+handle when when assets deflate and you've got and you're levered up. I
+49:08
+don't know how you handle that. >> You said there like, you know, the 10%
+49:11
+draw down and you said earlier about fire and embedding fire with the
+49:15
+frontier models. Sam was like, "Hey, administration, take 5% of Frontier
+49:20
+Models." Do you think the answer when you create fire is you have to be owned
+49:24
+at least partly by the administration? >> Well, first of all, that's never
+49:28
+happened in the history of the United States until this current
+49:31
+administration. So, that's never been necessary. I don't see why it's
+49:36
+necessary now. >> If you look at utilities providers in,
+49:40
+you know, the UK, you have like your British Gas and your British telecoms. I
+49:44
+know they're not now but cuz they were sold and privatized but you know you had
+49:48
+your Royal Mail like actually the majority of utilities were stateowned
+49:54
+but look I mean you have a history of socialism in European countries they
+49:58
+that post World War II socialism has existed and people have always supported
+50:04
+that and I do think there was a need for governments to get involved because
+50:09
+there wasn't the capital markets available to them like they were in the
+50:13
+United States and obviously in the United States there's always there's
+50:17
+been public private you know collaboration right but Sam's already
+50:23
+built the company to this size without needing five to give sell 5% to the
+50:28
+government so why does he need to do it now right I mean it makes sense if like
+50:34
+a Manhattan style project if we did that for AI 10 years ago well fine you know
+50:39
+do it because it's strategically important to the country but today given
+50:44
+the size of them I think the only reason you do it is for political reasons
+50:49
+>> talking about strategically important for the country do you think it's right
+50:52
+that we have export controls on chips >> I think it's important that we think
+50:57
+about how we're going to deal with our technology we need to really have a
+51:03
+strategy I I'm not a believer in sort of regulation for regulation's sake you
+51:09
+need put it in the context give us a strategy
+51:13
+Let's publicize the strategy. Let's debate the strategy. Let's have people
+51:17
+responsible for it. You know, we don't need just some regulator to come out and
+51:21
+say, "Let's just do this." >> Do you worry about the dominance of
+51:24
+Chinese open-source models and the ability for back doors to be introduced
+51:29
+into their models, or do you think this is grossly overestimated?
+51:33
+>> The main thing about open source and Chinese models today is one, all these
+51:37
+models are not going to exist in 10 years. There's going to be completely
+51:40
+different ones. So the exist if there's open if there's back doors today there
+51:45
+ain't they better they better do what they're going to do now because they're
+51:49
+not going to exist in 10 years. >> What do you mean by that? Like Kimmy
+51:53
+won't be a dominant model in >> I mean all the all the open source
+51:56
+models that we're doing right now we're using they won't be used they'll be
+52:01
+replaced by something else. First of all, within 10 years, I believe we and
+52:06
+and I think some people are thinking two or three years, continuous learning
+52:11
+models will come into existence. That means that every generation, every
+52:16
+model we have today dies, goes away >> for two things. What is a continuous
+52:22
+learning model and why does that mean every generation dies for this? Ah,
+52:26
+because it's a goal like today one of the most important goals of of
+52:31
+the model builders particularly frontier model builders is continuous learning so
+52:34
+that it can do more complicated tasks just like humans like we we we're in
+52:40
+theory we're continuous learning but but robots so physical AI will need to have
+52:46
+some ability that maintains its memory so it can continuously do complicated
+52:51
+tasks and learn and deal with dynamic events that come into it. And so these
+52:57
+models will be fundamentally different than the models that have been trained
+53:01
+to date. And so continuous learning models will come in and once they're
+53:06
+sort of deployed, they'll be a whole new breed of open-source models based on
+53:13
+this new capability um of continuous learning. And then those will evolve
+53:18
+into what's called lifelong learning, which is truly more how human
+53:22
+intelligence works. But those models, in my humble opinion, will replace every
+53:27
+model that exists today. >> Does continuous learning and potential
+53:30
+lifelong learning not denigrate the value of frontier models?
+53:36
+>> They're going to replace frontier models. I don't think you can bolt on
+53:39
+continuous learning into an existing frontier model. I think they're going to
+53:44
+try in the early stages will look like that, but I think ultimately it'll call
+53:48
+for a new form of architecture and completely new training. Right? If you
+53:52
+when you train a model today, it's kind of static done. It's trained. Then you
+53:56
+go out there in the world, right? And so continuous learning models I think will
+54:01
+be architecturally different ultimately. >> Would you have done SSI at 30 billion
+54:07
+Ilia's company which is supposedly coming out with the first version of
+54:10
+their continuous learning model end of August?
+54:14
+>> Um I don't know him and I don't do model deals like that unless I know them or
+54:19
+someone I trust knows them. So I can't say
+54:24
+>> got you. You said there about training being kind of a shot and done. I'm an
+54:28
+investor in Mccore. I think data itself is much harder than people give it
+54:32
+credit for uh in terms of acquisition, cleaning and deployment.
+54:38
+How do you feel about data providing companies as a commodity or as a
+54:44
+valuable asset? >> Well, data keeps changing. So the so the
+54:49
+the thing about data is it's not static and so you know there's of course value
+54:55
+to context right data gives you the context the memory right you so so and
+55:00
+and I do think that if you're an enterprise business your data the way
+55:06
+you do it right will be different than the way someone else take hamburger
+55:11
+companies right I mean Jack's data is going to be utilized differently than
+55:17
+say Burger King will do it or or McDonald's. And so I do think that
+55:22
+there's going to be highly um unique use cases for data that is really important,
+55:31
+but you have to have a system where the data continues to evolve and change and
+55:37
+the underlying utilization of it can change as the data changes. I think I
+55:42
+buy Lynn's thesis that you'll have specialized models for companies and
+55:46
+part of the training for those models will require additional surplus data and
+55:52
+then you'll see the likes of Mccor go from purely selling to frontier models
+55:57
+to selling to enterprises and even mid-market who need specialized data
+56:01
+that they might not have and that massively opens the TAM.
+56:05
+>> That's the $200 billion opportunity. Right now models are essentially
+56:09
+taskdriven to to a large degree. Would models you know and and frontier models
+56:16
+are doing some levels of creativity but we really went into deep creativity like
+56:22
+go solve climate change right you're going to need a diversity of
+56:26
+intelligence. You think about board levels and you think about management
+56:30
+teams. You need diversity of intelligence to be able to to solve
+56:35
+really difficult problems. And so the market is going to change from let's
+56:40
+just solve tasks and do it a great way. Let's do minimal creativity with writing
+56:45
+and visual arts to being oh we really need a lot of diversity
+56:52
+of intelligence to be creative enough to solve the the problems that matter and
+56:59
+the problems that we're going to get paid for.
+57:02
+I find everything that we talk about today so exciting and then I just have
+57:06
+one pullback in my mind. Yeah. Which is just a lot of wise people say you always
+57:12
+overestimate what you can do in a year and underestimate what you can do in 10.
+57:17
+>> Right. >> Is that the case here? Am I massively
+57:20
+getting ahead of myself when I think about a lot of what we've spoken about
+57:26
+and actually calm down kiddo. It takes longer than you think. My feeling is is
+57:30
+that that continuous learning it it feels like
+57:35
+it's two to three years away. Maybe it's 10 years away. We don't know. I mean,
+57:39
+we've been thinking we're on the cusp of solving cancer for the past 15 years,
+57:45
+right? And we got a little something. We got immune we got we got a little a
+57:50
+little bump with with uh um the new sort of uh drugs like uh Katruda to do you
+57:57
+know uh cancer solving problems with the immune system but we haven't solved
+58:02
+cancer yet. We're managing it better but it's but we thought we'd it'd be over by
+58:07
+now and it hasn't happened. So I think I apply the same thinking to continuous
+58:12
+learning models. Um we are getting a little bit of success with sample
+58:17
+efficient models. Sample efficient models means when you just get a little
+58:21
+bit of data, a small sample and you can extrapolate enough beyond that to come
+58:26
+up to be useful and to learn you know from that small sample. And so learning
+58:31
+from small samples is starting to happen but when they actually become robust
+58:36
+enough to be useful I don't know. And and my feeling is is that
+58:44
+these things take a breakthrough from where we are. And just like with cancer,
+58:48
+we need more of a breakthrough. And the complexity that they're trying to solve
+58:51
+is huge. So, I'm not going to bet against them, but I would say
+58:57
+what could send us into the valley of disillusionment is a combination of a
+59:02
+global financial event and a failure for the models to continue to grow and
+59:08
+evolve. And we're going to get to a place that if we don't solve sample
+59:12
+efficient models and we don't solve continuous learning, we're going to feel
+59:17
+like, hey, our our inflated expectations are somehow not being met.
+59:21
+>> Jerry, I'd love to do a quick fire with you because I could talk to you all day,
+59:25
+literally. Um, who goes out first, OpenAI or Anthropic?
+59:32
+>> It appears like Anthropic. >> Over or under? Nvidia will be a $10
+59:37
+trillion company in 5 years >> over.
+59:41
+>> Why is it so mispriced then right now? It's been flat for the last 12 months
+59:47
+despite numbers going through the roof. I I don't get it.
+59:51
+>> I think it's because the market doesn't go like a rocket ship forever. You're
+59:55
+going to have these plateaus, right? And I think, you know, that there are areas
+1:00:02
+of of of things not really accelerating as fast as you think it is. Um, we don't
+1:00:09
+know because right now there's these circular transactions that are
+1:00:13
+obfuscating real growth in the market cuz that the the hyperscalers are sort
+1:00:20
+of trying to get ahead of the game. But we don't know, you know, I mean, demand
+1:00:26
+is going to have a lot to do with people having money in their pocket. And if you
+1:00:30
+have a a a 10% 15% dislocation in the markets, people are going to feel poor
+1:00:38
+and that's going to affect the credit market, that's going to affect
+1:00:41
+everything. That's going to affect demand. It always does,
+1:00:46
+at least short term. >> I can't believe I'm about to say this to
+1:00:49
+you, Jerry, but [ __ ] it. We've known each other a while. In the UK, we have a
+1:00:53
+game called Shag, marry, kill. Okay. And I'm going to apply it to three
+1:00:57
+companies. And the application is kill is short. Shag is buy quick, but you'll
+1:01:03
+probably flip it. And Mar is you're in it for the long term. Yeah.
+1:01:07
+>> You've got Meta, you've got Google, and you've got Microsoft.
+1:01:13
+Oh, >> because of the scale.
+1:01:15
+I'm gonna say long term for all of them. No,
+1:01:21
+>> here's why. Here's why. >> When when when Meta's got two billion
+1:01:27
+users with all their things, when Google's got two billion users with all
+1:01:31
+their things, there's a kind of stability in that cuz consumers, they're
+1:01:36
+really slow to to to accept new changes and things. So because of
+1:01:43
+those two company having such a substantial consumer business and
+1:01:48
+Microsoft's consumer business is good too. It's kind of acts like a a buffer a
+1:01:54
+stability a stabilizer that gives them time to catch up. I mean let's face it
+1:01:59
+all three of them have failed on the coding agent side but I don't know if
+1:02:03
+they're going to fail forever. I think I think you have to say these these this
+1:02:09
+mass mass customer base gives them this incredible time to catch up with
+1:02:15
+problems and that's why they're going to be trillions of dollar companies for at
+1:02:20
+least a decade in my humble opinion. They may not be as important as they are
+1:02:26
+today. That's not the question you ask. But as an economic buyer, would I hold
+1:02:31
+their stock for long term? Yeah, I would.
+1:02:35
+>> Even Microsoft with a no model, relatively shitty AI products.
+1:02:42
+>> Yeah, >> you'd still be a bummer.
+1:02:44
+>> Yeah. Here's why. They control communication for the global
+1:02:48
+enterprises. Microsoft email, as dumb as it is, I mean, exchange, whatever you
+1:02:53
+want to call it, that's not going away. That thing is a money machine that
+1:02:58
+cannot change. It cannot just disappear. It it controls. By the way, you know
+1:03:05
+what's really interesting? We talk about the speed of AI and stuff. They won't be
+1:03:10
+able to control a Asian communication, but human communication that's not going
+1:03:15
+away and they're going to be able to monetize that forever. You can't get rid
+1:03:19
+of it. It's not like it's, you know, your your cable system at home where you
+1:03:23
+can say, "Fine, I can I don't need Infinity anymore. Get rid of it."
+1:03:28
+You're not getting rid of Microsoft anytime soon. And these guys have built
+1:03:32
+these kind of businesses because of the scale that supports their underlying
+1:03:36
+business. And the consumer is in my humble opinion the thing that's keeping
+1:03:41
+those companies afloat more than anything.
+1:03:45
+>> You got to short one of the Mag 7, which you would
+1:03:49
+>> it would it would be meta. It would be meta. And it was and it would be meta
+1:03:53
+because that's the one that may become boring. It may become like a telephone
+1:04:00
+company, you know. I mean, it just it'll just be this malaise like like owning a
+1:04:06
+AT&T or something, you know? That's what that's what you kind of think about it.
+1:04:10
+Um whereas I >> being the largest So, I push back. It's
+1:04:14
+the largest ads business in the world. It's got WhatsApp and it's got
+1:04:17
+Instagram. >> Yeah. WhatsApp. I mean, again, they
+1:04:21
+control human communication on WhatsApp in a in a very meaningful way. They
+1:04:25
+haven't monetized it yet. But those users, they're going to find ways to
+1:04:29
+keep the users. You got 2 billion plus. Maybe they'll be 3 billion in 5 years. I
+1:04:34
+don't know. We got half the world using your application. I'm sorry. That's
+1:04:39
+something that's stable. That's a stable thing. Like I say, it might be bor
+1:04:44
+boring. It'll just generate dividends out to you. So, as an economic buyer,
+1:04:48
+you don't necessarily always need growth. you can take big fat dividends
+1:04:52
+and just, you know, punch the coupon. At least for the next five years, it's
+1:04:57
+going to be considered a safe haven, right? The the Mag 7 is the Mag 7
+1:05:02
+because people say, "Hey, I'll put my money there. I might be underwater for a
+1:05:06
+year or two or less of a return than I had." But long term those things are
+1:05:11
+going to be there and they're going to benefit you know with uh with with every
+1:05:15
+you know positive cycle in the markets. >> Is Apple's AI strategy unforgivable
+1:05:22
+mistakes or is it genius patience waiting to see how a developing
+1:05:27
+ecosystem plays out? >> The answer to that is something that
+1:05:32
+it's going to be hard to know. We'd have to go sit down with Tim Cook now that
+1:05:36
+he's retired. Maybe he'd tell us. Um, what is the culture around AI at at
+1:05:41
+Apple? How are they thinking about it? What are they doing in there? You know,
+1:05:44
+I know they're using Claude Code, huge, massive Claude Code customer, but how
+1:05:50
+are they thinking about it? Do they have anything innovative to say? Have they
+1:05:54
+been intelligent, watchful observers, or are they just dumb consumers? If
+1:06:02
+they're consuming, sorry, they're in big trouble. They
+1:06:06
+they're going to suffer. But if they're watchful observers and they've got
+1:06:10
+something up their sleeve, then we could be surprised by them.
+1:06:15
+>> Which PE firm will navigate the next 5 years best?
+1:06:20
+>> That's not fair. That's a tough question. I mean, I'd have to look at
+1:06:24
+the portfolios to see it. I wouldn't want to make that bet.
+1:06:33
+>> Which will navigate them worst? Well, I don't know who's worse, but my company,
+1:06:39
+Insight, they have a very small PE portfolio. Very, very small. It almost
+1:06:45
+doesn't even matter. So, I think I feel the best about them long term because
+1:06:51
+they've been really intelligent about how they deploy the capital there. But
+1:06:54
+the people that are all in on PE all the time,
+1:06:58
+I just don't know about that. I I I think they're highly at risk to any kind
+1:07:06
+of financial dislocation, anything. >> Which which venture investor do you
+1:07:11
+think has fared most well in the transition to an AI world?
+1:07:16
+>> Oh, good question. Well, look, I mean, I I think there's five or six firms that
+1:07:21
+have just done phenomenal. um you know um the the guys like Menllo that that
+1:07:29
+did anthropic how do you say early but early enough
+1:07:33
+you know they're going to they're going to do great I think um benchmark while
+1:07:38
+they missed Anthropic and OpenAI they've done amazing with you know factory and
+1:07:43
+and a bunch of other great ones that we've tal about so I think despite the
+1:07:48
+fact they're missing um the big frontier models they have a great portfolio
+1:07:54
+I think Koshla is also phenomenal. I mean Venode with Ain and you know his
+1:08:01
+companies they did amazing. So I think I think Koshla is in that group of I mean
+1:08:06
+they're just going to crush it. Koshla, Menllo and Benchmark have all just done
+1:08:11
+amazing. >> I have one final one for you and this is
+1:08:14
+kind of the beauty of what we do I think which is seeing the future hopefully
+1:08:18
+ahead. What seems crazy today that you think will be quite obvious in five
+1:08:24
+years time? >> Blockchain for agent payments.
+1:08:28
+Blockchain I is is in the the valley of disillusion right now. It's it's it's
+1:08:35
+like it's really in a bad spot. I mean IBM CEO came out and said Bitcoin's at
+1:08:41
+risk of being hacked in 3 to four years. Tom Lee came out and said Bitcoin's at
+1:08:46
+risk to being hacked in two years. Google said that Bitcoin's being hacked
+1:08:49
+in two years. And that greed element of blockchain, which is exactly what the
+1:08:55
+Bitcoin thing is all about in my humble opinion, is about greed, bringing down
+1:08:59
+the in the whole blockchain thing. Well, Salana and and and and Ethereum, they're
+1:09:05
+they're looking like they have a long-term potential. And I do think that
+1:09:11
+new things like Venice or AI Naki or what Robin Hood did with Robin Hood
+1:09:16
+chain great they got a billion in revenue probably those innovations
+1:09:22
+whether you're tokenizing stocks or you're going to do payment rails or
+1:09:26
+you're going to use C or you're going to use blockchain for buying inference like
+1:09:32
+on Akinaki or Gonka those things are going to be real innovations People are
+1:09:39
+going to be blown away that blockchain has found true utility other than some
+1:09:44
+supposed form of utility. >> Jerry, I've absolutely loved having you
+1:09:48
+on. I I No, seriously, I learned so much from you. I love what I do because of
+1:09:52
+shows like this. So, thank you so much for joining me and you've been amazing,
+1:09:56
+dude. >> Cheers. Take care.

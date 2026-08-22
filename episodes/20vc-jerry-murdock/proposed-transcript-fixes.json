@@ -1,0 +1,571 @@
+{
+ "schemaVersion": 1,
+ "status": "proposed-only",
+ "notes": [
+  "These proposals do not modify the source transcript (youtube_raw.txt stays immutable).",
+  "Timestamps are the caption block where the observed string appears.",
+  "High-confidence fixes are supported by the video title/description, a public company name, or unambiguous context.",
+  "Medium-confidence fixes are strongly suggested by context or by another AI transcript and should be checked against the recording.",
+  "Unresolved names (Aki Naki, DODEx spelling, Leopold) are documented in glossary.json instead of being guessed here."
+ ],
+ "referenceUrls": [
+  "https://www.youtube.com/watch?v=R1336Jyb-qk",
+  "https://bidclub.ai/e/20vc-ai-bubble-will-burst-half-neoclouds-will-di",
+  "https://www.audioscrape.com/podcast/the-twenty-minute-vc-20vc-venture-capital--startup-funding--the-pitch/episode/20vc-the-ai-bubble-will-burst-half-the-neoclouds-will-die-china-should-we-ban-chip-exports-be-fearful-of-chinese-open-source-mag7-who-dies-and-who-thrives-why-meta-is-meh-and-microsoft-is-mega-82420"
+ ],
+ "fixes": [
+  {
+   "id": "murdock-spelling",
+   "replacements": [
+    {
+     "observed": "Murdoch",
+     "proposed": "Murdock"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "0:09"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Video title and description spell the guest's name Jerry Murdock (Insight Partners co-founder)."
+  },
+  {
+   "id": "baseten",
+   "replacements": [
+    {
+     "observed": "base 10's",
+     "proposed": "Baseten's"
+    },
+    {
+     "observed": "base 10",
+     "proposed": "Baseten"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "0:37",
+      "9:16",
+      "9:20",
+      "9:38",
+      "9:44"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Baseten (baseten.co) is the inference provider compared with Fireworks; bidclub and audioscrape both render Baseten."
+  },
+  {
+   "id": "cursor",
+   "replacements": [
+    {
+     "observed": "Curser",
+     "proposed": "Cursor"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "43:48",
+      "9:38"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Cursor (Anysphere) is the coding IDE whose Baseten contracts are discussed."
+  },
+  {
+   "id": "fireworks-case",
+   "replacements": [
+    {
+     "observed": "fireworks",
+     "proposed": "Fireworks"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "15:38",
+      "33:25",
+      "33:46",
+      "40:11",
+      "9:20",
+      "9:55"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Every lowercase 'fireworks' instance refers to Fireworks the inference provider; the pyrotechnic sense never occurs. Case-sensitive replacement only touches lowercase instances."
+  },
+  {
+   "id": "openrouter",
+   "replacements": [
+    {
+     "observed": "Open Router",
+     "proposed": "OpenRouter"
+    },
+    {
+     "observed": "open router",
+     "proposed": "OpenRouter"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "36:14",
+      "36:24",
+      "36:28",
+      "36:57",
+      "37:07",
+      "37:29",
+      "37:43",
+      "41:22"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "OpenRouter (openrouter.ai), the inference router whose 5% markup is discussed."
+  },
+  {
+   "id": "saas",
+   "replacements": [
+    {
+     "observed": "SAS",
+     "proposed": "SaaS"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "45:17",
+      "46:01",
+      "46:14",
+      "46:20"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Context is unambiguous ('SAS companies that don't have some kind of system of record'); no SAS Institute reference exists in the episode."
+  },
+  {
+   "id": "khosla",
+   "replacements": [
+    {
+     "observed": "Koshla",
+     "proposed": "Khosla"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:07:54",
+      "1:08:01",
+      "1:08:06"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Khosla Ventures; 'Vinod' (Khosla) is named in the same passage."
+  },
+  {
+   "id": "menlo",
+   "replacements": [
+    {
+     "observed": "Menllo",
+     "proposed": "Menlo"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:07:21",
+      "1:08:06"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Menlo Ventures, named as an early Anthropic investor."
+  },
+  {
+   "id": "solana",
+   "replacements": [
+    {
+     "observed": "Salana",
+     "proposed": "Solana"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:08:59"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Solana, named alongside Ethereum in the blockchain-for-agent-payments prediction."
+  },
+  {
+   "id": "thiel",
+   "replacements": [
+    {
+     "observed": "Theal",
+     "proposed": "Thiel"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "31:08",
+      "31:23"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Peter Thiel; the 'start with a niche and dominate it' advice is his well-known Zero to One thesis."
+  },
+  {
+   "id": "legora",
+   "replacements": [
+    {
+     "observed": "Lagora",
+     "proposed": "Legora"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "29:55"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Legora (legora.com), the legal-AI startup that competes with Harvey."
+  },
+  {
+   "id": "forstmann-little",
+   "replacements": [
+    {
+     "observed": "Forceman Little",
+     "proposed": "Forstmann Little"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "47:19",
+      "47:25"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Forstmann Little, the PE firm whose telecom exposure ended the firm; bidclub digest confirms."
+  },
+  {
+   "id": "robinhood",
+   "replacements": [
+    {
+     "observed": "Robin Hood",
+     "proposed": "Robinhood"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:09:11"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Robinhood (company) and Robinhood Chain."
+  },
+  {
+   "id": "xai",
+   "replacements": [
+    {
+     "observed": "XAI",
+     "proposed": "xAI"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "41:18"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "xAI is the company's styling; context is the Cursor/xAI $60B outcome."
+  },
+  {
+   "id": "nvidia",
+   "replacements": [
+    {
+     "observed": "Nvidia",
+     "proposed": "NVIDIA"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "59:32"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Company styling."
+  },
+  {
+   "id": "mainnet",
+   "replacements": [
+    {
+     "observed": "mainet",
+     "proposed": "mainnet"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "36:40"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Common noun; 'launched DODEx on their mainnet'."
+  },
+  {
+   "id": "openai-case",
+   "replacements": [
+    {
+     "observed": "open AI",
+     "proposed": "OpenAI"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "11:09",
+      "17:01",
+      "19:26",
+      "20:18",
+      "32:41",
+      "38:58",
+      "43:24"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Company styling; only lowercase 'open AI' instances are affected."
+  },
+  {
+   "id": "anthropic-case",
+   "replacements": [
+    {
+     "observed": "anthropic",
+     "proposed": "Anthropic"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "11:09",
+      "17:01",
+      "1:07:29",
+      "20:18",
+      "32:41",
+      "33:46",
+      "34:53",
+      "34:58",
+      "43:17"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Company styling; case-sensitive replacement only touches lowercase instances."
+  },
+  {
+   "id": "bending-spoons",
+   "replacements": [
+    {
+     "observed": "bending spoons",
+     "proposed": "Bending Spoons"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "44:35"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Bending Spoons, the Italian software acquirer named as one of few buyers at that scale."
+  },
+  {
+   "id": "atob",
+   "replacements": [
+    {
+     "observed": "A2B",
+     "proposed": "AtoB"
+    },
+    {
+     "observed": "A to B",
+     "proposed": "AtoB"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "40:16"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "AtoB (atob.com), the payments company Murdock names as 'one of my companies'; bidclub digest renders AtoB."
+  },
+  {
+   "id": "lin-qiao",
+   "replacements": [
+    {
+     "observed": "Lynn",
+     "proposed": "Lin"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "10:00",
+      "24:25",
+      "55:42"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "Fireworks CEO Lin Qiao ('she said on the show publicly'); bidclub also renders 'Lynn', so check against the recording."
+  },
+  {
+   "id": "hot-seat",
+   "replacements": [
+    {
+     "observed": "hot seat stage",
+     "proposed": "hot seat today"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "0:09"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "audioscrape renders 'joining me in the hot seat today'; YouTube ASR 'stage' is a likely mis-hear."
+  },
+  {
+   "id": "mag7",
+   "replacements": [
+    {
+     "observed": "MAG7",
+     "proposed": "Mag7"
+    },
+    {
+     "observed": "Mag 7",
+     "proposed": "Mag7"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "1:03:45",
+      "1:04:57",
+      "39:58"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "Cosmetic normalization to the episode-title styling 'Mag7'."
+  },
+  {
+   "id": "neoclouds",
+   "replacements": [
+    {
+     "observed": "NeoClouds",
+     "proposed": "Neoclouds"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "8:04"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "Cosmetic normalization; audioscrape/bidclub episode titles use 'Neoclouds'."
+  },
+  {
+   "id": "getdynasty",
+   "replacements": [
+    {
+     "observed": "Get Dynasty",
+     "proposed": "GetDynasty"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "30:58"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "bidclub digest renders 'GetDynasty' (trusts specialist); single occurrence, check against recording."
+  },
+  {
+   "id": "dodex",
+   "replacements": [
+    {
+     "observed": "Dodex",
+     "proposed": "DODEx"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "36:40"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "bidclub digest renders 'DODEx on mainnet'; both sources are AI-generated, so verify."
+  }
+ ]
+}
