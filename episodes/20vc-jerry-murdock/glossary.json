@@ -1,0 +1,617 @@
+{
+ "schemaVersion": 1,
+ "scope": "Canonical people, firms, companies, and concepts explicitly discussed in the 20VC episode 'The AI Bubble WILL Burst' (Jerry Murdock, 2026-08-22). '(unresolved)' entries are names no available source could confirm; they are documented rather than guessed in proposed-transcript-fixes.json.",
+ "provenanceConvention": "Every term carries 'sources': the artifact or URL the canonical form came from. 'verified YYYY-MM-DD' = the URL was fetched and the spelling confirmed on that date; 'canonical reference' = official domain cited without a fresh fetch; 'transcript context' = internal evidence; 'user review' = provided by the repo owner. Sources make each entry auditable and re-checkable.",
+ "referenceUrls": [
+  "https://www.youtube.com/watch?v=R1336Jyb-qk",
+  "https://bidclub.ai/e/20vc-ai-bubble-will-burst-half-neoclouds-will-di",
+  "https://www.audioscrape.com/podcast/the-twenty-minute-vc-20vc-venture-capital--startup-funding--the-pitch/episode/20vc-the-ai-bubble-will-burst-half-the-neoclouds-will-die-china-should-we-ban-chip-exports-be-fearful-of-chinese-open-source-mag7-who-dies-and-who-thrives-why-meta-is-meh-and-microsoft-is-mega-82420",
+  "https://www.ycombinator.com/companies/atob",
+  "https://aven.com",
+  "https://dex.do",
+  "https://github.com/gosh-sh/dexdo-cli",
+  "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/",
+  "https://www.insightpartners.com",
+  "https://www.20vc.com"
+ ],
+ "terms": [
+  {
+   "term": "Jerry Murdock",
+   "category": "Person",
+   "definition": "Guest; co-founder of Insight Partners. ASR renders 'Murdoch'.",
+   "sources": [
+    "youtube info.json (title/description/chapters)"
+   ]
+  },
+  {
+   "term": "Harry Stebbings",
+   "category": "Person",
+   "definition": "Host of 20VC.",
+   "sources": [
+    "youtube info.json (title/description/chapters)"
+   ]
+  },
+  {
+   "term": "Lin Qiao",
+   "category": "Person",
+   "definition": "Co-founder and CEO of Fireworks; ASR renders 'Lynn'.",
+   "sources": [
+    "fireworks.ai leadership (canonical reference)"
+   ]
+  },
+  {
+   "term": "Vignan Velivela",
+   "category": "Person",
+   "definition": "Founder and CEO of AtoB; ASR renders 'Vnan'.",
+   "sources": [
+    "https://www.ycombinator.com/companies/atob (verified 2026-08-22)"
+   ]
+  },
+  {
+   "term": "Sadi Khan",
+   "category": "Person",
+   "definition": "Cofounder/CEO of Aven, ex-Meta; ASR renders 'Saudi Khan'.",
+   "sources": [
+    "https://aven.com (cofounder/CEO per user review 2026-08-22)",
+    "Khosla Ventures backing confirmed on aven.com/about (verified 2026-08-22)"
+   ]
+  },
+  {
+   "term": "Vinod Khosla",
+   "category": "Person",
+   "definition": "Khosla Ventures; Sun Microsystems cofounder. ASR renders 'Koshla', 'Kosha', 'Venode'.",
+   "sources": [
+    "khoslaventures.com (canonical reference)",
+    "transcript context 1:07:54-1:08:06, 40:27-40:38"
+   ]
+  },
+  {
+   "term": "Gavin Baker",
+   "category": "Person",
+   "definition": "Atreides Management; his 'a token is a token' claim is debated.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Peter Thiel",
+   "category": "Person",
+   "definition": "Cited for dominate-a-niche-first advice; ASR renders 'Theal'.",
+   "sources": [
+    "Zero to One thesis (public knowledge)",
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Alex Karp",
+   "category": "Person",
+   "definition": "Palantir CEO; referenced by first name only ('Alex') about enterprises avoiding frontier providers.",
+   "sources": [
+    "transcript context 18:38-19:00; Palantir link confirmed by 'Palanteer' fix",
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Satya Nadella",
+   "category": "Person",
+   "definition": "Microsoft CEO; ASR renders 'Satcha Nadella'.",
+   "sources": [
+    "microsoft.com (canonical reference)",
+    "bidclub.ai transcript/digest (digest: 'Satya Nadella has described...')"
+   ]
+  },
+  {
+   "term": "Ilya Sutskever",
+   "category": "Person",
+   "definition": "SSI cofounder; ASR renders 'Ilia's' in the SSI-at-$30B answer.",
+   "sources": [
+    "transcript context 54:01-54:07",
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Orlando Bravo",
+   "category": "Person",
+   "definition": "Thoma Bravo founder; 'I really like Orlando ... great on the show' (46:48), a past 20VC guest.",
+   "sources": [
+    "transcript context 46:40-46:48",
+    "thomabravo.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "Tom Lee",
+   "category": "Person",
+   "definition": "Fundstrat; cited for a 10% S&P drawdown call and a Bitcoin-hacking warning.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Leopold / Liupole (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "A levered fund/person that 'blew up' at ~3.5x leverage and had to sell assets. Two ASR renderings of one referent: 'Liupole' (4:49), 'Leopold' (8:34, 48:14). bidclub flags 'Leopold [?]'. Verify against recording.",
+   "sources": [
+    "transcript 4:49, 8:34, 48:14",
+    "bidclub.ai transcript/digest (marks uncertain)"
+   ]
+  },
+  {
+   "term": "Bill (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "'Bill's on the board of the Santa Fe Institute with me' (39:03). First name only; possibly an SFI trustee. Unverified.",
+   "sources": [
+    "transcript 39:03"
+   ]
+  },
+  {
+   "term": "Insight Partners",
+   "category": "Firm",
+   "definition": "Murdock's firm; over $90B AUM, 55+ IPOs.",
+   "sources": [
+    "youtube info.json (title/description/chapters)",
+    "insightpartners.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "Khosla Ventures",
+   "category": "Firm",
+   "definition": "Named among top AI-transition performers; backs Aven (per aven.com/about).",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "aven.com/about (verified 2026-08-22)"
+   ]
+  },
+  {
+   "term": "Menlo Ventures",
+   "category": "Firm",
+   "definition": "Named for being early enough into Anthropic; ASR renders 'Menllo'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Benchmark",
+   "category": "Firm",
+   "definition": "Missed Anthropic/OpenAI but strong with Factory and others.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "TPG",
+   "category": "Firm",
+   "definition": "Survived a terrible 2001 vintage fund.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Forstmann Little",
+   "category": "Firm",
+   "definition": "PE firm ended by telecom exposure; ASR renders 'Forceman Little'.",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "public PE history"
+   ]
+  },
+  {
+   "term": "Thoma Bravo",
+   "category": "Firm",
+   "definition": "Software PE firm; ASR renders 'Toma Braavos'. Founder Orlando Bravo referenced next sentence; took Coupa and Anaplan private.",
+   "sources": [
+    "transcript context 46:40-46:56",
+    "thomabravo.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "Baseten",
+   "category": "Company",
+   "definition": "Inference provider contrasted with Fireworks; ASR renders 'base 10' and 'B 10'.",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "audioscrape preview",
+    "baseten.co (canonical reference)",
+    "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/ (verified 2026-08-22): 'Baseten', $2.15B valuation"
+   ]
+  },
+  {
+   "term": "Fireworks",
+   "category": "Company",
+   "definition": "Inference provider (Fireworks AI) Murdock prefers; ~35% margins per Lin Qiao's prior 20VC appearance.",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "audioscrape preview",
+    "https://bizety.com/2025/09/19/cool-startups-baseten-and-the-inference-platforms/ (verified 2026-08-22): 'Fireworks AI', $200M-$300M ARR - corroborates 'making a lot more money than Baseten'"
+   ]
+  },
+  {
+   "term": "CoreWeave",
+   "category": "Company",
+   "definition": "Neocloud named with Fireworks and Baseten; ASR renders 'Core Weeave'.",
+   "sources": [
+    "coreweave.com (canonical reference)",
+    "transcript context 22:39"
+   ]
+  },
+  {
+   "term": "Cursor",
+   "category": "Company",
+   "definition": "Anysphere's coding IDE; Baseten contracts, later xAI outcome; ASR renders 'Curser'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "xAI",
+   "category": "Company",
+   "definition": "Acquirer in the described $60B Cursor outcome; ASR renders 'XAI'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "OpenRouter",
+   "category": "Company",
+   "definition": "Inference router with a 5% markup Murdock says 'is not gonna last'; ASR renders 'open router'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Acki Nacki",
+   "category": "Company",
+   "definition": "Blockchain chain whose token is NACKL; ASR renders 'Aki Naki', 'AI Naki', 'Akinaki'. Resolved via DEX.DO's own materials.",
+   "sources": [
+    "https://dex.do launch program issues NACKL (verified 2026-08-22)",
+    "https://github.com/gosh-sh/dexdo-cli (verified 2026-08-22)",
+    "user review 2026-08-22"
+   ]
+  },
+  {
+   "term": "DEX.DO",
+   "category": "Company",
+   "definition": "'Trade decentralized AI': an exchange to buy/sell AI inference on the Acki Nacki chain. ASR renders 'Dodex'.",
+   "sources": [
+    "https://dex.do (verified 2026-08-22)",
+    "https://github.com/gosh-sh/dexdo-cli (verified 2026-08-22)"
+   ]
+  },
+  {
+   "term": "Venice",
+   "category": "Company",
+   "definition": "venice.ai; direct-inference exchange named alongside Acki Nacki.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Gonka",
+   "category": "Company",
+   "definition": "Blockchain AI-inference network named in the closing prediction.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "E2B",
+   "category": "Company",
+   "definition": "Cloud sandboxes; one of the two strongest sandbox companies named.",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "e2b.dev (canonical reference)"
+   ]
+  },
+  {
+   "term": "Docker",
+   "category": "Company",
+   "definition": "Docker Sandboxes; Docker itself warned containers are not safe.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Harvey",
+   "category": "Company",
+   "definition": "Legal AI platform; Murdock prefers funding smaller specialists instead.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Legora",
+   "category": "Company",
+   "definition": "Legal AI platform competing with Harvey; ASR renders 'Lagora'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "GetDynasty",
+   "category": "Company",
+   "definition": "Trusts specialist cited as niche-domination example; ASR renders 'Get Dynasty'. Verify spelling.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "AtoB",
+   "category": "Company",
+   "definition": "Transportation payments, 'one of my companies' per Murdock; ASR renders 'A2B' / 'A to B'.",
+   "sources": [
+    "https://www.ycombinator.com/companies/atob (verified 2026-08-22)",
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Aven",
+   "category": "Company",
+   "definition": "Consumer-finance company (home-equity cards); founder Sadi Khan praised by Khosla per the episode.",
+   "sources": [
+    "https://aven.com (verified 2026-08-22)",
+    "transcript context 40:27"
+   ]
+  },
+  {
+   "term": "Bending Spoons",
+   "category": "Company",
+   "definition": "Software acquirer; bought Airtable per the discussion.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Airtable",
+   "category": "Company",
+   "definition": "Discussed at a $4.85B sale.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Flipboard",
+   "category": "Company",
+   "definition": "Murdock's missed ~$1B exit ('arrows in my back'); two bidders: Twitter and TikTok/ByteDance.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Coupa",
+   "category": "Company",
+   "definition": "Thoma Bravo take-private; ASR renders 'Cooper' in 'your Coupa and your Anaplans of the world'. Medium confidence.",
+   "sources": [
+    "transcript context 46:56",
+    "coupa.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "Anaplan",
+   "category": "Company",
+   "definition": "Thoma Bravo take-private; ASR renders 'Anna plans'. Medium confidence.",
+   "sources": [
+    "transcript context 46:56",
+    "anaplan.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "Palantir",
+   "category": "Company",
+   "definition": "ASR renders 'Palanteer'; Alex Karp's enterprise-security warning discussed.",
+   "sources": [
+    "transcript context 18:56",
+    "palantir.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "Etched",
+   "category": "Company",
+   "definition": "Transformer-ASIC designer; ASR renders lowercase 'etched' in the chip-designer passage.",
+   "sources": [
+    "etched.com (canonical reference)",
+    "transcript context 27:20"
+   ]
+  },
+  {
+   "term": "Fractile",
+   "category": "Company",
+   "definition": "UK AI-chip designer; ASR renders 'fractile' in 'Etched or Fractile in the UK'.",
+   "sources": [
+    "fractile.ai (canonical reference)",
+    "transcript context 27:20"
+   ]
+  },
+  {
+   "term": "Keytruda",
+   "category": "Company",
+   "definition": "Merck's cancer immunotherapy (pembrolizumab); ASR renders 'Katruda' in the cancer-drug analogy.",
+   "sources": [
+    "keytruda.com (canonical reference)",
+    "transcript context 57:50"
+   ]
+  },
+  {
+   "term": "Factory",
+   "category": "Company",
+   "definition": "Benchmark portfolio company named in the quick-fire.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Robinhood",
+   "category": "Company",
+   "definition": "Robinhood Chain cited as tokenization innovation; ASR renders 'Robin Hood'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Xfinity",
+   "category": "Company",
+   "definition": "Comcast cable service in the cancellation analogy; ASR renders 'Infinity'.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Zerohash",
+   "category": "Company",
+   "definition": "Sponsor in the podcast-audio version only (audioscrape); not in the YouTube edit.",
+   "sources": [
+    "audioscrape preview"
+   ]
+  },
+  {
+   "term": "MongoDB",
+   "category": "Company",
+   "definition": "Sponsor in the podcast-audio version only.",
+   "sources": [
+    "audioscrape preview"
+   ]
+  },
+  {
+   "term": "Framer",
+   "category": "Company",
+   "definition": "Sponsor in the podcast-audio version only.",
+   "sources": [
+    "audioscrape preview"
+   ]
+  },
+  {
+   "term": "Mccore (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "'I'm an investor in Mccore' (54:28), in the data-is-harder-than-people-think passage. A data company; candidates unclear (Encore? MotherDuck?). Verify against recording.",
+   "sources": [
+    "transcript 54:28"
+   ]
+  },
+  {
+   "term": "Padron (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "'The next iteration is called Padron' (28:30), in the chip-design passage. Possibly an Etched/Fractile product codename. Verify against recording.",
+   "sources": [
+    "transcript 28:30"
+   ]
+  },
+  {
+   "term": "Jack's (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "Burger-chain data analogy (55:11): YouTube ASR 'Jack's' vs bidclub digest 'Shake Shack'. Same passage names Burger King and McDonald's. Verify against recording.",
+   "sources": [
+    "transcript 55:11",
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "ASIC",
+   "category": "Concept",
+   "definition": "Application-specific integrated circuit; ASR renders 'A6 chip(s)' throughout the chip discussion (12:34, 27:28-27:58).",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "transcript context: Etched/Fractile named in the same passage"
+   ]
+  },
+  {
+   "term": "Neocloud",
+   "category": "Concept",
+   "definition": "New GPU-cloud providers; Murdock expects at least half to go away within 36 months. ASR once renders 'Neoclaw'.",
+   "sources": [
+    "youtube info.json (title/description/chapters)",
+    "bidclub.ai transcript/digest",
+    "audioscrape preview"
+   ]
+  },
+  {
+   "term": "Hyperscaler",
+   "category": "Concept",
+   "definition": "Mega-scale cloud operators; best prepared to survive a dislocation.",
+   "sources": [
+    "youtube info.json (title/description/chapters)",
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Mag7",
+   "category": "Concept",
+   "definition": "Magnificent Seven; quick-fire subject. ASR variants: 'Mag 7', 'MAG7'.",
+   "sources": [
+    "youtube info.json (title/description/chapters) (episode title)",
+    "bidclub.ai transcript/digest",
+    "audioscrape preview"
+   ]
+  },
+  {
+   "term": "Sandbox",
+   "category": "Concept",
+   "definition": "'If you don't get the sandbox right, forget everything else' - the security choke point for agents.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Continuous learning",
+   "category": "Concept",
+   "definition": "Models that keep learning; would replace today's architectures. Timing uncertain (2-3 or 10 years).",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Sample-efficient models",
+   "category": "Concept",
+   "definition": "Models that learn from small samples; an early step toward continuous learning.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Circular transactions",
+   "category": "Concept",
+   "definition": "Hyperscaler deals that may be obfuscating NVIDIA's organic growth.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Token fungibility",
+   "category": "Concept",
+   "definition": "Murdock's counter to 'a token is a token': customization changes a token's value.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Co-work era",
+   "category": "Concept",
+   "definition": "Murdock's name for the autonomous-agent era of work.",
+   "sources": [
+    "bidclub.ai transcript/digest",
+    "youtube info.json (title/description/chapters) (chapter 'The Coworker Era Has Begun')"
+   ]
+  },
+  {
+   "term": "LAMP stack",
+   "category": "Concept",
+   "definition": "Post-dot-com innovation wave example.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Oklahoma land rush",
+   "category": "Concept",
+   "definition": "Analogy for land-grab pricing: acceptable as strategy, not as culture.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  },
+  {
+   "term": "Trough of disillusionment",
+   "category": "Concept",
+   "definition": "Gartner-cycle phase; where Murdock places blockchain today and where AI could land if progress stalls.",
+   "sources": [
+    "bidclub.ai transcript/digest"
+   ]
+  }
+ ]
+}
