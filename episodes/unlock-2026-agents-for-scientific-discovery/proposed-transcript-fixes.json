@@ -1,0 +1,452 @@
+{
+ "schemaVersion": 1,
+ "status": "proposed-only",
+ "notes": [
+  "These proposals do not modify the source transcript (youtube_raw.txt is a byte-identical copy of app/src/data/transcripts/unlock-2026-agents-for-scientific-discovery.txt, md5 5c5fe9b2a6aadb6f4f8f3d1d2a8f40ec).",
+  "Timestamps are the nearest preceding timestamp marker in the raw transcript.",
+  "Fixes whose reason ends with 'owner-authored' are inherited unchanged from the repo's app/src/data/proposed-transcript-fixes.json; the rest were found by this pass's suspicious-token discovery (rare tokens, tech-vocabulary reconciliation, context windows).",
+  "Unresolved after this pass (see glossary.json): 'Luzison' (IBM cloud-lab location, 4:46), 'Antonio's' (first-name-only citation, 13:26).",
+  "Fresh caption fetch was bot-gated on 2026-08-23 (yt-dlp all player clients + youtube-transcript-api: IP blocked); the owner-copied panel transcript served as the immutable raw basis.",
+  "Panel-format pitfall: phrases spanning a timestamp marker (e.g. 'Nova' / '4:10' / 'Nordisk') never match a whole-phrase observed string; fix the in-chunk fragment after counting occurrences (see novo-nordisk)."
+ ],
+ "referenceUrls": [
+  "https://www.youtube.com/watch?v=BzRvHeBC9ZY",
+  "https://futurehouse.org",
+  "https://edisonscientific.com",
+  "https://www.biorxiv.org",
+  "https://www.novonordisk.com",
+  "https://react-lm.github.io"
+ ],
+ "fixes": [
+  {
+   "id": "agents-metr",
+   "replacements": [
+    {
+     "observed": "Meter",
+     "proposed": "METR"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "0:47"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "The speaker is describing METR's plots of the task-completion time horizon of AI systems. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-futurehouse",
+   "replacements": [
+    {
+     "observed": "future house",
+     "proposed": "FutureHouse"
+    },
+    {
+     "observed": "Future House",
+     "proposed": "FutureHouse"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "2:58",
+      "5:06",
+      "9:01"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "FutureHouse is the former organization name referenced by Andrew White. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-paperqa",
+   "replacements": [
+    {
+     "observed": "paper QA",
+     "proposed": "PaperQA"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:03"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "PaperQA is the published name of the scientific-literature retrieval framework. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-gpt4",
+   "replacements": [
+    {
+     "observed": "GPT4",
+     "proposed": "GPT-4"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:50"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "GPT-4 is the canonical model name. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-kosmos",
+   "replacements": [
+    {
+     "observed": "Cosmos",
+     "proposed": "Kosmos"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "12:49",
+      "12:51",
+      "13:30",
+      "17:20",
+      "6:52",
+      "7:11"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "The transcript metadata and Edison Scientific identify the AI scientist as Kosmos. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-lab-bench",
+   "replacements": [
+    {
+     "observed": "lab bench",
+     "proposed": "LAB-Bench"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "10:06"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "LAB-Bench is the benchmark suite's canonical name. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-bixbench",
+   "replacements": [
+    {
+     "observed": "Bixbench",
+     "proposed": "BixBench"
+    },
+    {
+     "observed": "bixbench",
+     "proposed": "BixBench"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "11:39",
+      "11:40",
+      "11:48"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "BixBench is the benchmark's canonical capitalization. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-product-capitalization",
+   "replacements": [
+    {
+     "observed": "protein crow",
+     "proposed": "ProteinCrow"
+    },
+    {
+     "observed": "claude code",
+     "proposed": "Claude Code"
+    },
+    {
+     "observed": "openclaw",
+     "proposed": "OpenClaw"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "14:24",
+      "14:27",
+      "15:25",
+      "17:07",
+      "17:24"
+     ]
+    }
+   ],
+   "confidence": "medium",
+   "reason": "These appear to be product-name capitalization errors; ProteinCrow should be checked against the recording or product materials. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-cofounded",
+   "replacements": [
+    {
+     "observed": "co-ounded",
+     "proposed": "co-founded"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "2:58"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "This is a dropped-consonant transcription error. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-bioinformatics",
+   "replacements": [
+    {
+     "observed": "bionformmaticians",
+     "proposed": "bioinformaticians"
+    },
+    {
+     "observed": "bionformmatics",
+     "proposed": "bioinformatics"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "11:44",
+      "11:58"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "The speaker is discussing conventions and hypothesis-driven work in bioinformatics. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "agents-kras-inhibitors",
+   "replacements": [
+    {
+     "observed": "coalent inhibitor",
+     "proposed": "covalent inhibitor"
+    },
+    {
+     "observed": "PANRASS inhibitor",
+     "proposed": "pan-KRAS inhibitor"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "7:15",
+      "7:27"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Covalent KRAS inhibitors and pan-KRAS inhibitors are the drug classes described in context. [Inherited unchanged from app/src/data/proposed-transcript-fixes.json, owner-authored.]"
+  },
+  {
+   "id": "chemcrow",
+   "replacements": [
+    {
+     "observed": "ChemCro",
+     "proposed": "ChemCrow"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:36"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "ChemCrow, the LLM chemistry agent paper Andrew White's group released in 2023; the surrounding timeline ('released the ChemCrow paper' next to the 2023 Coscientist mention) is unambiguous."
+  },
+  {
+   "id": "coscientist",
+   "replacements": [
+    {
+     "observed": "the co-scientist paper",
+     "proposed": "the Coscientist paper"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:34"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Coscientist (Boiko, MacKnight, Gomes et al., Nature 2023), named alongside its author 'Gabe Gomes'. Single occurrence, context-scoped."
+  },
+  {
+   "id": "gabe-gomes",
+   "replacements": [
+    {
+     "observed": "Gabe Gomez",
+     "proposed": "Gabe Gomes"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:32"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Gabe Gomes (CMU), Coscientist senior author; ASR added an extra 'z'."
+  },
+  {
+   "id": "shunyu-yao",
+   "replacements": [
+    {
+     "observed": "Shenu Yao",
+     "proposed": "Shunyu Yao"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:24"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Shunyu Yao, first author of the ReAct paper (2022) named in the same sentence."
+  },
+  {
+   "id": "react-paper",
+   "replacements": [
+    {
+     "observed": "react miracle paper",
+     "proposed": "ReAct miracle paper"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:27"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al. 2022). Single occurrence, context-scoped."
+  },
+  {
+   "id": "novo-nordisk",
+   "replacements": [
+    {
+     "observed": "Nova",
+     "proposed": "Novo"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "4:08"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Novo Nordisk, headquartered in Copenhagen, where the talk places the event. NOTE: in the raw panel format the phrase is split across a timestamp marker ('...at Nova' / '4:10' / 'Nordisk uh...'), so a whole-phrase replacement would match zero times; 'Nova' occurs exactly once, so the fragment fix is safe."
+  },
+  {
+   "id": "biorxiv",
+   "replacements": [
+    {
+     "observed": "bioarchchive",
+     "proposed": "bioRxiv"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "9:06",
+      "9:09"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "bioRxiv, the biology preprint server (pronounced 'bio-archive'); passage is about recovering/measuring claims from preprints."
+  },
+  {
+   "id": "provenance-word",
+   "replacements": [
+    {
+     "observed": "the providence of all the claims",
+     "proposed": "the provenance of all the claims"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "8:03"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "'Provenance of claims' is the talk's subject (verifying AI-scientist claims); 'providence' is an ASR near-homophone. Single occurrence, context-scoped."
+  },
+  {
+   "id": "ortho-typos",
+   "replacements": [
+    {
+     "observed": "whack-a-ole",
+     "proposed": "whack-a-mole"
+    },
+    {
+     "observed": "postocs",
+     "proposed": "postdocs"
+    },
+    {
+     "observed": "coalesed",
+     "proposed": "coalesced"
+    }
+   ],
+   "occurrences": [
+    {
+     "transcript": "youtube_raw.txt",
+     "timestamps": [
+      "14:36",
+      "15:13",
+      "5:54"
+     ]
+    }
+   ],
+   "confidence": "high",
+   "reason": "Unambiguous orthographic errors found by the suspicious-token scan; each occurs once."
+  }
+ ]
+}

@@ -85,6 +85,14 @@ occurrences[{transcript, timestamps[]}], confidence, reason}]}`.
 - **Count occurrences before writing every replacement** (`grep -c`). One
   occurrence means the bare token is safe; more means scope the replacement with
   context (`"with Ain and"` → `"with Aven and"`).
+- **Panel-format pitfall: phrases spanning a timestamp marker never match.** In
+  the raw format, `Nova` / `4:10` / `Nordisk` are separate lines, so replacing
+  `"Nova Nordisk"` silently applies zero times. Detect this at the completion
+  gate (residual grep + per-fix occurrence timestamps are empty), then fix the
+  in-chunk fragment (`"Nova"` → `"Novo"`) after confirming its count.
+- **Substring traps in validation:** after `ChemCro` → `ChemCrow`,
+  `grep ChemCro` still matches inside the corrected word. Residual checks need
+  word-boundary context (e.g. `grep "ChemCro[^w]"`).
 - **Beware substring corruption across rules.** The applier sorts by
   `len(observed)` descending, so a longer, more specific replacement fires first
   and wins — but if you only add the short rule, it mangles longer tokens:
