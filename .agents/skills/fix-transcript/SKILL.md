@@ -59,7 +59,11 @@ supplied). Provenance makes each entry auditable and re-checkable later.
 **Looking up associated glossaries / authoritative sources, in order:**
 
 1. Episode metadata: title, description, chapter list, tags (free, already local).
-2. Guest/employer official bio pages (name spelling, portfolio companies).
+2. The repo's conference glossary (`app/src/data/glossary.json`) — maintained
+   canonical vocabulary, including the LLM provider/model block. Use
+   domain-relevant entries only: a biotech term will not help an AI panel and
+   vice versa.
+3. Guest/employer official bio pages (name spelling, portfolio companies).
 3. Official company sites and `/about` pages (founder names, investor lists —
    Aven's own about page confirmed its Khosla backing).
 4. Directories: YC company pages (founder names), Crunchbase/LinkedIn.
