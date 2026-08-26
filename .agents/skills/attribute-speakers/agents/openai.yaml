@@ -1,0 +1,4 @@
+interface:
+  display_name: "Attribute Speakers"
+  short_description: "Evidence-backed transcript speaker attribution"
+  default_prompt: "Use $attribute-speakers to assign and verify speakers in this timestamped transcript."
