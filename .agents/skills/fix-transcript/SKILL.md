@@ -59,7 +59,11 @@ supplied). Provenance makes each entry auditable and re-checkable later.
 **Looking up associated glossaries / authoritative sources, in order:**
 
 1. Episode metadata: title, description, chapter list, tags (free, already local).
-2. Guest/employer official bio pages (name spelling, portfolio companies).
+2. The repo's conference glossary (`app/src/data/glossary.json`) — maintained
+   canonical vocabulary, including the LLM provider/model block. Use
+   domain-relevant entries only: a biotech term will not help an AI panel and
+   vice versa.
+3. Guest/employer official bio pages (name spelling, portfolio companies).
 3. Official company sites and `/about` pages (founder names, investor lists —
    Aven's own about page confirmed its Khosla backing).
 4. Directories: YC company pages (founder names), Crunchbase/LinkedIn.
@@ -99,7 +103,12 @@ occurrences[{transcript, timestamps[]}], confidence, reason}]}`.
   `anthropic` → `Anthropic` turned the merged ASR token `aanthropic` into
   `aAnthropic` until `open aanthropic` → `OpenAI, Anthropic` was added.
 - Include inflected variants as separate replacements (`base 10's`, `base 10`).
-- Record every occurrence timestamp (nearest preceding marker) per fix.
+- Record every occurrence timestamp (nearest preceding marker) per fix. For a
+  segment raw (see get-transcript's segment scoping) these timestamps are
+  video-absolute by design — do not rebase them to segment start.
+- **Scope everything to the segment**: glossary terms, fixes, and discovery
+  scans cover the segment raw only; content outside the window does not exist
+  for this artifact series.
 - Never fix what stays unresolved: a documented `(unresolved)` glossary entry
   with all observed renderings beats a guessed correction (e.g. `Liupole` /
   `Leopold`, `Mccore`, `Padron`, `Jack's` vs an alternate source's `Shake Shack`).

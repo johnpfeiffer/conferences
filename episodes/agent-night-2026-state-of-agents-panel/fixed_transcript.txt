@@ -1,0 +1,606 @@
+https://www.youtube.com/watch?v=wcYdO0v1K1k
+
+Segment: 57:12-1:27:46 of the source video (Agent Night Live: Introducing Intent-Based Access Control, WorkOS, 2026-08-14; full duration 1:30:01). Panel "The State of Agents" only; the keynote, lightning demos, and closing WorkOS announcements are intentionally out of scope. Timestamps are video-absolute.
+
+Description: Panel with Jaya Gupta (Foundation Capital), Flo Crivello (Lindy), and Shawn "swyx" Wang (AI Engineer), hosted by WorkOS CEO Michael Grinich: the state of agents, open source models, harnesses, memory, and what's next.
+
+Speakers: Michael Grinich (host, WorkOS), Jaya Gupta (Foundation Capital), Flo Crivello (Lindy), Shawn "swyx" Wang (AI Engineer / latent.space)
+
+Transcript basis: owner-copied YouTube transcript-panel text with timestamps (2026-08-26), after automated caption fetches were bot-gated from the working IP on 2026-08-23. Cross-checked against two independent full-video renderings of the same caption track (server-side watch-page fetch and youtubetotranscript.com); 49/49 distinctive panel probes agree across all three copies. Notes on format: the first block carries no timestamp in the copy (it begins at the requested 57:12 mark); the "Panel: The State of Agents ..." line between 57:29 and 57:35 is YouTube's inline chapter marker, kept verbatim; the marker 1:15:29 appears twice in the source copy, kept verbatim.
+
+---
+
+run times, different things. Um, we're going to switch gears here into actually a panel discussion as the chairs appear
+57:15
+behind me. Um you know these are a group of three people that um I've gotten to know over the last uh year few years who
+57:23
+are all kind of working in different areas either building startups um investing in startups or in some cases
+57:29
+um kind of doing a lot of media and conferences about startups. Um so I'll introduce them on stage but please give
+Panel: The State of Agents with Jaya Gupta (foundation capital), Flo Crivello (Lindy), and Shawn Wang (AI Engineer)
+57:35
+a very very warm welcome to uh Jaya, Flo, and swyx.
+57:40
+[applause]
+57:47
+[applause] First of all, thank you folks all for for coming out tonight. This is great.
+57:52
+Good to see you. Um, just really quick intro for those of you not familiar with these folks. Um, Jaya is a partner of
+57:59
+Foundation Capital and you might know her from the uh context graph tweetstorm
+58:06
+article that went viral earlier this year. It really popped and she's written a bunch about that. Um, uh, Flo is the,
+58:12
+uh, founder and CEO of Lindy, which recently had a pretty amazing, uh, launch this week, um, with a AI teammate
+58:18
+product, but Flo's has been building stuff around agents for, um, I think over four years now, like this kind of same thesis, so he's been very early to
+58:25
+it. Um, and of course, swyx, who I feel like um, needs no introduction. If you don't if you don't know swyx, uh, he
+58:31
+runs the latent.space um, podcast, which is incredible. um he's the creator and the organizer of um the AI Engineer
+58:38
+World's Fair um which is now a global conference and has also worked with companies like Cognition and a bunch of AI AI companies. So thank you guys for
+58:45
+being here. It's great. Um so I think getting started here the thing that was
+58:50
+on my mind to get started is uh what's changed. You know we did this event like about 3 months ago which still in the AI
+58:57
+world feels like a decade. Um that's that's taken part. Um what what is your top highlight maybe each of you from the
+59:03
+last three months? Like what's changed in the world that you think is like the the biggest shift?
+59:09
+I mean start with Yeah, I I I can offer a thought. I think
+59:15
+I have uh at least 5xed my spend on
+59:21
+everything. I don't know of how common that experience is, but that is just a
+59:27
+significant amount like like I think we used to laugh at like I I we're probably
+59:33
+in 5,000 per person right now. Um and um
+59:38
+we used to laugh at like $200 a month subscriptions and now we no longer we get multiple of them and we used to say those people were weird and now I'm like
+59:46
+no actually like uh I need those resets please over the API and so uh it's
+59:51
+actually very interesting just the use case of it as as long as you uh are
+59:56
+finding interesting use cases and are able to turn that into something useful for your business then you should throw
+1:00:03
+all the money at it because it is preferable to hiring a And that's changed for me.
+1:00:10
+Flo, how about you? Yeah, I um I think we'll look back on summer 26 as the season when AGI
+1:00:17
+arrived. Uh I think it's here. I've been saying for a long time like AGI is coming. I no longer say AI is coming. I say AGI is here. I think we're now going
+1:00:24
+through takeoff. Um you know, for for the longest time we've been describing, you know, the AI employee and we've not
+1:00:30
+had the AI employee for a long time. We've had like AI agents that kind of work, kind of don't, and and we've not
+1:00:36
+really had this like drop in replacement for a remote coworker. Now we have it.
+1:00:41
+Um I think open source happened over the last uh 3 months in a very very big way.
+1:00:46
+Um we we we we made an announcement like 3 months ago that made like a lot more
+1:00:52
+noise than I expected, but like we switched our main uh model that powers Lindy to DeepSeek. And um you know, we've
+1:00:58
+been keeping an eye on open source for a long time now. And every time you you
+1:01:03
+see the benchmarks, you see the press releases, and every time it's like, it's just as good as Sonnet for a tenth of the
+1:01:09
+price, and it's like, "All right, let's let's run it on our eval." And sure enough, every time it was it was vastly overblown, now it's real. It's actually
+1:01:16
+the open source models are actually super legit and incredibly cheap. Um, so yeah, AGI is here and open source
+1:01:22
+happened. Yeah. And maybe to add on to that, I think um I think every single time open
+1:01:28
+source models have come out over the past three years, everyone's always been like, "Oh my gosh, it's open source, it's back, and then two weeks later we
+1:01:34
+don't hear about it." I think that this time around, at least from like what we've seen just from our portfolio companies, we've actually actively seen
+1:01:41
+them moving from OpenAI and Anthropic to um to you know, open source models. And
+1:01:47
+I think that that's also coming into question just on the VC side like you know growth investors are are also
+1:01:52
+asking more questions around like you know the famous uh margin question um that I think you know people weren't
+1:01:58
+asking the last like you know 3 years because it's like just go get as many customers as you can but I do think
+1:02:03
+margins are being called into question now and it's like um I think what we're also seeing this is from the uh
+1:02:09
+enterprise buyer side I think because uh everyone blew through their sort of uh Anthropic budget really really quickly
+1:02:15
+people are now like you know I need to diversify and and think you know do we actually need these intelligent models.
+1:02:24
+Yeah. Uh you know concurrent to the open source thing I think uh inference has
+1:02:31
+become a lot more of its own uh field like like literal inference clouds that
+1:02:36
+we don't do any training we only do inference. uh they're not decacorn companies and that you did not like
+1:02:42
+three years ago I would have been like no no no way like you're sort of um it's sort of like a derivative long bet on
+1:02:49
+open source models but then that's really come up uh and I I I do think that is true one you know one of the
+1:02:55
+prep uh questions that they sent us was like you know what do you think you're really betting on that um is uh you know
+1:03:02
+maybe non-consensus over the next rest of the year um and I think it's really I guess American and opensource models um
+1:03:10
+to some extent like Thinking Machines Poolside uh but Meta uh really
+1:03:16
+actually coming out after a year of personal super intelligence and actually open sourcing uh their two models I
+1:03:23
+think it's actually like really interesting because they are probably the dark horse right now in terms of the
+1:03:30
+frontier lab race that no one's really counting and it is absurd that uh
+1:03:35
+America doesn't have a open models champion the same way Europe has Mistral. Uh that's weird. Like let's fix
+1:03:43
+that. What do you think the business model is around the open source models? Can you
+1:03:49
+talk about that a little bit? Or maybe I'm curious like is it the inference that goes to them or there's enormous
+1:03:54
+amounts of capital that need to go in to train train these things? No idea.
+1:03:59
+I I think it's it's basically what DeepSeek is doing right now, which is like um you make a big splash by being
+1:04:06
+open source and then you you are also solving it. It's the same like business model as like any open source uh
+1:04:11
+software company. It's like well open source but then hey we have a hosted solution that's like really good and you know MongoDB like Docker like that's
+1:04:17
+just the open source business but like LangChain is now like doing quite well with this. So I think that's just what they're going to do. They're going to be
+1:04:22
+like oh open source and so that gives you a huge bump because people really love open source. Um, if you want to be
+1:04:28
+killed on Twitter, by the way, just say something bad about the open source models. You're going to have like a terrible night. Uh, I got boots so hard. Um, and
+1:04:35
+yeah, and then they're just going to solve their own difference. Yeah, I think it's a hard question, but
+1:04:40
+I think that what I've seen some companies do is at least like figure out like what are the value added services on top of this. And so you know someone
+1:04:46
+like Palantir is saying okay we can take these models but we're also becoming your control layer and control plane and we're going to go automate you
+1:04:54
+know or not automate but we're going to go uh take care of this like fleet optimization use case and as as a
+1:04:59
+function of that we're going to make sure you know I think Alex Karp said you know the frontier labs are taking your
+1:05:04
+IP and so uh I think that's another way to call it into question. I think
+1:05:09
+inference is also the main the main use case that we've seen for it. Yeah,
+1:05:15
+I think we're all working at the application layer building stuff in in that. I I don't know if any is anybody here training models? Anybody dropping a
+1:05:22
+couple billion on a training set? Maybe maybe a couple. Um uh I'm curious to ask
+1:05:29
+about this like is the models the constraint for this going forward? Like you mentioned AGI is here. I know
+1:05:35
+Anthropic and and OpenAI and others will keep releasing new new capabilities. Um are they good enough for what what you
+1:05:41
+shipped this week? It seems like it. Yeah, I I think the model is no longer the bottleneck. I think intelligence is no longer the bottleneck. I think one
+1:05:47
+intuition pump to verify how true that is is just imagine you're at you're at work, you're at the office and like the
+1:05:53
+the smartest man in history like uh Einstein or John von Neumann like appears next to you, right? He's useless.
+1:06:00
+[laughter] Like John von Neumann is useless in that moment. Like you're in the meeting like oh my god, von Neumann's here and I was like what do you do? He's like well you're just
+1:06:05
+going to continue your meeting. Like you're actually going to talk to your teammate over talking to John von Neumann because the teammates got all the
+1:06:11
+context. Um and so I think right now we we have John von Neumann and we have like that useless John von Neumann in the room
+1:06:16
+and um and it's time to actually on board them and give them access to the tools and do like the figure out like the whole governance and the
+1:06:22
+permissioning system and the context system and all of that. I think that that's now the bottleneck but intelligence is is basically good enough
+1:06:27
+now to have like a full-blown AI employee. I will Hello. Uh because Flo is uh
+1:06:35
+enjoys a good argument. I will just disagree with everything he just said. Please. Yeah, I know. You guys are agreeing too much. I need
+1:06:41
+[laughter] to ask harder. That is something that Michael prompted us to do. Like don't don't agree too much. Uh skill issue, bro. Uh you you
+1:06:49
+are not working on hard enough problems. You're selling to the mids. Um uh I have several tasks I've been throwing for
+1:06:56
+literal days. Uh GPT-5.6, Sol, and Fable. Uh and they're not uh being solved. Uh so
+1:07:02
+for example I'm current currently trying to build GitHub and uh it is screwing up some of my deployment infrastructure and
+1:07:09
+like all this coordination of complex things. GitHub's fine like obviously that's a very complex piece of
+1:07:14
+infrastructure. So you don't expect to vibe code GitHub. But then I was like okay like I also want to build like Wikipedia
+1:07:20
+like a big rocked right like let me just AI engineer this thing and it's still
+1:07:25
+not good and and then well okay let me let me scale down my ambitions. Let me like try to um look at like look at my
+1:07:33
+skills and audit those skills and uh even though even skill creation I I literally just complained in the the
+1:07:39
+openi stack today like it's bad. I don't know if you're like creating uh using
+1:07:44
+the skill creators things. Um everyone's nodding along. Uh and so like if you're not careful about what you put into your
+1:07:49
+models, um they will go wrong, right? And the fact that you have to care is
+1:07:54
+not AGI, right? The the fact that um they don't have the judgment to be like,
+1:08:00
+well, you just gave me some irrelevant information or you didn't give me enough information. I'm just going to uh go off
+1:08:06
+and do whatever literally you told me to do. That's wrong. like an a model would be smarter enough to push back. You're
+1:08:12
+nodding a lot, so I'm just going to let you carry you. Well, yeah. I think I think in some use cases like I think the model is actually
+1:08:18
+just too intelligent for the task. Um I think like if if someone's using like solving customer support tickets and
+1:08:24
+they're like using Fable 5, I think I would short the company. Um, and I think one public company CEO actually, it was
+1:08:31
+funny. He said this, but he was like, if you know, I don't want every single employee on Fable 5 because it's like,
+1:08:37
+you know, it it's overthinking for for most of my use cases and like I actually just need to focus on execution versus
+1:08:44
+and context matters much more for intelligence for most of my use cases. And think the company is like a large
+1:08:49
+retailer. They don't, you know, really need all their engineers to have like IMO level intelligence uh to query every
+1:08:55
+day. Yeah, I love it because on my left I have like oh, you know, it's it's still not AGI, it's like too dumb in
+1:09:00
+here. I have like, oh, it's too smart. So, and I'm usually in the middle, so I'll just like leave you guys at it. Um,
+1:09:06
+yeah, I I I think like look, if I ask my human employees to build GitHub or Wikipedia, like they can't either, right? Like you need a leader, you need
+1:09:12
+like an orchestration layer. I think if you if you actually use like dynamic, I tried like using like dynamic workflows and like a very cushion loop and like a
+1:09:19
+SL loop and a SL code and all of that stuff. I actually do think today's models have it in them to give you a Wikipedia and a GitHub.
+1:09:26
+Yeah. It's not good. Oh well. Yeah. Yeah. Yeah. Yeah. It's you know uh I I move the bars to like if you've read
+1:09:32
+the slop that it generates it's not good slop and like I'm trying to define what good means and uh even so like literally
+1:09:40
+uh you know a very simple thing you can do at home today uh is take your frontier model of choice whatever it is
+1:09:46
+uh take an image gen design uh let's say like design WorkOS's website design uh
+1:09:52
+the AIE website and then try to replicate it com like pixel perfect in
+1:09:58
+uh in your coding model of choice, it's gonna get it wrong. It's actually like really bad at like just even like a
+1:10:05
+beautifully designed thing. Um I I don't know if you strongly disagree, but like this is a very consistent experience of
+1:10:11
+mine. And so like I I think like it's really upon us to u not be satisfied with the current state of things to
+1:10:18
+that's where humans really still have a job. Um and then also like try to build evals for that or try to build harnesses
+1:10:24
+for that. um to basically bring forward the future because hopefully the model
+1:10:30
+people will will figure that out at some point um and they will actually pay you to uh for your information whether they
+1:10:37
+pay you in access or pay you in money. But uh if you can reliably define where
+1:10:43
+you're unhappy with models, you're a more valuable contributor to the AI economy than someone who is like models
+1:10:49
+are great. That's just, you know, futures here not evenly distributed. That's just distributed everywhere. Um people are still very very uh focused on
+1:10:58
+trying to find the frontier and pushing it. You mentioned harness. I'm wondering if
+1:11:04
+like the harness engineering is a piece of this you know like year ago we were coordinating sub agents and Ralph loops
+1:11:10
+were a brief moment in time less than a year you know uh is is that the limiter to be able to use the current models to
+1:11:16
+execute like you're looking at for GitHub is I'm also wondering if like Lindy is a harness a form of a harness
+1:11:22
+do you think about it in that way? It is. We hate it. [laughter] Look, we have like a complicated Sorry to call it call it a harness.
+1:11:28
+Yeah. No, no, no, no. Like what we hate about it is that we we did build our own harness. We we have a complicated history because to your point, we've
+1:11:34
+been building AI agent since 2022. It was like GPT-3.5 and so there was no tooling. There was no ecosystem like
+1:11:40
+eval like there was no eval solution now Braintrust. There was no like third party harness. Little known fact, I
+1:11:45
+actually don't know if I've ever like talked about it publicly. we made like a in hindsight laughably low acquisition
+1:11:52
+offer to Harrison at LangChain uh in uh Q3 2022 uh when he still had a job um
+1:12:00
+and so you know we've been working on this for a while and so we unfortunately built our own harness um and we built
+1:12:05
+our own eval to we built we built everything in house and like don't do this at home I do not recommend it uh
+1:12:11
+because like there's actually really good harnesses out there Mastra right now would be our our like it's not really a harness it's more like a
+1:12:16
+framework but there's like limit harness is on there. So to answer your question, I do think the harness really matters,
+1:12:22
+but simultaneously the gap between the 25th percentile harness and the 75th
+1:12:28
+percentile harness does not straddle the viability line. Like the 25th percentile
+1:12:34
+harness is going to do most of your tasks anyway. It's maybe expensive. It's going to be slow. It's going to retry. It's going to get stuck in loops, but
+1:12:39
+it's going to do it anyway. Yeah. Um I should probably turn stop
+1:12:46
+turning this off. Uh I I I think that there is an interesting over like if you
+1:12:53
+sort of look at harness philosophy or harness commentary on Twitter. Uh you
+1:12:58
+often find here things like well we just have less stuff in our harness therefore we perform better. You hear this a lot
+1:13:04
+with pi that's a lot of the marketing. And then with Claude every model they every model release they always somehow
+1:13:11
+cut 70% of the context. And I'm like, well, okay, you're just piling up a lot of slop in there, I guess. I don't know.
+1:13:17
+Um, but I think uh there is a lot of
+1:13:23
+tasteful engineering that is done in terms of like what context you exposed to it and what tools you give it. And I
+1:13:28
+think there's a generally emerging consensus of what you give uh the harness as tools. I basically that is
+1:13:35
+also a nice interface for the post-training people to optimize towards and everyone knows like you should
+1:13:42
+probably you know, try to adopt what whatever it was post trained for, otherwise you're really just fighting going against the
+1:13:48
+grain there. Um, I I I do think like uh you you basically want to try to take
+1:13:54
+out the harness by everyone adopting the same level of of uh interface and
+1:14:00
+probably it is some kind of sandbox. Probably is some kind of search like the the sort of key tools of harness
+1:14:06
+engineering have already emerged. The main thing that is uncertain right now is memory and and continual learning. um
+1:14:12
+which this is why I talk about skills so much because basically you should try to never repeat mistakes in your company or
+1:14:19
+in your uh in your coding agents. So the only way to do that right now is to store memory and storing memory is
+1:14:26
+really bad still. People say ChatGPT has improved a lot. I don't see it that often but um you know like ultimately
+1:14:34
+ideally you want to remember from mistakes because that that's how that's the only way you you scale and I don't
+1:14:39
+see that happening yet. We we actually have something uh that we're playing with these days that we'll probably
+1:14:45
+release it at some point so I can talk about it. It doesn't matter. Um it's um
+1:14:50
+hot take. I actually think this this will become a pattern for agents in the next six months. I think agents creating
+1:14:55
+their own eval is going to become a thing. So one thing we're playing with is like when we give feedback to Lindy right now. um she she modifies her
+1:15:03
+memory. She makes changes to her prompt and all of that stuff and then she creates her own eval from that task and she replace that task to verify that
+1:15:10
+that change can probably increase the performance of that given task. It's it's still like a prototype but I
+1:15:15
+actually think this is going to be the pattern that gives us something closer to like continual learning like verifiably. Yeah. Uh it's it's weird because not
+1:15:22
+just you should create your own eval, you should create your own labeling um interface and then you should kick off
+1:15:29
+multiple runs to see the uh if things if things are doing and so engineering is
+1:15:29
+looking like ML research. I am babysitting runs. I'm doing labeling. I'm doing eval. And I'm not updating
+1:15:41
+weights but I am updating the harness. And it is uh very interesting that like actually the costs are also increasing
+1:15:47
+as well. Like literally I will spend $1,000 optimizing harnesses because then I can use that in indefinitely and
+1:15:54
+that's great. Jaya, you wrote this post about the context graph um which you told me
+1:16:01
+backstage that almost was context layer. I think context graph is a spicier name. It's great. Um the context graph is
+1:16:08
+really about teams like companies bringing information in together as I understand it. um how does this this
+1:16:14
+match to like you know the the continual learning the skills the eval is that do
+1:16:19
+they blend together? What's what's your update on the context graph? Yeah, it's a good question. Um it's
+1:16:25
+funny like I posted it on December 22nd and I think skills was sort of becoming
+1:16:31
+a thing early January and you know that's like when I had to completely update my view. Um I think that context
+1:16:37
+is more broad than just the things that you put into a skill. Like I think a skill is a very small representation of
+1:16:43
+like all of context. Um and I think that the the updated view is really like I
+1:16:48
+think a lot of companies that I talked to after that post like most were not capturing context especially like F500
+1:16:55
+companies. I think everyone in SF is using Granola now maybe using Granola in their coffee chats and like uh they're
+1:17:02
+recording everything but that's not a thing in in in most in most companies. And so I think that the the definition
+1:17:09
+of context is just is really really different especially if it's like a physical world business like that might context for them might be like sensors
+1:17:16
+in their factory or like uh video camera footage. Um, and so I think that was one
+1:17:21
+thing that was big. And I think the other updated view was really like around like most most companies I think
+1:17:29
+their context is trapped in in in people's heads. And I think people like
+1:17:34
+for a normal employee that context might actually be their IP. like knowing exactly like how I, you know, what I
+1:17:41
+know about this repo and this massive database and like um being able to
+1:17:47
+extract that context out of someone and turn it into a skill per se is is is a
+1:17:52
+really political thing. And so I think that you know we've also seen some backlash against skills at as at many
+1:17:58
+many companies too. I've heard a lot about like deleting your skill files. Delete your skill files.
+1:18:04
+That's Have you deleted your skills, Lindy? No. I love my skill files. Don't touch my skill files. Um, no. What would
+1:18:10
+I do with my my skill files? What what we've seen work by the way about like extracting the the the information from
+1:18:16
+the person's head is like the way you align the incentives at least of all the short term is that and I was showing uh
+1:18:22
+swyx and I were meeting I think yesterday or day before yesterday and I was sharing my screen like something happened to me. Um, I hate I keeping
+1:18:29
+talking about my product by the way like my objective is not to sell my book or whatever. Patty was by great um I'll
+1:18:34
+I'll plug Lindy for you later. [laughter] Thank you. Every time I say Lindy, I'll show you and you can say Lindy for me. And then so I was on
+1:18:41
+Lindy. Um and and I was asking about like a candidate I had just met and I was like, "Hey, what did you think?" I
+1:18:46
+was on the fence about the candidate. I was like, "What do you think?" And and Lindy pulled a skill that I did not know had just been created by our recruiter.
+1:18:54
+And she was like, "Oh, well, this is the this is actually how we screen candidates and like, oh, he checked his box and here he was weaker." And the
+1:19:00
+reason why our recruiter did that is because it was helping her at her job, right? And so I think if you if you
+1:19:06
+align the incentives in a way that like uh the individual has to create skills because it belongs them at their jobs
+1:19:12
+and by default and that's really important by default that skill that this person creates because it makes them better at their job gets added to
+1:19:18
+the team library. That's how you get that that flywheel going
+1:19:24
+as people start. Oh, go ahead. Oh, I'll just plug uh Drew Breunig online has a DrSkill thing that you can
+1:19:30
+run. uh it hooks into the popular coding agents uh skill usage statistics and you
+1:19:37
+can sort of see if you there's anything to clean up. I think it's just a skill hygiene type of thing. Uh I do also
+1:19:43
+think that I wish it was easier to turn on and off skills for different models because some model um as models upgrade
+1:19:50
+you may need less and less skills or less uh prescriptive skills and that is
+1:19:56
+completely untouched in current harnesses. Maybe we should have a skill swap at the afterparty. You guys can
+1:20:03
+Oh, yeah. Uh we're launching a new uh newsletter next week that uh helps people share skills, I think. Yeah. So,
+1:20:10
+somebody's going to buy this. Uh skillshare, like skillsshare.com is available online right now for
+1:20:16
+$3,000. I'm really figuring out if I should buy this thing because people are going to confuse it for Skillshare. Uh
+1:20:22
+but it'll just be funny for the joke. [laughter] What do what do you all think wins as
+1:20:28
+these AI teammates we start collaborating more with agents? Is it like a single general purpose agent that
+1:20:33
+has all these skills in your organization like a you know an omnipresent you know agent inside of
+1:20:39
+your Slack? Is it a bunch of these specialized agents for different tasks you know that you you spin up? Um some
+1:20:46
+kind of vertical agent like what what's the end state here? What do you see? Um okay so there this is a deep question
+1:20:53
+that none of us know the answer to but I've experimented with a lot uh my team is very unfortunate because I make them
+1:21:00
+try everything claw tag victor town Lindy right um and I think that there
+1:21:06
+there's different stages and also our handrolled one AIE bot um there's very
+1:21:11
+different approaches to agent identity. Claude trying to make Claude his own entity that's why like you have to add Claude
+1:21:17
+you have to set up a own Gmail for Claude you maybe have to set up like a phone number for Claude in the future. Uh the other guys don't do that. Um uh
+1:21:24
+Grok bot today la la la la la la la la la la la la la la la la la la la la launched a completely different philosophy where you have multiple um
+1:21:31
+multiple agents doing specialist things. Uh and then I think Lindy is also more on the Claude side where like you have a
+1:21:36
+Lindy right any anyone that's like a personified human uh is is a general task. I think one pattern I haven't seen
+1:21:43
+that other people are all handrolling which is something that is a theme is the personal chief of staff thing. So
+1:21:49
+everyone has a twin. There's a Michael twin. There's a Jaya twin. There's a Flo twin. Um I think that makes sense until
+1:21:54
+you try to pwn that bot and then you can just get I can read all the data that you can see and that's bad, right?
+1:22:00
+So like that that permissioning system is crazy. Uh nobody has any answer and I
+1:22:06
+think it's it's kind of the wild west. uh I I don't I don't have any beyond that apart from um I think uh it also it
+1:22:14
+varies by your company maturity like what is appropriate for you as well as what people you have so um I have Codex
+1:22:21
+has been my chief marketing officer for the last month or so uh for latent.space drives my ads drives my YouTube drives
+1:22:29
+uh AB testing across everything it's double my subscribers um and and I don't have the money to pay
+1:22:35
+a CMO but I can pay Codex $200 a month to [laughter] to do random experiments and research for me. And I think like
+1:22:42
+depending on your size, you can have the specialist guy or you can have the twin, you can have the god AGI. It's really
+1:22:48
+dependent on you. And there's a range of options right now. We we've spent maybe cumulatively like a 100 hours debating
+1:22:55
+this question. More than that at Lindy, like if you got all of us together, like maybe a thousand hours. Um we have swung
+1:23:02
+back hard on the pendulum. We used to be like many agents, now we're like one big agent. Um, I think we're going to
+1:23:08
+reintroduce a couple of of agents uh underneath the big agents. That's going to be an interface to the to the to the
+1:23:14
+to the small agents. I think um there are some reasons to have like multiple agents. I think like you get
+1:23:19
+encapsulation of of privileges and permissions. You get more sharability. You limit the blast radius of the changes to your agent. So like there's a
+1:23:26
+couple of of really nice properties. You you you you can still encapsulate like context better in a single agent in in
+1:23:31
+multiple agents. So that's that's good. I think though, you know, it's really funny. There is this pattern every time
+1:23:37
+there is a techn a technological revolution where um people use the new technology is the way the old one was
+1:23:43
+used like the first content on TV was like literally recorded radio talk shows they put a camera on a recorded radio
+1:23:49
+talk show that's what like Jimmy needs basically right uh or like they record like theater plays you know and so it
+1:23:55
+takes a very long time to find the form of content that's native to a new technological paradigm I think the
+1:24:00
+reason why people tend to default to many agents is because they mistakenly think of AI organizations in the same
+1:24:05
+ways they think of human organizations. Human organizations have a lot of employees because employees humans are
+1:24:11
+limited. They have only 24 hours a day and they can only hold so much content and skills in their head at the same time. So they have to specialize. AI
+1:24:17
+agents have neither of these constraints. So in so far as there remain reasons to have multiple agents and and there are still reasons to have
+1:24:23
+multiple agents. Those two reasons are not part of the mix and I think those are the main reasons today which drive
+1:24:29
+fragmentation of of agents especially inside companies. Yeah, I think it's it's just super
+1:24:34
+highly dependent on who you are and what the company is because I think there's, you know, a lot of developers in SF, I
+1:24:40
+feel like they're the fastest to switch. They have like 16 different agents running at all times, whether it's, you
+1:24:45
+know, one week I'm they're like, we love Cloud Code, the next week it's Codex, the next week it's Kimi. And so I think
+1:24:51
+that um I think that that's that's one side of the group. And then there's people large companies that you know
+1:24:57
+they get their $1,000 credits on Cowork and that's all they use and um whoever
+1:25:04
+runs it at the company is now thinking about switching to to Codex because they drop prices and so they'll switch
+1:25:09
+to Codex and so I think it really really depends on where you work um and how much flexibility they give you. I
+1:25:15
+also think that the the AI chief of staff or this like AI personal assistant thing, people have tried this for the
+1:25:22
+last three years and and I think most 90% of companies we've seen like have
+1:25:27
+not made it past the you know two or three year mark. I actually went and recently surveyed all maybe we probably
+1:25:34
+saw 50 pitches of like AI chief of staffs and AI personal assistants and I think 47 of them are no longer um that
+1:25:41
+have made it and I think now the capabilities are better but I think no one's really cracked the interface thing
+1:25:47
+yet and maybe maybe it'll be Grokbot maybe it'll be something else so we'll see. Last question, rapid fire. If we're
+1:25:55
+back here in like four months, we're hanging out at the WorkOS holiday party, say mid December, what's the bet
+1:26:01
+that you would make that we're going to hit by then? What's going to change? Where do you think we'll be?
+1:26:10
+First of all, to your point, it's it's, you know, it's funny because in the same breath you say like we don't have AGI and by the way, I
+1:26:17
+have an AI CMO that doubled my my subscriber base. I think that that does very routine advice any CMO would tell
+1:26:24
+you. Uh totally um I think people should feel ready in the next four months for
+1:26:30
+anywhere between 40 and 60% of all the activities currently performed by their companies to be performable by an agent.
+1:26:37
+And I think whether they actually do end up being performed by an agent or not is is up to is up to everyone.
+1:26:47
+I think that we'll probably see a shift to like local local models. Um I think that uh you know not everything will get
+1:26:54
+sent to the cloud and people will probably realize like we can do a lot of this stuff locally.
+1:27:00
+Um I've been very infra-pilled recently. Um and I think it's I mean recently is
+1:27:06
+is a is a relative term. Uh faster chips uh across the entire semiconductor
+1:27:12
+stack. I know that this is like not it's like relatively consensus now but it is
+1:27:17
+still going. I think people look at uh the max of what speed looks like to be
+1:27:22
+Cerebras where you have instead of 70 tokens per second you have 750. uh I
+1:27:28
+encourage you to think about a world in which you have a 100,000 tokens per second because uh that is happening uh
+1:27:34
+and that is the possibility of ASICs versus GPUs and uh if you really really take
+1:27:40
+inference seriously which we are starting to do now because agents then you should think about that.
+1:27:46
+I love it. Thank you guys so much for coming out tonight. Yeah. [applause]
