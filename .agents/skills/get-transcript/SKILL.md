@@ -36,8 +36,14 @@ yt-dlp --skip-download --write-subs --write-auto-subs --sub-langs "en.*" \
 Pitfalls, in the order you will hit them:
 
 1. **Bot check from datacenter IPs** — HTTP 429 / "Sign in to confirm you're not a bot".
-   `player_client=android,web_embedded` usually bypasses it. Otherwise
-   `--cookies-from-browser` or exported `--cookies`.
+   `player_client=android,web_embedded` usually bypasses it. Otherwise try other
+   clients (`ios`, `mweb`, `tv`), then `--cookies-from-browser` or exported
+   `--cookies`. Note the bypass list is per-IP and per-day: a client combo that
+   worked yesterday can be gated today. `youtube-transcript-api` shares the same
+   IP reputation and is not a bypass. If every path is gated, **an existing
+   owner-supplied transcript of the same video (e.g. copied from the YouTube
+   transcript panel) is a valid immutable raw basis** — record the fetch failure
+   and the substitution in the artifacts.
 2. **Prefer json3 over vtt** — auto-caption VTTs use rolling-window cues (each cue
    repeats the previous line) and need a dedup pass; json3 events are sequential
    and non-overlapping. Concatenate segment text directly.

@@ -1,0 +1,232 @@
+{
+ "schemaVersion": 1,
+ "scope": "Canonical people, companies, and concepts explicitly discussed in UNLOCK 2026 'Agents for Scientific Discovery' (Andrew White, Edison Scientific). Episode-scoped subset reconciled against the repo's 250-term conference glossary and knowledge graph.",
+ "provenanceConvention": "Every term carries 'sources'. Here: repo artifacts (owner-authored fixes, conference glossary, knowledge graph), transcript context with timestamps, canonical references (official sites/papers), and explicit unresolved flags. Fresh web verification was limited on 2026-08-23; canonical references are cited without a fresh fetch unless marked verified.",
+ "referenceUrls": [
+  "https://www.youtube.com/watch?v=BzRvHeBC9ZY",
+  "https://futurehouse.org",
+  "https://edisonscientific.com",
+  "https://www.biorxiv.org",
+  "https://www.novonordisk.com",
+  "https://react-lm.github.io"
+ ],
+ "terms": [
+  {
+   "term": "Andrew White",
+   "category": "Person",
+   "definition": "Speaker; co-founder & CTO of Edison Scientific, formerly FutureHouse.",
+   "sources": [
+    "transcript header",
+    "repo knowledge graph entities"
+   ]
+  },
+  {
+   "term": "Michelle Lee",
+   "category": "Person",
+   "definition": "Session introducer ('Thank you so much, Michelle').",
+   "sources": [
+    "transcript 0:00",
+    "repo knowledge graph entities"
+   ]
+  },
+  {
+   "term": "Sam (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "'When Sam and I...' (Edison co-founding context); likely Sam Rodriques, Edison co-founder/CEO - first name only in audio, unverified here.",
+   "sources": [
+    "transcript ~2:59",
+    "edisonscientific.com (candidate, not fetched)"
+   ]
+  },
+  {
+   "term": "Shunyu Yao",
+   "category": "Person",
+   "definition": "ReAct paper first author; ASR renders 'Shenu Yao'.",
+   "sources": [
+    "https://react-lm.github.io (canonical reference)"
+   ]
+  },
+  {
+   "term": "Gabe Gomes",
+   "category": "Person",
+   "definition": "CMU; Coscientist senior author. ASR renders 'Gabe Gomez'.",
+   "sources": [
+    "Nature 2023 Coscientist paper (canonical reference)"
+   ]
+  },
+  {
+   "term": "Antonio (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "'Published a few weeks ago by Antonio's...' (13:26) - first-name-only citation; surname ASR-mangled or absent. Verify against recording.",
+   "sources": [
+    "transcript 13:26"
+   ]
+  },
+  {
+   "term": "Edison Scientific",
+   "category": "Company",
+   "definition": "Andrew White's company; built Kosmos, raised $70M.",
+   "sources": [
+    "transcript header",
+    "repo knowledge graph entities"
+   ]
+  },
+  {
+   "term": "FutureHouse",
+   "category": "Company",
+   "definition": "The nonprofit White co-founded; origin of PaperQA/ChemCrow work. ASR renders 'future house'/'Future House'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "futurehouse.org (canonical reference)"
+   ]
+  },
+  {
+   "term": "Novo Nordisk",
+   "category": "Company",
+   "definition": "Pharma company whose Copenhagen site hosted the 2023 talk described. ASR renders 'Nova Nordisk'.",
+   "sources": [
+    "novonordisk.com (canonical reference)",
+    "transcript 4:08-4:10"
+   ]
+  },
+  {
+   "term": "IBM",
+   "category": "Company",
+   "definition": "Ran the cloud lab the agents operated ('from IBM in Luzison' - location unresolved).",
+   "sources": [
+    "transcript 4:42-4:46"
+   ]
+  },
+  {
+   "term": "Kosmos",
+   "category": "Concept",
+   "definition": "Edison's AI scientist; completes in 12 hours what takes researchers months. ASR renders 'Cosmos'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "transcript header",
+    "edisonscientific.com (canonical reference)"
+   ]
+  },
+  {
+   "term": "PaperQA",
+   "category": "Concept",
+   "definition": "Open-source literature-research agent. ASR renders 'paper QA'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "repo glossary.json (canonical conference term)"
+   ]
+  },
+  {
+   "term": "ChemCrow",
+   "category": "Concept",
+   "definition": "LLM chemistry agent (2023 paper). ASR renders 'ChemCro'.",
+   "sources": [
+    "arxiv.org/abs/2304.05376 (canonical reference)",
+    "transcript 4:36"
+   ]
+  },
+  {
+   "term": "Coscientist",
+   "category": "Concept",
+   "definition": "Boiko/MacKnight/Gomes autonomous-chemistry system (Nature 2023). ASR renders 'the co-scientist paper'.",
+   "sources": [
+    "Nature 2023 (canonical reference)",
+    "transcript 4:34"
+   ]
+  },
+  {
+   "term": "ReAct",
+   "category": "Concept",
+   "definition": "Reasoning+acting paradigm paper (Yao et al. 2022). ASR renders lowercase 'react'.",
+   "sources": [
+    "https://react-lm.github.io (canonical reference)",
+    "transcript 4:27"
+   ]
+  },
+  {
+   "term": "bioRxiv",
+   "category": "Concept",
+   "definition": "Biology preprint server. ASR renders 'bioarchchive'.",
+   "sources": [
+    "biorxiv.org (canonical reference)",
+    "transcript 9:06-9:11"
+   ]
+  },
+  {
+   "term": "METR",
+   "category": "Company",
+   "definition": "Model-evaluation org; ASR renders 'Meter'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)"
+   ]
+  },
+  {
+   "term": "LAB-Bench",
+   "category": "Concept",
+   "definition": "FutureHouse biology benchmark. ASR renders 'lab bench'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "repo glossary.json (canonical conference term)"
+   ]
+  },
+  {
+   "term": "BixBench",
+   "category": "Concept",
+   "definition": "Bioinformatics benchmark. ASR renders 'Bixbench'/'bixbench'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "repo glossary.json (canonical conference term)"
+   ]
+  },
+  {
+   "term": "pan-KRAS inhibitor",
+   "category": "Concept",
+   "definition": "KRAS inhibitor class example; ASR renders 'PANRASS inhibitor'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "repo glossary.json (canonical conference term) (KRAS)"
+   ]
+  },
+  {
+   "term": "Covalent inhibitor",
+   "category": "Concept",
+   "definition": "Drug mechanism example; ASR renders 'coalent inhibitor'.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)",
+    "repo glossary.json (canonical conference term)"
+   ]
+  },
+  {
+   "term": "ProteinCrow",
+   "category": "Concept",
+   "definition": "Agent named at 14:24; owner-authored fix, medium confidence - verify against recording.",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)"
+   ]
+  },
+  {
+   "term": "Claude Code",
+   "category": "Concept",
+   "definition": "Anthropic's coding agent; owner-authored casing fix (medium).",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)"
+   ]
+  },
+  {
+   "term": "OpenClaw",
+   "category": "Concept",
+   "definition": "Open agent harness; owner-authored casing fix (medium).",
+   "sources": [
+    "repo proposed-transcript-fixes.json (owner-authored)"
+   ]
+  },
+  {
+   "term": "Luzison (unresolved)",
+   "category": "Unresolved proper noun",
+   "definition": "'A cloud lab that we used from IBM in Luzison' (4:46). Candidates: an IBM Research site (Zurich/R\u00fcschlikon) or a mis-heard city. Verify against recording.",
+   "sources": [
+    "transcript 4:42-4:46"
+   ]
+  }
+ ]
+}
