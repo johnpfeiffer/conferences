@@ -53,7 +53,10 @@ alternate renderings (per the fix-transcript lookup order).
   name.
 - `5.6 soul and fable`: GPT-5.6 and **Claude Fable 5** are real Aug-2026
   frontier models (CASRAI/mungomash roundups) — 'Fable' would never have been
-  guessed without verification; 'soul' stayed unresolved.
+  guessed without verification. 'soul' was subsequently **owner-resolved to
+  Sol** (OpenAI's model name in the GPT-5.6 generation, 2026-08-26;
+  corroborated by codingscape.com's 'GPT-5.6 Sol' roundup headline), moving the
+  rule to high confidence.
 - `co-work`→**Cowork**: claude.com/product/cowork (verified 2026-08-26).
 - `A6 versus GPUs`→**ASICs versus GPUs**: same ASR pattern as the 20VC
   episode's 'A6 chips'→ASIC.
@@ -62,7 +65,7 @@ alternate renderings (per the fix-transcript lookup order).
 
 ## Unresolved (documented in glossary.json, not guessed)
 
-`'soul'` (model name?), `claw tag victor town`, `cushion loop`/`SL loop`/`SL code`,
+`claw tag victor town`, `cushion loop`/`SL loop`/`SL code`,
 `limit harness is on there`, `I got boots so hard`, `Patty was by great`,
 `like a big rocked`, `Jimmy needs`, `I will Hello`, `replicate it com like`.
 

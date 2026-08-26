@@ -1150,7 +1150,7 @@
       "replacements": [
         {
           "observed": "5.6 soul and fable",
-          "proposed": "GPT-5.6, soul, and Fable"
+          "proposed": "GPT-5.6, Sol, and Fable"
         }
       ],
       "occurrences": [
@@ -1161,8 +1161,8 @@
           ]
         }
       ],
-      "confidence": "medium",
-      "reason": "GPT-5.6 and Claude Fable 5 are verified Aug-2026 frontier models (CASRAI/mungomash roundups); 'soul' is left as spoken - no model named 'Soul' could be verified, see glossary unresolved entry."
+      "confidence": "high",
+      "reason": "GPT-5.6 and Claude Fable 5 are verified Aug-2026 frontier models (CASRAI/mungomash roundups); 'soul' resolved to Sol (OpenAI's model name in the GPT-5.6 generation) by repo owner 2026-08-26, corroborated by codingscape.com's 'GPT-5.6 Sol' roundup headline."
     }
   ]
 }

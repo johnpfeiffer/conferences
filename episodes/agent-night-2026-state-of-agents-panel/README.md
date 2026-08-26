@@ -18,9 +18,9 @@ Panel: **Jaya Gupta** (Foundation Capital), **Flo Crivello** (Lindy),
 | File | What |
 |---|---|
 | `youtube_raw.txt` | Immutable raw. Owner-copied YouTube transcript-panel text with timestamps (see COMPARISON.md for why this is the basis). |
-| `proposed-transcript-fixes.json` | 58 fix rules → 75 corrections (44 high / 14 medium confidence). |
+| `proposed-transcript-fixes.json` | 58 fix rules → 75 corrections (45 high / 13 medium confidence). |
 | `fixed_transcript.txt` | Raw + fixes applied by `.agents/skills/fix-transcript/scripts/apply_transcript_fixes.py` (exact port of `app/src/data/transcriptFixes.ts`). |
-| `glossary.json` | 50 terms (Person/Firm/Company/Concept) with per-entry provenance, incl. 10 documented-unresolved items. |
+| `glossary.json` | 50 terms (Person/Firm/Company/Concept) with per-entry provenance, incl. 9 documented-unresolved items. |
 | `video_metadata.md` | Title/channel/date/duration, description, chapter list, scope rationale — captured via server-side fetch while yt-dlp was bot-gated. |
 | `COMPARISON.md` | Sources, agreement checks, fetch-blockage log, method notes, unresolved list. |
 
@@ -49,12 +49,12 @@ python3 ../../.agents/skills/fix-transcript/scripts/apply_transcript_fixes.py \
 
 ## Confidence model
 
-- **high** (44 rules): video metadata, verified canonical reference, or
+- **high** (45 rules): video metadata, verified canonical reference, or
   unambiguous context (e.g. `Palunteer`→Palantir with Alex Karp named correctly
   two lines later).
-- **medium** (14 rules): strong context but invented spelling — each says
+- **medium** (13 rules): strong context but invented spelling — each says
   "verify against recording" in its reason; the glossary marks the entry
   `user review pending (recording)`.
 - **unresolved** (10 glossary entries): documented with candidates, not
   guessed — including `'soul'` in the GPT-5.6/Soul/Fable model list (Fable 5
-  turned out to be a real Claude model; no 'Soul' model could be verified).
+  turned out to be a real Claude model; "soul" itself was later owner-resolved to OpenAI's Sol).
