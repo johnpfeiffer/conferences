@@ -99,7 +99,12 @@ occurrences[{transcript, timestamps[]}], confidence, reason}]}`.
   `anthropic` → `Anthropic` turned the merged ASR token `aanthropic` into
   `aAnthropic` until `open aanthropic` → `OpenAI, Anthropic` was added.
 - Include inflected variants as separate replacements (`base 10's`, `base 10`).
-- Record every occurrence timestamp (nearest preceding marker) per fix.
+- Record every occurrence timestamp (nearest preceding marker) per fix. For a
+  segment raw (see get-transcript's segment scoping) these timestamps are
+  video-absolute by design — do not rebase them to segment start.
+- **Scope everything to the segment**: glossary terms, fixes, and discovery
+  scans cover the segment raw only; content outside the window does not exist
+  for this artifact series.
 - Never fix what stays unresolved: a documented `(unresolved)` glossary entry
   with all observed renderings beats a guessed correction (e.g. `Liupole` /
   `Leopold`, `Mccore`, `Padron`, `Jack's` vs an alternate source's `Shake Shack`).
