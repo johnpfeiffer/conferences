@@ -58,13 +58,13 @@ Panel participants (from video metadata — authoritative for spellings):
 - **Shawn Wang (swyx)** — AI Engineer / latent.space
 - Moderated by WorkOS (Michael Grinich, CEO, hosts the event)
 
-## Pending
+## Status: delivered 2026-08-26
 
 Timestamped caption fetch was bot-gated on 2026-08-23 (all yt-dlp player
 clients, invidious/piped sweep, direct real-browser attempt →
-`google.com/sorry`). Full panel text (no timestamps) was captured from two
-agreeing server-side sources and is held scratch-side for cross-checking.
-The timestamped raw is scheduled to be fetched on the next automated attempt
-(gates observed to reset within ~24h), after which `youtube_raw.txt`,
-`proposed-transcript-fixes.json`, `glossary.json`, `fixed_transcript.txt`,
-`README.md`, and `COMPARISON.md` will be generated per the skills.
+`google.com/sorry`). The owner hand-copied the transcript panel with
+timestamps on 2026-08-26; that copy became the immutable raw after passing a
+49/49 probe agreement check against the two server-side full-text captures.
+`youtube_raw.txt`, `proposed-transcript-fixes.json` (58 rules / 75
+corrections), `glossary.json` (50 terms), `fixed_transcript.txt`, `README.md`,
+and `COMPARISON.md` are all delivered in this folder.

@@ -1,0 +1,1168 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-only",
+  "notes": "Segment-scoped fixes for the Agent Night Live panel (57:12 to end of panel, video-absolute timestamps). Raw basis is an owner-copied YouTube transcript panel (2026-08-26) after automated caption fetches were bot-gated on 2026-08-23; the copy agrees with two independent full-video renderings on all 49 probes. 'medium' rules are strongly suggested by context but await verification against the recording. Unresolved items are documented in glossary.json, not guessed.",
+  "referenceUrls": [
+    "https://www.youtube.com/watch?v=wcYdO0v1K1k",
+    "https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity",
+    "https://www.dbreunig.com/2026/07/24/manage-your-agent-s-loadout-with-dr-skill/",
+    "https://github.com/dbreunig/drskill",
+    "https://claude.com/product/cowork",
+    "https://thenewstack.io/lindy-deepseek-anthropic-switch/",
+    "https://casrai.org/news/frontier-llm-landscape-august-2026",
+    "https://www.latent.space",
+    "https://www.ai.engineer",
+    "https://mastra.ai",
+    "https://workos.com",
+    "https://lindy.ai"
+  ],
+  "fixes": [
+    {
+      "id": "agentnight-panel-intro-names",
+      "replacements": [
+        {
+          "observed": "Ja Flo and Swix",
+          "proposed": "Jaya, Flo, and swyx"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "57:35"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Chapter marker in the video metadata names the panelists as Jaya Gupta, Flo Crivello, and Shawn Wang (swyx)."
+    },
+    {
+      "id": "agentnight-panel-swyx",
+      "replacements": [
+        {
+          "observed": "Swix",
+          "proposed": "swyx"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "57:35",
+            "58:25"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "swyx (Shawn Wang) styles his handle lowercase; ASR heard 'Swix'. Two remaining occurrences after the intro fix."
+    },
+    {
+      "id": "agentnight-panel-latent-space",
+      "replacements": [
+        {
+          "observed": "Laton space",
+          "proposed": "latent.space"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "58:31"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "swyx runs the latent.space podcast; canonical reference latent.space."
+    },
+    {
+      "id": "agentnight-panel-ai-engineer-worlds-fair",
+      "replacements": [
+        {
+          "observed": "the AI engineer",
+          "proposed": "the AI Engineer"
+        },
+        {
+          "observed": "world fair",
+          "proposed": "World's Fair"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "58:31",
+            "58:38"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "AI Engineer World's Fair (ai.engineer) is the conference swyx organizes. The phrase spans the 58:31/58:38 timestamp marker (panel-format pitfall), so it is fixed as two in-chunk fragments."
+    },
+    {
+      "id": "agentnight-panel-cognition",
+      "replacements": [
+        {
+          "observed": "cognition",
+          "proposed": "Cognition"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "58:38"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Cognition (AI coding company) capitalized; single lowercase occurrence."
+    },
+    {
+      "id": "agentnight-panel-context-graph",
+      "replacements": [
+        {
+          "observed": "contact graph",
+          "proposed": "context graph"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "57:59"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Jaya Gupta & Ashu Garg's Foundation Capital essay 'Context Graphs' (foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity, verified 2026-08-26). Correctly transcribed later at 1:15:54."
+    },
+    {
+      "id": "agentnight-panel-tweetstorm",
+      "replacements": [
+        {
+          "observed": "tweettorm",
+          "proposed": "tweetstorm"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "57:59"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Orthographic ASR typo."
+    },
+    {
+      "id": "agentnight-panel-deepsee",
+      "replacements": [
+        {
+          "observed": "deepsee",
+          "proposed": "DeepSeek"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:00:52"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "DeepSeek; Lindy moved its agent traffic to DeepSeek v4 in June 2026 (thenewstack.io/lindy-deepseek-anthropic-switch, Flo Crivello's X post, verified 2026-08-26)."
+    },
+    {
+      "id": "agentnight-panel-lindy-md",
+      "replacements": [
+        {
+          "observed": "powers MD to",
+          "proposed": "powers Lindy to"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:00:52"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Flo Crivello is Lindy's CEO describing Lindy's model switch; 'MD' is the ASR residue of 'Lindy'. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-deepsync",
+      "replacements": [
+        {
+          "observed": "DeepSync",
+          "proposed": "DeepSeek"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:03:59"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Same company, second mangling in the business-model passage."
+    },
+    {
+      "id": "agentnight-panel-sonnet",
+      "replacements": [
+        {
+          "observed": "Sunnet",
+          "proposed": "Sonnet"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:01:03"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Anthropic's Claude Sonnet; 'as good as Sonnet for a tenth of the price' is the open-source-vs-Sonnet benchmark comparison."
+    },
+    {
+      "id": "agentnight-panel-tenth",
+      "replacements": [
+        {
+          "observed": "for ten of the",
+          "proposed": "for a tenth of the"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:01:03"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "ASR dropped the article and split 'tenth'; phrase spans the 1:01:03/1:01:09 marker so it is fixed as an in-chunk fragment. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-anthropic-case",
+      "replacements": [
+        {
+          "observed": "anthropic",
+          "proposed": "Anthropic"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:01:41",
+            "1:02:09"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Case-sensitive rule; two lowercase occurrences, both the company."
+    },
+    {
+      "id": "agentnight-panel-enthropic",
+      "replacements": [
+        {
+          "observed": "Enthropic",
+          "proposed": "Anthropic"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:05:35"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Anthropic mangled at 1:05:35."
+    },
+    {
+      "id": "agentnight-panel-openai-others",
+      "replacements": [
+        {
+          "observed": "Open others",
+          "proposed": "OpenAI and others"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:05:35"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "'Anthropic and OpenAI and others will keep releasing new capabilities'; verify against recording."
+    },
+    {
+      "id": "agentnight-panel-thinking-machines",
+      "replacements": [
+        {
+          "observed": "the thinkies",
+          "proposed": "Thinking Machines"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:03:10"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "American open-weights-adjacent labs list: Thinking Machines, Poolside, Meta. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-poolside",
+      "replacements": [
+        {
+          "observed": "the pool sides",
+          "proposed": "Poolside"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:03:10"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Poolside (poolside.ai) in the same list. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-mistral",
+      "replacements": [
+        {
+          "observed": "misdraw",
+          "proposed": "Mistral"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:03:35"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "'Europe has Mistral' - Europe's open-models champion."
+    },
+    {
+      "id": "agentnight-panel-meta-case",
+      "replacements": [
+        {
+          "observed": "but meta",
+          "proposed": "but Meta"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:03:10"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Meta (after a year of 'personal super intelligence', open-sourcing two models); single lowercase occurrence."
+    },
+    {
+      "id": "agentnight-panel-langchain",
+      "replacements": [
+        {
+          "observed": "Lchain",
+          "proposed": "LangChain"
+        },
+        {
+          "observed": "link chain",
+          "proposed": "LangChain"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:04:17",
+            "1:11:52"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "LangChain; Harrison Chase reference ('Harrison at LangChain, Q3 2022, when he still had a job') confirms."
+    },
+    {
+      "id": "agentnight-panel-palantir",
+      "replacements": [
+        {
+          "observed": "Palunteer",
+          "proposed": "Palantir"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:04:46"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Palantir; Alex Karp named correctly two lines later confirms the passage subject."
+    },
+    {
+      "id": "agentnight-panel-von-neumann",
+      "replacements": [
+        {
+          "observed": "John Voyman",
+          "proposed": "John von Neumann"
+        },
+        {
+          "observed": "John Vman",
+          "proposed": "John von Neumann"
+        },
+        {
+          "observed": "John Boy Nman",
+          "proposed": "John von Neumann"
+        },
+        {
+          "observed": "von Noman",
+          "proposed": "von Neumann"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:05:53",
+            "1:06:00",
+            "1:06:05",
+            "1:06:11"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The 'Einstein or John von Neumann appears next to you' intuition pump; five mangled renderings across the riff."
+    },
+    {
+      "id": "agentnight-panel-godman",
+      "replacements": [
+        {
+          "observed": "oh my godman's here",
+          "proposed": "oh my god, von Neumann's here"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:06:00"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Merged ASR of 'oh my god, von Neumann's here'; verify against recording."
+    },
+    {
+      "id": "agentnight-panel-vibe-code",
+      "replacements": [
+        {
+          "observed": "to v code GitHub",
+          "proposed": "to vibe code GitHub"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:07:14"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "'you don't expect to vibe code GitHub'."
+    },
+    {
+      "id": "agentnight-panel-gpt35",
+      "replacements": [
+        {
+          "observed": "GP 3.5",
+          "proposed": "GPT-3.5"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:11:34"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "GPT-3.5 era tooling reference."
+    },
+    {
+      "id": "agentnight-panel-braintrust",
+      "replacements": [
+        {
+          "observed": "brain trust",
+          "proposed": "Braintrust"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:11:40"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Braintrust (eval product, braintrust.dev), not the idiom."
+    },
+    {
+      "id": "agentnight-panel-mastra",
+      "replacements": [
+        {
+          "observed": "the maestra",
+          "proposed": "Mastra"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:12:11"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Mastra (mastra.ai); Abhi Aiyer's Mastra Factory demoed earlier the same night (video description names it)."
+    },
+    {
+      "id": "agentnight-panel-chatgpt",
+      "replacements": [
+        {
+          "observed": "chatbt",
+          "proposed": "ChatGPT"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:14:26"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "ChatGPT mangled."
+    },
+    {
+      "id": "agentnight-panel-skull-files",
+      "replacements": [
+        {
+          "observed": "skull files",
+          "proposed": "skill files"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:18:10"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Joke lands on 'skill files' ('Don't touch my skill files. What would I do with my skill files?')."
+    },
+    {
+      "id": "agentnight-panel-swiss",
+      "replacements": [
+        {
+          "observed": "Swiss and I",
+          "proposed": "swyx and I"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:18:22"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Flo describing his meeting with swyx earlier that week."
+    },
+    {
+      "id": "agentnight-panel-breunig",
+      "replacements": [
+        {
+          "observed": "Drew Brunig",
+          "proposed": "Drew Breunig"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:19:24"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Drew Breunig (dbreunig.com, verified 2026-08-26)."
+    },
+    {
+      "id": "agentnight-panel-drskill",
+      "replacements": [
+        {
+          "observed": "a skilled doctor thing",
+          "proposed": "a DrSkill thing"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:19:24"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Breunig's DrSkill ('brew doctor for your agent's loadout', github.com/dbreunig/drskill, verified 2026-08-26); ASR spoonerized the name. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-granola",
+      "replacements": [
+        {
+          "observed": "granola",
+          "proposed": "Granola"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:16:55"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Granola (meeting-recorder product); two lowercase occurrences, both the product."
+    },
+    {
+      "id": "agentnight-panel-codex",
+      "replacements": [
+        {
+          "observed": "Codeex",
+          "proposed": "Codex"
+        },
+        {
+          "observed": "codeex",
+          "proposed": "Codex"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:24:45",
+            "1:25:04",
+            "1:25:09"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "OpenAI Codex; three occurrences across two casings."
+    },
+    {
+      "id": "agentnight-panel-kimi",
+      "replacements": [
+        {
+          "observed": "Kimmy",
+          "proposed": "Kimi"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:24:45"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Moonshot AI's Kimi (K3 is a current frontier model, per Aug-2026 frontier roundups); listed alongside Claude Code and Codex."
+    },
+    {
+      "id": "agentnight-panel-cowork",
+      "replacements": [
+        {
+          "observed": "co-work",
+          "proposed": "Cowork"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:24:57"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Claude Cowork (claude.com/product/cowork, verified 2026-08-26); '$1,000 credits on Cowork'. The unhyphenated 'coworker' elsewhere is untouched (case+hyphen scoped)."
+    },
+    {
+      "id": "agentnight-panel-workless",
+      "replacements": [
+        {
+          "observed": "workless holiday party",
+          "proposed": "WorkOS holiday party"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:25:55"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The host is WorkOS; 'workless' is ASR of 'WorkOS'."
+    },
+    {
+      "id": "agentnight-panel-workos",
+      "replacements": [
+        {
+          "observed": "work OS's",
+          "proposed": "WorkOS's"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:09:46"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "WorkOS casing; single occurrence."
+    },
+    {
+      "id": "agentnight-panel-cerebras",
+      "replacements": [
+        {
+          "observed": "cerebras",
+          "proposed": "Cerebras"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:27:22"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Cerebras (wafer-scale inference) capitalized."
+    },
+    {
+      "id": "agentnight-panel-asics",
+      "replacements": [
+        {
+          "observed": "A6 versus GPUs",
+          "proposed": "ASICs versus GPUs"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:27:34"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Same ASR pattern as the 20VC episode's 'A6 chips' -> ASIC; 100k tokens/sec is the ASIC-vs-GPU inference argument."
+    },
+    {
+      "id": "agentnight-panel-claude-case",
+      "replacements": [
+        {
+          "observed": "claude",
+          "proposed": "Claude"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:13:04",
+            "1:21:11",
+            "1:21:17"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Case-sensitive rule; four lowercase occurrences, all the Anthropic product. 'Cloud Code' (capitalized) unaffected."
+    },
+    {
+      "id": "agentnight-panel-claude-cloud",
+      "replacements": [
+        {
+          "observed": "phone number for cloud",
+          "proposed": "phone number for Claude"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:21:17"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Scoped because lowercase 'cloud' has a legitimate occurrence at 1:26:54 ('sent to the cloud')."
+    },
+    {
+      "id": "agentnight-panel-cla",
+      "replacements": [
+        {
+          "observed": "identity cla trying to make",
+          "proposed": "identity. Claude trying to make"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:21:11"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Truncated 'Claude' at a sentence boundary; verify against recording."
+    },
+    {
+      "id": "agentnight-panel-grok",
+      "replacements": [
+        {
+          "observed": "Grock",
+          "proposed": "Grok"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:21:24",
+            "1:25:47"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "xAI's Grok (Grok 4.6 is a current frontier model per Aug-2026 roundups); two occurrences incl. 'Grockbot'. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-claude-side",
+      "replacements": [
+        {
+          "observed": "crowd side",
+          "proposed": "Claude side"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:21:31"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Contrasts Grok's multi-agent philosophy with the personified-single-agent (Claude, Lindy) side. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-pwn",
+      "replacements": [
+        {
+          "observed": "pone that bot",
+          "proposed": "pwn that bot"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:21:54"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Security slang 'pwn' (compromise); verify against recording."
+    },
+    {
+      "id": "agentnight-panel-twins",
+      "replacements": [
+        {
+          "observed": "Ja twin",
+          "proposed": "Jaya twin"
+        },
+        {
+          "observed": "flow twin",
+          "proposed": "Flo twin"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:21:49"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "The 'everyone has a twin' list: Michael twin, Jaya twin, Flo twin. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-linspace",
+      "replacements": [
+        {
+          "observed": "lin space",
+          "proposed": "latent.space"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:22:21"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "swyx's latent.space, second mangling; 'for latent.space, drives my ads, drives my YouTube'."
+    },
+    {
+      "id": "agentnight-panel-ai-cmo",
+      "replacements": [
+        {
+          "observed": "an ICO mode",
+          "proposed": "an AI CMO"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:26:17"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Callback to 'Codex has been my chief marketing officer... doubled my subscribers'; 'ICO mode' is ASR of 'AI CMO'. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-same-breath",
+      "replacements": [
+        {
+          "observed": "in the same race",
+          "proposed": "in the same breath"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:26:10"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Idiom; verify against recording."
+    },
+    {
+      "id": "agentnight-panel-infra-pilled",
+      "replacements": [
+        {
+          "observed": "infrailled",
+          "proposed": "infra-pilled"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:27:00"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "swyx slang 'infra-pilled' (pilled on infrastructure); verify against recording."
+    },
+    {
+      "id": "agentnight-panel-api",
+      "replacements": [
+        {
+          "observed": "over the AAI",
+          "proposed": "over the API"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "59:46"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Usage-limit resets over the API, in a spend discussion; verify against recording."
+    },
+    {
+      "id": "agentnight-panel-pource",
+      "replacements": [
+        {
+          "observed": "the Pource models",
+          "proposed": "the open source models"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:04:28"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Merged ASR of 'the [o]pen [s]ource models'; the sentence is about getting flamed on Twitter for criticizing open source. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-jaya",
+      "replacements": [
+        {
+          "observed": "Jay is a partner of",
+          "proposed": "Jaya is a partner of"
+        },
+        {
+          "observed": "Jay, you wrote",
+          "proposed": "Jaya, you wrote"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:15:54",
+            "57:52"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Full name per video metadata is Jaya Gupta; 'Jay' may be the host's spoken shortening - verify against recording before treating as final."
+    },
+    {
+      "id": "agentnight-panel-flo-address",
+      "replacements": [
+        {
+          "observed": "Hello, how about you?",
+          "proposed": "Flo, how about you?"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:00:10"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "The host turns to Flo, who answers with the 'AGI is here' take; 'Hello' is ASR of 'Flo'. Verify against recording."
+    },
+    {
+      "id": "agentnight-panel-repo",
+      "replacements": [
+        {
+          "observed": "this bro and this massive database",
+          "proposed": "this repo and this massive database"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:17:41"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "Engineer's head-context: the repo and the database; verify against recording."
+    },
+    {
+      "id": "agentnight-panel-nonconsensus",
+      "replacements": [
+        {
+          "observed": "non-conensus",
+          "proposed": "non-consensus"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:03:02"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Orthographic typo."
+    },
+    {
+      "id": "agentnight-panel-frontier-list",
+      "replacements": [
+        {
+          "observed": "5.6 soul and fable",
+          "proposed": "GPT-5.6, soul, and Fable"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "1:06:56"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "GPT-5.6 and Claude Fable 5 are verified Aug-2026 frontier models (CASRAI/mungomash roundups); 'soul' is left as spoken - no model named 'Soul' could be verified, see glossary unresolved entry."
+    }
+  ]
+}
