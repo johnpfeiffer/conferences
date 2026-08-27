@@ -1,0 +1,124 @@
+{
+  "edges": [
+    {
+      "source": "person:jeremy-elser",
+      "target": "org:palantir",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:daniel-balsam",
+      "target": "org:goodfire",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "org:anthropic",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:joseph-krause",
+      "target": "org:radical-ai",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:carina-hong",
+      "target": "org:axiom-math",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:pete-florence",
+      "target": "org:generalist",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "org:goodfire",
+      "type": "Founder_of"
+    },
+    {
+      "source": "session:dealmaking",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:training",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:noetik",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:proof",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:hype",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:astrazeneca",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:agents-for-sci",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:xaira-x-cell",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "session:dealmaking",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "session:training",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:jeremy-elser",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:daniel-balsam",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:joseph-krause",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:carina-hong",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:pete-florence",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    }
+  ]
+}

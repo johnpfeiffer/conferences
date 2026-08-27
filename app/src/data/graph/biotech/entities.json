@@ -1,0 +1,308 @@
+{
+  "entities": [
+    {
+      "id": "type:person",
+      "name": "Person"
+    },
+    {
+      "id": "event:unlock-2026",
+      "name": "UNLOCK 2026"
+    },
+    {
+      "id": "session:dealmaking",
+      "name": "Dealmaking & Partnerships"
+    },
+    {
+      "id": "session:training",
+      "name": "How to Train an AI for Science"
+    },
+    {
+      "id": "session:noetik",
+      "name": "Noetik: Models of Human Biology"
+    },
+    {
+      "id": "session:proof",
+      "name": "From Predictions to Proof"
+    },
+    {
+      "id": "session:hype",
+      "name": "What Is Hype—and What Is Real?"
+    },
+    {
+      "id": "session:astrazeneca",
+      "name": "AstraZeneca's AI Playbook"
+    },
+    {
+      "id": "session:agents-for-sci",
+      "name": "Agents for Scientific Discovery"
+    },
+    {
+      "id": "session:xaira-x-cell",
+      "name": "Xaira X-Cell"
+    },
+    {
+      "id": "person:aviv-regev",
+      "name": "Aviv Regev"
+    },
+    {
+      "id": "person:michelle-lee",
+      "name": "Michelle Lee"
+    },
+    {
+      "id": "person:david-baker",
+      "name": "David Baker"
+    },
+    {
+      "id": "person:peyton-greenside",
+      "name": "Peyton Greenside"
+    },
+    {
+      "id": "person:ron-alfa",
+      "name": "Ron Alfa"
+    },
+    {
+      "id": "person:jeremy-elser",
+      "name": "Jeremy Elser"
+    },
+    {
+      "id": "person:reshma-shetty",
+      "name": "Reshma Shetty"
+    },
+    {
+      "id": "person:henry-lee",
+      "name": "Henry Lee"
+    },
+    {
+      "id": "person:alex-morgan",
+      "name": "Alex Morgan"
+    },
+    {
+      "id": "person:martin-jensen",
+      "name": "Martin Jensen"
+    },
+    {
+      "id": "person:gregg-spivey",
+      "name": "Gregg Spivey"
+    },
+    {
+      "id": "person:sarah-nam",
+      "name": "Sarah Nam"
+    },
+    {
+      "id": "person:anna-marie-wagner",
+      "name": "Anna Marie Wagner"
+    },
+    {
+      "id": "person:daniel-balsam",
+      "name": "Daniel Balsam"
+    },
+    {
+      "id": "person:jonah-cool",
+      "name": "Jonah Cool"
+    },
+    {
+      "id": "person:bo-wang",
+      "name": "Bo Wang"
+    },
+    {
+      "id": "person:ci-chu",
+      "name": "Ci Chu"
+    },
+    {
+      "id": "person:andrew-white",
+      "name": "Andrew White"
+    },
+    {
+      "id": "person:shahin-farshchi",
+      "name": "Shahin Farshchi"
+    },
+    {
+      "id": "person:samuel-stanton",
+      "name": "Samuel Stanton"
+    },
+    {
+      "id": "person:joseph-krause",
+      "name": "Joseph Krause"
+    },
+    {
+      "id": "person:jorge-reis-filho",
+      "name": "Jorge Reis-Filho"
+    },
+    {
+      "id": "person:payal-sheth",
+      "name": "Payal Sheth"
+    },
+    {
+      "id": "person:carina-hong",
+      "name": "Carina Hong"
+    },
+    {
+      "id": "person:pete-florence",
+      "name": "Pete Florence"
+    },
+    {
+      "id": "person:chris-leiter",
+      "name": "Chris Leiter"
+    },
+    {
+      "id": "person:eli-berlin",
+      "name": "Eli Berlin"
+    },
+    {
+      "id": "person:johnny-hu",
+      "name": "Johnny Hu"
+    },
+    {
+      "id": "person:hani-goodarzi",
+      "name": "Hani Goodarzi"
+    },
+    {
+      "id": "person:yusuf-roohani",
+      "name": "Yusuf Roohani"
+    },
+    {
+      "id": "person:stacy-feld",
+      "name": "Stacy Feld"
+    },
+    {
+      "id": "person:nan-li",
+      "name": "Nan Li"
+    },
+    {
+      "id": "person:jacob-kimmel",
+      "name": "Jacob Kimmel"
+    },
+    {
+      "id": "person:eric-ho",
+      "name": "Eric Ho"
+    },
+    {
+      "id": "org:genentech",
+      "name": "Genentech"
+    },
+    {
+      "id": "org:medra",
+      "name": "Medra"
+    },
+    {
+      "id": "org:university-of-washington",
+      "name": "University of Washington"
+    },
+    {
+      "id": "org:institute-for-protein-design",
+      "name": "Institute for Protein Design"
+    },
+    {
+      "id": "org:bighat-biosciences",
+      "name": "BigHat Biosciences"
+    },
+    {
+      "id": "org:noetik",
+      "name": "Noetik"
+    },
+    {
+      "id": "org:palantir",
+      "name": "Palantir"
+    },
+    {
+      "id": "org:ginkgo-bioworks",
+      "name": "Ginkgo Bioworks"
+    },
+    {
+      "id": "org:cultivarium",
+      "name": "Cultivarium"
+    },
+    {
+      "id": "org:khosla-ventures",
+      "name": "Khosla Ventures"
+    },
+    {
+      "id": "org:gordian-biotechnologies",
+      "name": "Gordian Biotechnologies"
+    },
+    {
+      "id": "org:lilly",
+      "name": "Lilly"
+    },
+    {
+      "id": "org:abbvie",
+      "name": "AbbVie"
+    },
+    {
+      "id": "org:transfyr",
+      "name": "Transfyr"
+    },
+    {
+      "id": "org:goodfire",
+      "name": "Goodfire"
+    },
+    {
+      "id": "org:anthropic",
+      "name": "Anthropic"
+    },
+    {
+      "id": "org:xaira-therapeutics",
+      "name": "Xaira Therapeutics"
+    },
+    {
+      "id": "org:edison-scientific",
+      "name": "Edison Scientific"
+    },
+    {
+      "id": "org:lux-capital",
+      "name": "Lux Capital"
+    },
+    {
+      "id": "org:coefficient-bio",
+      "name": "Coefficient Bio"
+    },
+    {
+      "id": "org:radical-ai",
+      "name": "Radical AI"
+    },
+    {
+      "id": "org:astrazeneca",
+      "name": "AstraZeneca"
+    },
+    {
+      "id": "org:bristol-myers-squibb",
+      "name": "Bristol Myers Squibb"
+    },
+    {
+      "id": "org:axiom-math",
+      "name": "Axiom Math"
+    },
+    {
+      "id": "org:generalist",
+      "name": "Generalist"
+    },
+    {
+      "id": "org:atria-ventures",
+      "name": "Atria Ventures"
+    },
+    {
+      "id": "org:terray-therapeutics",
+      "name": "Terray Therapeutics"
+    },
+    {
+      "id": "org:menlo-ventures",
+      "name": "Menlo Ventures"
+    },
+    {
+      "id": "org:arc-institute",
+      "name": "Arc Institute"
+    },
+    {
+      "id": "org:johnson-and-johnson",
+      "name": "Johnson & Johnson"
+    },
+    {
+      "id": "org:dimension-capital",
+      "name": "Dimension Capital"
+    },
+    {
+      "id": "org:newlimit",
+      "name": "NewLimit"
+    }
+  ]
+}

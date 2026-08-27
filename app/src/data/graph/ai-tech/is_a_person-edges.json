@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {
+      "source": "person:jeremy-elser",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:daniel-balsam",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:joseph-krause",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:carina-hong",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:pete-florence",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    }
+  ]
+}

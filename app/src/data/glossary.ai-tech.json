@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "domain": "ai-tech",
+  "scope": "Canonical AI, tech, and software terms explicitly discussed across the conference transcripts (UNLOCK 2026 and the AI-engineering episodes): AI and machine learning vocabulary, named models and benchmarks (including biological/genomic foundation models, which are model artifacts), and the computing-leaning entries from scientific data and computing. Split on 2026-08-27 from the combined glossary.json (schemaVersion 1, 271 terms) into this file and glossary.biotech.json; term entries are unchanged. Company and person names remain in the conference graph (graph/ai-tech/). Biology, drug-discovery, clinical, and laboratory terms live in glossary.biotech.json.",
+  "referenceUrls": [
+    "https://www.unlockscience.ai/",
+    "https://www.xaira.com/news/x-cell-scaling-causal-perturbation-prediction-across-diverse-cellular-contexts-via-diffusion-language-models",
+    "https://www.noetik.ai/octo",
+    "https://www.noetik.ai/octo-vc",
+    "https://arcinstitute.org/news/foundation-model-stack",
+    "https://arcinstitute.org/news/yusuf-roohani-virtual-cell-architecture",
+    "https://edisonscientific.com/news/performance-of-our-platform-agents",
+    "https://casrai.org/news/frontier-llm-landscape-august-2026",
+    "https://codingscape.com/blog/most-powerful-llms-large-language-models"
+  ],
+  "terms": [
+    {
+      "term": "Active learning",
+      "category": "AI and machine learning",
+      "definition": "A strategy in which a model selects the most informative next examples or experiments from which to learn."
+    },
+    {
+      "term": "Agent",
+      "category": "AI and machine learning",
+      "definition": "An AI system that can plan, use tools, take actions, and iterate toward a goal rather than only produce a single response."
+    },
+    {
+      "term": "Agentic AI",
+      "category": "AI and machine learning",
+      "definition": "AI designed to carry out multi-step work with some autonomy, often using tools, memory, and feedback."
+    },
+    {
+      "term": "AI governance",
+      "category": "AI and machine learning",
+      "definition": "The structures, policies, review processes, and accountability used to guide how AI is selected, developed, and deployed."
+    },
+    {
+      "term": "AI scientist",
+      "category": "AI and machine learning",
+      "definition": "An agentic system intended to perform substantial parts of scientific research, such as literature review, analysis, hypothesis generation, and experiment planning."
+    },
+    {
+      "term": "AI/ML",
+      "category": "AI and machine learning",
+      "definition": "A combined abbreviation for artificial intelligence and machine learning."
+    },
+    {
+      "term": "Anthropic",
+      "category": "AI and machine learning",
+      "definition": "Frontier AI lab behind the Claude model family (Opus, Sonnet, Fable), Claude Code, and the Claude Cowork enterprise agent."
+    },
+    {
+      "term": "API",
+      "category": "Scientific data and computing",
+      "definition": "An application programming interface through which software systems or agents exchange requests and data.",
+      "aliases": [
+        "application programming interface"
+      ]
+    },
+    {
+      "term": "Autoregressive model",
+      "category": "AI and machine learning",
+      "definition": "A model that generates an output sequentially, conditioning each new element on previously generated elements."
+    },
+    {
+      "term": "Benchmark",
+      "category": "AI and machine learning",
+      "definition": "A standardized collection of tasks, data, and metrics used to compare model capabilities."
+    },
+    {
+      "term": "Biological foundation model",
+      "category": "AI and machine learning",
+      "definition": "A broadly trained model of biological data that can be adapted or prompted for many downstream scientific tasks."
+    },
+    {
+      "term": "BixBench",
+      "category": "Named model or benchmark",
+      "definition": "A benchmark for evaluating whether agents can explore biological datasets, perform multi-step analyses, and interpret the results."
+    },
+    {
+      "term": "Causal model",
+      "category": "AI and machine learning",
+      "definition": "A model intended to represent or predict the effects of interventions and counterfactual changes."
+    },
+    {
+      "term": "Causal perturbation prediction",
+      "category": "AI and machine learning",
+      "definition": "Prediction of how a biological system will change after a specified genetic, chemical, or environmental intervention."
+    },
+    {
+      "term": "Cell2Sentence",
+      "category": "Named model or benchmark",
+      "definition": "A method that represents single-cell gene-expression profiles as ordered gene sequences so language-model techniques can be applied to cellular data.",
+      "aliases": [
+        "C2S"
+      ]
+    },
+    {
+      "term": "Claude Fable 5",
+      "category": "Named model or benchmark",
+      "definition": "Anthropic frontier model (Aug 2026).",
+      "aliases": [
+        "Fable 5"
+      ]
+    },
+    {
+      "term": "Claude Opus 5",
+      "category": "Named model or benchmark",
+      "definition": "Anthropic's top frontier model (Aug 2026).",
+      "aliases": [
+        "Opus 5"
+      ]
+    },
+    {
+      "term": "Claude Sonnet",
+      "category": "Named model or benchmark",
+      "definition": "Anthropic's workhorse model family; the customary open-source benchmark comparison point.",
+      "aliases": [
+        "Sonnet"
+      ]
+    },
+    {
+      "term": "Coding agent",
+      "category": "AI and machine learning",
+      "definition": "An AI agent specialized in writing, running, debugging, and modifying software."
+    },
+    {
+      "term": "Computational prediction",
+      "category": "Scientific data and computing",
+      "definition": "A forecast produced by a mathematical or machine-learning model rather than a direct experiment."
+    },
+    {
+      "term": "Context window",
+      "category": "AI and machine learning",
+      "definition": "The amount of input and prior output a model can consider in one inference run."
+    },
+    {
+      "term": "Convolutional neural network",
+      "category": "AI and machine learning",
+      "definition": "A neural-network architecture that learns local spatial patterns and is widely used for image analysis.",
+      "aliases": [
+        "CNN"
+      ]
+    },
+    {
+      "term": "Cross-attention",
+      "category": "AI and machine learning",
+      "definition": "An attention mechanism that lets one representation selectively use information from another representation or modality."
+    },
+    {
+      "term": "Data sharing",
+      "category": "Scientific data and computing",
+      "definition": "The controlled exchange of datasets between teams or organizations for analysis, model training, validation, or collaboration."
+    },
+    {
+      "term": "Data-poor regime",
+      "category": "Scientific data and computing",
+      "definition": "A setting in which too few relevant observations are available to train or validate a model reliably."
+    },
+    {
+      "term": "Data-rich regime",
+      "category": "Scientific data and computing",
+      "definition": "A setting with enough relevant observations to train and evaluate models at substantial scale."
+    },
+    {
+      "term": "Deep learning",
+      "category": "AI and machine learning",
+      "definition": "Machine learning based on neural networks with multiple learned layers of representation."
+    },
+    {
+      "term": "DeepSeek",
+      "category": "AI and machine learning",
+      "definition": "Open-weights lab whose v4 generation made open models viable for production agent traffic in 2026."
+    },
+    {
+      "term": "DeepSeek v4",
+      "category": "Named model or benchmark",
+      "definition": "DeepSeek's open-weights generation adopted for production agent traffic in 2026 (e.g. Lindy's switch from Anthropic)."
+    },
+    {
+      "term": "Diffusion language model",
+      "category": "AI and machine learning",
+      "definition": "A generative model that learns to reconstruct structured sequences from noise through iterative denoising rather than only predicting the next token."
+    },
+    {
+      "term": "Domain-specific model",
+      "category": "AI and machine learning",
+      "definition": "A model trained or adapted for the data, vocabulary, and tasks of a particular field."
+    },
+    {
+      "term": "Embedding",
+      "category": "AI and machine learning",
+      "definition": "A learned numeric representation that places data with related properties near one another in a vector space."
+    },
+    {
+      "term": "Encoder",
+      "category": "AI and machine learning",
+      "definition": "A model component that converts raw input into a learned internal representation."
+    },
+    {
+      "term": "Evaluation",
+      "category": "AI and machine learning",
+      "definition": "The systematic measurement of whether a model or system performs a defined task reliably and usefully.",
+      "aliases": [
+        "eval"
+      ]
+    },
+    {
+      "term": "Evo",
+      "category": "Named model or benchmark",
+      "definition": "Arc Institute's genomic foundation-model family for reading, writing, and reasoning over biological sequences."
+    },
+    {
+      "term": "Explainability",
+      "category": "AI and machine learning",
+      "definition": "The ability to provide human-understandable reasons or evidence for a model's output."
+    },
+    {
+      "term": "Fine-tuning",
+      "category": "AI and machine learning",
+      "definition": "Additional training that adapts a pre-trained model to a narrower dataset or task."
+    },
+    {
+      "term": "Foundation model",
+      "category": "AI and machine learning",
+      "definition": "A model trained broadly at scale so it can support many downstream tasks."
+    },
+    {
+      "term": "Frontier model",
+      "category": "AI and machine learning",
+      "definition": "A model near the leading edge of capability or scale at a given time."
+    },
+    {
+      "term": "Gemini 3.6 Flash",
+      "category": "Named model or benchmark",
+      "definition": "Google DeepMind's fast, low-cost frontier-tier model (Aug 2026)."
+    },
+    {
+      "term": "Generalization",
+      "category": "AI and machine learning",
+      "definition": "A model's ability to perform well on data, contexts, or tasks not seen during training."
+    },
+    {
+      "term": "Generative model",
+      "category": "AI and machine learning",
+      "definition": "A model that learns a data distribution well enough to create or reconstruct new examples."
+    },
+    {
+      "term": "Genomic foundation model",
+      "category": "AI and machine learning",
+      "definition": "A foundation model trained on large collections of DNA or other genomic sequences."
+    },
+    {
+      "term": "Google DeepMind",
+      "category": "AI and machine learning",
+      "definition": "Google's frontier AI lab; Gemini model family (Gemini 3.6 Flash current as of Aug 2026).",
+      "aliases": [
+        "DeepMind"
+      ]
+    },
+    {
+      "term": "GPT",
+      "category": "AI and machine learning",
+      "definition": "A family of generative pre-trained transformer models for language and multimodal tasks.",
+      "aliases": [
+        "generative pre-trained transformer"
+      ]
+    },
+    {
+      "term": "GPT-5.6",
+      "category": "Named model or benchmark",
+      "definition": "OpenAI's current frontier generation (Aug 2026)."
+    },
+    {
+      "term": "GPU",
+      "category": "Scientific data and computing",
+      "definition": "A graphics processing unit, widely used to accelerate neural-network training and inference."
+    },
+    {
+      "term": "Grok 4.6",
+      "category": "Named model or benchmark",
+      "definition": "xAI's current frontier model (Aug 2026)."
+    },
+    {
+      "term": "Hyperscaler",
+      "category": "Scientific data and computing",
+      "definition": "A provider that operates cloud-computing infrastructure at very large scale."
+    },
+    {
+      "term": "In-context learning",
+      "category": "AI and machine learning",
+      "definition": "A model's ability to adapt its behavior from examples or information supplied in the current input without updating model weights."
+    },
+    {
+      "term": "Inference",
+      "category": "AI and machine learning",
+      "definition": "The use of a trained model to generate a prediction, representation, or output."
+    },
+    {
+      "term": "Interpretability",
+      "category": "AI and machine learning",
+      "definition": "The degree to which people can inspect or understand a model's internal representations and decision process."
+    },
+    {
+      "term": "Jupyter notebook",
+      "category": "Scientific data and computing",
+      "definition": "An interactive document that combines executable code, results, visualizations, and explanatory text."
+    },
+    {
+      "term": "Kimi K3",
+      "category": "Named model or benchmark",
+      "definition": "Moonshot AI's current frontier model (Aug 2026); a coding-agent favorite alongside Claude Code and Codex.",
+      "aliases": [
+        "Kimi"
+      ]
+    },
+    {
+      "term": "Kosmos",
+      "category": "Named model or benchmark",
+      "definition": "Edison Scientific's AI scientist, which combines literature, analysis, and other specialized agents for autonomous scientific discovery."
+    },
+    {
+      "term": "LAB-Bench",
+      "category": "Named model or benchmark",
+      "definition": "A benchmark suite for evaluating language models and agents on practical biology-research tasks."
+    },
+    {
+      "term": "Language model",
+      "category": "AI and machine learning",
+      "definition": "A model trained to represent or generate sequences such as human language, code, proteins, or genes."
+    },
+    {
+      "term": "Large language model",
+      "category": "AI and machine learning",
+      "definition": "A language model trained at large scale on broad data and capable of many language and reasoning tasks.",
+      "aliases": [
+        "LLM"
+      ]
+    },
+    {
+      "term": "Latent representation",
+      "category": "AI and machine learning",
+      "definition": "An internal learned encoding that captures important hidden structure in data."
+    },
+    {
+      "term": "Lilly TuneLab",
+      "category": "Named model or benchmark",
+      "definition": "Lilly's program for making selected AI/ML models available to biotech users in exchange for model-improving data contributions."
+    },
+    {
+      "term": "Llama",
+      "category": "Named model or benchmark",
+      "definition": "Meta's open-weight model family."
+    },
+    {
+      "term": "Long-horizon task",
+      "category": "AI and machine learning",
+      "definition": "A task requiring many dependent actions over an extended period before a useful result is reached."
+    },
+    {
+      "term": "Machine learning",
+      "category": "AI and machine learning",
+      "definition": "Methods that learn patterns from data to make predictions, generate outputs, or guide decisions."
+    },
+    {
+      "term": "Masked autoencoder",
+      "category": "AI and machine learning",
+      "definition": "A model trained to reconstruct portions of an input that have been hidden or masked.",
+      "aliases": [
+        "MAE"
+      ]
+    },
+    {
+      "term": "Masked token modeling",
+      "category": "AI and machine learning",
+      "definition": "A self-supervised training task in which a model predicts input tokens that were intentionally hidden."
+    },
+    {
+      "term": "MCP server",
+      "category": "Scientific data and computing",
+      "definition": "A server implementing the Model Context Protocol so an AI system can discover and use external tools or data.",
+      "aliases": [
+        "Model Context Protocol server"
+      ]
+    },
+    {
+      "term": "Mechanistic interpretability",
+      "category": "AI and machine learning",
+      "definition": "Analysis that tries to identify the internal components and computations responsible for a model's behavior."
+    },
+    {
+      "term": "Meta",
+      "category": "AI and machine learning",
+      "definition": "Open-weight Llama model family; pursuing 'personal superintelligence' and newly open-sourcing frontier models."
+    },
+    {
+      "term": "Mistral AI",
+      "category": "AI and machine learning",
+      "definition": "Europe's open-weights champion frontier lab.",
+      "aliases": [
+        "Mistral"
+      ]
+    },
+    {
+      "term": "Model architecture",
+      "category": "AI and machine learning",
+      "definition": "The structural design of a model, including its components and how information flows between them."
+    },
+    {
+      "term": "Model benchmarking",
+      "category": "AI and machine learning",
+      "definition": "The process of measuring and comparing models on defined datasets, tasks, and metrics."
+    },
+    {
+      "term": "Model co-development",
+      "category": "AI and machine learning",
+      "definition": "A partnership in which organizations jointly build, adapt, evaluate, or deploy an AI model."
+    },
+    {
+      "term": "Model parameter",
+      "category": "AI and machine learning",
+      "definition": "A learned numeric value that helps determine a model's behavior."
+    },
+    {
+      "term": "Moonshot AI",
+      "category": "AI and machine learning",
+      "definition": "Frontier lab behind the Kimi model family (Kimi K3 current as of Aug 2026).",
+      "aliases": [
+        "Moonshot"
+      ]
+    },
+    {
+      "term": "Multimodal data",
+      "category": "Scientific data and computing",
+      "definition": "Data combining distinct measurement types, such as images, gene expression, proteins, clinical records, and text."
+    },
+    {
+      "term": "Multimodal model",
+      "category": "AI and machine learning",
+      "definition": "A model that learns from or produces more than one type of data."
+    },
+    {
+      "term": "Neural network",
+      "category": "AI and machine learning",
+      "definition": "A machine-learning model composed of connected layers that learn transformations from data."
+    },
+    {
+      "term": "Next-token prediction",
+      "category": "AI and machine learning",
+      "definition": "A training objective in which a model predicts the next element in a sequence from the preceding context."
+    },
+    {
+      "term": "OCTO",
+      "category": "Named model or benchmark",
+      "definition": "Noetik's Oncology Counterfactual Therapeutics Oracle, a multimodal world model for simulating patient-level cancer biology.",
+      "aliases": [
+        "Oncology Counterfactual Therapeutics Oracle"
+      ]
+    },
+    {
+      "term": "OCTO-vc",
+      "category": "Named model or benchmark",
+      "definition": "Noetik's virtual-cell foundation model for simulating spatially resolved single-cell gene expression in tissue.",
+      "aliases": [
+        "OCTO-VirtualCell"
+      ]
+    },
+    {
+      "term": "OpenAI",
+      "category": "AI and machine learning",
+      "definition": "Frontier AI lab behind the GPT model family (GPT-5.6/Sol generation), the Codex coding agent, and ChatGPT."
+    },
+    {
+      "term": "Out-of-distribution generalization",
+      "category": "AI and machine learning",
+      "definition": "Performance in data or biological contexts that differ materially from those used for training."
+    },
+    {
+      "term": "PaperQA",
+      "category": "Named model or benchmark",
+      "definition": "A framework for retrieving and synthesizing evidence from scientific papers."
+    },
+    {
+      "term": "Physical AI",
+      "category": "AI and machine learning",
+      "definition": "AI that perceives, controls, or coordinates actions in the physical world, including robotics and laboratory systems."
+    },
+    {
+      "term": "Poolside",
+      "category": "AI and machine learning",
+      "definition": "Coding-focused foundation model lab; among the American open-models hopefuls."
+    },
+    {
+      "term": "Pre-training",
+      "category": "AI and machine learning",
+      "definition": "Initial large-scale training that gives a model broad capabilities before task-specific adaptation."
+    },
+    {
+      "term": "Predictive biology",
+      "category": "AI and machine learning",
+      "definition": "The use of quantitative models to forecast biological behavior, intervention effects, or patient outcomes."
+    },
+    {
+      "term": "Protein language model",
+      "category": "AI and machine learning",
+      "definition": "A sequence model trained on amino-acid strings to learn protein structure, function, or design patterns."
+    },
+    {
+      "term": "Qwen",
+      "category": "Named model or benchmark",
+      "definition": "Alibaba's open-weight model family."
+    },
+    {
+      "term": "Reasoning model",
+      "category": "AI and machine learning",
+      "definition": "A model optimized to perform multi-step inference before producing an answer or action."
+    },
+    {
+      "term": "Representation learning",
+      "category": "AI and machine learning",
+      "definition": "Learning internal features from data instead of relying only on manually designed descriptors."
+    },
+    {
+      "term": "Scaling law",
+      "category": "AI and machine learning",
+      "definition": "An empirical relationship describing how model performance changes with data, compute, parameters, or another scale variable."
+    },
+    {
+      "term": "scGPT",
+      "category": "Named model or benchmark",
+      "definition": "A generative pre-trained transformer for single-cell data that represents genes and expression measurements as model inputs."
+    },
+    {
+      "term": "Scientific evaluation",
+      "category": "AI and machine learning",
+      "definition": "An evaluation designed to measure whether an AI system produces correct, reproducible, and useful scientific work."
+    },
+    {
+      "term": "Self-supervised learning",
+      "category": "AI and machine learning",
+      "definition": "Training that creates learning targets from the structure of unlabeled data itself."
+    },
+    {
+      "term": "Sol",
+      "category": "Named model or benchmark",
+      "definition": "OpenAI model name in the GPT-5.6 generation (Aug 2026); owner-resolved from ASR 'soul' in the Agent Night panel."
+    },
+    {
+      "term": "STACK",
+      "category": "Named model or benchmark",
+      "definition": "Arc Institute's single-cell foundation model for in-context learning from observational cellular conditions without condition-specific fine-tuning."
+    },
+    {
+      "term": "STATE",
+      "category": "Named model or benchmark",
+      "definition": "Arc Institute's virtual-cell model for predicting cellular responses to perturbations across varied biological contexts."
+    },
+    {
+      "term": "Structured multimodal masking",
+      "category": "AI and machine learning",
+      "definition": "A self-supervised objective that masks coordinated portions of multiple data modalities so a model must learn cross-modal structure."
+    },
+    {
+      "term": "Thinking Machines",
+      "category": "AI and machine learning",
+      "definition": "US frontier lab; among the American open-models hopefuls."
+    },
+    {
+      "term": "Token",
+      "category": "AI and machine learning",
+      "definition": "A discrete unit represented and processed by a sequence model, such as a word fragment, gene, or image patch."
+    },
+    {
+      "term": "Training data",
+      "category": "AI and machine learning",
+      "definition": "Examples used to estimate a model's parameters or behavior."
+    },
+    {
+      "term": "Transformer",
+      "category": "AI and machine learning",
+      "definition": "A neural-network architecture based on attention mechanisms for modeling relationships within sequences or sets."
+    },
+    {
+      "term": "Uncertainty",
+      "category": "AI and machine learning",
+      "definition": "The degree of doubt around a prediction or conclusion due to limited data, noise, model assumptions, or unfamiliar context."
+    },
+    {
+      "term": "Virtual cell",
+      "category": "AI and machine learning",
+      "definition": "A computational model that predicts cellular state or behavior under different biological conditions and perturbations."
+    },
+    {
+      "term": "World model",
+      "category": "AI and machine learning",
+      "definition": "A model that learns enough structure and dynamics of a system to simulate possible states, actions, or outcomes."
+    },
+    {
+      "term": "X-Atlas/Pisces",
+      "category": "Named model or benchmark",
+      "definition": "Xaira's large genome-wide perturbation dataset used to train and evaluate X-Cell."
+    },
+    {
+      "term": "X-Cell",
+      "category": "Named model or benchmark",
+      "definition": "Xaira Therapeutics' virtual-cell model for predicting causal perturbation effects across diverse cellular contexts."
+    },
+    {
+      "term": "xAI",
+      "category": "AI and machine learning",
+      "definition": "Frontier lab behind the Grok model family (Grok 4.6 current as of Aug 2026), pursuing a multi-agent product philosophy."
+    },
+    {
+      "term": "Zero-shot learning",
+      "category": "AI and machine learning",
+      "definition": "Performance on a task, target, or context without task-specific labeled examples or additional training."
+    }
+  ]
+}

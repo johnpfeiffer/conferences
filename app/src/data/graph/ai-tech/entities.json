@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "id": "type:person",
+      "name": "Person"
+    },
+    {
+      "id": "event:unlock-2026",
+      "name": "UNLOCK 2026"
+    },
+    {
+      "id": "session:dealmaking",
+      "name": "Dealmaking & Partnerships"
+    },
+    {
+      "id": "session:training",
+      "name": "How to Train an AI for Science"
+    },
+    {
+      "id": "session:noetik",
+      "name": "Noetik: Models of Human Biology"
+    },
+    {
+      "id": "session:proof",
+      "name": "From Predictions to Proof"
+    },
+    {
+      "id": "session:hype",
+      "name": "What Is Hype—and What Is Real?"
+    },
+    {
+      "id": "session:astrazeneca",
+      "name": "AstraZeneca's AI Playbook"
+    },
+    {
+      "id": "session:agents-for-sci",
+      "name": "Agents for Scientific Discovery"
+    },
+    {
+      "id": "session:xaira-x-cell",
+      "name": "Xaira X-Cell"
+    },
+    {
+      "id": "person:jeremy-elser",
+      "name": "Jeremy Elser"
+    },
+    {
+      "id": "person:daniel-balsam",
+      "name": "Daniel Balsam"
+    },
+    {
+      "id": "person:jonah-cool",
+      "name": "Jonah Cool"
+    },
+    {
+      "id": "person:joseph-krause",
+      "name": "Joseph Krause"
+    },
+    {
+      "id": "person:carina-hong",
+      "name": "Carina Hong"
+    },
+    {
+      "id": "person:pete-florence",
+      "name": "Pete Florence"
+    },
+    {
+      "id": "person:eric-ho",
+      "name": "Eric Ho"
+    },
+    {
+      "id": "org:palantir",
+      "name": "Palantir"
+    },
+    {
+      "id": "org:goodfire",
+      "name": "Goodfire"
+    },
+    {
+      "id": "org:anthropic",
+      "name": "Anthropic"
+    },
+    {
+      "id": "org:radical-ai",
+      "name": "Radical AI"
+    },
+    {
+      "id": "org:axiom-math",
+      "name": "Axiom Math"
+    },
+    {
+      "id": "org:generalist",
+      "name": "Generalist"
+    }
+  ]
+}

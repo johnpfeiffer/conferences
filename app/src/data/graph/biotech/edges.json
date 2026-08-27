@@ -1,0 +1,504 @@
+{
+  "edges": [
+    {
+      "source": "person:aviv-regev",
+      "target": "org:genentech",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:michelle-lee",
+      "target": "org:medra",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:david-baker",
+      "target": "org:university-of-washington",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:david-baker",
+      "target": "org:institute-for-protein-design",
+      "type": "Director_of"
+    },
+    {
+      "source": "person:peyton-greenside",
+      "target": "org:bighat-biosciences",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:ron-alfa",
+      "target": "org:noetik",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:jeremy-elser",
+      "target": "org:palantir",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:reshma-shetty",
+      "target": "org:ginkgo-bioworks",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:henry-lee",
+      "target": "org:cultivarium",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:alex-morgan",
+      "target": "org:khosla-ventures",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:martin-jensen",
+      "target": "org:gordian-biotechnologies",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:gregg-spivey",
+      "target": "org:lilly",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:sarah-nam",
+      "target": "org:abbvie",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:anna-marie-wagner",
+      "target": "org:transfyr",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:daniel-balsam",
+      "target": "org:goodfire",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "org:anthropic",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:bo-wang",
+      "target": "org:xaira-therapeutics",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:ci-chu",
+      "target": "org:xaira-therapeutics",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:andrew-white",
+      "target": "org:edison-scientific",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:shahin-farshchi",
+      "target": "org:lux-capital",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:samuel-stanton",
+      "target": "org:coefficient-bio",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:joseph-krause",
+      "target": "org:radical-ai",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:jorge-reis-filho",
+      "target": "org:astrazeneca",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:payal-sheth",
+      "target": "org:bristol-myers-squibb",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:carina-hong",
+      "target": "org:axiom-math",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:pete-florence",
+      "target": "org:generalist",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:chris-leiter",
+      "target": "org:atria-ventures",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:eli-berlin",
+      "target": "org:terray-therapeutics",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:johnny-hu",
+      "target": "org:menlo-ventures",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:hani-goodarzi",
+      "target": "org:arc-institute",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:yusuf-roohani",
+      "target": "org:arc-institute",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:stacy-feld",
+      "target": "org:johnson-and-johnson",
+      "type": "Current_Employee_of"
+    },
+    {
+      "source": "person:nan-li",
+      "target": "org:dimension-capital",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:jacob-kimmel",
+      "target": "org:newlimit",
+      "type": "Founder_of"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "org:goodfire",
+      "type": "Founder_of"
+    },
+    {
+      "source": "session:dealmaking",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:training",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:noetik",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:proof",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:hype",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:astrazeneca",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:agents-for-sci",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "session:xaira-x-cell",
+      "target": "event:unlock-2026",
+      "type": "Session_of"
+    },
+    {
+      "source": "person:sarah-nam",
+      "target": "session:dealmaking",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "session:dealmaking",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:eli-berlin",
+      "target": "session:dealmaking",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:stacy-feld",
+      "target": "session:dealmaking",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:chris-leiter",
+      "target": "session:dealmaking",
+      "type": "Moderator_of"
+    },
+    {
+      "source": "person:yusuf-roohani",
+      "target": "session:training",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:peyton-greenside",
+      "target": "session:training",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "session:training",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:johnny-hu",
+      "target": "session:training",
+      "type": "Moderator_of"
+    },
+    {
+      "source": "person:ron-alfa",
+      "target": "session:noetik",
+      "type": "Speaker_in"
+    },
+    {
+      "source": "person:anna-marie-wagner",
+      "target": "session:proof",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:martin-jensen",
+      "target": "session:proof",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:payal-sheth",
+      "target": "session:proof",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:alex-morgan",
+      "target": "session:proof",
+      "type": "Moderator_of"
+    },
+    {
+      "source": "person:hani-goodarzi",
+      "target": "session:hype",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:reshma-shetty",
+      "target": "session:hype",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:jacob-kimmel",
+      "target": "session:hype",
+      "type": "Panelist_in"
+    },
+    {
+      "source": "person:gregg-spivey",
+      "target": "session:hype",
+      "type": "Moderator_of"
+    },
+    {
+      "source": "person:jorge-reis-filho",
+      "target": "session:astrazeneca",
+      "type": "Speaker_in"
+    },
+    {
+      "source": "person:michelle-lee",
+      "target": "session:astrazeneca",
+      "type": "Moderator_of"
+    },
+    {
+      "source": "person:andrew-white",
+      "target": "session:agents-for-sci",
+      "type": "Speaker_in"
+    },
+    {
+      "source": "person:ci-chu",
+      "target": "session:xaira-x-cell",
+      "type": "Speaker_in"
+    },
+    {
+      "source": "person:bo-wang",
+      "target": "session:xaira-x-cell",
+      "type": "Speaker_in"
+    },
+    {
+      "source": "person:aviv-regev",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:michelle-lee",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:david-baker",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:peyton-greenside",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:ron-alfa",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:jeremy-elser",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:reshma-shetty",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:henry-lee",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:alex-morgan",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:martin-jensen",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:gregg-spivey",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:sarah-nam",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:anna-marie-wagner",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:daniel-balsam",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:bo-wang",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:ci-chu",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:andrew-white",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:shahin-farshchi",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:samuel-stanton",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:joseph-krause",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:jorge-reis-filho",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:payal-sheth",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:carina-hong",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:pete-florence",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:chris-leiter",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:eli-berlin",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:johnny-hu",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:hani-goodarzi",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:yusuf-roohani",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:stacy-feld",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:nan-li",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:jacob-kimmel",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "event:unlock-2026",
+      "type": "Speaker_at"
+    }
+  ]
+}
