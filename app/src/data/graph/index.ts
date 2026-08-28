@@ -1,23 +1,36 @@
-import entitiesData from "./entities.json";
-import edgesData from "./edges.json";
-import personEdgesData from "./is_a_person-edges.json";
+import { conferenceGraph as biotechGraph } from "./biotech";
+import { conferenceGraph as aiTechGraph } from "./ai-tech";
+import type { GraphEntity, GraphEdge } from "./biotech";
 
-export type GraphEntity = {
-  id: string;
-  name: string;
-};
+export type { GraphEntity, GraphEdge };
 
-export type GraphEdge = {
-  source: string;
-  target: string;
-  type: string;
-};
+export { biotechGraph, aiTechGraph };
 
-export const graphEntities: GraphEntity[] = entitiesData.entities;
-export const graphEdges: GraphEdge[] = [
-  ...edgesData.edges,
-  ...personEdgesData.edges,
+/**
+ * Legacy merged view: both domains concatenated and deduped by id/edge so the
+ * historical `graphEntities`/`graphEdges` consumers keep working. Prefer the
+ * per-domain exports (`biotechGraph`, `aiTechGraph`) for domain-aware views;
+ * ids may repeat across domains (shared entities, sessions).
+ */
+const dedupeById = (entities: GraphEntity[]): GraphEntity[] => [
+  ...new Map(entities.map((entity) => [entity.id, entity])).values(),
 ];
+
+const dedupeEdge = (edges: GraphEdge[]): GraphEdge[] => [
+  ...new Map(
+    edges.map((edge) => [`${edge.source}|${edge.type}|${edge.target}`, edge]),
+  ).values(),
+];
+
+export const graphEntities: GraphEntity[] = dedupeById([
+  ...biotechGraph.entities,
+  ...aiTechGraph.entities,
+]);
+
+export const graphEdges: GraphEdge[] = dedupeEdge([
+  ...biotechGraph.edges,
+  ...aiTechGraph.edges,
+]);
 
 export const conferenceGraph = {
   entities: graphEntities,

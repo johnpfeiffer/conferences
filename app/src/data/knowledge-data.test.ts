@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import glossary from "./glossary.json";
+import glossaryBiotech from "./glossary.biotech.json";
+import glossaryAiTech from "./glossary.ai-tech.json";
 import proposedFixes from "./proposed-transcript-fixes.json";
 
 const transcriptFiles = new Set([
@@ -13,14 +14,31 @@ const transcriptFiles = new Set([
   "unlock-2026-xaira-x-cell-drug-discovery.txt",
 ]);
 
+const glossaries = [
+  ["biotech", glossaryBiotech],
+  ["ai-tech", glossaryAiTech],
+] as const;
+
 describe("conference knowledge data", () => {
   it("contains a substantial glossary with unique canonical terms", () => {
-    const normalizedTerms = glossary.terms.map(({ term }) => term.toLocaleLowerCase());
+    const allTerms = glossaries.flatMap(([, glossary]) => glossary.terms);
+    const normalizedTerms = allTerms.map(({ term }) => term.toLocaleLowerCase());
 
-    expect(glossary.terms.length).toBeGreaterThan(200);
+    expect(allTerms.length).toBeGreaterThan(200);
     expect(new Set(normalizedTerms).size).toBe(normalizedTerms.length);
-    expect(glossary.terms.every(({ term, category, definition }) =>
+    expect(allTerms.every(({ term, category, definition }) =>
       term.trim() && category.trim() && definition.trim())).toBe(true);
+  });
+
+  it("splits the glossary into substantial, disjoint biotech and ai-tech domains", () => {
+    const biotechTerms = new Set(glossaryBiotech.terms.map(({ term }) => term));
+    const aiTechTerms = new Set(glossaryAiTech.terms.map(({ term }) => term));
+
+    expect(glossaryBiotech.terms.length).toBeGreaterThan(100);
+    expect(glossaryAiTech.terms.length).toBeGreaterThan(50);
+    for (const term of biotechTerms) {
+      expect(aiTechTerms.has(term), `term in both domains: ${term}`).toBe(false);
+    }
   });
 
   it("keeps every proposed fix traceable to a known transcript", () => {

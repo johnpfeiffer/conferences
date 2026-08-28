@@ -1,0 +1,174 @@
+{
+  "edges": [
+    {
+      "source": "person:aviv-regev",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:michelle-lee",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:david-baker",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:peyton-greenside",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:ron-alfa",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:jeremy-elser",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:reshma-shetty",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:henry-lee",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:alex-morgan",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:martin-jensen",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:gregg-spivey",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:sarah-nam",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:anna-marie-wagner",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:daniel-balsam",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:jonah-cool",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:bo-wang",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:ci-chu",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:andrew-white",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:shahin-farshchi",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:samuel-stanton",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:joseph-krause",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:jorge-reis-filho",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:payal-sheth",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:carina-hong",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:pete-florence",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:chris-leiter",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:eli-berlin",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:johnny-hu",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:hani-goodarzi",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:yusuf-roohani",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:stacy-feld",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:nan-li",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:jacob-kimmel",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    },
+    {
+      "source": "person:eric-ho",
+      "target": "type:person",
+      "type": "Is_a_Person"
+    }
+  ]
+}

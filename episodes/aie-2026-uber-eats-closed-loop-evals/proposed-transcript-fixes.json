@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-only",
+  "notes": [
+    "These proposals do not modify the source transcript (youtube_raw.txt, converted from the YouTube auto-caption json3 track fetched 2026-08-27 via yt-dlp player_client=android after the per-client bot gate lifted; 310 blocks, span 0:01-21:36).",
+    "Timestamps are the nearest preceding timestamp marker in the raw transcript.",
+    "Occurrence counts were verified with grep against the raw before writing each replacement (fix-transcript convention); every replacement below occurs exactly once in the transcript body.",
+    "Substring-corruption rule applied: the speaker-name and employer rules use context-scoped observed strings ('Sonya. We', 'to Somya', 'Thanks Thanks, Somya.', 'at Aruba.', 'at Rue Ba') so the raw header's documentation of the ASR renderings ('Jay'/'Sonya'/'Somya', 'Aruba'/'Rue Ba' on line 7) is NOT rewritten, and no correct 'Uber'/'eval' instance is touched.",
+    "Panel-format pitfall: none of these phrases spans a timestamp marker in the raw (each sits inside one block, verified by the apply step's non-zero correction count).",
+    "'medium' rules are strongly suggested by context but await verification against the recording. Unresolved items are documented in glossary.json, not guessed."
+  ],
+  "referenceUrls": [
+    "https://www.youtube.com/watch?v=31GUkCBD-Uc",
+    "https://ai.engineer/worldsfair/2026/speakers.json",
+    "https://ai.engineer/worldsfair/2026/sessions.json",
+    "https://x.com/guptasoumya12",
+    "https://x.com/jai_chopra"
+  ],
+  "fixes": [
+    {
+      "id": "aie-uber-intro-speaker-names",
+      "replacements": [
+        {
+          "observed": "My name is Jay and I'm here with Sonya. We",
+          "proposed": "My name is Jai and I'm here with Soumya. We"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "0:17"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Video description and the official AI Engineer World's Fair 2026 speakers.json name the speakers as Jai Chopra (Product Manager, Uber) and Soumya Gupta (ML Engineer, Uber); ASR heard 'Jay' and 'Sonya' (Soumya is a woman — the conference bio uses she/her — so 'Sonya' is also the wrong gendered rendering). Verified 2026-08-27."
+    },
+    {
+      "id": "aie-uber-employer-intro",
+      "replacements": [
+        {
+          "observed": "at Aruba.",
+          "proposed": "at Uber."
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "0:22"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "'We are part of the computer vision team at Aruba' — both speakers are Uber employees per the video description and conference JSON; Uber Eats is named correctly one paragraph later. 'Aruba' (the HPE networking company) has no connection to this talk. Scoped with the trailing period so the header's documentation of the mangle is untouched."
+    },
+    {
+      "id": "aie-uber-employer-pairwise",
+      "replacements": [
+        {
+          "observed": "at Rue Ba,",
+          "proposed": "at Uber,"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "15:18"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "'For least for us at Rue Ba, we have to make sure that we're aligning with product, design, policy, legal' — same employer, second ASR rendering. Scoped with the trailing comma. The garbled 'For least' fragment stays (documented in glossary as unresolved)."
+    },
+    {
+      "id": "aie-uber-evals-intro",
+      "replacements": [
+        {
+          "observed": "the e-bows and the e-bow loops",
+          "proposed": "the evals and the eval loops"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "0:43"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "The talk title is 'Building Closed-Loop Evals for a Multimodal Agent at Scale'; 'e-bows'/'e-bow loops' is the ASR rendering of 'evals'/'eval loops' in the intro. Replaced as one phrase so the two occurrences in the same block are fixed together."
+    },
+    {
+      "id": "aie-uber-evals-pairwise",
+      "replacements": [
+        {
+          "observed": "generation of the vowels",
+          "proposed": "generation of the evals"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "14:50"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "'just before we end here on the generation of the vowels, we use what's called pairwise comparison' — 'vowels' is the ASR rendering of 'evals' (the pairwise comparison is the pass@K eval described next)."
+    },
+    {
+      "id": "aie-uber-ai-slop",
+      "replacements": [
+        {
+          "observed": "AI's lock",
+          "proposed": "AI slop"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "2:54"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "'food photography that looks like AI's lock' — almost certainly 'AI slop', the standard term for low-quality AI-generated content, in a passage about consumers distrusting AI-generated imagery. Strong context but invented spelling; verify against the recording."
+    },
+    {
+      "id": "aie-uber-handover-soumya",
+      "replacements": [
+        {
+          "observed": "to Somya\n8:35\nwho's",
+          "proposed": "to Soumya\n8:35\nwho's"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "8:30"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "PANEL-FORMAT FIX: 'hand over to Somya / 8:35 / who's' spans a timestamp marker, so the in-chunk fragment is targeted with the marker embedded in the observed string. Jai hands over to co-speaker Soumya Gupta (spelling per video description and conference speakers.json, verified 2026-08-27)."
+    },
+    {
+      "id": "aie-uber-thanks-soumya",
+      "replacements": [
+        {
+          "observed": "Thanks Thanks, Somya. Um",
+          "proposed": "Thanks Thanks, Soumya. Um"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "14:47"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "Jai thanks Soumya Gupta when taking the presentation back. The doubled 'Thanks Thanks' is ASR stutter kept verbatim; only the name is fixed."
+    },
+    {
+      "id": "aie-uber-dogfooding",
+      "replacements": [
+        {
+          "observed": "dog dog feeding",
+          "proposed": "dogfooding"
+        },
+        {
+          "observed": "internal dog fooding",
+          "proposed": "internal dogfooding"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "18:57",
+            "19:45"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "'a great sort of dog dog feeding culture' and 'an example of internal dog fooding' — the standard industry term 'dogfooding' (eating your own dog food); the following sentences describe exactly that ('we will test apps before they go live', thumbs up/down in internal apps)."
+    },
+    {
+      "id": "aie-uber-false-negative",
+      "replacements": [
+        {
+          "observed": "false negative\n7:58\nnegative cases",
+          "proposed": "false\n7:58\nnegative cases"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "7:54"
+          ]
+        }
+      ],
+      "confidence": "high",
+      "reason": "PANEL-FORMAT FIX: 'the false negative / 7:58 / negative cases' spans a timestamp marker. Confusion-matrix cells are true/false positive/negative; 'false negative negative' is an ASR duplication. Observed string embeds the marker so only this instance is affected."
+    },
+    {
+      "id": "aie-uber-synthesize-agent",
+      "replacements": [
+        {
+          "observed": "the up synthesize agent",
+          "proposed": "the synthesize agent"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "12:32"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "'There's the reflect agent and the up synthesize agent' — the two sub-agents are 'reflect' and 'synthesize' (both named cleanly later in the same passage); 'up' is an ASR stray. Strong context; verify against the recording."
+    },
+    {
+      "id": "aie-uber-agent-store",
+      "replacements": [
+        {
+          "observed": "in the new agent store",
+          "proposed": "in the agent store"
+        }
+      ],
+      "occurrences": [
+        {
+          "transcript": "youtube_raw.txt",
+          "timestamps": [
+            "12:59"
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "reason": "'you actually register this new agent in the new agent store' — the registry is 'the agent store'; one 'new' already belongs to 'this new agent', so the second reads as an ASR duplication. Alternative reading: the store is literally named 'new agent store' — verify against the recording."
+    }
+  ]
+}

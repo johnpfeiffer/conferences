@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "scope": "episode: aie-2026-uber-eats-closed-loop-evals — 'Building Closed-Loop Evals for a Multimodal Agent at Scale', Soumya Gupta & Jai Chopra (Uber), AI Engineer World's Fair 2026, Evals track, Day 3 (2026-07-01), San Francisco; YouTube upload 2026-07-24, 21:38. Domain: AI/tech/software (no biotech content).",
+  "provenanceConvention": "Every term carries 'sources'. 'verified 2026-08-27' = the URL was fetched and the spelling confirmed on that date; 'canonical reference' = official source cited without a fresh fetch; 'transcript context' = internal evidence from this transcript; 'video description' = the watch-page description block (ground truth for speaker/company spellings).",
+  "referenceUrls": [
+    "https://www.youtube.com/watch?v=31GUkCBD-Uc",
+    "https://ai.engineer/worldsfair/2026/speakers.json",
+    "https://ai.engineer/worldsfair/2026/sessions.json",
+    "https://www.ai.engineer/worldsfair",
+    "https://x.com/guptasoumya12",
+    "https://www.linkedin.com/in/guptasoumya12/",
+    "https://x.com/jai_chopra",
+    "https://linkedin.com/in/jaichopra",
+    "https://www.uber.com"
+  ],
+  "terms": [
+    {
+      "term": "Soumya Gupta",
+      "category": "Person",
+      "definition": "Tech Lead and Applied AI Engineer at Uber (computer vision / generative AI); second speaker. ASR renders 'Sonya' (intro) and 'Somya' (twice); the official conference bio uses she/her, so 'Sonya' is also the wrong gendered rendering.",
+      "sources": [
+        "video description (X/LinkedIn links)",
+        "https://ai.engineer/worldsfair/2026/speakers.json (verified 2026-08-27)",
+        "https://x.com/guptasoumya12 (verified 2026-08-27: 'Machine Learning @ UberAI')"
+      ]
+    },
+    {
+      "term": "Jai Chopra",
+      "category": "Person",
+      "definition": "Product Lead on Uber's Applied AI team (previously Cruise and startups; later moved to Waymo per his X bio); first speaker and the 'Jay' the ASR renders throughout. Also 'Somya' is who he hands over to and thanks.",
+      "sources": [
+        "video description (X/LinkedIn links)",
+        "https://ai.engineer/worldsfair/2026/speakers.json (verified 2026-08-27)",
+        "zoominfo.com profile 'Jai Singh Chopra, Senior Product Manager at Uber, Applied AI' (verified 2026-08-27)"
+      ]
+    },
+    {
+      "term": "Uber",
+      "category": "Company",
+      "definition": "The speakers' employer; both the delivery marketplace (Uber Eats) and mobility sides are referenced. ASR renders 'Aruba' (intro) and 'Rue Ba' (pairwise-comparison section); 'Uber' itself is transcribed correctly elsewhere.",
+      "sources": [
+        "video description",
+        "uber.com (canonical reference)",
+        "transcript context (Uber Eats named correctly at first mention)"
+      ]
+    },
+    {
+      "term": "Uber Eats",
+      "category": "Company",
+      "definition": "Uber's delivery marketplace: ~$90B run rate per year, millions of items added each month, 20% year-on-year growth, operating in 10,000 cities globally; 'just as big as the mobility side on Uber today'. Transcribed correctly.",
+      "sources": [
+        "video description",
+        "transcript context (marketplace statistics passage)"
+      ]
+    },
+    {
+      "term": "AI Engineer World's Fair 2026",
+      "category": "Concept",
+      "definition": "The conference this talk was given at: June 29 – July 2, 2026, Moscone West, San Francisco. This session ran Day 3 (July 1) 11:40am–12:00pm, Track 5 (Evals track). YouTube title says 'at Uber Scale'; upload 2026-07-24 on the AI Engineer channel.",
+      "sources": [
+        "https://ai.engineer/worldsfair/2026/sessions.json (verified 2026-08-27)",
+        "https://www.ai.engineer/worldsfair (verified 2026-08-27)"
+      ]
+    },
+    {
+      "term": "evals / eval loops",
+      "category": "Concept",
+      "definition": "The talk's subject: evaluations for each agent stage plus the closed feedback loops that keep them aligned. ASR renders 'e-bows' and 'e-bow loops' in the intro and 'the vowels' once later.",
+      "sources": [
+        "video title and description",
+        "transcript context (intro; 'generation of the vowels' before 'pairwise comparison')"
+      ]
+    },
+    {
+      "term": "food enhancement agent",
+      "category": "Concept",
+      "definition": "The production system under discussion: edits food photography to better present dishes for smaller, independent Uber Eats merchants while staying faithful to the dish, preserving merchant brand/packaging, and avoiding marketplace homogenization.",
+      "sources": [
+        "video description"
+      ]
+    },
+    {
+      "term": "image understanding and routing agent",
+      "category": "Concept",
+      "definition": "First pipeline stage: a multimodal LLM describes the photo, the description becomes structured output, and a router applies pass/fail rubric criteria to decide enhance vs skip (skip keeps the original). Evaled as a classifier with a confusion matrix (2x2, or n x n when routing to multiple branches/models).",
+      "sources": [
+        "transcript context (routing section)"
+      ]
+    },
+    {
+      "term": "image editing agent",
+      "category": "Concept",
+      "definition": "Second pipeline stage; runs in a feedback loop with the QA agent, self-correcting edits; after a number of failed loops the image is not published.",
+      "sources": [
+        "transcript context (pipeline walkthrough)"
+      ]
+    },
+    {
+      "term": "QA agent / QA gate",
+      "category": "Concept",
+      "definition": "Multi-dimensional quality gate over plating, faithfulness, colors, etc.; failed edits loop back with feedback. The final 'post-processing and publish-ready QA' adds policy checks and redundancy (Swiss cheese model).",
+      "sources": [
+        "transcript context (enhancement and post-processing sections)"
+      ]
+    },
+    {
+      "term": "confusion matrix",
+      "category": "Concept",
+      "definition": "The router's eval frame: true positives, false negatives, etc., measuring precision and recall; generalizes to an n x n matrix for multi-branch routing. Transcribed correctly.",
+      "sources": [
+        "transcript context (router eval section)"
+      ]
+    },
+    {
+      "term": "precision and recall",
+      "category": "Concept",
+      "definition": "Classifier metrics; recall is the routing guardrail metric ('we don't want any bad image to slip through'). Transcribed correctly.",
+      "sources": [
+        "transcript context (router eval section)"
+      ]
+    },
+    {
+      "term": "golden dataset",
+      "category": "Concept",
+      "definition": "Human-labeled representative dataset (cuts across geographies, dish types, image quality) treated as the golden source of truth; agents are tuned until they meet guardrail metrics against it, and re-benchmarked against it after every auto-tune.",
+      "sources": [
+        "transcript context (human-alignment section)"
+      ]
+    },
+    {
+      "term": "guardrail metrics",
+      "category": "Concept",
+      "definition": "Ship/no-ship thresholds the tuned agent must meet on the golden dataset (recall for routing); part of the 'ship safely' theme.",
+      "sources": [
+        "transcript context (human-alignment section)"
+      ]
+    },
+    {
+      "term": "hallucination (image)",
+      "category": "Concept",
+      "definition": "Failure mode example: a dish named 'eight pieces chicken wings' whose photo shows six; an enhancement model may hallucinate the two missing wings to match the description — a faithfulness failure.",
+      "sources": [
+        "transcript context (recall-miss example)"
+      ]
+    },
+    {
+      "term": "diagnoser agent",
+      "category": "Concept",
+      "definition": "The umbrella/higher-level abstraction over all feedback loops: takes flagged input (human-label mismatches, dogfooding thumbs up/down, free-form merchant/design/product feedback), reflects on which agent(s) need optimization, localizes the issue, and triggers the auto-tuning pipeline. ASR also renders 'umbrella diagnosis agent' and 'diagnosis'.",
+      "sources": [
+        "transcript context (model-loop and diagnoser sections)"
+      ]
+    },
+    {
+      "term": "auto-tuning pipeline",
+      "category": "Concept",
+      "definition": "Config-driven, no-human-in-the-loop tuning triggered by the diagnoser: tunes the target agent, benchmarks against the golden dataset, ships on pass, iterates otherwise; runs on a regular cadence over sampled production data, with observability guardrails and quick rollback.",
+      "sources": [
+        "transcript context (drift/auto-tuning section)"
+      ]
+    },
+    {
+      "term": "prompt optimizer agent",
+      "category": "Concept",
+      "definition": "The auto-tuning core: given unseen human-labeled eval samples it finds mismatches and rewrites the target agent's config. Composed of two sub-agents, reflect and synthesize.",
+      "sources": [
+        "transcript context (auto-tuning zoom-in)"
+      ]
+    },
+    {
+      "term": "reflect agent",
+      "category": "Concept",
+      "definition": "Prompt-optimizer sub-agent: inspects mismatches, removes noise, finds systemic issues in the dataset, and sends feedback to the synthesize agent. Transcribed correctly.",
+      "sources": [
+        "transcript context (auto-tuning zoom-in)"
+      ]
+    },
+    {
+      "term": "synthesize agent",
+      "category": "Concept",
+      "definition": "Prompt-optimizer sub-agent: takes the reflect agent's feedback plus the current agent config and writes the new config, then benchmarks it. ASR renders 'the up synthesize agent' at first mention (stray 'up').",
+      "sources": [
+        "transcript context (auto-tuning zoom-in)"
+      ]
+    },
+    {
+      "term": "agent store",
+      "category": "Concept",
+      "definition": "Registry where a newly benchmark-passing agent version is registered; production picks up the new version on its next run. ASR renders 'the new agent store' with a duplicated 'new'.",
+      "sources": [
+        "transcript context (auto-tuning zoom-in)"
+      ]
+    },
+    {
+      "term": "pass@K",
+      "category": "Concept",
+      "definition": "Enhancement-loop metric: pass rate at the Kth iteration; rises with iterations as feedback accumulates. Enhancement ends in publish (QA pass within K iterations) or a coverage hit (image never enhanced).",
+      "sources": [
+        "transcript context (enhancement section: 'pass at K' / 'Kth iteration')"
+      ]
+    },
+    {
+      "term": "pairwise comparison",
+      "category": "Concept",
+      "definition": "How 'better' is judged for pass@K: the input and output images are compared directly, output graded yes/no/unsure against the platform's baked-in definition of a better image (faithful, complete, natural, realistic, …), aligned with product, design, policy, and legal.",
+      "sources": [
+        "transcript context (pairwise-comparison section)"
+      ]
+    },
+    {
+      "term": "reward hacking",
+      "category": "Concept",
+      "definition": "Failure mode where the editing agent oversteers after a QA rejection into an overly conservative, nugatory change (falling back to a generic ceramic bowl) whose raw pixels differ but which is not a meaningful or influential change.",
+      "sources": [
+        "video description ('navigated reward hacking')",
+        "transcript context (creative-edit example)"
+      ]
+    },
+    {
+      "term": "nugatory change",
+      "category": "Concept",
+      "definition": "A change that is not meaningful or influential despite differing pixels; the talk's term for the reward-hacked edit. Transcribed correctly.",
+      "sources": [
+        "transcript context (creative-edit example)"
+      ]
+    },
+    {
+      "term": "faithfulness",
+      "category": "Concept",
+      "definition": "Core eval dimension: the edit must not add or invent content (example failure: shrimp added to the dish). Pair with completeness.",
+      "sources": [
+        "video description ('stay faithful to the original dish')",
+        "transcript context (failure-modes section)"
+      ]
+    },
+    {
+      "term": "completeness",
+      "category": "Concept",
+      "definition": "Eval dimension complementary to faithfulness: the edit must not remove content (example failure: sauce at the bottom of the sushi removed).",
+      "sources": [
+        "transcript context (failure-modes section)"
+      ]
+    },
+    {
+      "term": "object coherence / physics plausibility",
+      "category": "Concept",
+      "definition": "Eval dimensions where frontier image-editing models' problems leak into the applied use case (example: the plate covering the sauce in the output); Uber's evals sometimes surface these back to the frontier teams.",
+      "sources": [
+        "transcript context (failure-modes section)"
+      ]
+    },
+    {
+      "term": "Swiss cheese model",
+      "category": "Concept",
+      "definition": "Defense-in-depth rationale for the redundant publish-ready QA gate: stacked imperfect layers reduce the chance of a failure reaching production.",
+      "sources": [
+        "transcript context (post-processing section)",
+        "canonical reference (reasoning-model-of-accident-causation term)"
+      ]
+    },
+    {
+      "term": "model loop",
+      "category": "Concept",
+      "definition": "The first and predominant feedback loop: accounts for drift by aligning to the offline human-labeled dataset (sample production data at cadence → label → mismatch → diagnoser → auto-tune → benchmark → ship).",
+      "sources": [
+        "transcript context (feedback-loops summary)"
+      ]
+    },
+    {
+      "term": "dogfooding",
+      "category": "Concept",
+      "definition": "Uber's internal feedback culture ('a great sort of dog dog feeding culture' in ASR): test apps before launch, plus in-production thumbs up/down and free-form feedback from merchants, design, and product teams, replayed into the diagnoser.",
+      "sources": [
+        "transcript context (feedback-loops section)"
+      ]
+    },
+    {
+      "term": "conversion",
+      "category": "Concept",
+      "definition": "The called-out marketplace metric: add-to-cart, converting, completing orders; production impact is sliced by geos, device type, dish type, etc., and segments can be tuned individually.",
+      "sources": [
+        "transcript context (production-metrics section)"
+      ]
+    },
+    {
+      "term": "structured output",
+      "category": "Concept",
+      "definition": "The router input format: the multimodal LLM's image description is converted to a structured form that is graded against a pass/fail rubric.",
+      "sources": [
+        "transcript context (routing section)"
+      ]
+    },
+    {
+      "term": "coverage hit",
+      "category": "Concept",
+      "definition": "Enhancement-loop terminal outcome where the image is never enhanced after K failed iterations; traded off against publishing bad edits.",
+      "sources": [
+        "transcript context (enhancement section)"
+      ]
+    },
+    {
+      "term": "'we use our eyes'",
+      "category": "Unresolved proper noun",
+      "definition": "Closing sentence of the logging aside: 'And at Uber, we um we use our eyes.' Candidates: literal ('we look at the logs ourselves'), a product name ('UberEyes'? no evidence), or an ASR mangle of an internal observability tool name. No confident resolution; verify against the recording.",
+      "sources": [
+        "transcript context (logging section)"
+      ]
+    },
+    {
+      "term": "'Oh, my son done'",
+      "category": "Unresolved proper noun",
+      "definition": "Garbled line during the microphone trouble at the talk start ('Oh, my son done. Okay. Try again.'). Candidates: an aside to the AV staff or a mangled 'Oh, my mic's not on'. Unresolved; low stakes.",
+      "sources": [
+        "transcript context (opening)"
+      ]
+    },
+    {
+      "term": "'AI's lock'",
+      "category": "Unresolved proper noun",
+      "definition": "'the last thing that you want is to be scrolling through food photography that looks like AI's lock.' Candidates: 'AI slop' (the common term for low-quality AI-generated content) — strong contextual fit but the recording must confirm before fixing. Documented, not guessed.",
+      "sources": [
+        "transcript context (consumer-distrust passage)"
+      ]
+    },
+    {
+      "term": "'the technical is low ball'",
+      "category": "Unresolved proper noun",
+      "definition": "The routing agent's stated reason for failing the good cheeseburger image: 'It said the technical is low ball'. Candidates: 'the technical score is low', 'technicals are low'. Unresolved.",
+      "sources": [
+        "transcript context (router failure examples)"
+      ]
+    },
+    {
+      "term": "'For least for us'",
+      "category": "Unresolved proper noun",
+      "definition": "'this is where you sort of For least for us at Rue Ba, we have to make sure…' — garbled; presumably 'at least for us at Uber'. Only the company name is fixed (high confidence via metadata); the 'For least' fragment is documented, not guessed.",
+      "sources": [
+        "transcript context (pairwise-comparison section)"
+      ]
+    }
+  ]
+}
