@@ -14,6 +14,9 @@ The eight transcripts are presented as selected highlights. The interface also l
 
 # To develop or build
 
+Node.js 24.20.0 or later is required by the Vite/Vitest toolchain (see
+`app/package.json` `engines`).
+
 Run `npm run dev` or `npm run build` from the `app/` directory.
 
 # To test
