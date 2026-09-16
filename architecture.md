@@ -21,7 +21,8 @@ flowchart LR
     C --> APP[Conference recap web app]
     O --> APP
     APP --> RET[Browser retrieval]
-    RET --> API[Server-side model API]
+    RET --> API[Server-side OpenAI-compatible API]
+    CFG[Backend model configuration] --> API
 ```
 
 Transcript responsibilities are intentionally non-overlapping:
@@ -31,8 +32,12 @@ Transcript responsibilities are intentionally non-overlapping:
 - `attribute-speakers` owns anonymous speaker labels, identity evidence, and
   citation-safe rendering. It cannot change words or timestamps.
 
-The app keeps the API key server-side, retrieves relevant transcript passages in
-the browser, and sends only selected excerpts to the allowed model endpoint.
+The app keeps provider configuration server-side, retrieves relevant transcript
+passages in the browser, and sends only selected excerpts to the shared
+OpenAI-compatible endpoint. The frontend does not send a model, API base URL,
+API key, or completion-window metadata. The backend supplies credentials,
+injects `OPENAI_MODEL`, and enforces `metadata.completion_window = "balanced"`
+when forwarding the request.
 
 ## User journey
 

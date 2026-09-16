@@ -8,8 +8,12 @@ The eight transcripts are presented as selected highlights. The interface also l
 
 - The supplied `unlock-2026-*.txt` transcripts live in `app/src/data/transcripts` and are bundled.
 - `app/src/lib/retrieval.ts` breaks them into timestamped excerpts and selects relevant passages in the browser.
-- `app/src/lib/chat.ts` sends only those excerpts to `/api/cerebras/chat/completions` using `gemma-4-31b`.
-- The shared Cloudflare middleware keeps `CEREBRAS_API_KEY` server-side and pins the allowed model.
+- `app/src/lib/chat.ts` sends only those excerpts to `/api/openai/chat/completions` without selecting a model or provider configuration.
+- The shared backend supplies the OpenAI-compatible provider credentials, selects the model, and enforces the balanced completion window.
+
+The deployment backend requires `OPENAI_API_BASE`, `OPENAI_API_KEY`, and
+`OPENAI_MODEL`. These are server-only settings and must never be exposed through
+Vite variables or browser code.
 
 
 # To develop or build

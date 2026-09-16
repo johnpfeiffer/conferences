@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { askConference, buildChatRequest, CHAT_ENDPOINT, LLM_MODEL } from "./chat";
+import { askConference, buildChatRequest, CHAT_ENDPOINT } from "./chat";
 import type { TranscriptChunk } from "./retrieval";
 
 const source: TranscriptChunk = {
@@ -13,9 +13,25 @@ const source: TranscriptChunk = {
 };
 
 describe("conference chat", () => {
-  it("pins the Cerebras model and includes numbered transcript sources", () => {
+  it("leaves model selection to the backend and includes numbered transcript sources", () => {
     const request = buildChatRequest("What happened?", [source]);
-    expect(request.model).toBe(LLM_MODEL);
+    expect(request).not.toHaveProperty("model");
+    expect(request).not.toHaveProperty("metadata");
+    expect(request).not.toHaveProperty("api_base");
+    expect(request).not.toHaveProperty("api_key");
+    expect(Object.keys(request)).toEqual([
+      "temperature",
+      "top_p",
+      "max_tokens",
+      "response_format",
+      "messages",
+    ]);
+    expect(request).toMatchObject({
+      temperature: 0.25,
+      top_p: 1,
+      max_tokens: 700,
+      response_format: { type: "text" },
+    });
     expect(request.messages.at(-1)?.content).toContain("[1] A scientific session");
   });
 
@@ -34,14 +50,21 @@ describe("conference chat", () => {
     expect(body.length).toBeLessThan(32_000);
   });
 
-  it("uses the shared endpoint and returns the assistant content", async () => {
+  it("uses the shared OpenAI-compatible endpoint and returns the assistant content", async () => {
     const fetchImpl = vi.fn().mockResolvedValue(
-      new Response(JSON.stringify({ choices: [{ message: { content: "Grounded answer [1]" } }] }), {
-        status: 200,
-        headers: { "Content-Type": "application/json" },
-      }),
+      new Response(
+        JSON.stringify({
+          model: "backend-selected-model",
+          choices: [{ message: { content: "Grounded answer [1]" } }],
+        }),
+        {
+          status: 200,
+          headers: { "Content-Type": "application/json" },
+        },
+      ),
     );
     await expect(askConference("Question", [source], [], fetchImpl)).resolves.toBe("Grounded answer [1]");
-    expect(fetchImpl).toHaveBeenCalledWith(CHAT_ENDPOINT, expect.objectContaining({ method: "POST" }));
+    expect(CHAT_ENDPOINT).toBe("/api/openai/chat/completions");
+    expect(fetchImpl).toHaveBeenCalledWith("/api/openai/chat/completions", expect.objectContaining({ method: "POST" }));
   });
 });

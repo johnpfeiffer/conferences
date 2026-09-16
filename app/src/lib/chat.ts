@@ -1,7 +1,6 @@
 import type { TranscriptChunk } from "./retrieval";
 
-export const LLM_MODEL = "gemma-4-31b";
-export const CHAT_ENDPOINT = "/api/cerebras/chat/completions";
+export const CHAT_ENDPOINT = "/api/openai/chat/completions";
 
 export type ConversationTurn = {
   role: "user" | "assistant";
@@ -21,9 +20,10 @@ export function buildChatRequest(
     .join("\n\n");
 
   return {
-    model: LLM_MODEL,
     temperature: 0.25,
+    top_p: 1,
     max_tokens: 700,
+    response_format: { type: "text" as const },
     messages: [
       {
         role: "system",
@@ -56,13 +56,14 @@ export async function askConference(
 
   if (!response.ok) {
     const detail = (await response.text()).slice(0, 180);
-    throw new Error(detail || `Request failed with status ${response.status}`);
+    throw new Error(`LLM API error: ${detail || `request failed with status ${response.status}`}`);
   }
 
   const payload = (await response.json()) as {
+    model?: string;
     choices?: { message?: { content?: string } }[];
   };
   const answer = payload.choices?.[0]?.message?.content?.trim();
-  if (!answer) throw new Error("The model returned an empty answer.");
+  if (!answer) throw new Error("The LLM API returned an empty answer.");
   return answer;
 }

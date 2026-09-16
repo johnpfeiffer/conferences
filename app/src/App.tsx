@@ -318,7 +318,7 @@ function LandingPage({ onNavigate }: { onNavigate: Navigate }) {
           role: "assistant",
           content:
             detail.includes("configured") || detail.includes("503")
-              ? "The conference guide is not connected right now. The Cerebras API key needs to be configured in the deployment environment."
+              ? "The conference guide is not connected right now. The Live LLM backend needs to be configured in the deployment environment."
               : "I couldn’t reach the conference guide. Please try that question again in a moment.",
           error: true,
         },
@@ -385,7 +385,7 @@ function LandingPage({ onNavigate }: { onNavigate: Navigate }) {
 
           <div className="chat-frame">
             <div className="chat-toolbar">
-              <span className="status-pill"><i /> GEMMA 4 · CEREBRAS</span>
+              <span className="status-pill"><i /> LIVE LLM</span>
               <span>{transcriptIndex.length} searchable excerpts</span>
             </div>
 
