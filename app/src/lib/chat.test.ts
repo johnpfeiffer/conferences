@@ -14,7 +14,7 @@ const source: TranscriptChunk = {
 
 describe("conference chat", () => {
   it("leaves model selection to the backend and includes numbered transcript sources", () => {
-    const request = buildChatRequest("What happened?", [source]);
+    const request = buildChatRequest("What happened?", [source], [], "WorkOS Agent Night");
     expect(request).not.toHaveProperty("model");
     expect(request).not.toHaveProperty("metadata");
     expect(request).not.toHaveProperty("api_base");
@@ -33,6 +33,7 @@ describe("conference chat", () => {
       response_format: { type: "text" },
     });
     expect(request.messages.at(-1)?.content).toContain("[1] A scientific session");
+    expect(request.messages[0].content).toContain("WorkOS Agent Night");
   });
 
   it("keeps a full retrieval request under the middleware body limit", () => {

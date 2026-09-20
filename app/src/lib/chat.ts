@@ -11,6 +11,7 @@ export function buildChatRequest(
   question: string,
   sources: TranscriptChunk[],
   history: ConversationTurn[] = [],
+  archiveName = "conference",
 ) {
   const sourceText = sources
     .map(
@@ -28,7 +29,7 @@ export function buildChatRequest(
       {
         role: "system",
         content:
-          "You are the guide to the UNLOCK 2026 conference transcript archive. Answer exclusively from the supplied transcript excerpts. Be direct, synthesize across sessions when useful, and cite each factual claim with bracketed source numbers like [1]. Never invent speakers, claims, or event details. If the excerpts do not answer the question, say so clearly and suggest a narrower question. Use short paragraphs and no markdown heading.",
+          `You are the guide to the ${archiveName} transcript archive. Answer exclusively from the supplied transcript excerpts. Be direct, synthesize across sessions when useful, and cite each factual claim with bracketed source numbers like [1]. Never invent speakers, claims, or event details. If the excerpts do not answer the question, say so clearly and suggest a narrower question. Use short paragraphs and no markdown heading.`,
       },
       ...history.slice(-4).map((turn) => ({
         role: turn.role,
@@ -47,11 +48,12 @@ export async function askConference(
   sources: TranscriptChunk[],
   history: ConversationTurn[] = [],
   fetchImpl: typeof fetch = fetch,
+  archiveName = "conference",
 ): Promise<string> {
   const response = await fetchImpl(CHAT_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(buildChatRequest(question, sources, history)),
+    body: JSON.stringify(buildChatRequest(question, sources, history, archiveName)),
   });
 
   if (!response.ok) {

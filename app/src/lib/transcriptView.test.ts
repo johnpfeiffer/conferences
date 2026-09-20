@@ -31,4 +31,14 @@ describe("transcript reader data", () => {
     expect(diff.original.filter(({ changed }) => changed).map(({ text }) => text)).toEqual(["Cosmos"]);
     expect(diff.fixed.filter(({ changed }) => changed).map(({ text }) => text)).toEqual(["Kosmos"]);
   });
+
+  it("uses a declared segment start for transcript text before the first timestamp", () => {
+    const original = "Segment: 57:12-1:27:46 of the source video\n---\nOpening words\n57:15\nNext line";
+    const fixed = "Segment: 57:12-1:27:46 of the source video\n---\nOpening words\n57:15\nNext line";
+
+    expect(buildTranscriptRows(original, fixed)[0]).toMatchObject({
+      timestamp: "57:12",
+      original: "Opening words",
+    });
+  });
 });

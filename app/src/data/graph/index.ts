@@ -1,10 +1,11 @@
 import { conferenceGraph as biotechGraph } from "./biotech";
 import { conferenceGraph as aiTechGraph } from "./ai-tech";
+import { conferenceGraph as eventGraph } from "./events";
 import type { GraphEntity, GraphEdge } from "./biotech";
 
 export type { GraphEntity, GraphEdge };
 
-export { biotechGraph, aiTechGraph };
+export { biotechGraph, aiTechGraph, eventGraph };
 
 /**
  * Legacy merged view: both domains concatenated and deduped by id/edge so the
@@ -25,11 +26,13 @@ const dedupeEdge = (edges: GraphEdge[]): GraphEdge[] => [
 export const graphEntities: GraphEntity[] = dedupeById([
   ...biotechGraph.entities,
   ...aiTechGraph.entities,
+  ...eventGraph.entities,
 ]);
 
 export const graphEdges: GraphEdge[] = dedupeEdge([
   ...biotechGraph.edges,
   ...aiTechGraph.edges,
+  ...eventGraph.edges,
 ]);
 
 export const conferenceGraph = {

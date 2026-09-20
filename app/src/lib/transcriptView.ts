@@ -18,7 +18,7 @@ export function buildTranscriptRows(original: string, fixed: string): Transcript
   const originalLines = original.split(/\r?\n/);
   const fixedLines = fixed.split(/\r?\n/);
   const rows: TranscriptRow[] = [];
-  let timestamp = "0:00";
+  let timestamp = original.match(/^Segment:\s*((?:\d{1,2}:)?\d{1,2}:\d{2})/m)?.[1] ?? "0:00";
   let inBody = false;
 
   for (let index = 0; index < Math.max(originalLines.length, fixedLines.length); index += 1) {

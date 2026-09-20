@@ -15,28 +15,16 @@ import astraZenecaUrl from "./transcripts/unlock-2026-astrazeneca-ai-playbook.tx
 import agentsUrl from "./transcripts/unlock-2026-agents-for-scientific-discovery.txt?url";
 import xairaXCellUrl from "./transcripts/unlock-2026-xaira-x-cell-drug-discovery.txt?url";
 import { applyProposedTranscriptFixes } from "./transcriptFixes";
+import type { Session } from "../models/event";
 
-export type Session = {
-  id: string;
-  number: string;
-  title: string;
-  eyebrow: string;
-  description: string;
-  videoUrl: string;
-  transcript: string;
-  transcriptFileName: string;
-  originalTranscriptUrl: string;
-  fixedTranscript: string;
-  fixedTranscriptFileName: string;
-  correctionCount: number;
-};
+export type { Session } from "../models/event";
 
 const videoUrlFrom = (transcript: string) =>
   transcript.match(/^https?:\/\/\S+/m)?.[0] ?? "";
 
 type SessionInput = Omit<
   Session,
-  "videoUrl" | "transcriptFileName" | "fixedTranscript" | "fixedTranscriptFileName" | "correctionCount"
+  "eventId" | "videoUrl" | "transcriptFileName" | "fixedTranscript" | "fixedTranscriptFileName" | "fixedTranscriptUrl" | "correctionCount"
 > & {
   transcriptFileName: string;
 };
@@ -46,6 +34,7 @@ const createSession = ({ transcriptFileName, transcript, ...session }: SessionIn
 
   return {
     ...session,
+    eventId: "unlock2026",
     transcript,
     transcriptFileName,
     videoUrl: videoUrlFrom(transcript),

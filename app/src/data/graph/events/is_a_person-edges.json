@@ -1,0 +1,10 @@
+{
+  "edges": [
+    { "source": "person:michael-grinich", "target": "type:person", "type": "Is_a_Person" },
+    { "source": "person:jaya-gupta", "target": "type:person", "type": "Is_a_Person" },
+    { "source": "person:flo-crivello", "target": "type:person", "type": "Is_a_Person" },
+    { "source": "person:shawn-swyx-wang", "target": "type:person", "type": "Is_a_Person" },
+    { "source": "person:jai-chopra", "target": "type:person", "type": "Is_a_Person" },
+    { "source": "person:soumya-gupta", "target": "type:person", "type": "Is_a_Person" }
+  ]
+}

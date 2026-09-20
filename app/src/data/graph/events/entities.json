@@ -1,0 +1,21 @@
+{
+  "entities": [
+    { "id": "type:person", "name": "Person" },
+    { "id": "event:workos-agent-night-2026", "name": "WorkOS Agent Night" },
+    { "id": "event:aie-worlds-fair-2026", "name": "AI Engineer World's Fair 2026" },
+    { "id": "session:workos-state-of-agents", "name": "Panel: The State of Agents" },
+    { "id": "session:aiewf-closed-loop-evals", "name": "Building Closed-Loop Evals for a Multimodal Agent at Scale" },
+    { "id": "person:michael-grinich", "name": "Michael Grinich" },
+    { "id": "person:jaya-gupta", "name": "Jaya Gupta" },
+    { "id": "person:flo-crivello", "name": "Flo Crivello" },
+    { "id": "person:shawn-swyx-wang", "name": "Shawn “swyx” Wang" },
+    { "id": "person:jai-chopra", "name": "Jai Chopra" },
+    { "id": "person:soumya-gupta", "name": "Soumya Gupta" },
+    { "id": "org:workos", "name": "WorkOS" },
+    { "id": "org:foundation-capital", "name": "Foundation Capital" },
+    { "id": "org:lindy", "name": "Lindy" },
+    { "id": "org:latent-space", "name": "Latent Space" },
+    { "id": "org:ai-engineer", "name": "AI Engineer" },
+    { "id": "org:uber", "name": "Uber" }
+  ]
+}

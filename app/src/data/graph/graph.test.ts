@@ -13,13 +13,18 @@ describe("conference graph", () => {
     }
   });
 
-  it("classifies every person and connects all eight sessions to UNLOCK 2026", () => {
+  it("classifies every person and connects all ten sessions across all events", () => {
     const people = graphEntities.filter(({ id }) => id.startsWith("person:"));
     const personEdges = graphEdges.filter(({ type }) => type === "Is_a_Person");
     const sessionEdges = graphEdges.filter(({ type }) => type === "Session_of");
+    const connectedEvents = new Set(sessionEdges.map(({ target }) => target));
 
     expect(personEdges).toHaveLength(people.length);
-    expect(sessionEdges).toHaveLength(8);
-    expect(sessionEdges.every(({ target }) => target === "event:unlock-2026")).toBe(true);
+    expect(sessionEdges).toHaveLength(10);
+    expect(connectedEvents).toEqual(new Set([
+      "event:unlock-2026",
+      "event:workos-agent-night-2026",
+      "event:aie-worlds-fair-2026",
+    ]));
   });
 });

@@ -1,4 +1,4 @@
-# Conference knowledge graphs (split by domain)
+# Event knowledge graph
 
 The conference graph is split into per-domain subgraphs so biotech and AI/tech
 content can be browsed and extended independently:
@@ -9,15 +9,17 @@ content can be browsed and extended independently:
 - [`ai-tech/`](./ai-tech/) — AI/tech/software slice (23 entities, 31 edges):
   the AI people and orgs, the shared type/event entities, and the session
   context they appear in.
+- [`events/`](./events/) — cross-event additions for WorkOS Agent Night and AI
+  Engineer World's Fair, including their sessions, speakers, and organizations.
 
 Each domain folder follows the same entity-and-edge JSON structure (`entities.json`,
 `edges.json`, `is_a_person-edges.json`) with semantic ids, an `index.ts` typed export,
 and its own `graph.test.ts`. Entity ids may repeat across domains (shared entities,
 session context); invariants such as unique ids hold **per domain file**.
 
-`index.ts` here re-exports both domains (`biotechGraph`, `aiTechGraph`) plus a
-deduped legacy merged view (`graphEntities`, `graphEdges`, `conferenceGraph`) for
-existing consumers.
+`index.ts` re-exports the three inputs (`biotechGraph`, `aiTechGraph`, and
+`eventGraph`) plus a deduped merged view (`graphEntities`, `graphEdges`,
+`conferenceGraph`) spanning all events.
 
 Sources:
 

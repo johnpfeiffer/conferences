@@ -1,0 +1,25 @@
+{
+  "edges": [
+    { "source": "session:workos-state-of-agents", "target": "event:workos-agent-night-2026", "type": "Session_of" },
+    { "source": "session:aiewf-closed-loop-evals", "target": "event:aie-worlds-fair-2026", "type": "Session_of" },
+    { "source": "person:michael-grinich", "target": "session:workos-state-of-agents", "type": "Hosted" },
+    { "source": "person:jaya-gupta", "target": "session:workos-state-of-agents", "type": "Panelist_in" },
+    { "source": "person:flo-crivello", "target": "session:workos-state-of-agents", "type": "Panelist_in" },
+    { "source": "person:shawn-swyx-wang", "target": "session:workos-state-of-agents", "type": "Panelist_in" },
+    { "source": "person:jai-chopra", "target": "session:aiewf-closed-loop-evals", "type": "Presented" },
+    { "source": "person:soumya-gupta", "target": "session:aiewf-closed-loop-evals", "type": "Presented" },
+    { "source": "person:michael-grinich", "target": "event:workos-agent-night-2026", "type": "Speaker_at" },
+    { "source": "person:jaya-gupta", "target": "event:workos-agent-night-2026", "type": "Speaker_at" },
+    { "source": "person:flo-crivello", "target": "event:workos-agent-night-2026", "type": "Speaker_at" },
+    { "source": "person:shawn-swyx-wang", "target": "event:workos-agent-night-2026", "type": "Speaker_at" },
+    { "source": "person:jai-chopra", "target": "event:aie-worlds-fair-2026", "type": "Speaker_at" },
+    { "source": "person:soumya-gupta", "target": "event:aie-worlds-fair-2026", "type": "Speaker_at" },
+    { "source": "person:michael-grinich", "target": "org:workos", "type": "Founder_of" },
+    { "source": "person:jaya-gupta", "target": "org:foundation-capital", "type": "Current_Employee_of" },
+    { "source": "person:flo-crivello", "target": "org:lindy", "type": "Founder_of" },
+    { "source": "person:shawn-swyx-wang", "target": "org:latent-space", "type": "Host_of" },
+    { "source": "person:shawn-swyx-wang", "target": "org:ai-engineer", "type": "Founder_of" },
+    { "source": "person:jai-chopra", "target": "org:uber", "type": "Current_Employee_of" },
+    { "source": "person:soumya-gupta", "target": "org:uber", "type": "Current_Employee_of" }
+  ]
+}

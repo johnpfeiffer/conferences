@@ -1,4 +1,4 @@
-import type { Session } from "../data/transcripts";
+import type { Session } from "../models/event";
 
 export type TranscriptChunk = {
   id: string;
@@ -33,9 +33,12 @@ export function videoAtTimestamp(url: string, seconds: number): string {
 }
 
 export function chunkTranscript(session: Session, targetLength = 1_250): TranscriptChunk[] {
-  const lines = session.transcript.split(/\r?\n/).map((line) => line.trim());
+  const allLines = session.transcript.split(/\r?\n/);
+  const bodyStart = allLines.findIndex((line) => line.trim() === "---");
+  const lines = (bodyStart >= 0 ? allLines.slice(bodyStart + 1) : allLines)
+    .map((line) => line.trim());
   const segments: { timestamp: string; text: string }[] = [];
-  let timestamp = "0:00";
+  let timestamp = session.transcript.match(/^Segment:\s*((?:\d{1,2}:)?\d{1,2}:\d{2})/m)?.[1] ?? "0:00";
   let text: string[] = [];
 
   const flush = () => {

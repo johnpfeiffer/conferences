@@ -10,6 +10,7 @@ import {
 
 const session: Session = {
   id: "test",
+  eventId: "test-event",
   number: "01",
   title: "Scientific evaluation",
   eyebrow: "Test",
@@ -35,6 +36,18 @@ describe("transcript retrieval", () => {
     expect(chunks[0].timestamp).toBe("0:09");
     expect(retrieveSources("Why do models need trustworthy evals?", chunks, 1)[0].text)
       .toContain("trustworthy evals");
+  });
+
+  it("starts segmented transcripts at the source-video offset and excludes metadata", () => {
+    const segmented = {
+      ...session,
+      transcript: "https://youtube.com/watch?v=abc\nSegment: 57:12-1:27:46 of the source video\nDescription: metadata only\n---\nOpening words\n57:15\nNext line",
+    };
+    const [firstChunk] = chunkTranscript(segmented);
+
+    expect(firstChunk.timestamp).toBe("57:12");
+    expect(firstChunk.text).toContain("Opening words");
+    expect(firstChunk.text).not.toContain("metadata only");
   });
 
   it("indexes all eight supplied highlight transcripts in display order", () => {
