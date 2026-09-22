@@ -17,7 +17,7 @@
     {
       "term": "Soumya Gupta",
       "category": "Person",
-      "definition": "Tech Lead and Applied AI Engineer at Uber (computer vision / generative AI); second speaker. ASR renders 'Sonya' (intro) and 'Somya' (twice); the official conference bio uses she/her, so 'Sonya' is also the wrong gendered rendering.",
+      "definition": "Tech Lead and Applied AI Engineer at Uber specializing in computer vision and generative AI; second speaker in the session.",
       "sources": [
         "video description (X/LinkedIn links)",
         "https://ai.engineer/worldsfair/2026/speakers.json (verified 2026-08-27)",
@@ -27,7 +27,7 @@
     {
       "term": "Jai Chopra",
       "category": "Person",
-      "definition": "Product Lead on Uber's Applied AI team (previously Cruise and startups; later moved to Waymo per his X bio); first speaker and the 'Jay' the ASR renders throughout. Also 'Somya' is who he hands over to and thanks.",
+      "definition": "Product Lead on Uber's Applied AI team and the session's first speaker; previously worked at Cruise and startups and later moved to Waymo.",
       "sources": [
         "video description (X/LinkedIn links)",
         "https://ai.engineer/worldsfair/2026/speakers.json (verified 2026-08-27)",
@@ -37,7 +37,7 @@
     {
       "term": "Uber",
       "category": "Company",
-      "definition": "The speakers' employer; both the delivery marketplace (Uber Eats) and mobility sides are referenced. ASR renders 'Aruba' (intro) and 'Rue Ba' (pairwise-comparison section); 'Uber' itself is transcribed correctly elsewhere.",
+      "definition": "The speakers' employer; both its delivery marketplace, Uber Eats, and mobility businesses are discussed.",
       "sources": [
         "video description",
         "uber.com (canonical reference)",
@@ -47,7 +47,7 @@
     {
       "term": "Uber Eats",
       "category": "Company",
-      "definition": "Uber's delivery marketplace: ~$90B run rate per year, millions of items added each month, 20% year-on-year growth, operating in 10,000 cities globally; 'just as big as the mobility side on Uber today'. Transcribed correctly.",
+      "definition": "Uber's delivery marketplace: approximately $90B in annual run rate, millions of items added each month, 20% year-on-year growth, and operations in 10,000 cities globally.",
       "sources": [
         "video description",
         "transcript context (marketplace statistics passage)"
@@ -65,7 +65,7 @@
     {
       "term": "evals / eval loops",
       "category": "Concept",
-      "definition": "The talk's subject: evaluations for each agent stage plus the closed feedback loops that keep them aligned. ASR renders 'e-bows' and 'e-bow loops' in the intro and 'the vowels' once later.",
+      "definition": "Evaluations for each agent stage plus the closed feedback loops that keep the production system aligned.",
       "sources": [
         "video title and description",
         "transcript context (intro; 'generation of the vowels' before 'pairwise comparison')"
@@ -106,7 +106,7 @@
     {
       "term": "confusion matrix",
       "category": "Concept",
-      "definition": "The router's eval frame: true positives, false negatives, etc., measuring precision and recall; generalizes to an n x n matrix for multi-branch routing. Transcribed correctly.",
+      "definition": "The router's evaluation frame: true positives, false negatives, and related outcomes used to measure precision and recall; it generalizes to an n x n matrix for multi-branch routing.",
       "sources": [
         "transcript context (router eval section)"
       ]
@@ -114,7 +114,7 @@
     {
       "term": "precision and recall",
       "category": "Concept",
-      "definition": "Classifier metrics; recall is the routing guardrail metric ('we don't want any bad image to slip through'). Transcribed correctly.",
+      "definition": "Classifier metrics used to evaluate routing; recall is the key guardrail because unsafe images must not slip through.",
       "sources": [
         "transcript context (router eval section)"
       ]
@@ -146,7 +146,7 @@
     {
       "term": "diagnoser agent",
       "category": "Concept",
-      "definition": "The umbrella/higher-level abstraction over all feedback loops: takes flagged input (human-label mismatches, dogfooding thumbs up/down, free-form merchant/design/product feedback), reflects on which agent(s) need optimization, localizes the issue, and triggers the auto-tuning pipeline. ASR also renders 'umbrella diagnosis agent' and 'diagnosis'.",
+      "definition": "The higher-level abstraction over all feedback loops: it takes flagged input, identifies which agents need optimization, localizes the issue, and triggers the auto-tuning pipeline.",
       "sources": [
         "transcript context (model-loop and diagnoser sections)"
       ]
@@ -170,7 +170,7 @@
     {
       "term": "reflect agent",
       "category": "Concept",
-      "definition": "Prompt-optimizer sub-agent: inspects mismatches, removes noise, finds systemic issues in the dataset, and sends feedback to the synthesize agent. Transcribed correctly.",
+      "definition": "Prompt-optimizer sub-agent that inspects mismatches, removes noise, finds systemic issues in the dataset, and sends feedback to the synthesize agent.",
       "sources": [
         "transcript context (auto-tuning zoom-in)"
       ]
@@ -178,7 +178,7 @@
     {
       "term": "synthesize agent",
       "category": "Concept",
-      "definition": "Prompt-optimizer sub-agent: takes the reflect agent's feedback plus the current agent config and writes the new config, then benchmarks it. ASR renders 'the up synthesize agent' at first mention (stray 'up').",
+      "definition": "Prompt-optimizer sub-agent that combines the reflect agent's feedback with the current agent configuration, writes a new configuration, and benchmarks it.",
       "sources": [
         "transcript context (auto-tuning zoom-in)"
       ]
@@ -186,7 +186,7 @@
     {
       "term": "agent store",
       "category": "Concept",
-      "definition": "Registry where a newly benchmark-passing agent version is registered; production picks up the new version on its next run. ASR renders 'the new agent store' with a duplicated 'new'.",
+      "definition": "Registry where a newly benchmark-passing agent version is registered so production can pick it up on the next run.",
       "sources": [
         "transcript context (auto-tuning zoom-in)"
       ]
@@ -219,7 +219,7 @@
     {
       "term": "nugatory change",
       "category": "Concept",
-      "definition": "A change that is not meaningful or influential despite differing pixels; the talk's term for the reward-hacked edit. Transcribed correctly.",
+      "definition": "A change that is not meaningful or influential despite differing pixels; the talk's term for the reward-hacked edit.",
       "sources": [
         "transcript context (creative-edit example)"
       ]
@@ -269,7 +269,7 @@
     {
       "term": "dogfooding",
       "category": "Concept",
-      "definition": "Uber's internal feedback culture ('a great sort of dog dog feeding culture' in ASR): test apps before launch, plus in-production thumbs up/down and free-form feedback from merchants, design, and product teams, replayed into the diagnoser.",
+      "definition": "Uber's internal feedback culture: teams test apps before launch, then replay production ratings and free-form feedback from merchants, design, and product teams into the diagnoser.",
       "sources": [
         "transcript context (feedback-loops section)"
       ]
@@ -296,46 +296,6 @@
       "definition": "Enhancement-loop terminal outcome where the image is never enhanced after K failed iterations; traded off against publishing bad edits.",
       "sources": [
         "transcript context (enhancement section)"
-      ]
-    },
-    {
-      "term": "'we use our eyes'",
-      "category": "Unresolved proper noun",
-      "definition": "Closing sentence of the logging aside: 'And at Uber, we um we use our eyes.' Candidates: literal ('we look at the logs ourselves'), a product name ('UberEyes'? no evidence), or an ASR mangle of an internal observability tool name. No confident resolution; verify against the recording.",
-      "sources": [
-        "transcript context (logging section)"
-      ]
-    },
-    {
-      "term": "'Oh, my son done'",
-      "category": "Unresolved proper noun",
-      "definition": "Garbled line during the microphone trouble at the talk start ('Oh, my son done. Okay. Try again.'). Candidates: an aside to the AV staff or a mangled 'Oh, my mic's not on'. Unresolved; low stakes.",
-      "sources": [
-        "transcript context (opening)"
-      ]
-    },
-    {
-      "term": "'AI's lock'",
-      "category": "Unresolved proper noun",
-      "definition": "'the last thing that you want is to be scrolling through food photography that looks like AI's lock.' Candidates: 'AI slop' (the common term for low-quality AI-generated content) — strong contextual fit but the recording must confirm before fixing. Documented, not guessed.",
-      "sources": [
-        "transcript context (consumer-distrust passage)"
-      ]
-    },
-    {
-      "term": "'the technical is low ball'",
-      "category": "Unresolved proper noun",
-      "definition": "The routing agent's stated reason for failing the good cheeseburger image: 'It said the technical is low ball'. Candidates: 'the technical score is low', 'technicals are low'. Unresolved.",
-      "sources": [
-        "transcript context (router failure examples)"
-      ]
-    },
-    {
-      "term": "'For least for us'",
-      "category": "Unresolved proper noun",
-      "definition": "'this is where you sort of For least for us at Rue Ba, we have to make sure…' — garbled; presumably 'at least for us at Uber'. Only the company name is fixed (high confidence via metadata); the 'For least' fragment is documented, not guessed.",
-      "sources": [
-        "transcript context (pairwise-comparison section)"
       ]
     }
   ]

@@ -4,15 +4,23 @@ A multi-event recap and transcript-grounded chat experience.
 
 The archive currently includes UNLOCK 2026, WorkOS Agent Night, and AI Engineer
 World's Fair. UNLOCK remains the default landing page; the event selector opens
-the other event-scoped archives.
+the other event-scoped archives. The default UNLOCK page restores its original
+editorial art direction—oversized type, mint palette, transcript chat frame,
+and numbered session index—without changing the shared event model, routes, or
+grounding behavior. WorkOS uses an airy violet-to-blue gradient treatment with
+layered agent-system cards; AI Engineer World's Fair uses its dark grid and
+gold-accented event language. Both remain variants of the reusable MUI landing.
+
+Every header includes a prominent conference selector. Its choices include the
+event dates so similarly named or recurring events remain easy to distinguish.
 
 ## Routes
 
 | Route | View |
 |---|---|
 | `/` | UNLOCK 2026 landing page |
-| `/events/2026-08-12-workos-agent-night` | WorkOS Agent Night landing page |
-| `/events/aiewf` | AI Engineer World's Fair landing page |
+| `/events/2026-08-12-workos-agent-night` | WorkOS-styled Agent Night landing page |
+| `/events/aiewf` | AI Engineer World's Fair dark event landing page |
 | `/talk/:sessionId` | Backward-compatible UNLOCK transcript reader |
 | `/events/:eventId/talk/:sessionId` | Event-scoped transcript reader |
 
@@ -67,7 +75,10 @@ entities.
 
 Glossaries are attached to their event in `app/src/data/events.ts`. UNLOCK's
 biotech and AI term sets are presented together as its event glossary; the two
-new events use the glossaries in their own data directories.
+new events use the glossaries in their own data directories. User-facing
+glossaries contain people, organizations, and domain concepts only; ASR
+diagnostics and unresolved caption fragments stay in the transcript-correction
+artifacts rather than appearing as glossary knowledge.
 
 `app/src/data/proposed-transcript-fixes.json` records traceable correction proposals without changing the original transcript text.
 

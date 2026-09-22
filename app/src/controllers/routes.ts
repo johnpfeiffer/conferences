@@ -1,4 +1,5 @@
 import { DEFAULT_EVENT_ID } from "../data/events";
+import type { Event } from "../models/event";
 
 export type AppRoute =
   | { kind: "event"; eventId: string }
@@ -14,6 +15,10 @@ const decodeSegment = (value: string) => {
     return value;
   }
 };
+
+export function conferenceOptionLabel({ name, date }: Pick<Event, "name" | "date">) {
+  return `${name} · ${date}`;
+}
 
 export function appBasePath(pathname = typeof window === "undefined" ? "/" : window.location.pathname) {
   const firstSegment = pathname.split("/").filter(Boolean)[0];
@@ -61,4 +66,3 @@ export function sessionPath(eventId: string, sessionId: string, base = appBasePa
     ? `${base}/talk/${sessionId}`
     : `${base}/events/${eventId}/talk/${sessionId}`;
 }
-

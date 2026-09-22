@@ -31,8 +31,18 @@ authority if this interpretation is incomplete or incorrect.
 ## Presentation
 
 - Navigation between events is available from every landing and reader view.
-- Each landing is a light-mode, minimal homage to its official source while
-  using MUI components and defaults.
+- The conference selector is prominently labeled, displays each event's date in
+  its choices, and is the only event-switching control in the top-right area.
+- UNLOCK's default landing restores its bespoke original presentation: oversized
+  editorial typography, mint and acid accents, a framed transcript-grounded
+  conversation, numbered session rows, and the branded footer.
+- WorkOS uses a light MUI presentation with violet-to-blue gradients, rounded
+  controls, and layered system-status cards inspired by its source site.
+- AI Engineer World's Fair uses a dark MUI presentation with a subtle grid,
+  centered typography, and gold accents inspired by its source site.
+- All presentation paths consume the same event/session models, route controller,
+  retrieval, and grounded-chat behavior. Unknown future events retain a neutral
+  generic MUI landing rather than inheriting another conference's identity.
 - Loading states are visible, content uses at least 14px text, controls have
   visible boundaries, and the browser owns normal page scrolling.
 - Event source and session video links are relative to the current application
@@ -41,5 +51,8 @@ authority if this interpretation is incomplete or incorrect.
 ## Knowledge data
 
 - Glossaries are associated with events, not with the entire archive.
+- User-facing glossary entries describe people, organizations, and domain
+  concepts. ASR variants, unresolved caption fragments, and correction notes
+  belong to the transcript-fix workflow and are excluded from glossary terms
+  and definitions.
 - The merged knowledge graph includes all three events and all ten sessions.
-

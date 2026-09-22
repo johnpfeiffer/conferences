@@ -32,4 +32,19 @@ describe("event archive", () => {
     expect(sessions).toHaveLength(10);
     expect(new Set(sessions.map(({ id }) => id)).size).toBe(sessions.length);
   });
+
+  it("keeps the AI Engineer glossary focused on people and domain knowledge", () => {
+    const aiewf = events.find(({ id }) => id === "aiewf");
+
+    expect(aiewf).toBeDefined();
+    expect(aiewf?.glossary.some(({ category }) => category === "Unresolved proper noun")).toBe(false);
+    for (const { definition } of aiewf?.glossary ?? []) {
+      expect(definition).not.toMatch(/\b(?:ASR|transcrib|garbl|mangl)/i);
+    }
+  });
+
+  it("uses intentional spacing in the WorkOS headline", () => {
+    expect(events.find(({ id }) => id === "2026-08-12-workos-agent-night")?.headline)
+      .toBe("AGI arrived — or it is a skill issue.");
+  });
 });

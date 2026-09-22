@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Alert, Box, Button, Container, CssBaseline, Stack, Typography } from "@mui/material";
-import { getEvent } from "./data/events";
+import { DEFAULT_EVENT_ID, getEvent } from "./data/events";
 import { eventPath, parseAppRoute } from "./controllers/routes";
 import EventLandingPage from "./views/EventLandingPage";
 import TranscriptView from "./views/TranscriptView";
+import UnlockLandingPage from "./views/UnlockLandingPage";
 
 export default function App() {
   const [route, setRoute] = useState(() => parseAppRoute(window.location.pathname));
@@ -46,7 +47,11 @@ export default function App() {
     return (
       <>
         <CssBaseline />
-        <EventLandingPage key={event.id} event={event} onNavigate={navigate} />
+        {event.id === DEFAULT_EVENT_ID ? (
+          <UnlockLandingPage key={event.id} event={event} onNavigate={navigate} />
+        ) : (
+          <EventLandingPage key={event.id} event={event} onNavigate={navigate} />
+        )}
       </>
     );
   }

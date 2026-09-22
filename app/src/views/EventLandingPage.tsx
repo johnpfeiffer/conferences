@@ -26,7 +26,9 @@ import {
   Stack,
   TextField,
   Typography,
+  createTheme,
 } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
 import { sessionPath } from "../controllers/routes";
 import { askConference, type ConversationTurn } from "../lib/chat";
 import {
@@ -46,12 +48,244 @@ type ChatMessage = {
   error?: boolean;
 };
 
-const heroBackground = {
-  primary: "primary.light",
-  secondary: "secondary.light",
-  success: "success.light",
-  warning: "warning.light",
-} as const;
+const WORKOS_EVENT_ID = "2026-08-12-workos-agent-night";
+const AIEWF_EVENT_ID = "aiewf";
+const genericTheme = createTheme();
+
+const workosTheme = createTheme({
+  palette: {
+    mode: "light",
+    primary: { main: "#625cf6", light: "#eceaff", dark: "#453fd0" },
+    secondary: { main: "#4f9bea" },
+    background: { default: "#fbfbff", paper: "#ffffff" },
+    text: { primary: "#202b33", secondary: "#6f7692" },
+    divider: "rgba(63, 69, 99, 0.18)",
+  },
+  shape: { borderRadius: 12 },
+  typography: {
+    fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  },
+  components: {
+    MuiButton: { styleOverrides: { root: { fontWeight: 700, textTransform: "none" } } },
+    MuiPaper: { styleOverrides: { root: { backgroundImage: "none" } } },
+  },
+});
+
+const aiewfTheme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: { main: "#ffffff", contrastText: "#050505" },
+    warning: { main: "#f3d36b", light: "#ffe69a", dark: "#b99b3c", contrastText: "#080807" },
+    background: { default: "#050505", paper: "#0d0d0c" },
+    text: { primary: "#f8f8f6", secondary: "#aaa9a4" },
+    divider: "rgba(255, 255, 255, 0.16)",
+  },
+  shape: { borderRadius: 4 },
+  typography: {
+    fontFamily: 'Arial, Helvetica, sans-serif',
+  },
+  components: {
+    MuiButton: { styleOverrides: { root: { fontWeight: 800 } } },
+    MuiPaper: { styleOverrides: { root: { backgroundImage: "none" } } },
+    MuiCard: { styleOverrides: { root: { backgroundImage: "none" } } },
+  },
+});
+
+function WorkOSHero({ event }: { event: Event }) {
+  const [headlineLead, headlineAccent = ""] = event.headline.split("—");
+
+  return (
+    <Box
+      component="header"
+      sx={{
+        position: "relative",
+        overflow: "hidden",
+        borderBottom: 1,
+        borderColor: "divider",
+        bgcolor: "#fff",
+        backgroundImage: "radial-gradient(circle at 79% 48%, rgba(86, 134, 255, 0.15), transparent 29%), radial-gradient(circle at 68% 70%, rgba(137, 91, 255, 0.12), transparent 27%)",
+      }}
+    >
+      <Container maxWidth="lg" sx={{ minHeight: { md: 650 }, py: { xs: 8, md: 11 }, display: "grid", alignItems: "center" }}>
+        <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1.08fr 0.92fr" }, gap: { xs: 7, md: 5 }, alignItems: "center" }}>
+          <Stack spacing={4} sx={{ position: "relative", zIndex: 1 }}>
+            <Stack direction="row" sx={{ gap: 1, flexWrap: "wrap" }}>
+              <Chip label={event.type} color="primary" />
+              <Chip label={event.date} variant="outlined" />
+              <Chip label={event.location} variant="outlined" />
+            </Stack>
+            <Box>
+              <Typography variant="overline" color="text.secondary" sx={{ fontWeight: 800, letterSpacing: "0.11em" }}>
+                {event.eyebrow}
+              </Typography>
+              <Typography
+                component="h1"
+                aria-label={event.headline}
+                sx={{ mt: 2, fontSize: { xs: "2.775rem", sm: "4.05rem", md: "4.95rem" }, fontWeight: 650, lineHeight: 0.92, letterSpacing: "-0.075em" }}
+              >
+                <Box component="span" sx={{ display: "block" }}>{headlineLead.trim()} — </Box>
+                <Box
+                  component="span"
+                  sx={{
+                    display: "block",
+                    color: "transparent",
+                    background: "linear-gradient(94deg, #8d72f4 3%, #4d9eea 92%)",
+                    backgroundClip: "text",
+                    WebkitBackgroundClip: "text",
+                  }}
+                >
+                  {headlineAccent.trim()}
+                </Box>
+              </Typography>
+            </Box>
+            <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 690, lineHeight: 1.6 }}>
+              {event.description}
+            </Typography>
+            <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5} sx={{ alignItems: { sm: "center" } }}>
+              <Button component="a" variant="contained" href="#sessions" size="large" sx={{ px: 3.5, borderRadius: 999 }}>
+                Browse the session
+              </Button>
+              <Button component="a" href={event.sourceUrl} target="_blank" rel="noreferrer" size="large">
+                {event.sourceLabel} ↗
+              </Button>
+            </Stack>
+          </Stack>
+
+          <Box
+            aria-hidden="true"
+            sx={{
+              position: "relative",
+              minHeight: { xs: 360, md: 500 },
+              borderRadius: 6,
+              backgroundImage: "repeating-linear-gradient(90deg, rgba(94, 123, 255, 0.3) 0 4px, transparent 4px 12px)",
+              maskImage: "linear-gradient(90deg, transparent, black 18%, black 78%, transparent)",
+            }}
+          >
+            {[
+              ["MODEL ACCESS", "READY", "8%", 0.34],
+              ["AGENT HARNESS", "ENABLED", "24%", 1],
+              ["CONTEXT GRAPH", "CONNECTED", "43%", 1],
+              ["LONG-TERM MEMORY", "INDEXED", "62%", 0.7],
+            ].map(([label, state, top, opacity]) => (
+              <Paper
+                key={label}
+                elevation={5}
+                sx={{
+                  position: "absolute",
+                  top,
+                  right: 0,
+                  width: { xs: "88%", md: "96%" },
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 2,
+                  p: { xs: 2, md: 2.5 },
+                  opacity,
+                  border: 1,
+                  borderColor: "rgba(83, 91, 132, 0.12)",
+                  borderRadius: 3,
+                  boxShadow: "0 16px 38px rgba(72, 76, 113, 0.16)",
+                }}
+              >
+                <Box sx={{ width: 54, height: 30, p: "3px", borderRadius: 999, bgcolor: label === "MODEL ACCESS" ? "#d8dbe6" : "#26343b" }}>
+                  <Box sx={{ width: 24, height: 24, ml: label === "MODEL ACCESS" ? 0 : 3, borderRadius: "50%", bgcolor: "#fff", boxShadow: "0 1px 4px rgba(0,0,0,.2)" }} />
+                </Box>
+                <Typography sx={{ flexGrow: 1, fontWeight: 800 }}>{label}</Typography>
+                <Chip label={state} size="small" color="primary" variant="outlined" />
+              </Paper>
+            ))}
+          </Box>
+        </Box>
+      </Container>
+    </Box>
+  );
+}
+
+function AiewfHero({ event }: { event: Event }) {
+  return (
+    <Box
+      component="header"
+      sx={{
+        position: "relative",
+        overflow: "hidden",
+        borderBottom: 1,
+        borderColor: "divider",
+        backgroundColor: "#050505",
+        backgroundImage: "linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px), radial-gradient(ellipse at 50% 78%, rgba(214, 179, 74, .2), transparent 48%)",
+        backgroundSize: "128px 128px, 128px 128px, 100% 100%",
+      }}
+    >
+      <Container maxWidth="lg" sx={{ minHeight: { md: 700 }, py: { xs: 8, md: 10 }, display: "grid", placeItems: "center", textAlign: "center" }}>
+        <Stack spacing={4} sx={{ position: "relative", zIndex: 1, alignItems: "center" }}>
+          <Box sx={{ display: "inline-grid", border: 2, borderColor: "text.primary", px: 2.5, py: 1, lineHeight: 1 }}>
+            <Typography variant="caption" sx={{ fontWeight: 800 }}>AI Engineer</Typography>
+            <Typography sx={{ fontSize: { xs: "1.6rem", sm: "2.2rem" }, fontWeight: 900, letterSpacing: "-0.05em" }}>World&apos;s Fair</Typography>
+          </Box>
+          <Typography sx={{ color: "warning.main", fontWeight: 800, letterSpacing: { xs: "0.08em", sm: "0.16em" }, textTransform: "uppercase" }}>
+            {event.date} • {event.location}
+          </Typography>
+          <Typography
+            component="h1"
+            aria-label={event.headline}
+            sx={{ maxWidth: 1120, fontSize: { xs: "2.625rem", sm: "4.2rem", md: "5.55rem" }, fontWeight: 900, lineHeight: 0.92, letterSpacing: "-0.065em" }}
+          >
+            <Box component="span" sx={{ display: "block" }}>The engineering behind </Box>
+            <Box component="span" sx={{ display: "block", color: "warning.main", textShadow: "0 0 30px rgba(243, 211, 107, .2)" }}>useful agents.</Box>
+          </Typography>
+          <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 850, lineHeight: 1.6 }}>
+            {event.description}
+          </Typography>
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+            <Button component="a" variant="contained" color="primary" href="#sessions" size="large" sx={{ px: 4 }}>
+              Browse the session
+            </Button>
+            <Button component="a" variant="outlined" color="warning" href={event.sourceUrl} target="_blank" rel="noreferrer" size="large" sx={{ px: 4 }}>
+              {event.sourceLabel} ↗
+            </Button>
+          </Stack>
+        </Stack>
+      </Container>
+    </Box>
+  );
+}
+
+function GenericHero({ event }: { event: Event }) {
+  return (
+    <Box component="header" sx={{ bgcolor: `${event.accent}.light`, borderBottom: 1, borderColor: "divider" }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 7, md: 12 } }}>
+        <Stack spacing={4}>
+          <Stack direction="row" sx={{ gap: 1, flexWrap: "wrap" }}>
+            <Chip label={event.type} color={event.accent} />
+            <Chip label={event.date} variant="outlined" />
+            <Chip label={event.location} variant="outlined" />
+          </Stack>
+          <Box sx={{ maxWidth: 920 }}>
+            <Typography variant="overline" color="text.secondary">{event.eyebrow}</Typography>
+            <Typography component="h1" variant="h1" sx={{ mt: 1, fontSize: { xs: "3.1rem", sm: "4.6rem", md: "6rem" }, letterSpacing: "-0.055em" }}>
+              {event.headline}
+            </Typography>
+          </Box>
+          <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 720, lineHeight: 1.6 }}>
+            {event.description}
+          </Typography>
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5}>
+            <Button component="a" variant="contained" color={event.accent} href="#sessions" size="large">
+              Browse {event.sessions.length === 1 ? "the session" : `${event.sessions.length} sessions`}
+            </Button>
+            <Button component="a" href={event.sourceUrl} target="_blank" rel="noreferrer" size="large">
+              {event.sourceLabel} ↗
+            </Button>
+          </Stack>
+        </Stack>
+      </Container>
+    </Box>
+  );
+}
+
+function EventHero({ event }: { event: Event }) {
+  if (event.id === WORKOS_EVENT_ID) return <WorkOSHero event={event} />;
+  if (event.id === AIEWF_EVENT_ID) return <AiewfHero event={event} />;
+  return <GenericHero event={event} />;
+}
 
 function AnswerText({ text, messageId }: { text: string; messageId: number }) {
   return text.split(/(\[\d+\])/g).map((part, index) => {
@@ -129,47 +363,17 @@ export default function EventLandingPage({ event, onNavigate }: { event: Event; 
   };
 
   const visibleTerms = showAllTerms ? event.glossary : event.glossary.slice(0, 12);
+  const theme = event.id === WORKOS_EVENT_ID
+    ? workosTheme
+    : event.id === AIEWF_EVENT_ID ? aiewfTheme : genericTheme;
 
   return (
-    <Box id="top">
-      <EventNavigation event={event} onNavigate={onNavigate} />
-      <Box
-        component="header"
-        sx={{ bgcolor: heroBackground[event.accent], borderBottom: 1, borderColor: "divider" }}
-      >
-        <Container maxWidth="lg" sx={{ py: { xs: 7, md: 12 } }}>
-          <Stack spacing={4}>
-            <Stack direction="row" sx={{ gap: 1, flexWrap: "wrap" }}>
-              <Chip label={event.type} color={event.accent} />
-              <Chip label={event.date} variant="outlined" />
-              <Chip label={event.location} variant="outlined" />
-            </Stack>
-            <Box sx={{ maxWidth: 920 }}>
-              <Typography variant="overline" color="text.secondary">{event.eyebrow}</Typography>
-              <Typography
-                component="h1"
-                variant="h1"
-                sx={{ mt: 1, fontSize: { xs: "3.1rem", sm: "4.6rem", md: "6rem" }, letterSpacing: "-0.055em" }}
-              >
-                {event.headline}
-              </Typography>
-            </Box>
-            <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 720, lineHeight: 1.6 }}>
-              {event.description}
-            </Typography>
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5} sx={{ alignItems: { sm: "center" } }}>
-              <Button component="a" variant="contained" color={event.accent} href="#sessions" size="large">
-                Browse {event.sessions.length === 1 ? "the session" : `${event.sessions.length} sessions`}
-              </Button>
-              <Button component="a" href={event.sourceUrl} target="_blank" rel="noreferrer" size="large">
-                {event.sourceLabel} ↗
-              </Button>
-            </Stack>
-          </Stack>
-        </Container>
-      </Box>
+    <ThemeProvider theme={theme}>
+      <Box id="top" sx={{ minHeight: "100vh", color: "text.primary", bgcolor: "background.default" }}>
+        <EventNavigation event={event} onNavigate={onNavigate} />
+        <EventHero event={event} />
 
-      <Container component="main" maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
+        <Container component="main" maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
         <Stack spacing={{ xs: 8, md: 12 }}>
           <Box component="section" aria-labelledby="ask-title">
             <Stack spacing={1} sx={{ mb: 3 }}>
@@ -348,21 +552,22 @@ export default function EventLandingPage({ event, onNavigate }: { event: Event; 
             </Accordion>
           </Box>
         </Stack>
-      </Container>
+        </Container>
 
-      <Divider />
-      <Container component="footer" maxWidth="lg" sx={{ py: 5 }}>
-        <Stack direction={{ xs: "column", sm: "row" }} sx={{ justifyContent: "space-between", gap: 2 }}>
-          <Box>
-            <Typography variant="subtitle2">{event.name}</Typography>
-            <Typography variant="body2" color="text.secondary">{event.date} · {event.location}</Typography>
-          </Box>
-          <Stack direction="row" spacing={2}>
-            <Link href={event.sourceUrl} target="_blank" rel="noreferrer">Source ↗</Link>
-            <Link href="#top">Back to top ↑</Link>
+        <Divider />
+        <Container component="footer" maxWidth="lg" sx={{ py: 5 }}>
+          <Stack direction={{ xs: "column", sm: "row" }} sx={{ justifyContent: "space-between", gap: 2 }}>
+            <Box>
+              <Typography variant="subtitle2">{event.name}</Typography>
+              <Typography variant="body2" color="text.secondary">{event.date} · {event.location}</Typography>
+            </Box>
+            <Stack direction="row" spacing={2}>
+              <Link href={event.sourceUrl} target="_blank" rel="noreferrer">Source ↗</Link>
+              <Link href="#top">Back to top ↑</Link>
+            </Stack>
           </Stack>
-        </Stack>
-      </Container>
-    </Box>
+        </Container>
+      </Box>
+    </ThemeProvider>
   );
 }

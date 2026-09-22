@@ -18,9 +18,12 @@ flowchart LR
     MODEL --> RET[Event-scoped retrieval]
     RET --> CHAT[Grounded chat request]
     CHAT --> API[Server-side OpenAI-compatible API]
-    MODEL --> VIEWS[MUI landing + reader views]
-    ROUTES --> VIEWS
-    RET --> VIEWS
+    MODEL --> UNLOCK[UNLOCK branded landing]
+    MODEL --> SHARED[Themed MUI event landings + reader]
+    ROUTES --> UNLOCK
+    ROUTES --> SHARED
+    RET --> UNLOCK
+    RET --> SHARED
     GRAPH[Archive-wide knowledge graph] --> MODEL
 ```
 
@@ -37,7 +40,12 @@ supplies credentials and model configuration.
 - `app/src/controllers/` owns URL parsing and internal path construction.
 - `app/src/lib/` owns retrieval, chat request construction, and transcript
   comparison behavior.
-- `app/src/views/` renders MUI landing pages and transcript readers.
+- `app/src/views/` contains two presentation paths over the same domain model:
+  `UnlockLandingPage.tsx` restores the conference's bespoke editorial design,
+  while `EventLandingPage.tsx` selects the WorkOS, AI Engineer, or neutral MUI
+  presentation variant and `TranscriptView.tsx` provides the shared reader.
+- `app/src/views/navigation.tsx` owns the prominent shared conference selector,
+  including date-qualified option labels and event-scoped route transitions.
 
 UNLOCK 2026 is the root event. Other events use `/events/:eventId`, while the
 legacy `/talk/:sessionId` route continues to open UNLOCK sessions.
@@ -63,9 +71,9 @@ before the first ordinary caption marker.
 
 ```mermaid
 flowchart TD
-    OPEN[Open archive] --> DEFAULT[UNLOCK 2026 landing]
-    DEFAULT --> SWITCH{Choose event}
-    SWITCH --> EVENT[Event landing]
+    OPEN[Open archive] --> DEFAULT[Branded UNLOCK 2026 landing]
+    DEFAULT --> SWITCH{Choose dated conference}
+    SWITCH --> EVENT[Event-specific branded landing]
     EVENT --> SOURCE[Open official source]
     EVENT --> ASK[Ask event-scoped question]
     ASK --> EVIDENCE[Review timestamped source cards]

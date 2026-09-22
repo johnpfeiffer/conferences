@@ -1,15 +1,13 @@
 import type { MouseEvent } from "react";
 import {
   AppBar,
-  Button,
+  Box,
   Container,
-  MenuItem,
   Stack,
-  TextField,
   Toolbar,
   Typography,
 } from "@mui/material";
-import { eventPath } from "../controllers/routes";
+import { conferenceOptionLabel, eventPath } from "../controllers/routes";
 import { events } from "../data/events";
 import type { Event } from "../models/event";
 
@@ -34,48 +32,67 @@ export function internalLinkHandler(onNavigate: Navigate, path: string) {
 export default function EventNavigation({ event, onNavigate }: { event: Event; onNavigate: Navigate }) {
   return (
     <AppBar
+      component="nav"
+      aria-label="Conference navigation"
       position="sticky"
       color="inherit"
       elevation={0}
       sx={{ borderBottom: 1, borderColor: "divider" }}
     >
       <Container maxWidth="lg" disableGutters>
-        <Toolbar sx={{ gap: 2, minHeight: { xs: 72, sm: 80 }, px: { xs: 2, sm: 3 } }}>
+        <Toolbar
+          sx={{
+            flexDirection: { xs: "column", sm: "row" },
+            alignItems: { xs: "stretch", sm: "center" },
+            gap: { xs: 1.5, sm: 2 },
+            minHeight: { xs: 72, sm: 80 },
+            px: { xs: 2, sm: 3 },
+            py: { xs: 1.5, sm: 0 },
+          }}
+        >
           <Typography
             component="a"
             href={eventPath(event.id)}
             onClick={internalLinkHandler(onNavigate, eventPath(event.id))}
             variant="subtitle1"
             color="text.primary"
-            sx={{ fontWeight: 800, letterSpacing: "-0.02em", textDecoration: "none", flexGrow: 1 }}
+            sx={{ color: "text.primary", fontWeight: 800, letterSpacing: "-0.02em", textDecoration: "none", flexGrow: { sm: 1 } }}
           >
             {event.mark}
           </Typography>
-          <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-            <TextField
-              select
-              size="small"
-              label="Event"
+          <Stack spacing={0.5} sx={{ width: { xs: "100%", sm: "auto" }, alignItems: "stretch" }}>
+            <Typography
+              component="label"
+              htmlFor="conference-selector"
+              variant="caption"
+              sx={{ fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            >
+              Choose a conference
+            </Typography>
+            <Box
+              component="select"
+              id="conference-selector"
+              aria-label="Conference selector"
               value={event.id}
               onChange={(changeEvent) => onNavigate(eventPath(changeEvent.target.value))}
-              slotProps={{ select: { MenuProps: { disableScrollLock: true } } }}
-              sx={{ minWidth: { xs: 140, sm: 220 } }}
+              sx={{
+                width: { xs: "100%", sm: 360 },
+                height: 46,
+                px: 1.5,
+                border: 1.5,
+                borderColor: "currentColor",
+                borderRadius: 1,
+                color: "text.primary",
+                bgcolor: "background.paper",
+                fontSize: { xs: "0.72rem", sm: "0.84rem" },
+                fontWeight: 700,
+                cursor: "pointer",
+              }}
             >
               {events.map((option) => (
-                <MenuItem key={option.id} value={option.id}>{option.name}</MenuItem>
+                <option key={option.id} value={option.id}>{conferenceOptionLabel(option)}</option>
               ))}
-            </TextField>
-            <Button
-              component="a"
-              href={event.sourceUrl}
-              target="_blank"
-              rel="noreferrer"
-              size="small"
-              color={event.accent}
-              sx={{ display: { xs: "none", sm: "inline-flex" } }}
-            >
-              Source ↗
-            </Button>
+            </Box>
           </Stack>
         </Toolbar>
       </Container>

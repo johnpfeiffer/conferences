@@ -93,7 +93,7 @@ export const events: Event[] = [
     location: "Regency Ballroom · San Francisco",
     mark: "WORKOS / AGENT NIGHT",
     eyebrow: "THE STATE OF AGENTS",
-    headline: "AGI arrived—or it is a skill issue.",
+    headline: "AGI arrived — or it is a skill issue.",
     description:
       "A candid panel about rapidly rising AI spend, open-source models, agent harnesses, organizational context, memory, and the road to December.",
     accent: "primary",
