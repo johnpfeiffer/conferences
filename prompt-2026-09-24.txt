@@ -1,0 +1,67 @@
+PROMPT (2026-09-24)
+===================
+
+Conferences: pull latest and new PR
+
+First to get a cross reference source, pull the latest from "aiewf" (your gh cli is
+a collaborator), and in there you can see all the conference sessions
+(aiewf/app/src/data/ ) , it is even more rigorous with the unique session IDs.
+
+Now for the actual task, apparently there's a whole playlist of every track of the
+386 videos:
+https://www.youtube.com/playlist?list=PLDyBmFH9HlVc
+
+GOAL: I would like you to put into (new directory) conferences/episodes/aiewf/TITLE
+for each session
+
+Let's use the existing first completed session as an example
+"conferences/app/src/data/aiewf/aie-2026-uber-eats-closed-loop-evals/" of file
+formats and structure
+
+To be clear: I don't need the full transcript, I just want the beginning of the
+README.md
+
+"# AI Engineer World's Fair 2026: "Building Closed-Loop Evals for a Multimodal
+Agent at Scale" — Soumya Gupta & Jai Chopra, Uber (2026-07-01)
+
+- Video: https://www.youtube.com/watch?v=31GUkCBD-Uc (AI Engineer channel, uploaded
+2026-07-24, 21:38)
+- Event: AI Engineer World's Fair 2026, Moscone West, San Francisco — Day 3
+(2026-07-01), 11:40–12:00, Track 5 (Evals track); verified against the conference's
+official sessions/speakers JSON
+- Speakers: **Jai Chopra** (Product Lead, Applied AI, Uber) and **Soumya Gupta**
+(Tech Lead / Applied AI Engineer, Uber).
+- Subject: how Uber designed evals for the Uber Eats food-enhancement agent (image
+understanding/router → image editing loop with QA gate → publish-ready QA), reward
+hacking, pass@K, and the config-driven closed-loop diagnoser/auto-tuning system."
+
+You can be more concise and ignore and not fill in a bunch of the random notes
+(like "Artifiact series..." and "ASR renders...")
+
+So basically I'm asking for ~386 directories and README files, questions?
+
+Also: write this prompt (and any questions/answers) to prompt-2026-09-24.txt
+
+
+QUESTIONS & ANSWERS
+===================
+
+Q1. Directory naming scheme for the ~386 session folders under episodes/aiewf/?
+A1. aie-2026-title-slug (like the example aie-2026-uber-eats-closed-loop-evals)
+
+Q2. Include the rigorous session_id in each README as an extra line (e.g.
+    "- Session: asn_slot_... (schedule URL)")?
+A2. Yes, add a Session line after Event
+
+Q3. A few playlist videos are NOT sessions (e.g. the promo "6 Things to Know about
+    AIE World's Fair 2026"). What should I do with those?
+A3. Skip them, list them in the PR description
+
+Q4. Where should prompt-2026-09-24.txt (this prompt + these Q&A) go?
+A4. Conferences repo root, committed in the PR
+
+Q5. The latest main moved the example episode to
+    app/src/data/aiewf/aie-2026-uber-eats-closed-loop-evals/ (the old top-level
+    episodes/ dir only has legacy non-aiewf entries). Where should the ~386 new
+    session directories go?
+A5. episodes/aiewf/<slug>/ exactly as written (new top-level path)
