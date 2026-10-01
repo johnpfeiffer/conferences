@@ -1,0 +1,6 @@
+# AI Engineer World's Fair 2026: "The Agentic AI Engineer" — Benedikt Sanftl, Mutagent
+
+- Video: https://www.youtube.com/watch?v=pSto5YaNGUo (AI Engineer channel, uploaded 2026-06-29, 34:49)
+- Event: AI Engineer World's Fair 2026, Moscone West, San Francisco — this talk is not present in the conference's official sessions/speakers JSON (checked 2026-09-24; likely a lightning/community session); day/track details unverified.
+- Session: not found in the official sessions/speakers JSON
+- Speakers: Benedikt Sanftl, Mutagent (as listed in the video title).
