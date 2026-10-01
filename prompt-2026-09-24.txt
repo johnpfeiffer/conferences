@@ -65,3 +65,28 @@ Q5. The latest main moved the example episode to
     episodes/ dir only has legacy non-aiewf entries). Where should the ~386 new
     session directories go?
 A5. episodes/aiewf/<slug>/ exactly as written (new top-level path)
+
+
+FEEDBACK (2026-10-01) & FIXES
+=============================
+
+F1. Afternoon times are ambiguous (165 files). The README says 2:25–2:45 where the
+    official time is 2:25pm-2:45pm, because am/pm was dropped.
+FIX1. Event times now render as 24-hour time (e.g. 14:25–14:45). All matched
+    entries regenerated; no am/pm remains in Event lines.
+
+F2. The example talk now exists twice under different names: the generated
+    episodes/aiewf/aie-2026-building-closed-loop-evals-for-a-multimodal-agent-at-scale
+    duplicates the curated app/src/data/aiewf/aie-2026-uber-eats-closed-loop-evals.
+    (Also noted: speaker job titles differ — the generated stubs take roles from
+    speakers.json, the reference README was hand-curated.)
+FIX2. The generated duplicate stub was removed; the curated episode under
+    app/src/data/aiewf/ is the single canonical entry for that talk.
+
+F3. Video q2JrUKBMf0w ("The Future of Evals: From LLM as a Judge to Agent as a
+    Judge — Aparna Dhinakaran, Arize AI") — was it included? It maps to the
+    "Evals Track Intro" session (asn_slot_2026_07_01_main_stage_1025_2026_06_25t09_02_28_031z;
+    Laurie Voss listed but did not appear).
+FIX3. It was present but as a video-only (unverified) stub. It is now manually
+    matched to the Evals Track Intro session, with a Speakers-line note that
+    Laurie Voss does not appear in the video.
